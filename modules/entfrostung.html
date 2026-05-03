@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('entfrostung','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('entfrostung','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('entfrostung','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('entfrostung','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -113,4 +114,42 @@
     </table>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG, EUR-Lex 2021/535, NHTSA.</div>
+
+
+<div id="entfrostung-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🌡️</span><h3>Heizungsprinzip</h3></div>
+    <p>Motorabwärme-Heizung, elektrische Widerstandsheizung (PTC), Wärmepumpe sind verschiedene Systemtypen. Wechsel des Grundprinzips (z.B. Verbrenner → EV) erfordert vollständige Neubewertung der Entfrostleistung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei Heizprinzipwechsel</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">💨</span><h3>Gebläseleistung und Luftführung</h3></div>
+    <p>Wesentliche Änderungen an Gebläseleistung (kW), Luftkanalführung oder Düsenausrichtung sind typabgrenzend wenn sie die Entfrostleistung in Zone A oder B beeinflussen.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei wesentlicher Gebläseänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">🪟</span><h3>Scheibengeometrie / Neigungswinkel</h3></div>
+    <p>Die Windschutzscheibenneigung und -fläche beeinflusst direkt das Entfrostverhalten. Fahrgestellvarianten mit anderem Scheibenneigungswinkel (&gt; 2°) oder anderer Fläche erfordern neue Entfrostprüfung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei Scheibengeometrieänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Heizleistung (kW)</h3></div>
+    <p>Die verfügbare Heizleistung (besonders relevant bei EVs) ist typabgrenzend. Reduzierung der maximalen Heizleistung um &gt; 10 % erfordert Nachprüfung ob Zone A/B-Anforderungen noch erfüllt werden.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei Leistungsreduktion &gt; 10 %</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: VO (EU) 2021/535 Anhang IV §1 (Fahrzeugtyp-Definition für Entfrostung). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>

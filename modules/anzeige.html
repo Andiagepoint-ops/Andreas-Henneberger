@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('anzeige','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('anzeige','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('anzeige','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('anzeige','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -151,4 +152,49 @@
     </div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG Arbeitsdokumente, UN R121 Supplements, ISO 2575:2024, EU 2021/1958, EU 2019/2144 (GSR II).</div>
+
+
+<div id="anzeige-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🖥️</span><h3>Instrumententräger / Anzeigesystem</h3></div>
+    <p>Das Kombiinstrument (als Baugruppe) wird im Rahmen der Fahrzeugtypgenehmigung geprüft. Eine neue Hardware-Generation des Instruments erfordert i.d.R. neue Prüfung der Symbole und Beleuchtung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Hardware-Wechsel Kombiinstrument</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">🎨</span><h3>Symbole und Beschriftung</h3></div>
+    <p>Verwendung anderer Symbole als in Anhang 1 UN R121 / ISO 2575 vorgeschrieben ist typabgrenzend. Änderungen der Symbolgestaltung (auch bei gleichbleibender Bedeutung) erfordern Nachprüfung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei Symboländerung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">💡</span><h3>Farbgebung der Kontrollleuchten</h3></div>
+    <p>Die Farbe einer Kontrollleuchte (rot/gelb/grün/blau) ist nach UN R121 §5.2 festgelegt. Farbänderungen (z.B. von gelb auf rot) sind typabgrenzend und nicht als Supplement möglich.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Farbänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">📍</span><h3>Position der Bedienelemente</h3></div>
+    <p>Die Belegung der Lenkstockhebel (Licht links, Wischer rechts nach R121) ist typabgrenzend. Änderungen erfordern neue Genehmigung. Positionsänderungen nicht-primärer Bedienelemente: Prüffall.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Hebelbelegungsänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🔆</span><h3>Beleuchtung / Dimmbarkeit</h3></div>
+    <p>Die Beleuchtungscharakteristik (Mindesthelligkeit, Dimmbereich) ist Teil der Typprüfung. Neue Beleuchtungstechnologie (z.B. OLED statt LCD) erfordert erneute Prüfung der Sichtbarkeitsanforderungen.</p>
+    <div class="module-card-footer">
+      <span class="tag">Prüfung erforderlich: bei Technologiewechsel</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R121 §5 und Anhang 1 (Typmerkmale für Typgenehmigung). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>

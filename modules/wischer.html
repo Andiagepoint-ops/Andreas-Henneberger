@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('wischer','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('wischer','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('wischer','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('wischer','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -114,4 +115,49 @@
     </table>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG, EUR-Lex 2021/535, NHTSA.</div>
+
+
+<div id="wischer-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🌧️</span><h3>Wischersystem-Typ</h3></div>
+    <p>Tandemwischer vs. Pantografenwischer vs. einseitiger Wischer sind verschiedene Systemtypen. Wechsel erfordert neue Prüfung der Wischbereiche Zone A und B.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Systemtypwechsel</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">📐</span><h3>Wischblattlänge und -geometrie</h3></div>
+    <p>Länge der Wischblätter, Wischwinkel und Parkposition sind typabgrenzend. Änderungen &gt; 10 mm Länge oder &gt; 3° Winkel erfordern Nachprüfung der Zone-Coverage.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei Geometrieänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Wischermotor-Leistung</h3></div>
+    <p>Wesentliche Änderungen an Motor-Leistung oder -Drehzahl die die Wischfrequenz beeinflussen sind typabgrenzend. Zu geringe Motorleistung → Stufe-2-Frequenz unterschreitet Minimum (45/min).</p>
+    <div class="module-card-footer">
+      <span class="tag">Prüfung: bei Motoränderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">💧</span><h3>Scheibenwaschanlage (Reservoir / Pumpe)</h3></div>
+    <p>Änderungen am Reservoir-Volumen (unter 1,0 L), Pumpendruck oder Düsenausrichtung sind typabgrenzend wenn Pflichtanforderungen tangiert werden. Reine Komforterhöhung des Reservoirs: keine neue Genehmigung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: wenn unter Mindestvolumen</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🖥️</span><h3>Regensensor-Integration</h3></div>
+    <p>Fahrzeuge mit Regensensor-Automatik: Sensor-Systemwechsel kann Wischverhalten beeinflussen. Manuelle Betätigung muss weiterhin funktionieren (Sensor ist Komfort, nicht sicherheitskritisch).</p>
+    <div class="module-card-footer">
+      <span class="tag">Prüfung: bei Regensensorwechsel</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: VO (EU) 2021/535 Anhang VI §1 (Fahrzeugtyp und Anlagentyp-Definitionen). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>

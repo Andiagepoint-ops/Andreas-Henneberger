@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('notrad','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('notrad','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('notrad','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('notrad','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -146,4 +147,42 @@
     </div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG Arbeitsdokumente, UN R64 Supplements, NHTSA FMVSS 109/110 Docket.</div>
+
+
+<div id="notrad-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Notlaufkonzept</h3></div>
+    <p>T-Typ Reserverad, Runflat-Reifen oder Reifenreparaturkit sind grundsätzlich verschiedene Typen nach UN R64. Ein Fahrzeug mit Typgenehmigung für T-Typ kann nicht ohne neue Prüfung auf Runflat umgestellt werden.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Konzeptwechsel</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">📐</span><h3>T-Typ Reifengröße und Tragfähigkeit</h3></div>
+    <p>Beim T-Typ Reserverad sind Reifengröße, Traglastzahl und Geschwindigkeitsbegrenzung (max. 80 km/h) typabgrenzend. Änderungen an diesen Parametern erfordern Nachprüfung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Größen-/Tragfähigkeitsänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">🛞</span><h3>Runflat-Reifenspezifikation</h3></div>
+    <p>Beim Runflat-System sind Reifentype, Felgentyp (mit RSC-Sicherheitsfelge) und maximale Notlaufdistanz (typisch 80 km bei 80 km/h) typabgrenzend. Änderungen an Reifen oder Felge können Neuprüfung erfordern.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Reifen-/Felgenänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🧴</span><h3>Reparaturkit-Zusammensetzung</h3></div>
+    <p>Das Reparaturkit (Dichtmittel + Kompressor) wird als System genehmigt. Änderungen am Dichtmittel (Zusammensetzung, Füllmenge) oder Kompressor-Förderleistung sind typabgrenzend.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Systemänderung</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R64 §2.2 und §2.3 (Typendefinitionen für T-Typ, Runflat, Reparaturkit). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>

@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('tpms','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('tpms','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('tpms','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('tpms','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -167,4 +168,49 @@
     </div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRE Arbeitsdokumente, UN R141 Supplements, NHTSA FMVSS 138 Docket.</div>
+
+
+<div id="tpms-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">📡</span><h3>Messprinzip (Direkt/Indirekt)</h3></div>
+    <p>Direkt-TPMS und Indirekt-TPMS sind grundsätzlich verschiedene Systemtypen. Ein Fahrzeug das für eines genehmigt ist, kann nicht ohne neue Prüfung auf das andere umgestellt werden.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Wechsel Direkt↔Indirekt</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">📻</span><h3>Sensorfrequenz</h3></div>
+    <p>315 MHz und 433 MHz Sensorsysteme sind verschiedene Typen. Relevant für USA/Japan (315 MHz) vs. Europa (433 MHz). Fahrzeugvarianten für verschiedene Märkte benötigen separate Nachweise.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Frequenzwechsel</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">⚠️</span><h3>Warnschwelle</h3></div>
+    <p>Die konfigurierte CO-Warnschwelle (% unter Soll) ist typabgrenzend. EU: ≤20 %, USA: ≤25 %. Eine Änderung der programmierten Schwelle erfordert Neuprüfung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Schwellenänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🚗</span><h3>Fahrzeugtyp / Reifengröße</h3></div>
+    <p>Das TPMS wird pro Fahrzeugtypgenehmigung genehmigt. Neue Reifengrößen (geänderter Abrollumfang) können die iTPMS-Kalibrierung beeinflussen und Nachprüfung erfordern.</p>
+    <div class="module-card-footer">
+      <span class="tag">Prüfung erforderlich: bei neuer Reifengröße</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Systemarchitektur (Steuergerät)</h3></div>
+    <p>Wesentliche Änderungen am TPMS-Steuergerät (neue Hardware-Generation, geänderte Software-Sensorverarbeitung) sind typabgrenzend. Minor Software-Updates: oft als Supplement möglich.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei wesentlicher HW/SW-Änderung</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R141 §2.2 (Systemtyp-Definition) und §2.4 (Fahrzeugtyp). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>

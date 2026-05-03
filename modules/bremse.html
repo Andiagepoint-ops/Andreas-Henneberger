@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('bremse','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('bremse','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('bremse','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('bremse','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -151,4 +152,56 @@
     </div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRVA Arbeitsdokumente, UN R13-H Supplements, UN R152, EU 2019/2144 (GSR II), NHTSA FMVSS 135 Docket.</div>
+
+
+<div id="bremse-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🛑</span><h3>Bremsanlage Grundprinzip</h3></div>
+    <p>Hydraulisch, elektrohydraulisch (iBooster), elektromechanisch (Brake-by-Wire) sind verschiedene Systemtypen. Der Wechsel des Grundprinzips erfordert vollständige neue Typprüfung nach UN R13-H.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Systemwechsel</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">💿</span><h3>Bremsscheibe/Bremstrommel</h3></div>
+    <p>Geänderte Scheibenabmessungen (Durchmesser, Dicke) oder Wechsel Scheibe↔Trommel sind typabgrenzend. Gleiches Konzept mit anderem Lieferanten: in der Regel Supplement möglich wenn Leistungsnachweis erbracht.</p>
+    <div class="module-card-footer">
+      <span class="tag">Supplement möglich: bei gleicher Geometrie, anderem Lieferanten</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">🔧</span><h3>ABS-System</h3></div>
+    <p>Das ABS (Steuergerät, Modulatoren, Sensoren) als Systemeinheit ist typabgrenzend. Neue ABS-Generation (andere Regelalgorithmik) erfordert erneute Prüfung von μ-Split und Kurventest.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei ABS-Systemwechsel</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Brake Blending (EV)</h3></div>
+    <p>Das Brake Blending System (Koordination Rekuperation + Hydraulikbremse) ist bei EVs typabgrenzend. Änderungen an der Rekuperationscharakteristik (max. rekuperative Bremskraft) erfordern Nachprüfung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei Rekuperationsänderung &gt; 10 %</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🅿️</span><h3>Feststellbremse</h3></div>
+    <p>Wechsel mechanische Handbremse ↔ elektrische Feststellbremse (EPB) ist typabgrenzend. Änderungen am EPB-Steuergerät oder Betätigungsmechanismus erfordern Nachprüfung Halteleistung auf 18 % (UN R13-H) / 30 % (FMVSS 135).</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Konzeptwechsel EPB</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#e879a0">
+    <div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Fahrzeugmasse</h3></div>
+    <p>Das zulässige Gesamtgewicht (zGG) ist direkt typabgrenzend. Höheres zGG → höhere Bremsenergie → Nachprüfung der Bremsleistungen erforderlich.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Prüfung: bei zGG-Erhöhung &gt; 5 %</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R13-H §1 (Geltungsbereich) und §5 (Anforderungen definieren implizit Typmerkmale). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>

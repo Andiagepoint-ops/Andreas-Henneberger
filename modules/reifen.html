@@ -9,6 +9,7 @@
   <div class="tab" onclick="switchTab('reifen','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('reifen','vergleich')">📊 Marktvergleich</div>
   <div class="tab" onclick="switchTab('reifen','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('reifen','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -196,4 +197,56 @@
     </div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRBP Arbeitsdokumente, EU 2020/740 Reifenkennzeichnungsverordnung, UNECE R117 amendment texts.</div>
+
+
+<div id="reifen-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">📐</span><h3>Reifengröße (Größenbezeichnung)</h3></div>
+    <p>Die Größenbezeichnung (z.B. 225/45 R18) ist das primäre typabgrenzende Merkmal nach UN R30. Jede neue Größenkombination (Breite / Verhältnis / Felgendurchmesser) erfordert eine eigene Typgenehmigung.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei jeder neuen Größenkombination</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Geschwindigkeitskategorie</h3></div>
+    <p>Der Geschwindigkeitsbuchstabe (H, V, W, Y, ZR) definiert den Typ. Ein H-Reifen und ein V-Reifen gleicher Größe sind verschiedene Typen.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Änderung des Buchstabens</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">🏋️</span><h3>Traglastzahl (Load Index)</h3></div>
+    <p>Die Traglastzahl (z.B. 95) ist typabgrenzend. Gleiches Profil, gleiche Größe, aber höhere TLZ = neuer Typ.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei TLZ-Änderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🏗️</span><h3>Karkassenaufbau</h3></div>
+    <p>Radial (R) vs. Diagonal (D) vs. Gürtelreifen. Grundsätzlich verschiedene Typen. Innerhalb Radial: Karkassenlagen-Anzahl und Material sind typabgrenzend.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Aufbauänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🏷️</span><h3>Handelsbeschreibung / Handelsname</h3></div>
+    <p>Gleiche technische Spezifikation unter anderem Handelsnamen = erweiterter Typ (Nachtrag möglich). Grundlegende Konstruktionsänderungen = neuer Typ.</p>
+    <div class="module-card-footer">
+      <span class="tag">Nachtrag möglich bei reiner Namensänderung</span>
+    </div>
+  </div>
+  <div class="module-card" style="--card-color:#e879a0">
+    <div class="module-card-header"><span class="module-card-icon">❄️</span><h3>M+S / Winter / All-Season Kennzeichnung</h3></div>
+    <p>M+S, Schneeflockensymbol (3PMSF), All-Season sind typabgrenzend. Ein M+S-Reifen und ein Sommerreifen gleicher Größe sind verschiedene Typen nach R30.</p>
+    <div class="module-card-footer">
+      <span class="tag">Neue Genehmigung: bei Änderung der Saisonkennzeichnung</span>
+    </div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R30 §2.1 (Definition 'Reifentyp') und §6 (Änderungen des Reifentyps). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
 </div>
