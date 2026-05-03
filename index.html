@@ -140,6 +140,31 @@
   .gesetz-interp-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin-bottom:4px;}
   .gesetz-interp p{font-size:12px;color:var(--text);line-height:1.65;}
   .gesetz-note{background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.25);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--text);margin-bottom:16px;}
+  /* REG DOCS */
+  .reg-docs-box{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:20px;}
+  .reg-docs-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+  .reg-docs-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text2);flex:1;}
+  .reg-docs-btn{display:inline-flex;align-items:center;gap:4px;padding:4px 12px;border-radius:6px;font-size:11px;font-weight:500;border:none;cursor:pointer;transition:all .15s;}
+  .reg-docs-btn.primary{background:var(--accent);color:#fff;}
+  .reg-docs-btn.primary:hover{background:#3a78e0;}
+  .reg-docs-btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text2);}
+  .reg-docs-btn.ghost:hover{background:var(--bg3);color:var(--text);}
+  .reg-docs-list{display:flex;flex-direction:column;gap:6px;}
+  .reg-doc-item{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--bg3);border-radius:6px;text-decoration:none;color:var(--text);transition:background .15s;}
+  .reg-doc-item:hover{background:rgba(79,142,247,.1);}
+  .reg-doc-icon{font-size:16px;}
+  .reg-doc-name{flex:1;font-size:13px;word-break:break-all;}
+  .reg-doc-badge{font-size:10px;padding:2px 6px;background:rgba(79,142,247,.15);border:1px solid rgba(79,142,247,.3);border-radius:4px;color:var(--accent);font-weight:600;white-space:nowrap;}
+  .reg-docs-empty,.reg-docs-loading{font-size:12px;color:var(--text2);padding:4px 0;}
+  /* UPLOAD MODAL */
+  .reg-upload-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;align-items:center;justify-content:center;}
+  .reg-upload-dialog{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px;width:420px;max-width:90vw;}
+  .reg-upload-dialog h3{font-size:15px;margin-bottom:16px;}
+  .reg-upload-path{font-size:12px;color:var(--text2);background:var(--bg3);padding:6px 10px;border-radius:6px;margin-bottom:14px;font-family:monospace;}
+  .reg-upload-dialog input[type=file]{width:100%;background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:8px;border-radius:6px;font-size:13px;margin-bottom:12px;}
+  .reg-upload-actions{display:flex;gap:8px;justify-content:flex-end;}
+  .upload-status.ok{background:rgba(62,207,142,.1);border:1px solid rgba(62,207,142,.3);color:#3ecf8e;display:block;padding:6px 10px;border-radius:6px;font-size:12px;margin-bottom:8px;}
+  .upload-status.err{background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.3);color:#e74c3c;display:block;padding:6px 10px;border-radius:6px;font-size:12px;margin-bottom:8px;}
   </style>
 </head>
 <body>
@@ -539,9 +564,92 @@ function uploadInit(){
 }
 /* ===== END UPLOAD MODULE ===== */
 
+/* ===== REGULATION DOCS ===== */
+async function loadRegDocs(subfolder, containerId) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  el.innerHTML = '<span class="reg-docs-loading">Lade…</span>';
+  try {
+    const headers = ghToken() ? {'Authorization':'Bearer '+ghToken()} : {};
+    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/downloads/${subfolder}`, {headers});
+    if (!res.ok) { el.innerHTML = '<span class="reg-docs-empty">Noch keine Dokumente in diesem Ordner.</span>'; return; }
+    const files = (await res.json()).filter(f => f.type === 'file' && !f.name.startsWith('.'));
+    if (!files.length) { el.innerHTML = '<span class="reg-docs-empty">Noch keine Dokumente hochgeladen.</span>'; return; }
+    el.innerHTML = files.map(f => {
+      const url = `https://andiagepoint-ops.github.io/Andreas-Henneberger/downloads/${subfolder}/${f.name}`;
+      const ext = f.name.split('.').pop().toUpperCase();
+      return `<a href="${url}" target="_blank" class="reg-doc-item"><span class="reg-doc-icon">📄</span><span class="reg-doc-name">${f.name}</span><span class="reg-doc-badge">${ext}</span></a>`;
+    }).join('');
+  } catch(e) { el.innerHTML = `<span class="reg-docs-empty">Fehler: ${e.message}</span>`; }
+}
+
+function openRegUpload(subfolder) {
+  // Setzt Upload-Modal voraus — nutzt bestehende Upload-Infrastruktur
+  const modal = document.getElementById('reg-upload-modal');
+  if (!modal) return;
+  document.getElementById('reg-upload-folder-display').textContent = 'downloads/' + subfolder + '/';
+  modal.dataset.subfolder = subfolder;
+  modal.style.display = 'flex';
+  document.getElementById('reg-upload-file-input').value = '';
+  document.getElementById('reg-upload-status').textContent = '';
+  document.getElementById('reg-upload-status').className = 'upload-status';
+}
+
+function closeRegUpload() {
+  const modal = document.getElementById('reg-upload-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+async function submitRegUpload() {
+  const modal = document.getElementById('reg-upload-modal');
+  const subfolder = modal?.dataset?.subfolder;
+  const fileInput = document.getElementById('reg-upload-file-input');
+  const file = fileInput?.files?.[0];
+  const statusEl = document.getElementById('reg-upload-status');
+  const btn = document.getElementById('reg-upload-btn');
+  if (!file) { statusEl.textContent = 'Bitte Datei auswählen.'; statusEl.className = 'upload-status err'; return; }
+  if (!ghToken()) { statusEl.textContent = 'Kein GitHub-Token gespeichert. Bitte zuerst auf der Upload-Seite einloggen.'; statusEl.className = 'upload-status err'; return; }
+  btn.disabled = true; btn.textContent = 'Uploading…';
+  const path = `downloads/${subfolder}/${file.name}`;
+  try {
+    const b64 = await new Promise((res,rej) => { const r=new FileReader(); r.onload=e=>res(e.target.result.split(',')[1]); r.onerror=rej; r.readAsDataURL(file); });
+    let sha = null;
+    const chk = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`, {headers:{'Authorization':'Bearer '+ghToken(),'Accept':'application/vnd.github+json'}});
+    if (chk.ok) { const d = await chk.json(); sha = d.sha; }
+    const body = {message:`docs: upload ${file.name} to ${subfolder}/`, content:b64, branch:GH_BRANCH};
+    if (sha) body.sha = sha;
+    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`, {method:'PUT', headers:{'Authorization':'Bearer '+ghToken(),'Content-Type':'application/json','Accept':'application/vnd.github+json'}, body:JSON.stringify(body)});
+    if (res.ok) {
+      statusEl.textContent = '✅ Hochgeladen: ' + file.name;
+      statusEl.className = 'upload-status ok';
+      // Refresh doc list in the calling page
+      const listId = 'reg-docs-' + subfolder.replace(/[^a-z0-9]/g,'');
+      await loadRegDocs(subfolder, listId);
+      setTimeout(closeRegUpload, 1500);
+    } else {
+      const err = await res.json(); throw new Error(err.message || res.status);
+    }
+  } catch(e) { statusEl.textContent = '❌ ' + e.message; statusEl.className = 'upload-status err'; }
+  btn.disabled = false; btn.textContent = 'Hochladen';
+}
+/* ===== END REGULATION DOCS ===== */
+
 // Init from hash
 const hash = window.location.hash.replace('#','');
 if (hash) showSection(hash); else showSection('home');
 </script>
+<!-- UPLOAD MODAL -->
+<div id="reg-upload-modal" class="reg-upload-modal" onclick="if(event.target===this)closeRegUpload()">
+  <div class="reg-upload-dialog">
+    <h3>📤 Dokument hochladen</h3>
+    <div class="reg-upload-path" id="reg-upload-folder-display">downloads/</div>
+    <div id="reg-upload-status" class="upload-status"></div>
+    <input type="file" id="reg-upload-file-input" accept="application/pdf,.pdf,.doc,.docx,.xlsx,.xls,.zip">
+    <div class="reg-upload-actions">
+      <button class="reg-docs-btn ghost" onclick="closeRegUpload()">Abbrechen</button>
+      <button class="reg-docs-btn primary" id="reg-upload-btn" onclick="submitRegUpload()">Hochladen</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
