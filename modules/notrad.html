@@ -1,0 +1,120 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Notrad / Ersatzrad</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(247,111,111,.12);border-color:rgba(247,111,111,.3)">🔧</div>
+  <div><h2>Modul — Notrad / Ersatzrad</h2><p>UN R64 · FMVSS 109/110 und Äquivalente. Space Saver, Runflat, Reparaturkit in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="notrad-tabs">
+  <div class="tab active" onclick="switchTab('notrad','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('notrad','typen')">🔩 Typen &amp; Technik</div>
+  <div class="tab" onclick="switchTab('notrad','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('notrad','vergleich')">📊 Marktvergleich</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="notrad-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span><strong>UN R64 Rev.3</strong> ist die Basisvorschrift für temporäre Ersatzräder (ECE). TPMS-Anforderungen wurden in <strong>UN R141</strong> ausgegliedert. Alternativsysteme (Runflat, Reparaturkit) sind als Ersatz für das physische Reserverad in den meisten Märkten zulässig, wenn TPMS vorhanden ist.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>T-Typ Notrad</th><th>Runflat</th><th>Reparaturkit</th><th>Besonderheit</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-64" target="_blank" class="reg-link">UN R64 Rev.3 ↗</a> <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-142" target="_blank" class="reg-link">UN R142 ↗</a></td><td>✓ max. 80 km/h; 420 kPa</td><td>✓ + TPMS (Annex 3)</td><td>✓ + TPMS (Annex 4)</td><td>3 Optionen gleichwertig; kein Pflicht-Reserverad</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.109" target="_blank" class="reg-link">FMVSS 109 S5.5 ↗</a> <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.110" target="_blank" class="reg-link">FMVSS 110 ↗</a></td><td>✓ ~80 km/h; Aufkleber Pflicht</td><td>✓</td><td>✓</td><td>Kein Bundesgesetz fordert physisches Reserverad</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 7258-2017 §4.5 ↗</a></td><td>✓ max. 80 km/h</td><td>✓ + TPMS</td><td>⚠ Eingeschränkt</td><td>GB 7258 schreibt Reserverad grundsätzlich vor; Ausnahmen für Runflat/TPMS</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT Art. 9 ↗</a> <a href="https://www.jatma.or.jp/" target="_blank" class="reg-link">JATMA ↗</a></td><td>✓ max. 80 km/h</td><td>✓ + TPMS</td><td>⚠ Einzelfall</td><td>UN R64 ratifiziert; JATMA-Richtlinien für T-Reifen</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 12 ↗</a></td><td>✓ max. 80 km/h</td><td>✓ + TPMS</td><td>⚠ Eingeschränkt</td><td>Orientiert sich stark an UN R64</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN ↗</a> <a href="https://www.inmetro.gov.br/" target="_blank" class="reg-link">INMETRO ↗</a></td><td>✓ max. 80 km/h; 420 kPa</td><td>✓</td><td>⚠ kein formaler Rahmen</td><td>Reserverad ist <strong>Pflichtausrüstung</strong></td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-64" target="_blank" class="reg-link">UN R64 retained ↗</a> <a href="https://www.legislation.gov.uk/uksi/2020/818/contents" target="_blank" class="reg-link">UK SI 2020/818 ↗</a></td><td>✓ identisch ECE</td><td>✓ + TPMS</td><td>✓ + TPMS</td><td>Vollständige Übernahme ECE post-Brexit</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO (ECE-Basis) ↗</a></td><td>✓ + Hitzetest 70°C</td><td>✓</td><td>⚠ Marktspezifisch</td><td>Extreme Klimabedingungen; Hitzebeständigkeit relevant</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 95A ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-153 Entwurf ↗</a></td><td>✓ nicht vollständig mit R64 harmonisiert</td><td>⚠ Geplant (AIS-153)</td><td>⚠ Nicht geregelt</td><td>Reserverad de-facto Standard; AIS-153 in Vorbereitung</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TYPEN -->
+<div id="notrad-tab-typen" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">🛞</span><h3>Temporäres Notrad (T-Typ)</h3></div><p>„T"-Präfix (z.B. T125/70 R16 96M). Kleinere Dimension. Betriebsgrenzen: max. 80 km/h, 420 kPa. „TEMPORARY USE ONLY" Pflichtaufschrift. UN R64 Annex 1.</p><div class="module-card-footer"><span class="tag">UN R64 Annex 1</span><span class="tag">Max. 80 km/h</span><span class="tag">420 kPa</span></div></div>
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🔄</span><h3>Vollgröße-Reserverad</h3></div><p>Identische Dimension. Keine Betriebsbeschränkung. In BR und de-facto IN Pflicht; in EU/US/UK durch Alternativen ersetzbar.</p><div class="module-card-footer"><span class="tag">Keine Betriebsbeschr.</span><span class="tag">Pflicht: BR</span></div></div>
+    <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🏃</span><h3>Runflat-Reifen (RFT)</h3></div><p>Verstärkte Seitenwand. Weiterfahrt bei Druckverlust (max. 80 km/h, max. 80 km). TPMS zwingend. UN R64 Annex 3.</p><div class="module-card-footer"><span class="tag">UN R64 Annex 3</span><span class="tag">TPMS Pflicht</span><span class="tag">80 km / 80 km/h</span></div></div>
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🧴</span><h3>Reifenreparaturkit</h3></div><p>Kompressor + Dichtmittel. Nur für Lauffläche. TPMS + OEM-Freigabe erforderlich. UN R64 Annex 4. In BR/IN nicht formal anerkannt.</p><div class="module-card-footer"><span class="tag">UN R64 Annex 4</span><span class="tag">TPMS Pflicht</span><span class="tag">Nur Kleinschäden</span></div></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">📍</span><h3>Kennzeichnungspflichten T-Reifen</h3></div><p>Am Reifen: „T", LI, Geschwindigkeitssymbol, max. Druck kPa/psi, „TEMPORARY USE ONLY". Am Fahrzeug (UN R64 §5.3): Aufkleber mit max. Geschwindigkeit und Druck nahe dem Reserverad.</p><div class="module-card-footer"><span class="tag">UN R64 §5.3</span><span class="tag">FMVSS 110</span></div></div>
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">🌡️</span><h3>Sonderbedingungen Klima</h3></div><p>GCC: Hitzetest bei 70°C Umgebung (zusätzlich zu Standard). Nordeuropa/Alpen: T-Reifen nicht mit Schneeketten kombinierbar — bei Winterausführungen oft Vollgröße-Spare empfohlen.</p><div class="module-card-footer"><span class="tag">GCC: Hitzetest</span><span class="tag">EU: R142 Schneeketten-§</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="notrad-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Anwendung der Notrad-/Ersatzradvorschriften.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — UN R64 Rev.3, UN R142</summary>
+      <div class="details-body">
+        <p><strong>Drei gleichwertige Optionen:</strong> UN R64 stellt physisches Notrad, Runflat und Reparaturkit als gleichwertige Alternativen auf. Der OEM wählt beim Fahrzeugdesign die Lösung. Ein Fahrzeug ohne physisches Reserverad ist vollständig EU-konform, wenn es entweder Runflat-Reifen (mit TPMS) oder ein OEM-zugelassenes Reparaturkit (mit TPMS) mitliefert.</p>
+        <p><strong>Schneeketten und Notrad:</strong> UN R142 enthält Anforderungen zur Schneeketten-Kompatibilität. T-Reifen haben in der Regel keine Schneeketten-Kompatibilität (zu schmale Lücke zwischen Reifen und Karosserie). Das bedeutet: In Gebieten mit Schneekettenpflicht kann ein T-Reifen den Betrieb einschränken. OEMs müssen dies im Fahrzeughandbuch dokumentieren.</p>
+        <p><strong>TPMS und Notrad:</strong> Wenn ein Fahrzeug mit Runflat oder Reparaturkit ausgerüstet ist, ist TPMS zwingend erforderlich. Wenn das Fahrzeug ein physisches Notrad mitführt, ist TPMS für das Fahrzeug ebenfalls Pflicht (seit 2014) — aber der Sensor im Notrad selbst ist nicht vorgeschrieben.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 109, FMVSS 110</summary>
+      <div class="details-body">
+        <p><strong>Kein Bundesgesetz für Reserverad:</strong> Auf Bundesebene schreibt kein Gesetz ein physisches Reserverad vor. Die Pflicht ergibt sich für T-Reifen aus dem Kennzeichnungs- und Aufkleber-Requirement — der Aufkleber mit Betriebsbeschränkungen ist Pflicht, aber das Mitführen des Rades selbst nicht explizit. In der Praxis liefern fast alle US-Fahrzeuge ein Reserverad mit, weil Verbraucher es erwarten.</p>
+        <p><strong>Reparaturkit-Trend:</strong> Immer mehr US-Modelle werden ohne physisches Reserverad (kit-only) geliefert, besonders Elektrofahrzeuge (Gewichts- und Bauraum-Optimierung). NHTSA hat keine Einwände erhoben; die Verantwortung liegt beim OEM und den Verbraucherinformationspflichten.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇧🇷 Brasilien · 🇨🇳 China · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>Brasilien:</strong> Das Reserverad ist in Brasilien gesetzlich als Pflichtausrüstung vorgeschrieben (CONTRAN). Eine Fahrt ohne Reserverad führt zu einem Bußgeld. Elektrofahrzeuge und Fahrzeuge mit Runflat-Reifen können Ausnahmen beantragen, aber der formale Rahmen dafür ist noch nicht vollständig etabliert.</p>
+        <p><strong>China:</strong> GB 7258-2017 schreibt grundsätzlich ein Reserverad vor. Fahrzeuge mit Runflat-Reifen und gültigem TPMS können eine Ausnahme erhalten. In der Praxis wird die Ausnahme zunehmend häufig für NEV-Modelle genutzt, da das Gewicht der Batterie Bauraum für ein Reserverad einschränkt.</p>
+        <p><strong>Indien:</strong> Es gibt keine formale Notrad-Norm die UN R64 entspricht. AIS-153 ist in Vorbereitung. In der Praxis führen alle indischen Fahrzeuge ein Vollgröße-Reserverad mit — dies entspricht der Verbrauchererwartung und informellen Behördenpraxis, ist aber nicht formal kodifiziert.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Notrad">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Darf das Notrad (T-Typ) auf der Autobahn gefahren werden?</summary>
+      <div class="details-body"><p>Ja, aber mit Einschränkungen. UN R64 begrenzt die Betriebsgeschwindigkeit auf 80 km/h (Aufschrift auf dem Reifen). Auf Autobahnen mit höherem Tempolimit ist das Fahren mit T-Reifen zulässig, aber der Fahrer ist verpflichtet, die 80 km/h einzuhalten. Der Aufkleber im Fahrzeug (UN R64 §5.3) macht auf diese Beschränkung aufmerksam. In einigen Ländern ist eine zusätzliche Kennzeichnung am Fahrzeug (z.B. L-Schild) vorgeschrieben, wenn man mit deutlich niedrigerer Geschwindigkeit unterwegs ist.</p></div>
+    </details>
+    <details>
+      <summary>Muss das Notrad beim TPMS-Relearn berücksichtigt werden?</summary>
+      <div class="details-body"><p>Das hängt davon ab, ob das Notrad einen TPMS-Sensor hat. Wenn ja: Der Sensor des Notrads muss beim Relearn-Prozess eingebunden werden. Wenn nein: Bei Direkt-TPMS erzeugt das fehlende Signal eine Systemfehlermeldung (gelbe Warnleuchte), sofern das Steuergerät nicht explizit eine „Notrad-Position" kennt. Manche OEM-Systeme haben einen dedizierten Notrad-Modus, der die Warnleuchte unterdrückt und stattdessen einen Hinweistext anzeigt.</p></div>
+    </details>
+    <details>
+      <summary>Kann ich ein Notrad aus einem anderen Fahrzeugmodell verwenden?</summary>
+      <div class="details-body"><p>Grundsätzlich nein — das Notrad muss mit dem Fahrzeug kompatibel sein (Felgengröße, Lochkreis, Einpresstiefe, Lastindex ≥ Achslast des Fahrzeugs). UN R142 schreibt vor, dass die verbauten Reifen für das Fahrzeug ausgelegt sein müssen. Ein fremdes Notrad kann bei falscher Auslegung zu gefährlichem Fahrverhalten führen (falsche Spurweite, zu geringer Bremsenabstand). Es gibt keine generelle Zulassung für „universelle" Noträder — jede Kombination muss im Rahmen der Fahrzeugtypgenehmigung oder Einzelabnahme geprüft sein.</p></div>
+    </details>
+    <details>
+      <summary>Ist ein Fahrzeug ohne Reserverad bei der Hauptuntersuchung (HU) noch zulässig?</summary>
+      <div class="details-body"><p>In Deutschland: Ja. Es gibt keine gesetzliche Pflicht, ein Reserverad bei der HU mitzuführen. Das Fahrzeug muss nur die technischen Anforderungen der StVZO/UN-Regelungen erfüllen. Fahrzeuge die gemäß ihrer Typgenehmigung mit Reparaturkit und Runflat-Reifen ausgeliefert werden, sind vollständig HU-konform ohne physisches Reserverad. In anderen EU-Ländern gilt dies entsprechend.</p></div>
+    </details>
+    <details>
+      <summary>Warum gibt es beim Reparaturkit eine Einschränkung auf Seitenwandschäden?</summary>
+      <div class="details-body"><p>Das Dichtmittel in Reparaturkits funktioniert durch den Reifeninnendruck — es wird durch den Druckunterschied in den Schaden gedrückt und dichtet diesen ab. Seitenwandschäden entstehen typischerweise durch Scherkräfte oder Aufprall und sind strukturell; das Dichtmittel kann dort nicht funktionieren, da keine rotationssymmetrische Kraft das Mittel an die Schadensstelle drückt. UN R64 Annex 4 spezifiziert die Schadenskategorien, für die das Kit als ausreichend gilt. OEMs, die ein Kit mitliefern, müssen im Handbuch klar auf diese Einschränkung hinweisen.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="notrad-tab-vergleich" style="display:none">
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Physisches Spare Pflicht</th><th>T-Typ max. km/h</th><th>Runflat</th><th>Reparaturkit</th><th>Regelwerk</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Nein (3 Optionen)</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-64" target="_blank" class="reg-link">UN R64 ↗</a></td></tr>
+      <tr><td>🇺🇸 USA</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Kein Bundesgesetz</span></td><td>~80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.110" target="_blank" class="reg-link">FMVSS 110 ↗</a></td></tr>
+      <tr><td>🇨🇳 China</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GB 7258</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 7258 ↗</a></td></tr>
+      <tr><td>🇯🇵 Japan</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Empfohlen</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Einzelfall</span></td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT ↗</a></td></tr>
+      <tr><td>🇰🇷 Korea</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Nicht explizit</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS ↗</a></td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN ↗</a></td></tr>
+      <tr><td>🇬🇧 UK</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Nein</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ + TPMS</span></td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-64" target="_blank" class="reg-link">UN R64 ↗</a></td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Variiert</span></td><td>80</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a></td></tr>
+      <tr><td>🇮🇳 Indien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ De-facto</span></td><td>80</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Geplant</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR ↗</a></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = erlaubt/Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht erlaubt/geregelt</div>
+</div>

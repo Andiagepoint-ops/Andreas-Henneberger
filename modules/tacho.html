@@ -1,0 +1,134 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Geschwindigkeitsmesser</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(192,57,43,.12);border-color:rgba(192,57,43,.3)">🔢</div>
+  <div><h2>Modul — Geschwindigkeitsmesser</h2><p>UN R39 · FMVSS 101 und Äquivalente. Toleranzformel, Skaleneinheit und Prüfmethoden in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="tacho-tabs">
+  <div class="tab active" onclick="switchTab('tacho','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('tacho','anforderungen')">📋 Technische Anforderungen</div>
+  <div class="tab" onclick="switchTab('tacho','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('tacho','vergleich')">📊 Marktvergleich</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="tacho-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span><strong>UN R39</strong> (Rev.3) ist die Basisvorschrift für Tachometer. Kernprinzip: Die angezeigte Geschwindigkeit darf nie <em>unter</em> der tatsächlichen liegen. Toleranzformel: <strong>0 ≤ V<sub>angezeigt</sub> − V<sub>tatsächlich</sub> ≤ V<sub>tatsächlich</sub>/10 + 4 km/h</strong>.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Toleranzformel</th><th>Pflicht-Einheit</th><th>Besonderheit</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">UN R39 Rev.3 ↗</a> <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32009R0661" target="_blank" class="reg-link">EU 661/2009 ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht); mph zusätzlich erlaubt</td><td>Analog und digital gleichwertig; HUD als Ergänzung zulässig; Prüfung bei 40, 80, 120 km/h</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101" target="_blank" class="reg-link">FMVSS 101 ↗</a></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Keine Bundes-Genauigkeitsnorm</span></td><td>mph (Pflicht); km/h zusätzlich erlaubt</td><td>FMVSS 101 regelt nur Lesbarkeit/Beleuchtung. SAE J678 (freiwillig) entspricht UN R39-Toleranz. Kein staatliches Prüfverfahren.</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 15082-2021 ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>Analog UN R39; digitale Anzeige seit 2021 explizit erlaubt; Prüfung auch bei 200 km/h für Hochleistungsfzg.</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT Bek. 154 Art. 46 ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>UN R39 ratifiziert; Prüfung äquivalent; Kombinationsanzeige Tacho+Drehzahl zulässig</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 53 ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>KMVSS Art. 53 äquivalent UN R39; Prüfung bei 40, 80, 120 km/h</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.abnt.org.br/" target="_blank" class="reg-link">ABNT NBR 6160:2021 ↗</a> <a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>NBR 6160 orientiert sich an UN R39; Prüfung über INMETRO-akkreditierte Stellen</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">UN R39 retained ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>mph (Pflicht, Primäranzeige); km/h erlaubt</td><td>UK: mph Pflicht-Primäreinheit (wie USA); km/h darf nicht größer als mph-Anzeige sein</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO (UN R39-Basis) ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>Analog UN R39; Skalenbereich bis mind. 200 km/h empfohlen</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-017 Rev.1 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 100 ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>AIS-017 ist UN R39-äquivalent; <strong>Speed Alert System (AIS-145)</strong> ab 80/120 km/h Pflicht</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNISCHE ANFORDERUNGEN -->
+<div id="tacho-tab-anforderungen" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">📐</span><h3>Toleranzformel (UN R39 §5.2)</h3></div><p><strong>0 ≤ V<sub>ind</sub> − V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</strong><br>Beispiel 100 km/h: Anzeige muss zwischen 100 und 114 km/h liegen. Unter dem Istwert verboten. Gilt weltweit (außer USA).</p><div class="module-card-footer"><span class="tag">UN R39 §5.2</span><span class="tag">8/9 Märkten</span></div></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">💱</span><h3>Skaleneinheit und Beschriftung</h3></div><p>km/h Pflicht: EU, CN, JP, KR, BR, GCC, IN. mph Pflicht: UK, USA. UN R39 §4.2: Skala bis v<sub>max</sub> + 10 %. Teilstriche max. alle 20 km/h.</p><div class="module-card-footer"><span class="tag">km/h: 7 Märkte</span><span class="tag">mph: UK + USA</span></div></div>
+    <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">💡</span><h3>Beleuchtung und Ablesbarkeit</h3></div><p>UN R39 §4.3: Ablesbar bei Nacht mit Fahrzeuginnenbeleuchtung und bei extremem Umgebungslicht. Analoge Zeiger und digitale Anzeigen gleichwertig. HUD als Ergänzung erlaubt.</p><div class="module-card-footer"><span class="tag">UN R39 §4.3</span><span class="tag">Analog = Digital</span></div></div>
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🧾</span><h3>Prüfmethodik (UN R39 Annex)</h3></div><p>Prüfgeschwindigkeiten: 40, 80, 120 km/h (+ weitere wenn v<sub>max</sub> > 120 km/h). Rollenprüfstand oder Messfahrt. Toleranz Prüfeinrichtung: ±1 %. Prüfung bei Nenndruck und Betriebstemperatur.</p><div class="module-card-footer"><span class="tag">UN R39 Annex</span><span class="tag">40/80/120 km/h</span></div></div>
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🗺️</span><h3>USA-Sonderfall: Keine Genauigkeitsnorm</h3></div><p>FMVSS 101 regelt nur Lesbarkeit und Beleuchtung. Keine bundesrechtliche Toleranzpflicht. SAE J678 (freiwillig, äquivalent UN R39) wird von Herstellern angewendet. Kein staatliches Prüfverfahren erforderlich.</p><div class="module-card-footer"><span class="tag">SAE J678 (freiwillig)</span><span class="tag">Kein Bundesstandard</span></div></div>
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: Speed Alert System (AIS-145)</h3></div><p>Einziger der 9 Märkte mit Pflicht-Geschwindigkeitswarner. AIS-145: Dauerton ab 80 km/h, Schnellton ab 120 km/h. Pflicht seit 2019 für alle Neuzulassungen.</p><div class="module-card-footer"><span class="tag">AIS-145</span><span class="tag">80 + 120 km/h</span><span class="tag">Seit 2019</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="tacho-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Anwendung der Tachometer-Vorschriften nach UN R39.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — UN R39</summary>
+      <div class="details-body">
+        <p><strong>Typgenehmigung Tachometer:</strong> Der Tachometer wird als Teil des Fahrzeugs im Rahmen der WVTA (UN R39 als technische Anforderung) geprüft. Es gibt keine eigenständige Bauteil-Typgenehmigung für das Tachometer als Einzelbauteil. Die Prüfung erfolgt am Fahrzeug durch die benannte Technische Prüfstelle.</p>
+        <p><strong>Bewusste Überschätzung:</strong> Die UN R39-Toleranz erlaubt es dem Tachometer, die tatsächliche Geschwindigkeit um bis zu V/10 + 4 km/h zu überschätzten. In der Praxis zeigen fast alle Fahrzeuge 3–7 % mehr an als tatsächlich gefahren. Dies dient dem Verbraucherschutz: Fahrer fahren tendenziell langsamer als sie denken. Für Blitzer und Geschwindigkeitsmessungen gilt die Fahrzeug-Tachoangabe nicht als Referenz — diese nutzen eigene kalibrierte Geräte.</p>
+        <p><strong>GPS-basierte Geschwindigkeitsanzeigen:</strong> GPS-Geschwindigkeitsanzeigen (z.B. im Navigationssystem oder HUD) gelten nicht als Ersatz für den Tachometer nach UN R39. Der Haupt-Tachometer muss weiterhin UN R39-konform sein. GPS-Anzeigen sind als Zusatzinformation erlaubt und unterliegen keiner Genauigkeitspflicht nach UN R39.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA · 🇬🇧 UK — mph als Pflichteinheit</summary>
+      <div class="details-body">
+        <p><strong>USA:</strong> FMVSS 101 schreibt keine Messgenauigkeit vor, nur die physische Darstellung (Lesbarkeit bei Tag/Nacht, Beleuchung). SAE J678 als freiwilliger Industriestandard entspricht inhaltlich UN R39 — alle relevanten US-Hersteller wenden ihn an. Praktisch gibt es keinen messbaren Unterschied zwischen US- und EU-Fahrzeugen bei der Tachogenauigkeit; der Unterschied liegt in der rechtlichen Verbindlichkeit, nicht in der tatsächlichen Ausführung.</p>
+        <p><strong>UK:</strong> UN R39 wurde nach dem Brexit als nationales Recht übernommen. Die Anforderung, mph als Primäreinheit anzuzeigen, ergibt sich nicht aus UN R39 (das km/h vorschreibt), sondern aus britischem Verkehrsrecht (Road Vehicles (Construction and Use) Regulations 1986, SI 1986/1078). Ein Fahrzeug muss sowohl UN R39 (Genauigkeit) als auch das britische Recht (mph-Primäranzeige) erfüllen. km/h darf zusätzlich angezeigt werden, aber die mph-Anzeige muss mindestens gleich groß oder größer sein.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇦🇪 Golf-Staaten · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>China (GB 15082-2021):</strong> Inhaltlich äquivalent zu UN R39. Seit 2021 explizit auch volldigitale Anzeigen geregelt. Die Prüfung erfolgt über CATARC oder andere von MIIT anerkannte Stellen. Für Fahrzeuge über 200 km/h Höchstgeschwindigkeit gibt es zusätzliche Prüfpunkte.</p>
+        <p><strong>Japan:</strong> UN R39 ratifiziert. Umsetzung über MLIT-Bekanntmachung Nr. 154. Keine praxisrelevanten Abweichungen zur ECE-Auslegung. Die Prüfung erfolgt durch MLIT-autorisierte Stellen (z.B. NTSEL).</p>
+        <p><strong>Korea:</strong> KMVSS Art. 53 ist UN R39-äquivalent. Keine Abweichungen in der Praxis. Prüfung über KOTSA/KATRI.</p>
+        <p><strong>Brasilien:</strong> NBR 6160:2021 orientiert sich an UN R39. Prüfung durch INMETRO-akkreditierte Stellen. Für ältere Typgenehmigungen gilt noch die Vorgängerversion (NBR 6160:2001), die leicht abweichende Toleranzwerte hatte — neues und altes System koexistieren noch für Bestandsfahrzeuge.</p>
+        <p><strong>Indien — Speed Alert System:</strong> AIS-145 schreibt ab 80 km/h einen Dauerton und ab 120 km/h einen schnelleren periodischen Ton vor. Das System ist funktional integriert mit dem Tachometer. Das Tachometer selbst nach AIS-017 entspricht UN R39. India ist das einzige der 9 Länder mit dieser kombinierten Anforderung.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Tacho">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Darf mein Tachometer weniger als die tatsächliche Geschwindigkeit anzeigen?</summary>
+      <div class="details-body"><p>Nein. UN R39 §5.2 (und alle nationalen Äquivalente außer FMVSS 101) legt eindeutig fest: V<sub>angezeigt</sub> ≥ V<sub>tatsächlich</sub>. Der Tachometer darf nie zu wenig anzeigen. Die Toleranz erlaubt nur eine Überschätzung (maximal V/10 + 4 km/h). Wenn ein Tachometer die tatsächliche Geschwindigkeit unterschreitet, ist das ein Typgenehmigungsfehler, der zur Beanstandung bei der Fahrzeuguntersuchung und potenziell zu einem Rückruf führen kann.</p></div>
+    </details>
+    <details>
+      <summary>Was ist der Unterschied bei der Genehmigung von digitalen vs. analogen Tachometern?</summary>
+      <div class="details-body"><p>UN R39 behandelt beide Anzeigeformen gleichwertig. Die Anforderungen (Toleranz, Skalenbereich, Beleuchtung, Ablesbarkeit) gelten identisch. Für digitale Anzeigen gibt es keine separaten Pixelauflösungs- oder Darstellungsvorschriften in UN R39 — nur die Lesbarkeit und Genauigkeit müssen nachgewiesen werden. In der Praxis prüfen Technische Dienste bei digitalen Anzeigen zusätzlich die Reaktionszeit (keine merkliche Verzögerung zwischen Geschwindigkeitsänderung und Anzeigeänderung) und die Diskretisierungsgenauigkeit (Schrittweite der digitalen Anzeige, typ. 1 km/h).</p></div>
+    </details>
+    <details>
+      <summary>Gilt die Toleranzformel auch für GPS-basierte Geschwindigkeitsanzeigen im HUD oder Navi?</summary>
+      <div class="details-body"><p>Nein. UN R39 gilt für den vorgeschriebenen Tachometer. GPS-basierte Anzeigen im Navigationssystem oder HUD sind Zusatzinformationen und unterliegen nicht der UN R39-Toleranzpflicht. GPS-Geschwindigkeiten sind in der Regel präziser als der vorgeschriebene Tachometer (weniger als 1 km/h Fehler bei guter Abdeckung), zeigen also die tatsächliche Geschwindigkeit besser an. Fahrer, die GPS-Anzeigen für Tempolimiteinhaltung nutzen, fahren tendenziell genauer als Fahrer die den Tacho nutzen.</p></div>
+    </details>
+    <details>
+      <summary>Wie wird die Tachogenauigkeit bei der Hauptuntersuchung (HU) geprüft?</summary>
+      <div class="details-body"><p>In Deutschland und den meisten EU-Ländern ist eine Tachometerprüfung kein standardisierter Teil der HU (StVZO Anlage VIII). Tachometer werden bei der HU visuell begutachtet (funktioniert er überhaupt, leuchtet die Beleuchtung), aber keine messtechnische Kalibrierprüfung durchgeführt. Tachometerprüfungen sind primär Aufgabe der Fahrzeugtypgenehmigung (einmalige Prüfung beim Neubau). Werkstätten können Tachometermessgeräte zur Prüfung einsetzen, aber dies ist keine HU-Pflicht. Bei offensichtlich stark falsch anzeigenden Tachometern kann dies als erheblicher Mangel gewertet werden.</p></div>
+    </details>
+    <details>
+      <summary>Warum zeigt fast jeder Tachometer zu viel an?</summary>
+      <div class="details-body"><p>Die UN R39-Toleranz erlaubt eine Überschätzung von bis zu V/10 + 4 km/h, aber keine Unterschätzung. Fahrzeughersteller kalibrieren den Tachometer daher bewusst auf der „zu viel"-Seite, um sicherzustellen, dass er unter keinen Betriebsbedingungen (Reifenverschleiß, Reifendruckänderungen, Fertigungstoleranzen) weniger anzeigt als tatsächlich gefahren. Reifenverschleiß verkleinert den Reifenumfang und würde ohne Korrekturfaktor zu einem zu geringen Anzeigewert führen. Der eingestellte Überschätzungspuffer kompensiert dies über die gesamte Reifenlebensdauer.</p></div>
+    </details>
+    <details>
+      <summary>Muss der Tachometer bis zur tatsächlichen Höchstgeschwindigkeit des Fahrzeugs skalieren?</summary>
+      <div class="details-body"><p>Ja. UN R39 §4.2 schreibt vor, dass die Skala mindestens bis zur maximal erreichbaren Fahrzeuggeschwindigkeit reichen muss. Dabei wird typischerweise ein Puffer von +10 % über v<sub>max</sub> berücksichtigt, um auch bei leichten Überschreitungen (Gefälle, Windschutzscheibe) noch ablesbar zu sein. Bei elektronisch begrenzten Fahrzeugen (z.B. 250 km/h Limit) muss die Skala über die Begrenzungsgeschwindigkeit hinausgehen, da die physische Höchstgeschwindigkeit ohne Begrenzer höher liegen kann.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="tacho-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad: 7 von 9 Märkten verwenden identische UN R39-Toleranzformel. Hauptunterschiede: USA (keine Bundesnorm), UK (mph-Pflicht), Indien (Speed-Alert-Pflicht).</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Bundes-Genauigkeitsnorm</th><th>Toleranzformel</th><th>Pflicht-Einheit</th><th>Speed-Alert-Pflicht</th><th>Regelwerk</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ UN R39</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗ (ISA separat)</span></td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">UN R39 ↗</a></td></tr>
+      <tr><td>🇺🇸 USA</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗ Kein Bundesstandard</span></td><td>SAE J678 (freiwillig)</td><td>mph</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101" target="_blank" class="reg-link">FMVSS 101 ↗</a></td></tr>
+      <tr><td>🇨🇳 China</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GB 15082</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Diskussion</span></td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 15082 ↗</a></td></tr>
+      <tr><td>🇯🇵 Japan</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ MLIT Art. 46</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT ↗</a></td></tr>
+      <tr><td>🇰🇷 Korea</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ KMVSS Art. 53</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS ↗</a></td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ NBR 6160</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.abnt.org.br/" target="_blank" class="reg-link">NBR 6160 ↗</a></td></tr>
+      <tr><td>🇬🇧 UK</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ UN R39 retained</span></td><td>0 … V/10 + 4 km/h</td><td>mph</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">UN R39 ↗</a></td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GSO/UN R39</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a></td></tr>
+      <tr><td>🇮🇳 Indien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ AIS-017</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ AIS-145 (80+120 km/h)</span></td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-017 ↗</a></td></tr>
+    </tbody>
+  </table>
+  <hr class="divider">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🇺🇸</span><h3>USA: Einziger Markt ohne Genauigkeitsnorm</h3></div><p>FMVSS 101 regelt nur Lesbarkeit. SAE J678 (freiwillig) kompensiert dies. Kein staatliches Prüfverfahren erforderlich.</p></div>
+    <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🇬🇧</span><h3>UK: mph Pflicht-Primäreinheit</h3></div><p>UK + USA einzige Märkte mit mph-Pflicht. UK hat UN R39 (Genauigkeit) übernommen, mph-Pflicht kommt aus britischem Verkehrsrecht.</p></div>
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: Speed Alert System Pflicht</h3></div><p>Einziger Markt mit gesetzlichem akustischem Geschwindigkeitswarner (AIS-145): Dauerton 80 km/h, Schnellton 120 km/h.</p></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Höchster Harmonisierungsgrad</h3></div><p>7 von 9 Märkten: identische Toleranzformel aus UN R39. Höchster Harmonisierungsgrad aller betrachteten Module.</p></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
+</div>

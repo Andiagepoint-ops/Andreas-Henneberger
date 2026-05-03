@@ -1,0 +1,124 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Anzeige &amp; Bedienelemente</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(124,106,247,.12);border-color:rgba(124,106,247,.3)">🖥️</div>
+  <div><h2>Modul — Anzeige &amp; Bedienelemente</h2><p>UN R121 · FMVSS 101 · ISO 2575 und Äquivalente. Symbole, Warnleuchten und HMI-Anforderungen in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="anzeige-tabs">
+  <div class="tab active" onclick="switchTab('anzeige','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('anzeige','anforderungen')">📋 Kernanforderungen</div>
+  <div class="tab" onclick="switchTab('anzeige','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('anzeige','vergleich')">📊 Marktvergleich</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="anzeige-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span><strong>UN R121</strong> (Rev.2, 2021) definiert die Identifizierung von Bedien- und Anzeigeelementen in Kraftfahrzeugen. Symbole folgen <strong>ISO 2575</strong>, die weltweit als Grundlage dient und weitgehend harmonisiert ist.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Symbol-Basis</th><th>Behörde</th><th>Besonderheit</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-121" target="_blank" class="reg-link">UN R121 Rev.2 ↗</a> <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32009R0661" target="_blank" class="reg-link">EU 661/2009 ↗</a></td><td>ISO 2575 (verbindlich für geregelte Symbole)</td><td>UNECE WP.29 · KBA · TÜV</td><td>HUD-Anforderungen in Diskussion; Rev.2 inkl. EV-Symbole; ISO 2575:2021</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101" target="_blank" class="reg-link">FMVSS 101 ↗</a></td><td>ISO 2575 per Reference; eigene NHTSA-Liste für Pflicht-Warnanzeigen</td><td>NHTSA · DOT</td><td>Abweichung von ISO 2575 erlaubt wenn Funktionalität gegeben; Airbag/TPMS-Warnleuchte federal vorgeschrieben</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 4094-2016 ↗</a> <a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB/T 37153 ↗</a> (NEV)</td><td>GB 4094 (ISO 2575-basiert + CN-Ergänzungen)</td><td>MIIT · CATARC · CNCA</td><td>Chinesische Beschriftung zus. erlaubt; GB/T 37153 für NEV-spezifische Symbole</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT Bek. 154 Art. 37-42 ↗</a></td><td>ISO 2575 (via JASO Z9101)</td><td>MLIT · JASO</td><td>UN R121 ratifiziert; JASO Z9101 als nationale Ergänzungsnorm; Beschriftung in Japanisch zusätzlich zulässig</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 37 ↗</a> <a href="https://www.kats.go.kr/" target="_blank" class="reg-link">KS R ISO 2575 ↗</a></td><td>ISO 2575 (via KS R ISO 2575)</td><td>MOLIT · KOTSA</td><td>EV-spezifische Symbole per Erlass ergänzt; KS R ISO 2575 verbindlich</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.abnt.org.br/" target="_blank" class="reg-link">ABNT NBR 6061:2019 ↗</a> <a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN Res. ↗</a></td><td>ISO 2575 (via NBR 6061)</td><td>DENATRAN · INMETRO</td><td>Pflicht-Warnanzeigen (Gurt, Airbag, TPMS) per CONTRAN-Resolution</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-121" target="_blank" class="reg-link">UN R121 retained ↗</a> <a href="https://www.legislation.gov.uk/uksi/2020/818/contents" target="_blank" class="reg-link">UK SI 2020/818 ↗</a></td><td>ISO 2575 (identisch ECE)</td><td>DVSA · VCA</td><td>Vollständige Übernahme UN R121 post-Brexit; keine Abweichungen</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO (ECE-Basis) ↗</a></td><td>ISO 2575 (via GSO/ECE)</td><td>GSO · ESMA · SASO</td><td>Arabische Beschriftung zusätzlich zulässig; alle GCC-Märkte Linkslenker</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-097 Rev.1 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 100 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-138 ↗</a> (EV)</td><td>ISO 2575 (via AIS-097)</td><td>MoRTH · ARAI · iCAT</td><td>AIS-097 harmonisiert mit UN R121; Hindi/Englisch erlaubt; EV-Symbole via AIS-138</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: KERNANFORDERUNGEN -->
+<div id="anzeige-tab-anforderungen" style="display:none">
+  <div class="callout"><span class="ci">ℹ️</span><span>UN R121 unterscheidet: <strong>Bedienelemente</strong> (controls), <strong>Kontrollleuchten</strong> (tell-tales) und <strong>Indikatoren</strong> (indicators). Symbole nach ISO 2575 wo definiert verbindlich.</span></div>
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">🔴</span><h3>Rot — Gefahren- und Ausfallwarnungen</h3></div><p>Öldruckwarnung, Kühlwassertemperatur, Ladeanlage, Airbag-Fehler, Bremsanlage. Sofortiger Handlungsbedarf. UN R121 §5.1.</p><div class="module-card-footer"><span class="tag">UN R121 §5.1</span><span class="tag">Sofortiger Handlungsbedarf</span></div></div>
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🟡</span><h3>Gelb/Amber — Warnungen</h3></div><p>Motorstörungs-Warnleuchte (MIL), TPMS, ESP, Serviceintervall. Bald beheben erforderlich. UN R121 §5.1.</p><div class="module-card-footer"><span class="tag">MIL</span><span class="tag">TPMS-Symbol T.16</span></div></div>
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🟢</span><h3>Grün — Systeme aktiv</h3></div><p>Blinker, Tempomat, EV-Betrieb, Standlicht. System aktiviert und in Ordnung. Kein Handlungsbedarf. UN R121 §5.1.</p><div class="module-card-footer"><span class="tag">UN R121 §5.1</span></div></div>
+    <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🔵</span><h3>Blau — Ausschließlich Fernlicht</h3></div><p>Blaue Leuchte ist weltweit reserviert für Fernlicht-Aktivanzeige (ISO 2575 Symbol A.02). Einzige global eindeutig fixierte Farbe. UN R121 §5.1.2.</p><div class="module-card-footer"><span class="tag">ISO 2575 A.02</span><span class="tag">Global harmonisiert</span></div></div>
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">📍</span><h3>Pflicht-Bedienelemente (Annex 1)</h3></div><p>Symbole verpflichtend für: Fahrlicht, Abblendlicht, Fernlicht, Nebelleuchten, Hupe, Blinker, Wischer, Heizung/Entfrostung, Handbremse. Position nicht normiert, aber eindeutige Identifizierung Pflicht.</p><div class="module-card-footer"><span class="tag">UN R121 Annex 1</span></div></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">🚗</span><h3>EV/Hybrid-Symbole (ISO 2575:2021)</h3></div><p>READY-Modus, Ladesystem-Warnung, Regeneration, Hochvolt-Systemfehler. UN R121 Rev.2 übernimmt diese. China (GB/T 37153) und Indien (AIS-138) haben eigene EV-Symbollisten.</p><div class="module-card-footer"><span class="tag">ISO 2575:2021</span><span class="tag">UN R121 Rev.2</span><span class="tag">CN: GB/T 37153</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="anzeige-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Anwendung der Anzeige- und Bedienelement-Vorschriften nach UN R121.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — UN R121, ISO 2575</summary>
+      <div class="details-body">
+        <p><strong>Verbindlichkeit von Symbolen:</strong> ISO 2575 schreibt Symbole für definierte Funktionen vor. UN R121 Annex 1 listet die Funktionen, für die das ISO-Symbol zwingend verwendet werden muss. Für Funktionen, die in ISO 2575 nicht definiert sind (z.B. neue Fahrerassistenzsysteme), darf der OEM eigene Symbole verwenden, solange diese nicht mit ISO-Symbolen verwechselt werden können.</p>
+        <p><strong>Digitale Kombiinstrumente:</strong> UN R121 Rev.2 adressiert explizit volldigitale Kombiinstrumente und Displays. Die Anforderungen (Farben, Symbole) gelten gleichermaßen für analoge und digitale Darstellungen. Head-Up Displays (HUD) als primäre Anzeige sind noch nicht vollständig durch UN R121 geregelt — dies ist ein aktives Diskussionsthema in WP.29.</p>
+        <p><strong>EV-Symbole und neue Funktionen:</strong> ISO 2575:2021 hat viele EV-spezifische Symbole eingeführt. UN R121 Rev.2 referenziert die 2021er Version. Für Fahrzeuge die vor Rev.2 typgenehmigt wurden, kann die ältere ISO-Ausgabe noch gelten — eine Nachzertifizierung ist nicht zwingend erforderlich, wenn keine wesentlichen Änderungen am Fahrzeug vorgenommen werden.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 101</summary>
+      <div class="details-body">
+        <p><strong>Selbstzertifizierung und Abweichungen:</strong> FMVSS 101 erlaubt es Herstellern explizit, von ISO 2575 abzuweichen, wenn die Funktionalität der Bedienelemente und Anzeigen anderweitig sichergestellt ist. Dies führt dazu, dass US-Marktversionen von Fahrzeugen gelegentlich andere Symboldarstellungen verwenden als EU-Versionen.</p>
+        <p><strong>Pflicht-Warnanzeigen:</strong> NHTSA schreibt bestimmte Warnanzeigen explizit vor: MIL (OBD-Kontrollleuchte), Airbag-Warnleuchte, TPMS-Warnleuchte. Für diese gibt es genaue Spezifikationen in FMVSS 101. Andere Warnanzeigen (z.B. ESP) sind nicht federal vorgeschrieben, sondern ergeben sich aus anderen FMVSS-Standards.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇦🇪 Golf-Staaten · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>China:</strong> GB 4094-2016 ist inhaltlich mit ISO 2575 harmonisiert, enthält aber spezifische Anforderungen für chinesischsprachige Beschriftungen und NEV-Funktionen (GB/T 37153). Bei der Fahrzeugtypgenehmigung in China wird die Konformität mit GB 4094 separat geprüft.</p>
+        <p><strong>Japan:</strong> UN R121 ist ratifiziert. JASO Z9101 enthält nationale Ergänzungen für das japanische Markt. Japanischsprachige Beschriftungen sind zusätzlich zu den ISO-Symbolen erlaubt. Die Praxis entspricht weitgehend der ECE-Auslegung.</p>
+        <p><strong>Korea:</strong> KS R ISO 2575 ist die koreanische Fassung von ISO 2575. Abweichungen vom Standard sind gering. EV-spezifische Symbole wurden per Ministerialerlass ergänzt, sobald entsprechende Fahrzeuge auf den Markt kamen.</p>
+        <p><strong>Golf-Staaten:</strong> Arabische Beschriftungen sind erlaubt (und werden von lokalen Käufern erwartet). ISO-Symbole gelten unverändert. Rechtslenker-spezifische Symbole (z.B. Wischeranordnung) entfallen, da alle GCC-Märkte Linkslenker sind.</p>
+        <p><strong>Indien:</strong> AIS-097 ist inhaltlich mit UN R121 harmonisiert. AIS-138 regelt speziell EV-Warnanzeigen und ist für ARAI/iCAT-Zulassungen verbindlich. Hindi-Beschriftungen sind zusätzlich erlaubt.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Anzeige">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Darf ein OEM eigene Symbole für neue Funktionen verwenden, die nicht in ISO 2575 definiert sind?</summary>
+      <div class="details-body"><p>Ja. UN R121 Annex 1 definiert die Pflicht-Symbole für die aufgelisteten Funktionen. Für Funktionen die in Annex 1 nicht enthalten sind (z.B. neue Fahrerassistenzsysteme, adaptive Lichtsysteme), darf der OEM eigene Symbole verwenden. Die Anforderung ist, dass diese Symbole nicht mit ISO 2575-Symbolen verwechselt werden können und im Fahrzeughandbuch erklärt werden. In der Praxis koordinieren viele OEMs neue Symbole über die ISO 2575-Revision, um globale Harmonisierung zu erreichen.</p></div>
+    </details>
+    <details>
+      <summary>Muss eine Warnleuchte dauerhaft leuchten oder darf sie blinken?</summary>
+      <div class="details-body"><p>UN R121 und ISO 2575 schreiben keine Blinkfrequenz für Tell-Tales vor. Blinken ist generell erlaubt und wird für bestimmte Leuchten genutzt, um besondere Dringlichkeit zu signalisieren (z.B. Fahrerablenkungs-Warnung). Einige Normen setzen jedoch voraus, dass nach einer definierten Aktivierungsphase ein Dauersignal folgt. FMVSS 101 enthält spezifischere Anforderungen für die US-Pflicht-Warnleuchten (insbesondere MIL und Airbag-Warnleuchte: kein Blinken im Dauerbetrieb).</p></div>
+    </details>
+    <details>
+      <summary>Gilt UN R121 auch für volldigitale Kombiinstrumente und Touchscreens?</summary>
+      <div class="details-body"><p>Ja. UN R121 Rev.2 adressiert explizit digitale Displays. Die Anforderungen (Farben, Symbole, Erkennbarkeit) gelten gleichermaßen für analoge Zeiger, digitale Segmentanzeigen und volldigitale OLED/LCD-Bildschirme. Touchscreen-Bedienelemente müssen ebenfalls die ISO 2575-Symbole verwenden, wenn die Funktion im Annex 1 enthalten ist. Für Head-Up Displays als primäre Geschwindigkeitsanzeige arbeitet WP.29 an einer separaten Regelung.</p></div>
+    </details>
+    <details>
+      <summary>Was ist der Unterschied zwischen einer MIL (Motorstörungs-Leuchte) und einer allgemeinen Motorwarnleuchte?</summary>
+      <div class="details-body"><p>Die MIL (Malfunction Indicator Lamp / OBD-Kontrollleuchte, Symbol: stilisierter Motor gelb) ist spezifisch an das OBD-System gekoppelt und leuchtet wenn ein emissionsrelevanter Fehler im Motormanagement vorliegt. Sie ist in UN R121 (ISO 2575 Symbol C.22) und FMVSS 101 definiert und durch OBD-Regulierungen (EU VO 2018/858, US-EPA OBD) gesondert geregelt. Eine allgemeine Motorwarnleuchte (gelb oder rot, z.B. Öldruck, Kühlwasser) kann daneben separat existieren und auf andere Motorprobleme hinweisen. Beide Leuchten können gleichzeitig aktiv sein und haben unterschiedliche Bedeutungen.</p></div>
+    </details>
+    <details>
+      <summary>Müssen EV-spezifische Warnanzeigen (Hochvolt-Systemfehler) zwingend nach ISO 2575 gestaltet sein?</summary>
+      <div class="details-body"><p>ISO 2575:2021 hat erstmals standardisierte Symbole für Hochvolt-Fehler, Ladesystem und READY-Modus definiert. UN R121 Rev.2 referenziert diese. Für Fahrzeuge die vor Rev.2 typgenehmigt wurden, gab es keine Pflicht, die ISO-Symbole zu verwenden — viele OEMs haben eigene Symbole eingesetzt. Für neue Typgenehmigungen nach Rev.2 sind die definierten ISO 2575:2021-Symbole verbindlich zu verwenden, sofern die Funktion in ISO 2575 enthalten ist. China und Indien haben eigene nationale Standards für EV-Symbole (GB/T 37153, AIS-138), die von ISO 2575 leicht abweichen können.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="anzeige-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Alle 9 Märkte verwenden ISO 2575 als Symbolbasis — der wesentliche Unterschied liegt im Verbindlichkeitsgrad, EV-Ergänzungen und nationalen Sprachzusätzen.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>ISO 2575 verbindlich</th><th>EV-Symbole geregelt</th><th>Landessprache erlaubt</th><th>Pflicht-Warnanzeigen</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-121" target="_blank" class="reg-link">UN R121 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Annex 1</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Rev.2 / ISO 2575:2021</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Zusätzlich</span></td><td>MIL, Airbag, TPMS, Gurt, ABS, ESP</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101" target="_blank" class="reg-link">FMVSS 101 ↗</a></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Per Reference</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Teilweise</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Englisch</span></td><td>MIL, Airbag, TPMS, Gurt</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 4094-2016 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GB 4094</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GB/T 37153</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Chinesisch</span></td><td>MIL, Airbag, TPMS, Gurt, NEV-READY</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT Art. 37-42 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ JASO Z9101</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ ISO 2575:2021</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Japanisch</span></td><td>MIL, Airbag, TPMS, Gurt, ABS</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 37 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ KS R ISO 2575</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Per Erlass</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Koreanisch</span></td><td>MIL, Airbag, TPMS, Gurt</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.abnt.org.br/" target="_blank" class="reg-link">ABNT NBR 6061 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ NBR 6061</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ In Überarbeitung</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Portugiesisch</span></td><td>MIL, Airbag, Gurt — TPMS separat</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-121" target="_blank" class="reg-link">UN R121 retained ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ identisch ECE</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Rev.2</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Englisch</span></td><td>Identisch EU</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO/ECE ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ ECE-Basis</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ECE-Stand</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Arabisch</span></td><td>Analog EU + arabische Ergänzungen</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-097 Rev.1 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ AIS-097</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ AIS-138</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Hindi/Englisch</span></td><td>MIL, Airbag, Gurt, TPMS (ab 2025)</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
+</div>

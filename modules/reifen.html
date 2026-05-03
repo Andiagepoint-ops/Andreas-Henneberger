@@ -1,0 +1,168 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Reifen</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(62,207,142,.12);border-color:rgba(62,207,142,.3)">⚙️</div>
+  <div><h2>Modul — Reifen</h2><p>UN R30 · UN R54 · UN R117 · UN R142 und marktspezifische Äquivalente in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="reifen-tabs">
+  <div class="tab active" onclick="switchTab('reifen','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('reifen','anforderungen')">📋 Kernanforderungen</div>
+  <div class="tab" onclick="switchTab('reifen','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('reifen','vergleich')">📊 Marktvergleich</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="reifen-tab-vorschriften">
+  <h3 style="font-size:13px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">Reifenprodukt-Vorschriften (Bauteilgenehmigung)</h3>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Kennzeichnung</th><th>Behörde</th><th>Besonderheit</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-30" target="_blank" class="reg-link">UN R30 ↗</a> (PKW) <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-54" target="_blank" class="reg-link">UN R54 ↗</a> (Nfz) <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-117" target="_blank" class="reg-link">UN R117 ↗</a> (Lärm/Grip) <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32020R0740" target="_blank" class="reg-link">EU 2020/740 ↗</a></td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">E-Zeichen</span></td><td>UNECE WP.29 · TÜV · UTAC</td><td>EU-Label (Effizienz, Nasshaftung, Lärm) Pflicht seit 2021</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.109" target="_blank" class="reg-link">FMVSS 109 ↗</a> (PKW) <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.119" target="_blank" class="reg-link">FMVSS 119 ↗</a> (Nfz)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">DOT-Kennzeichnung</span></td><td>NHTSA · DOT</td><td>Herstellerselbstzertifizierung; kein E-Zeichen; UTQG-Grading</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 9743 ↗</a> (PKW) <a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 9744 ↗</a> (Nfz) <a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB/T 2977 ↗</a></td><td><span class="tag" style="border-color:#e879a0;color:#e879a0">CCC</span></td><td>MIIT · CNCA · CATARC</td><td>CCC Pflicht; Labelling seit 2018</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/jidosha/jidosha_fr1_000009.html" target="_blank" class="reg-link">JASO C607 ↗</a> <a href="https://www.jatma.or.jp/publication/yearbook.html" target="_blank" class="reg-link">JATMA Year Book ↗</a></td><td><span class="tag">JIS / JATMA</span></td><td>MLIT · JASO</td><td>UN R30 nicht ratifiziert, Anforderungen äquivalent; JATMA-LI weicht geringfügig ab</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 12 ↗</a> <a href="https://www.kats.go.kr/" target="_blank" class="reg-link">KS M 6714 ↗</a></td><td><span class="tag">K-Zeichen</span></td><td>MOLIT · KOTSA · KATRI</td><td>Labelling ähnlich EU seit 2012</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.inmetro.gov.br/" target="_blank" class="reg-link">INMETRO Port. 517 ↗</a> <a href="https://www.abnt.org.br/" target="_blank" class="reg-link">ABNT NBR 15520 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">INMETRO</span></td><td>DENATRAN · INMETRO</td><td>Pflicht-Zertifizierung; ProEtiqueta-Label in Einführung</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-30" target="_blank" class="reg-link">UN R30 ↗</a> (retained) <a href="https://www.legislation.gov.uk/uksi/2020/1403/contents" target="_blank" class="reg-link">UK Tyre Labelling Reg. ↗</a></td><td><span class="tag">UKCA / E-Zeichen</span></td><td>DVSA · VCA</td><td>Post-Brexit UN R30 als nationales Recht; E-Zeichen übergangsweise</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO 1807 ↗</a> (UN R30-Basis)</td><td><span class="tag">E-Zeichen / GSO</span></td><td>GSO · ESMA · SASO</td><td>Starke ECE-Anlehnung; High-Speed-Test bei Hitze</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-142 ↗</a> <a href="https://www.bis.gov.in/" target="_blank" class="reg-link">IS 15627 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 95 ↗</a></td><td><span class="tag">BIS</span></td><td>MoRTH · BIS · ARAI · iCAT</td><td>BIS Pflicht-Zertifizierung; Labelling-Pilot seit 2021</td></tr>
+    </tbody>
+  </table>
+  <hr class="divider">
+  <h3 style="font-size:13px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">Fahrzeugseitige Einbauvorschriften (UN R142)</h3>
+  <div class="callout"><span class="ci">ℹ️</span><span><strong>UN R142</strong> (in Kraft 2021) regelt auf Fahrzeugebene: LI/Geschwindigkeitsindex ≥ Fahrzeugbedarf, Reifendruck-Placard (Pflichtaushang im Fahrzeug), Schneeketten-Kompatibilität, Notrad-Anforderungen. Ergänzt UN R30 auf Systemebene.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Wesentliche Anforderungen</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td>UN R142</td><td>LI ≥ Achslast; Geschw.-Index ≥ v<sub>max</sub>; Placard Pflicht; Schneeketten-Test; Notrad → UN R64</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-142" target="_blank" class="reg-link">UN R142 ↗</a> <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32009R0661" target="_blank" class="reg-link">EU 661/2009 ↗</a></td></tr>
+      <tr><td>🇺🇸 USA</td><td>FMVSS 110 / FMVSS 120</td><td>Reifen-Fahrzeug-Kompatibilität; Placard an B-Säule/Tankdeckel Pflicht; GVWR-Konformität</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.110" target="_blank" class="reg-link">FMVSS 110 ↗</a></td></tr>
+      <tr><td>🇨🇳 China</td><td>GB 7258-2017 §Reifen</td><td>LI/Geschw.-Index Kompatibilität; Placard ab 2022 Pflicht</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">SAMR ↗</a></td></tr>
+      <tr><td>🇯🇵 Japan</td><td>Straßenfahrzeug-Sicherheitsvorschriften Art. 9</td><td>Reifen für Fahrzeuglast und v<sub>max</sub> ausgelegt; Größenkonformität</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT ↗</a></td></tr>
+      <tr><td>🇰🇷 Korea</td><td>KMVSS Art. 12</td><td>Äquivalent UN R142; Placard Pflicht</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">Korean Law ↗</a></td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td>CONTRAN + INMETRO</td><td>Kompatibilität Pflicht; Placard vorgeschrieben</td><td><a href="https://www.inmetro.gov.br/" target="_blank" class="reg-link">INMETRO ↗</a></td></tr>
+      <tr><td>🇬🇧 UK</td><td>UN R142 (retained)</td><td>Identisch ECE; UKCA-Verfahren</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-142" target="_blank" class="reg-link">UN R142 ↗</a></td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td>GSO (ECE/UN R142-Basis)</td><td>Analog UN R142; Umsetzung variiert je GCC-Staat</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a></td></tr>
+      <tr><td>🇮🇳 Indien</td><td>CMVR Rule 94/95 + AIS-153 (Entwurf)</td><td>Kompatibilität nach CMVR; Placard ab 2022; AIS-153 in Vorbereitung</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">MoRTH ↗</a></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: KERNANFORDERUNGEN -->
+<div id="reifen-tab-anforderungen" style="display:none">
+  <div class="callout"><span class="ci">ℹ️</span><span>Kernanforderungen für C1-Reifen (PKW). Nutzfahrzeug- und Motorradreifen weichen marktspezifisch ab.</span></div>
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🏷️</span><h3>Kennzeichnung am Reifen</h3></div><p>Pflichtangaben: Breite/Querschnitt/Bauart/Felgendurchmesser/LI/Geschwindigkeitssymbol (z.B. 225/45 R17 91W). Weltweit identische Struktur nach ISO 4000-1.</p><div class="module-card-footer"><span class="tag">ISO 4000-1</span><span class="tag">Global einheitlich</span></div></div>
+    <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Lastindex (LI)</h3></div><p>ETRTO-Tabelle: Basis für EU/UK/GCC/Indien. USA nutzt TRA-Tabelle (äquivalent). Japan/JATMA mit marginalen Abweichungen (+/−1 Index bei bestimmten Größen).</p><div class="module-card-footer"><span class="tag">ETRTO</span><span class="tag">TRA (USA)</span><span class="tag">JATMA (JP)</span></div></div>
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🚀</span><h3>Geschwindigkeitskategorie</h3></div><p>L (120 km/h) bis Y (300 km/h). Weltweit harmonisiert nach ISO 4000-1. Pflicht in allen Märkten.</p><div class="module-card-footer"><span class="tag">ISO 4000-1</span><span class="tag">Global</span></div></div>
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">❄️</span><h3>Winterreifen / 3PMSF</h3></div><p>3PMSF-Symbol (Bergpiktogramm + Schneeflocke) nach UN R117 für echte Wintereigenschaften. M+S ist nur Eigendeklaration ohne Prüfverfahren. EU VO 2021/1958 regelt 3PMSF-Pflicht für Winterbetrieb.</p><div class="module-card-footer"><span class="tag">UN R117</span><span class="tag">3PMSF-Norm</span></div></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">🔊</span><h3>Rollgeräusch</h3></div><p>UN R117 Phasen 2/3: Grenzwerte nach Reifenbreite. EU/UK Pflicht. USA: kein Pflichtprogramm. China GB/T 14646.</p><div class="module-card-footer"><span class="tag">UN R117</span><span class="tag">EU/UK Pflicht</span></div></div>
+    <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">🌧️</span><h3>Nasshaftung / Labelling</h3></div><p>EU-Label A–E (VO 2020/740). Korea: ähnliches System. USA: UTQG Traction A/B/C. China: Pflicht-Label. Japan/Brasilien/Indien/GCC: kein Pflicht-Label.</p><div class="module-card-footer"><span class="tag">EU A–E</span><span class="tag">UTQG (USA)</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="reifen-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise je Markt und häufige Fragen zur Anwendung der Reifenvorschriften. Ergänzungen und neue Fragen können über den Button eingereicht werden.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE / EU — UN R30, UN R117, UN R142, EU VO 2020/740</summary>
+      <div class="details-body">
+        <p><strong>E-Zeichen und COP:</strong> Die Typgenehmigung nach UN R30 wird einmalig pro Reifendesignvariante erteilt. Nach der Genehmigung prüfen die Behörden stichprobenartig, ob Serienreifen dem genehmigten Muster entsprechen (COP — Conformity of Production). Abweichungen können zum Entzug des E-Zeichens führen.</p>
+        <p><strong>E-Zeichen in anderen ECE-Staaten:</strong> Ein in einem ECE-Vertragsstaat erteiltes E-Zeichen gilt automatisch in allen anderen Vertragsstaaten. Ein in Deutschland (E1) geprüfter Reifen ist direkt auch in Japan, Korea und allen anderen Signatarstaaten zugelassen — ohne weitere nationale Genehmigung.</p>
+        <p><strong>EU-Reifenlabel (VO 2020/740):</strong> Gilt für alle C1-Reifen (PKW), C2 und C3 (Nfz). Runflat-Reifen sind nicht ausgenommen. Das Label muss am Reifen angebracht oder beim Onlinekauf elektronisch verfügbar sein. Die Labelklasse bezieht sich auf den genehmigten Reifentyp — Varianten innerhalb einer Familie können unterschiedliche Labels haben.</p>
+        <p><strong>UN R142 Placard-Pflicht:</strong> Der Reifendruckaushang (Placard) im Fahrzeug muss die Drücke für alle zugelassenen Reifengrößen enthalten. Bei Fahrzeugen mit unterschiedlichen Vorder-/Hinterachsgrößen müssen beide angegeben werden. Wird das Fahrzeug auf eine nicht im Placard aufgeführte Reifengröße umgerüstet, ist eine Aktualisierung des Placards technisch erforderlich.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 109, FMVSS 110</summary>
+      <div class="details-body">
+        <p><strong>Selbstzertifizierung:</strong> Der US-Importeur oder Hersteller erklärt eigenverantwortlich FMVSS-Konformität. Es gibt keine behördliche Vorabprüfung. NHTSA beschafft regelmäßig Reifen am Markt und testet sie; bei Nichtkonformität folgt ein Rückrufverfahren mit Kostenfolge für den Hersteller.</p>
+        <p><strong>DOT-Code:</strong> Die vierstellige Datumscode-Endung (WWYY) des DOT-Codes gibt Produktionswoche und -jahr an. Reifen ohne gültigen DOT-Code dürfen in den USA nicht verkauft werden. E-Zeichen-Reifen erfüllen FMVSS 109 nicht automatisch — ein separater DOT-Nachweis (durch eigene Tests oder Äquivalenznachweis) ist erforderlich.</p>
+        <p><strong>UTQG:</strong> Das Uniform Tire Quality Grading gibt Treadwear, Traction (AA/A/B/C) und Temperature (A/B/C) an. Es ist eine Pflichtinformation auf dem Reifen, aber kein Mindeststandard — ein Reifen mit Traction C ist legal. Das UTQG-System findet außerhalb der USA kaum Anwendung.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 9743, CCC, Labelling</summary>
+      <div class="details-body">
+        <p><strong>CCC-Prozess:</strong> Die China Compulsory Certification läuft über CNCA-autorisierte Stellen (z.B. CCAP, TÜV SÜD China). Typische Dauer: 3–6 Monate. Eine Typänderung (neue Größe, neues Profil) erfordert in der Regel eine Änderungszertifizierung oder Neuzertifizierung.</p>
+        <p><strong>Labelling:</strong> Das chinesische Reifenlabel (seit 2018) bewertet Kraftstoffeffizienz (AA bis C) und Nasshaftung (AA bis C) nach GB/T 28916. Die Prüfmethoden weichen leicht von UN R117 ab; ein EU-Label ist in China nicht ausreichend — eine separate CN-Prüfung ist notwendig.</p>
+        <p><strong>NEV-Reifen:</strong> Für Elektrofahrzeuge empfiehlt China spezifische Reifen (höheres Gewicht durch Batterie, höhere Drehmomente). GB/T-Standards für NEV-Reifen werden aktuell entwickelt; derzeit gelten GB 9743 und spezifische OEM-Anforderungen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan — JATMA, JIS D 4230</summary>
+      <div class="details-body">
+        <p><strong>JATMA vs. ETRTO:</strong> Die JATMA-Lastindextabelle weicht bei bestimmten Reifengrößen um bis zu einem Index-Punkt von der ETRTO-Tabelle ab. In der Praxis: Ein E-Zeichen-Reifen 225/45 R17 91W kann in Japan mit LI 91 (ETRTO) einem JATMA-LI 90 entsprechen, was die zulässige Achslast beeinflusst. Für Exportfahrzeuge nach Japan ist dies bei der Typgenehmigung zu berücksichtigen.</p>
+        <p><strong>E-Zeichen-Akzeptanz:</strong> Japan erkennt E-Zeichen-Reifen an, sofern die JIS-Kennzeichnungsanforderungen erfüllt sind. In der Praxis tragen die meisten für den japanischen Markt bestimmten Reifen sowohl JATMA- als auch E-Zeichen-Markierungen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇰🇷 Korea · 🇧🇷 Brasilien · 🇬🇧 UK · 🇦🇪 Golf-Staaten · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>Korea:</strong> Der K-Zeichen-Prozess läuft über KATRI. E-Zeichen-Reifen werden weitgehend anerkannt; das koreanische Labelling-System (ähnlich EU) macht eine separate Labelling-Prüfung für den koreanischen Markt erforderlich.</p>
+        <p><strong>Brasilien:</strong> INMETRO-Zertifizierung ist Pflicht. Importreifen benötigen eine INMETRO-Genehmigung — E-Zeichen reicht nicht. Typische Zertifizierungsdauer: 4–8 Monate. Das ProEtiqueta-Labelling wird schrittweise eingeführt.</p>
+        <p><strong>UK (Post-Brexit):</strong> Das E-Zeichen wird übergangsweise akzeptiert. Langfristig ist UKCA für Reifen vorgesehen, aber noch kein verbindlicher Zeitplan für den vollständigen Übergang kommuniziert worden (Stand 2025).</p>
+        <p><strong>Golf-Staaten:</strong> E-Zeichen wird in den meisten GCC-Staaten direkt anerkannt. ESMA (UAE) und SASO (Saudi-Arabien) haben ergänzende Anforderungen für Hochtemperaturfestigkeit, da Reifen in der Region dauerhaft bei hohen Umgebungstemperaturen betrieben werden.</p>
+        <p><strong>Indien:</strong> BIS-Zertifizierung über ARAI oder iCAT. E-Zeichen reicht nicht — separater BIS-Nachweis erforderlich. Für Importreifen: BIS-Fremdlabortest oder Zertifizierung durch BIS-anerkannte indische Stelle.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Reifen">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Darf ein Reifen mit einem niedrigeren Lastindex als vorgeschrieben verbaut werden?</summary>
+      <div class="details-body"><p>Nein. UN R142 §5.1 (und alle Äquivalente) verlangen zwingend, dass der Lastindex des verbauten Reifens die tatsächliche Achslast des vollbeladenen Fahrzeugs abdeckt. Der Lastindex muss mindestens dem im Fahrzeugschein/Placard angegebenen Mindestwert entsprechen. Ein zu niedriger LI ist ein Sicherheitsmangel und führt zum Erlöschen der Betriebserlaubnis.</p></div>
+    </details>
+    <details>
+      <summary>Muss das EU-Reifenlabel auch auf Runflat-Reifen angebracht sein?</summary>
+      <div class="details-body"><p>Ja. EU VO 2020/740 gilt für alle C1-Reifen unabhängig von der Bauart — also auch für Runflat-Reifen, Reifen mit Mobilitätshilfen und Reifen mit erhöhter Tragfähigkeit (XL/RF). Es gibt keine Ausnahme für besondere Konstruktionen.</p></div>
+    </details>
+    <details>
+      <summary>Ist ein E-Zeichen-Reifen automatisch in den USA (DOT) zugelassen?</summary>
+      <div class="details-body"><p>Nein. E-Zeichen und DOT sind vollständig getrennte Zertifizierungssysteme. Ein Reifen mit E-Zeichen muss für den US-Markt separat nach FMVSS 109 qualifiziert werden (eigene Tests oder Äquivalenznachweis). In der Praxis testen Reifenhersteller für globale Märkte parallel nach beiden Systemen, da die Anforderungen ähnlich aber nicht identisch sind.</p></div>
+    </details>
+    <details>
+      <summary>Muss bei einer Umrüstung auf andere Reifengrößen der Reifendruckaushang (Placard) aktualisiert werden?</summary>
+      <div class="details-body"><p>Technisch ja — UN R142 und FMVSS 110 verlangen, dass das Placard die korrekte Reifendruckangabe für die verbauten Reifen enthält. In der Praxis wird dies bei Tuning/Umbereifungen oft nicht aktualisiert, was formell die Betriebserlaubnis beeinträchtigen kann. Bei einer Typgenehmigung für eine neue Reifengrößenoption muss das Placard zwingend aktualisiert werden.</p></div>
+    </details>
+    <details>
+      <summary>Gilt UN R117 Phase 3 rückwirkend für bereits auf dem Markt befindliche Reifen?</summary>
+      <div class="details-body"><p>Nein. UN R117 und EU VO 2020/740 legen Stichtage für neue Typgenehmigungen und Neufahrzeuge fest — bestehende Zulassungen müssen nicht rückwirkend angepasst werden. Die Phase-3-Grenzwerte gelten ab dem jeweiligen Einführungsdatum für neue Typgenehmigungen; Reifen mit älteren Genehmigungen dürfen weiterhin verkauft werden, bis der Abverkaufszeitraum endet.</p></div>
+    </details>
+    <details>
+      <summary>Wie lange ist eine CCC-Zertifizierung für Reifen in China gültig?</summary>
+      <div class="details-body"><p>CCC-Zertifikate haben keine feste Ablaufdauer, müssen aber bei wesentlichen Produktänderungen aktualisiert werden. CNCA führt jährliche Überwachungsaudits durch. Bei Nichtbestehen oder Produktänderungen ohne Meldung kann das Zertifikat ausgesetzt oder entzogen werden. In der Praxis sind Zertifikate über viele Jahre gültig, solange keine strukturellen Änderungen am Produkt vorgenommen werden.</p></div>
+    </details>
+    <details>
+      <summary>Kann ein Fahrzeughersteller im Rahmen der Typgenehmigung einen bestimmten Reifentyp als einzige zulässige Alternative vorschreiben?</summary>
+      <div class="details-body"><p>Ja. Im Rahmen der WVTA (Gesamtfahrzeugtypgenehmigung) kann der OEM die zulässigen Reifengrößen und -typen im CoC (Certificate of Conformity) festlegen. Nur die dort eingetragenen Optionen sind im Rahmen der Typgenehmigung zugelassen. Abweichungen erfordern eine Einzelgenehmigung oder Eintragung. In der Praxis listen OEMs jedoch meist mehrere Optionen ein.</p></div>
+    </details>
+    <details>
+      <summary>Was bedeutet der Unterschied zwischen ETRTO- und JATMA-Lastindextabellen für den Export nach Japan?</summary>
+      <div class="details-body"><p>Bei bestimmten Reifengrößen (typisch 50er und 55er Profile in Niederquerschnitt) weicht der JATMA-Lastindex um einen Punkt vom ETRTO-Index ab. Konkret: Ein Reifen mit ETRTO-LI 91 (615 kg) kann nach JATMA als LI 90 (600 kg) eingestuft sein. Für die Fahrzeugtypgenehmigung in Japan muss geprüft werden, ob die JATMA-Tragfähigkeit die Fahrzeugachslast abdeckt. Hersteller lösen dies in der Regel durch Wahl des nächsthöheren JATMA-LI oder durch Eintrag beider Referenztabellen.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="reifen-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Übersicht der regulatorischen Gemeinsamkeiten und Unterschiede für PKW-Reifen (C1) in den 9 Märkten.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Anforderung</th><th>🇪🇺 EU</th><th>🇺🇸 USA</th><th>🇨🇳 CN</th><th>🇯🇵 JP</th><th>🇰🇷 KR</th><th>🇧🇷 BR</th><th>🇬🇧 UK</th><th>🇦🇪 GCC</th><th>🇮🇳 IN</th></tr></thead>
+    <tbody>
+      <tr><td>Pflicht-Typgenehmigung</td><td style="color:var(--green)">✓ E-Zeichen</td><td style="color:var(--orange)">⚠ Selbst</td><td style="color:var(--green)">✓ CCC</td><td style="color:var(--orange)">⚠ JIS</td><td style="color:var(--green)">✓ K</td><td style="color:var(--green)">✓ INMETRO</td><td style="color:var(--green)">✓ UKCA</td><td style="color:var(--green)">✓ GSO</td><td style="color:var(--green)">✓ BIS</td></tr>
+      <tr><td>Pflicht-Labelling</td><td style="color:var(--green)">✓ A–E</td><td style="color:var(--orange)">⚠ UTQG</td><td style="color:var(--green)">✓</td><td style="color:var(--red)">✗</td><td style="color:var(--green)">✓</td><td style="color:var(--orange)">⚠</td><td style="color:var(--green)">✓</td><td style="color:var(--red)">✗</td><td style="color:var(--orange)">⚠ Pilot</td></tr>
+      <tr><td>Rollgeräusch-Limit</td><td style="color:var(--green)">✓ R117</td><td style="color:var(--red)">✗</td><td style="color:var(--green)">✓</td><td style="color:var(--orange)">⚠</td><td style="color:var(--green)">✓</td><td style="color:var(--orange)">⚠</td><td style="color:var(--green)">✓</td><td style="color:var(--orange)">⚠</td><td style="color:var(--orange)">⚠</td></tr>
+      <tr><td>Winterreifen-Norm (3PMSF)</td><td style="color:var(--green)">✓ R117</td><td style="color:var(--orange)">⚠ M+S</td><td style="color:var(--red)">✗</td><td style="color:var(--orange)">⚠</td><td style="color:var(--green)">✓</td><td style="color:var(--red)">✗</td><td style="color:var(--green)">✓</td><td style="color:var(--red)">✗</td><td style="color:var(--red)">✗</td></tr>
+      <tr><td>Reifendruckplacard (Fzg.)</td><td style="color:var(--green)">✓ R142</td><td style="color:var(--green)">✓ FMVSS110</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / in Einführung &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden
+  </div>
+</div>

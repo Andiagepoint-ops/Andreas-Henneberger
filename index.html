@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomoloBase — PKW Homologation Portal</title>
+  <style>
+    :root {
+      --bg:#0f1117;--bg2:#1a1d27;--bg3:#222536;--border:#2e3347;
+      --accent:#4f8ef7;--accent2:#7c6af7;--text:#e2e6f0;--text2:#8891aa;
+      --green:#3ecf8e;--orange:#f5a623;--red:#f76f6f;--radius:10px;
+      --font:'Segoe UI',system-ui,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;}
+    nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 32px;display:flex;align-items:center;gap:32px;height:56px;position:sticky;top:0;z-index:100;}
+    .nav-logo{font-weight:700;font-size:17px;color:var(--accent);letter-spacing:-0.3px;white-space:nowrap;}
+    .nav-links{display:flex;gap:4px;flex-wrap:wrap;}
+    .nav-links a{color:var(--text2);text-decoration:none;padding:6px 12px;border-radius:6px;font-size:13px;transition:all .15s;}
+    .nav-links a:hover{background:var(--bg3);color:var(--text);}
+    .nav-search{margin-left:auto;display:flex;align-items:center;gap:8px;}
+    .nav-search input{background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:6px 14px;border-radius:20px;font-size:13px;width:200px;outline:none;}
+    .nav-search input::placeholder{color:var(--text2);}
+    .hero{background:linear-gradient(135deg,#12192e 0%,#1a1d27 60%,#1a1427 100%);border-bottom:1px solid var(--border);padding:60px 32px 48px;text-align:center;}
+    .hero h1{font-size:36px;font-weight:700;letter-spacing:-0.5px;margin-bottom:12px;}
+    .hero h1 span{color:var(--accent);}
+    .hero p{color:var(--text2);font-size:16px;max-width:600px;margin:0 auto 28px;}
+    .hero-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+    .badge{background:var(--bg3);border:1px solid var(--border);padding:5px 14px;border-radius:20px;font-size:12px;color:var(--text2);}
+    .badge.active{border-color:var(--accent);color:var(--accent);}
+    .layout{display:grid;grid-template-columns:240px 1fr;gap:0;min-height:calc(100vh - 56px);}
+    .sidebar{background:var(--bg2);border-right:1px solid var(--border);padding:24px 0;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;}
+    .sidebar-section{margin-bottom:8px;}
+    .sidebar-heading{font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.8px;padding:8px 20px 4px;}
+    .sidebar-item{display:flex;align-items:center;gap:10px;padding:8px 20px;color:var(--text2);text-decoration:none;font-size:13px;border-left:2px solid transparent;transition:all .15s;cursor:pointer;}
+    .sidebar-item:hover{background:var(--bg3);color:var(--text);border-left-color:var(--border);}
+    .sidebar-item.active{background:rgba(79,142,247,.1);color:var(--accent);border-left-color:var(--accent);}
+    .sidebar-item .icon{font-size:15px;width:18px;text-align:center;}
+    .sidebar-badge{margin-left:auto;background:var(--bg3);border:1px solid var(--border);color:var(--text2);font-size:10px;padding:1px 6px;border-radius:10px;}
+    .sidebar-badge.new{background:rgba(79,142,247,.2);border-color:var(--accent);color:var(--accent);}
+    .content{padding:32px;overflow-y:auto;}
+    .section-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:28px;}
+    .section-icon{width:48px;height:48px;background:rgba(79,142,247,.12);border:1px solid rgba(79,142,247,.25);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+    .section-header h2{font-size:22px;font-weight:700;margin-bottom:4px;}
+    .section-header p{color:var(--text2);font-size:14px;}
+    .module-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px;}
+    .module-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden;}
+    .module-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--card-color,var(--accent));opacity:.7;}
+    .module-card:hover{border-color:var(--card-color,var(--accent));transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3);}
+    .module-card-header{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+    .module-card-icon{font-size:20px;}
+    .module-card h3{font-size:15px;font-weight:600;}
+    .module-card p{color:var(--text2);font-size:13px;line-height:1.5;}
+    .module-card-footer{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;}
+    .tag{font-size:11px;padding:2px 8px;border-radius:10px;background:var(--bg3);color:var(--text2);border:1px solid var(--border);}
+    .tag.placeholder{border-style:dashed;opacity:.6;}
+    .market-strip{margin-bottom:32px;}
+    .market-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;}
+    .market-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 12px;text-align:center;cursor:pointer;transition:all .15s;}
+    .market-card:hover{border-color:var(--accent);background:var(--bg3);}
+    .market-card .flag{font-size:22px;margin-bottom:6px;}
+    .market-card .name{font-size:12px;font-weight:600;}
+    .market-card .abbr{font-size:11px;color:var(--text2);margin-top:2px;}
+    .doc-table{width:100%;border-collapse:collapse;margin-bottom:32px;}
+    .doc-table th{background:var(--bg3);padding:10px 16px;text-align:left;font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border);}
+    .doc-table td{padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px;vertical-align:top;}
+    .doc-table tr:last-child td{border-bottom:none;}
+    .doc-table tr:hover td{background:var(--bg3);}
+    .placeholder-box{border:2px dashed var(--border);border-radius:var(--radius);padding:40px;text-align:center;color:var(--text2);margin-bottom:16px;}
+    .placeholder-box .ph-icon{font-size:32px;margin-bottom:12px;}
+    .placeholder-box p{font-size:13px;}
+    .process-steps{display:flex;gap:0;margin-bottom:32px;overflow-x:auto;padding-bottom:8px;}
+    .step{display:flex;flex-direction:column;align-items:center;min-width:140px;position:relative;}
+    .step:not(:last-child)::after{content:'→';position:absolute;right:-14px;top:22px;color:var(--text2);font-size:18px;z-index:1;}
+    .step-circle{width:44px;height:44px;background:var(--bg3);border:2px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:10px;position:relative;z-index:2;}
+    .step-label{font-size:12px;text-align:center;color:var(--text2);max-width:110px;}
+    .divider{border:none;border-top:1px solid var(--border);margin:28px 0;}
+    .tabs{display:flex;gap:4px;margin-bottom:24px;border-bottom:1px solid var(--border);}
+    .tab{padding:8px 16px;font-size:13px;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;}
+    .tab:hover{color:var(--text);}
+    .tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+    .callout{background:rgba(79,142,247,.08);border:1px solid rgba(79,142,247,.25);border-radius:var(--radius);padding:14px 18px;font-size:13px;color:var(--text2);margin-bottom:24px;display:flex;gap:12px;align-items:flex-start;}
+    .callout .ci{font-size:16px;flex-shrink:0;margin-top:1px;}
+    .reg-link{color:var(--accent);text-decoration:none;font-size:10px;margin-left:5px;opacity:.7;border:1px solid rgba(79,142,247,.3);border-radius:3px;padding:1px 4px;white-space:nowrap;vertical-align:middle;}
+    .reg-link:hover{opacity:1;background:rgba(79,142,247,.1);}
+    .breadcrumb{font-size:12px;color:var(--text2);margin-bottom:24px;display:flex;gap:6px;align-items:center;}
+    .breadcrumb a{color:var(--text2);text-decoration:none;}
+    .breadcrumb a:hover{color:var(--accent);}
+    .breadcrumb .sep{opacity:.4;}
+    /* ACCORDION / FAQ */
+    details{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;}
+    details summary{padding:12px 18px;cursor:pointer;font-weight:600;font-size:13px;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;}
+    details summary::-webkit-details-marker{display:none;}
+    details summary::after{content:'›';font-size:18px;color:var(--text2);transition:transform .2s;flex-shrink:0;}
+    details[open] summary::after{transform:rotate(90deg);}
+    details[open] summary{color:var(--accent);}
+    .details-body{padding:14px 18px 16px;color:var(--text2);font-size:13px;line-height:1.7;border-top:1px solid var(--border);}
+    .details-body p{margin-bottom:8px;}
+    .details-body p:last-child{margin-bottom:0;}
+    .details-body ul{margin:6px 0 8px 18px;}
+    .details-body li{margin-bottom:4px;}
+    .faq-section{margin-top:28px;}
+    .faq-header{font-size:13px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;}
+    .faq-submit{font-size:11px;padding:4px 12px;border:1px solid rgba(79,142,247,.4);border-radius:12px;color:var(--accent);cursor:pointer;background:transparent;}
+    .faq-submit:hover{background:rgba(79,142,247,.1);}
+    .interp-section{margin-bottom:28px;}
+    .interp-header{font-size:13px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;}
+    /* LOADING */
+    .loading{display:flex;align-items:center;justify-content:center;padding:60px;color:var(--text2);font-size:13px;gap:12px;}
+    .spinner{width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .6s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg);}}
+    @media(max-width:768px){.layout{grid-template-columns:1fr;}.sidebar{display:none;}.hero h1{font-size:26px;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">⚙️ HomoloBase</div>
+  <div class="nav-links">
+    <a href="#" onclick="showSection('home')">Startseite</a>
+    <a href="#" onclick="showSection('grundlagen')">Grundlagen</a>
+    <a href="#" onclick="showSection('marktvergleich')">Marktvergleich</a>
+    <a href="#" onclick="showSection('maerkte')">Märkte</a>
+  </div>
+  <div class="nav-search">
+    <input type="text" placeholder="🔍  Vorschrift, Markt, Thema …" oninput="searchContent(this.value)">
+  </div>
+</nav>
+
+<div id="hero" class="hero">
+  <h1>PKW <span>Homologation</span> Portal</h1>
+  <p>Vorschriften, Interpretationen, Marktunterschiede und FAQ — strukturiert für alle relevanten Märkte.</p>
+  <div class="hero-badges">
+    <span class="badge active">ECE / UN WP.29</span>
+    <span class="badge">USA (FMVSS)</span>
+    <span class="badge">China (GB)</span>
+    <span class="badge">Brasilien</span>
+    <span class="badge">Japan</span>
+    <span class="badge">Korea</span>
+    <span class="badge">Golf-Staaten</span>
+    <span class="badge">UK</span>
+    <span class="badge">Indien</span>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Navigation</div>
+      <a class="sidebar-item active" onclick="showSection('home')"><span class="icon">🏠</span> Startseite</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Grundlagen</div>
+      <a class="sidebar-item" onclick="showSection('grundlagen')"><span class="icon">📘</span> Was ist Homologation?</a>
+      <a class="sidebar-item" onclick="showSection('genehmigungsarten')"><span class="icon">🔑</span> Genehmigungsarten</a>
+      <a class="sidebar-item" onclick="showSection('maerkte')"><span class="icon">🌍</span> Marktübersicht</a>
+      <a class="sidebar-item" onclick="showSection('glossar')"><span class="icon">📖</span> Glossar</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Themenmodule</div>
+      <a class="sidebar-item" onclick="showSection('modul1')"><span class="icon">🚗</span> PKW Homologation</a>
+      <a class="sidebar-item" onclick="showSection('anzeige')"><span class="icon">🖥️</span> Anzeige &amp; Bedienelemente</a>
+      <a class="sidebar-item" onclick="showSection('reifen')"><span class="icon">⚙️</span> Reifen</a>
+      <a class="sidebar-item" onclick="showSection('tpms')"><span class="icon">📡</span> TPMS</a>
+      <a class="sidebar-item" onclick="showSection('notrad')"><span class="icon">🔧</span> Notrad / Ersatzrad</a>
+      <a class="sidebar-item" onclick="showSection('tacho')"><span class="icon">🔢</span> Geschwindigkeitsmesser</a>
+      <a class="sidebar-item" onclick="showSection('placeholder')"><span class="icon">🚦</span> Geschwindigkeitsbegrenzer</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Vergleiche</div>
+      <a class="sidebar-item" onclick="showSection('marktvergleich')"><span class="icon">📊</span> Marktvergleich</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Märkte</div>
+      <a class="sidebar-item" onclick="showSection('markt-eceu')"><span class="icon">🇪🇺</span> ECE / UN WP.29</a>
+      <a class="sidebar-item" onclick="showSection('markt-usa')"><span class="icon">🇺🇸</span> USA</a>
+      <a class="sidebar-item" onclick="showSection('markt-cn')"><span class="icon">🇨🇳</span> China</a>
+      <a class="sidebar-item" onclick="showSection('markt-br')"><span class="icon">🇧🇷</span> Brasilien</a>
+      <a class="sidebar-item" onclick="showSection('markt-jp')"><span class="icon">🇯🇵</span> Japan</a>
+      <a class="sidebar-item" onclick="showSection('markt-kr')"><span class="icon">🇰🇷</span> Korea</a>
+      <a class="sidebar-item" onclick="showSection('markt-gcc')"><span class="icon">🇦🇪</span> Golf-Staaten</a>
+      <a class="sidebar-item" onclick="showSection('markt-uk')"><span class="icon">🇬🇧</span> UK</a>
+      <a class="sidebar-item" onclick="showSection('markt-in')"><span class="icon">🇮🇳</span> Indien</a>
+    </div>
+  </aside>
+
+  <main class="content" id="main-content">
+
+    <!-- HOME (inline) -->
+    <div id="section-home">
+      <div class="section-header">
+        <div class="section-icon">🏠</div>
+        <div>
+          <h2>Willkommen im Homologation Portal</h2>
+          <p>Vorschriften, Interpretationen, FAQ und Marktvergleiche — modular, verknüpft, durchsuchbar.</p>
+        </div>
+      </div>
+      <div class="callout"><span class="ci">ℹ️</span><span>Jedes Modul enthält separate Tabs für Vorschriften, technische Anforderungen, <strong>Interpretation &amp; FAQ</strong> und Marktvergleich. Inhalte werden bei Bedarf geladen.</span></div>
+      <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin-bottom:14px;">Themenmodule</h3>
+      <div class="module-grid">
+        <div class="module-card" style="--card-color:#4f8ef7" onclick="showSection('modul1')"><div class="module-card-header"><span class="module-card-icon">🚗</span><h3>PKW Homologation</h3></div><p>Gesamtfahrzeug-Genehmigungsprozesse, marktspezifische Anforderungen und Grundlagen.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">Vorschriften</span></div></div>
+        <div class="module-card" style="--card-color:#7c6af7" onclick="showSection('anzeige')"><div class="module-card-header"><span class="module-card-icon">🖥️</span><h3>Anzeige &amp; Bedienelemente</h3></div><p>Symbole, Warnleuchten und HMI nach UN R121 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R121 · FMVSS 101</span><span class="tag">Interpretation + FAQ</span></div></div>
+        <div class="module-card" style="--card-color:#3ecf8e" onclick="showSection('reifen')"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Reifen</h3></div><p>Kennzeichnung, UN R30/R54/R142 und Äquivalente in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R30/R142</span><span class="tag">Interpretation + FAQ</span></div></div>
+        <div class="module-card" style="--card-color:#f5a623" onclick="showSection('tpms')"><div class="module-card-header"><span class="module-card-icon">📡</span><h3>TPMS</h3></div><p>Direkt/indirekt, Schwellenwerte, Pflicht je Markt nach UN R141.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R141 · FMVSS 138</span><span class="tag">Interpretation + FAQ</span></div></div>
+        <div class="module-card" style="--card-color:#f76f6f" onclick="showSection('notrad')"><div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Notrad / Ersatzrad</h3></div><p>Space Saver, Runflat, Reparaturkit nach UN R64.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R64 · FMVSS 110</span><span class="tag">Interpretation + FAQ</span></div></div>
+        <div class="module-card" style="--card-color:#c0392b" onclick="showSection('tacho')"><div class="module-card-header"><span class="module-card-icon">🔢</span><h3>Geschwindigkeitsmesser</h3></div><p>Toleranzformel, Einheit, Prüfmethoden nach UN R39.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R39 · FMVSS 101</span><span class="tag">Interpretation + FAQ</span></div></div>
+        <div class="module-card" style="--card-color:#e879a0" onclick="showSection('placeholder')"><div class="module-card-header"><span class="module-card-icon">🚦</span><h3>Geschwindigkeitsbegrenzer</h3></div><p>ISA, mechanische und elektronische Begrenzer, Einstellwerte.</p><div class="module-card-footer"><span class="tag placeholder">— geplant —</span></div></div>
+      </div>
+      <hr class="divider">
+      <div class="market-strip">
+        <h3 style="font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px;">Märkte</h3>
+        <div class="market-grid">
+          <div class="market-card" onclick="showSection('markt-eceu')"><div class="flag">🇪🇺</div><div class="name">ECE</div><div class="abbr">UN WP.29</div></div>
+          <div class="market-card" onclick="showSection('markt-usa')"><div class="flag">🇺🇸</div><div class="name">USA</div><div class="abbr">NHTSA / FMVSS</div></div>
+          <div class="market-card" onclick="showSection('markt-cn')"><div class="flag">🇨🇳</div><div class="name">China</div><div class="abbr">MIIT / GB</div></div>
+          <div class="market-card" onclick="showSection('markt-br')"><div class="flag">🇧🇷</div><div class="name">Brasilien</div><div class="abbr">CONTRAN</div></div>
+          <div class="market-card" onclick="showSection('markt-jp')"><div class="flag">🇯🇵</div><div class="name">Japan</div><div class="abbr">MLIT</div></div>
+          <div class="market-card" onclick="showSection('markt-kr')"><div class="flag">🇰🇷</div><div class="name">Korea</div><div class="abbr">KMVSS</div></div>
+          <div class="market-card" onclick="showSection('markt-gcc')"><div class="flag">🇦🇪</div><div class="name">Golf-Staaten</div><div class="abbr">GSO / ESMA</div></div>
+          <div class="market-card" onclick="showSection('markt-uk')"><div class="flag">🇬🇧</div><div class="name">UK</div><div class="abbr">Post-Brexit</div></div>
+          <div class="market-card" onclick="showSection('markt-in')"><div class="flag">🇮🇳</div><div class="name">Indien</div><div class="abbr">CMVR / AIS</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INLINE SECTIONS (Grundlagen etc.) -->
+    <div id="section-grundlagen" style="display:none">
+      <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Grundlagen</div>
+      <div class="section-header"><div class="section-icon">📘</div><div><h2>Was ist Fahrzeughomologation?</h2><p>Grundlegendes Rahmenwerk für Typgenehmigungen weltweit.</p></div></div>
+      <div class="placeholder-box"><div class="ph-icon">📝</div><p>Inhalt folgt — UN WP.29-Rahmen, internationaler Kontext, Ablaufübersicht.</p></div>
+    </div>
+    <div id="section-genehmigungsarten" style="display:none">
+      <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Genehmigungsarten</div>
+      <div class="section-header"><div class="section-icon">🔑</div><div><h2>Genehmigungsarten</h2><p>Bauteilzertifizierung, Systemgenehmigung und Gesamtfahrzeuggenehmigung.</p></div></div>
+      <div class="process-steps"><div class="step"><div class="step-circle">🔩</div><div class="step-label">Bauteil-<br>zertifizierung</div></div><div class="step"><div class="step-circle">⚙️</div><div class="step-label">System-<br>genehmigung</div></div><div class="step"><div class="step-circle">🚗</div><div class="step-label">Gesamtfahrzeug-<br>genehmigung</div></div><div class="step"><div class="step-circle">📋</div><div class="step-label">CoC /<br>Zulassung</div></div><div class="step"><div class="step-circle">🔍</div><div class="step-label">Markt-<br>überwachung</div></div></div>
+      <div class="module-grid"><div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🔩</span><h3>Bauteilzertifizierung</h3></div><p>Einzelne Komponenten (z.B. Reifen, Scheinwerfer) erhalten eigenständige Typgenehmigung.</p><div class="module-card-footer"><span class="tag">E-Zeichen</span><span class="tag">DOT</span><span class="tag">CCC</span></div></div><div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Systemgenehmigung</h3></div><p>Zusammenhängende Systeme (Bremsanlage, TPMS) werden als Einheit geprüft.</p><div class="module-card-footer"><span class="tag">UN ECE R13</span><span class="tag">FMVSS 135</span></div></div><div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🚗</span><h3>Gesamtfahrzeug (WVTA)</h3></div><p>Das komplette Fahrzeug auf Übereinstimmung mit allen Vorschriften geprüft.</p><div class="module-card-footer"><span class="tag">EU 2018/858</span><span class="tag">CMVR</span></div></div></div>
+    </div>
+    <div id="section-maerkte" style="display:none">
+      <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Märkte</div>
+      <div class="section-header"><div class="section-icon">🌍</div><div><h2>Marktübersicht</h2><p>Homologationssysteme, Behörden und Besonderheiten je Zielmarkt.</p></div></div>
+      <div class="market-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+        <div class="market-card" onclick="showSection('markt-eceu')"><div class="flag">🇪🇺</div><div class="name">ECE / UN WP.29</div><div class="abbr">UNECE Genf</div></div>
+        <div class="market-card" onclick="showSection('markt-usa')"><div class="flag">🇺🇸</div><div class="name">USA</div><div class="abbr">NHTSA · DOT</div></div>
+        <div class="market-card" onclick="showSection('markt-cn')"><div class="flag">🇨🇳</div><div class="name">China</div><div class="abbr">MIIT · CATARC</div></div>
+        <div class="market-card" onclick="showSection('markt-br')"><div class="flag">🇧🇷</div><div class="name">Brasilien</div><div class="abbr">DENATRAN · INMETRO</div></div>
+        <div class="market-card" onclick="showSection('markt-jp')"><div class="flag">🇯🇵</div><div class="name">Japan</div><div class="abbr">MLIT</div></div>
+        <div class="market-card" onclick="showSection('markt-kr')"><div class="flag">🇰🇷</div><div class="name">Korea</div><div class="abbr">MOLIT · KOTSA</div></div>
+        <div class="market-card" onclick="showSection('markt-gcc')"><div class="flag">🇦🇪</div><div class="name">Golf-Staaten</div><div class="abbr">GSO · ESMA</div></div>
+        <div class="market-card" onclick="showSection('markt-uk')"><div class="flag">🇬🇧</div><div class="name">UK</div><div class="abbr">DVSA · VCA</div></div>
+        <div class="market-card" onclick="showSection('markt-in')"><div class="flag">🇮🇳</div><div class="name">Indien</div><div class="abbr">MoRTH · ARAI</div></div>
+      </div>
+    </div>
+    <div id="section-modul1" style="display:none">
+      <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> PKW Homologation</div>
+      <div class="section-header"><div class="section-icon">🚗</div><div><h2>PKW Homologation</h2><p>Gesamtfahrzeug-Genehmigungsprozesse und Grundlagen.</p></div></div>
+      <div class="placeholder-box"><div class="ph-icon">📝</div><p>Inhalt folgt — Originalvorschriften, Interpretationen und historische Entwicklung je Markt.</p></div>
+    </div>
+    <div id="section-glossar" style="display:none">
+      <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Glossar</div>
+      <div class="section-header"><div class="section-icon">📖</div><div><h2>Glossar</h2><p>Schlüsselbegriffe der Fahrzeughomologation.</p></div></div>
+      <div class="placeholder-box"><div class="ph-icon">📝</div><p>Inhalt folgt — WVTA, CoC, E-Zeichen, COP, TA etc.</p></div>
+    </div>
+    <div id="section-placeholder" style="display:none">
+      <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> …</div>
+      <div class="section-header"><div class="section-icon" style="background:rgba(124,106,247,.12);border-color:rgba(124,106,247,.25)">🔧</div><div><h2>Abschnitt in Vorbereitung</h2><p>Dieser Bereich wird in Kürze befüllt.</p></div></div>
+      <div class="placeholder-box"><div class="ph-icon">⏳</div><p>Inhalt folgt.</p></div>
+    </div>
+
+    <!-- DYNAMIC MODULE CONTAINER -->
+    <div id="module-container" style="display:none"></div>
+
+  </main>
+</div>
+
+<script>
+const MODULES = ['reifen','tpms','notrad','anzeige','tacho','marktvergleich',
+  'markt-eceu','markt-usa','markt-cn','markt-br','markt-jp','markt-kr','markt-gcc','markt-uk','markt-in'];
+const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
+let currentSection = 'home';
+
+async function showSection(id) {
+  // Update sidebar
+  document.querySelectorAll('.sidebar-item').forEach(a => {
+    a.classList.toggle('active', !!(a.getAttribute('onclick')?.includes(`'${id}'`)));
+  });
+  // Hero
+  document.getElementById('hero').style.display = id === 'home' ? '' : 'none';
+
+  if (INLINE.includes(id)) {
+    document.getElementById('module-container').style.display = 'none';
+    document.querySelectorAll('[id^="section-"]').forEach(el => el.style.display = 'none');
+    const el = document.getElementById('section-' + id);
+    if (el) el.style.display = '';
+  } else if (MODULES.includes(id)) {
+    document.querySelectorAll('[id^="section-"]').forEach(el => el.style.display = 'none');
+    const mc = document.getElementById('module-container');
+    mc.style.display = '';
+    mc.innerHTML = '<div class="loading"><div class="spinner"></div> Lade Modul…</div>';
+    try {
+      const res = await fetch('modules/' + id + '.html');
+      if (!res.ok) throw new Error(res.status);
+      mc.innerHTML = await res.text();
+    } catch(e) {
+      mc.innerHTML = '<div class="placeholder-box"><div class="ph-icon">⚠️</div><p>Modul <strong>'+id+'</strong> konnte nicht geladen werden.</p></div>';
+    }
+  }
+  currentSection = id;
+  window.location.hash = id;
+}
+
+function switchTab(module, tab) {
+  const mc = document.getElementById('module-container');
+  const root = mc.style.display !== 'none' ? mc : document;
+  root.querySelectorAll('[id^="'+module+'-tab-"]').forEach(el => el.style.display = 'none');
+  const t = root.querySelector('#'+module+'-tab-'+tab);
+  if (t) t.style.display = '';
+  const tabBar = root.querySelector('#'+module+'-tabs');
+  if (tabBar) {
+    tabBar.querySelectorAll('.tab').forEach(t => {
+      t.classList.toggle('active', !!(t.getAttribute('onclick')?.includes("'"+tab+"'")));
+    });
+  }
+}
+
+function searchContent(q) {
+  // Basic: highlight or filter — placeholder for future implementation
+}
+
+// Init from hash
+const hash = window.location.hash.replace('#','');
+if (hash) showSection(hash); else showSection('home');
+</script>
+</body>
+</html>

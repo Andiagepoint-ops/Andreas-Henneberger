@@ -1,0 +1,141 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> TPMS</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(245,166,35,.12);border-color:rgba(245,166,35,.3)">📡</div>
+  <div><h2>Modul — TPMS (Reifendruckkontrolle)</h2><p>UN R141 · FMVSS 138 und marktspezifische Äquivalente. Direkt- vs. Indirektmessung, Pflicht und Schwellenwerte.</p></div>
+</div>
+<div class="tabs" id="tpms-tabs">
+  <div class="tab active" onclick="switchTab('tpms','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('tpms','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('tpms','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('tpms','vergleich')">📊 Marktvergleich</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="tpms-tab-vorschriften">
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Pflicht seit</th><th>Messprinzip</th><th>Schwellenwert</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-141" target="_blank" class="reg-link">UN R141 ↗</a> · <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32009R0661" target="_blank" class="reg-link">EU 661/2009 ↗</a></td><td>Neue Typen 01.11.2012<br>Alle Neufzg. 01.11.2014</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>≤ 20 % unter Soll</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.138" target="_blank" class="reg-link">FMVSS 138 ↗</a></td><td>Alle Neufahrzeuge ab MY2008</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Nur Direkt-TPMS</span></td><td>≤ 25 % unter Soll / &lt; 1,5 bar</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 26149-2017 ↗</a></td><td>Neue Typen 2013; alle 2014</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>≤ 25 % unter Soll / 30 kPa</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-141" target="_blank" class="reg-link">UN R141 ↗</a> (ratifiziert 2013)</td><td>Neue Typen 2013; alle 2015</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>20 % unter Soll (R141)</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 15-3 ↗</a></td><td>Neue Typen 2013; alle 2015</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>≤ 25 % unter Soll</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.in.gov.br/" target="_blank" class="reg-link">CONTRAN Res. 619 (2016) ↗</a></td><td>Neue Typen 2016; alle 2017</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>≤ 25 % unter Soll</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-141" target="_blank" class="reg-link">UN R141 ↗</a> (retained) · <a href="https://www.legislation.gov.uk/" target="_blank" class="reg-link">UK Retained Law ↗</a></td><td>Post-Brexit: EU-Stand übernommen</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>20 % unter Soll</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a> / ECE-Basis · UAE ESMA 2016</td><td>~2016 für Neufahrzeuge</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Direkt &amp; Indirekt</span></td><td>20 % unter Soll</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-156 (Entwurf) ↗</a> · CMVR vorgesehen</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">Noch nicht Pflicht</span></td><td>Offen (beide erwartet)</td><td>Geplant: R141-basiert</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="tpms-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">📡</span><h3>Direkt-TPMS (dTPMS)</h3></div><p>Drucksensoren im Ventil/Felge messen direkt. Übertragung via 433 MHz (EU/CN/KR/BR/GCC) oder 315 MHz (USA/JP). Batterie: 7–10 Jahre. US-FMVSS 138 verlangt ausschließlich dTPMS.</p><div class="module-card-footer"><span class="tag">433 MHz EU/CN</span><span class="tag">315 MHz US/JP</span></div></div>
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🔄</span><h3>Indirekt-TPMS (iTPMS)</h3></div><p>Nutzt ABS/ESP-Radsensoren. Druckverlust erkennbar durch Änderung des Reifenumfangs (Drehzahldifferenz). Kein Sensorwechsel bei Radwechsel. In USA verboten.</p><div class="module-card-footer"><span class="tag">USA: verboten</span><span class="tag">EU/Rest: erlaubt</span></div></div>
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">⚠️</span><h3>Warnkonzept ISO 2575</h3></div><p>Pflicht: ISO 2575 Symbol T.16 im Kombiinstrument. Warnung innerhalb 20 min nach Druckabfall. Systemfehler-Warnanzeige (gelb) ebenfalls Pflicht. Weltweit einheitlich.</p><div class="module-card-footer"><span class="tag">ISO 2575 T.16</span><span class="tag">Max. 20 min Latenz</span></div></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Relearn / Kalibrierung</h3></div><p>dTPMS: Relearn nach Radwechsel (automatisch oder manuell via OBD/Menü). iTPMS: Manuelle Kalibrierung Pflicht (Reset-Knopf). UN R141 §5.5 fordert verständliche Kalibrieranleitung im Fahrzeughandbuch.</p><div class="module-card-footer"><span class="tag">UN R141 §5.5</span><span class="tag">OBD / Menü</span></div></div>
+    <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">📻</span><h3>Frequenztrennung</h3></div><p>433 MHz: EU, China, Korea, Brasilien, GCC, Indien (geplant). 315 MHz: USA, Japan. Für globale Baureihen: Dual-Band-Sensoren oder marktspezifische Varianten nötig.</p><div class="module-card-footer"><span class="tag">433 MHz: 7 Märkte</span><span class="tag">315 MHz: US/JP</span></div></div>
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">🌡️</span><h3>Temperaturgrenzen / Klima</h3></div><p>Golf-Staaten: hohe Umgebungstemperaturen (bis 55°C) beeinflussen Sensorbatterie-Lebensdauer und Reifendruck (Wärmeausdehnung). Sensordesign muss Extended-Temperature-Range abdecken. UN R141 enthält Temperaturprüfungen für Sensorbauteile.</p><div class="module-card-footer"><span class="tag">GCC: +55°C Umgebung</span><span class="tag">UN R141 Anhang</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="tpms-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise je Markt und häufige Fragen zur Anwendung der TPMS-Vorschriften.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — UN R141</summary>
+      <div class="details-body">
+        <p><strong>Typgenehmigung:</strong> Das TPMS-System (als Teil des Fahrzeugs) wird im Rahmen der Fahrzeugtypgenehmigung nach UN R141 geprüft, nicht als eigenständiges Bauteil. Die Prüfung erfolgt bei der Fahrzeugabnahme durch eine benannte Technische Prüfstelle (z.B. TÜV, UTAC).</p>
+        <p><strong>iTPMS und Reifenwechsel:</strong> Nach einem Saisonwechsel oder Reifenwechsel muss das iTPMS neu kalibriert werden (Reset). Das Fahrzeug warnt so lange mit einem Hinweissymbol, bis der Fahrer die Kalibrierung durchführt. UN R141 §5.5 schreibt vor, dass der Kalibriervorgang im Fahrzeughandbuch verständlich beschrieben sein muss.</p>
+        <p><strong>Notrad und TPMS:</strong> Das Notrad (T-Typ) muss nicht zwingend mit einem TPMS-Sensor ausgerüstet sein. Bei montiertem Notrad darf jedoch keine dauerhaft irreführende TPMS-Warnung erscheinen. Viele Systeme deaktivieren die TPMS-Überwachung für das Notrad automatisch oder zeigen einen dedizierten Hinweis.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 138</summary>
+      <div class="details-body">
+        <p><strong>Nur Direkt-TPMS:</strong> FMVSS 138 §S5 verlangt explizit ein „pressure-based" System — das bedeutet Direktmessung. Indirektes TPMS (drehzahlbasiert) ist nach US-Bundesrecht nicht zulässig. Dieser Unterschied hat erhebliche Auswirkungen auf Fahrzeugvarianten für USA vs. Europa (unterschiedliche Sensorarchitektur).</p>
+        <p><strong>Recall-Geschichte:</strong> FMVSS 138 hat eine aktive Durchsetzungsgeschichte. NHTSA hat mehrere Rückrufe wegen defekter TPMS-Sensoren oder falscher Warnschwellen eingeleitet. Hersteller müssen TPMS-Funktionalität über die Fahrzeuglebensdauer sicherstellen.</p>
+        <p><strong>315 MHz Frequenz:</strong> Seit den frühen 2000ern standard in USA und Japan. Sensoren für europäische Märkte (433 MHz) sind nicht kompatibel. Bei der Fahrzeugentwicklung für globale Märkte ist dies ein häufiger Fehlerfall.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 26149</summary>
+      <div class="details-body">
+        <p><strong>Schwellenwert-Unterschied:</strong> China verwendet 25 % unter Soll als Warnschwelle (statt 20 % in der EU). Das bedeutet: Bei einem Empfehlungsdruck von 2,4 bar warnt das chinesische System erst bei ≤ 1,8 bar, das europäische System bereits bei ≤ 1,92 bar.</p>
+        <p><strong>Praxis:</strong> Chinesische OEMs verwenden überwiegend Direkt-TPMS, da die Systemkosten gesunken sind und dTPMS als zuverlässiger gilt. Der indirektes TPMS ist formal erlaubt, wird in der Praxis selten eingesetzt.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇦🇪 Golf-Staaten · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>Japan:</strong> Hat UN R141 ratifiziert — Anforderungen identisch mit ECE. Der einzige relevante Unterschied: Sensorfrequenz 315 MHz (wie USA). Bei globalen Fahrzeugprojekten bedeutet das: Japan-spezifische Sensoren oder Dual-Band-Sensoren.</p>
+        <p><strong>Korea:</strong> 25 %-Schwellenwert (wie USA/CN/BR); 433 MHz Frequenz (wie EU). Enge Anlehnung an UN R141 aber mit US-ähnlicher Warnschwelle.</p>
+        <p><strong>Brasilien:</strong> CONTRAN Resolution 619 wurde 2016 sehr zügig eingeführt mit kurzer Vorlaufzeit. Einige ältere Fahrzeugmodelle hatten zunächst Übergangsprobleme bei der Nachrüstung. Inhaltlich nah an FMVSS 138 (25 %-Schwellenwert).</p>
+        <p><strong>Golf-Staaten:</strong> Hohe Temperaturen erhöhen den Reifendruck (ca. 0,1 bar pro 10°C). Bei direktem Sonnenschein kann der Reifendruck deutlich über dem Kaltwert liegen. TPMS-Systeme müssen mit diesen Druckschwankungen umgehen, ohne Fehlalarme zu erzeugen.</p>
+        <p><strong>Indien:</strong> TPMS ist noch nicht Pflicht (AIS-156 als Entwurf). Viele Premium-Fahrzeuge werden bereits mit TPMS geliefert (freiwillig), da das System beim Export nach anderen Märkten ohnehin vorhanden ist.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20TPMS">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Muss nach jedem Reifenwechsel das TPMS zurückgesetzt werden?</summary>
+      <div class="details-body"><p>Bei <strong>Direkt-TPMS</strong>: Bei einem Wechsel auf ein anderes Radsatz (z.B. Saisonwechsel) müssen die Sensor-IDs des neuen Satzes dem Steuergerät mitgeteilt werden (Relearn). Dies erfolgt automatisch während der ersten Fahrt (Auto-Relearn, benötigt 5–30 Minuten bei Geschwindigkeiten > 25 km/h) oder manuell über das Fahrzeugmenü/OBD. Bei <strong>Indirekt-TPMS</strong>: Nach jedem Reifenwechsel muss der Fahrer aktiv die Kalibrierung auslösen (Reset-Taste oder Menü). UN R141 §5.5 verlangt, dass dies in der Bedienungsanleitung klar erklärt ist.</p></div>
+    </details>
+    <details>
+      <summary>Ist ein TPMS-Fehler ein Hauptuntersuchungs-Mangel (HU/TÜV)?</summary>
+      <div class="details-body"><p>Ja. In Deutschland und den meisten EU-Mitgliedstaaten ist eine dauerhaft leuchtende TPMS-Warnleuchte (gelbes Symbol, Systemfehler) ein erheblicher Mangel bei der HU, der zu einer Nachprüfung führt. Eine leuchtende Druckwarnleuchte (Reifen zu wenig Luft) ist ein erheblicher Mangel, der vor der HU behoben werden muss. Grundlage: EU-RL 2014/45/EU (Fahrzeuguntersuchungsrichtlinie) i.V.m. nationaler Umsetzung (in DE §§ 29 StVZO, Anlage VIII).</p></div>
+    </details>
+    <details>
+      <summary>Was passiert wenn die Batterie eines TPMS-Sensors leer wird?</summary>
+      <div class="details-body"><p>Direktsensoren haben Batterien mit einer Lebensdauer von 7–10 Jahren (je nach Fahrstil und Umgebungstemperatur). Bei erschöpfter Batterie sendet der Sensor keine Daten mehr. Das Steuergerät erkennt dies als Systemfehler und aktiviert die gelbe TPMS-Fehlerleuchte. Die Drucküberwachung für diesen Sensor ist dann inaktiv. UN R141 §5.3 schreibt vor, dass ein Sensorausfall als Systemfehler angezeigt werden muss. Der Sensor muss dann ausgetauscht werden — die Batterie ist in den meisten Konstruktionen nicht separat austauschbar.</p></div>
+    </details>
+    <details>
+      <summary>Darf man ein TPMS mit einem anderen System (Aftermarket) nachrüsten, das nicht vom OEM stammt?</summary>
+      <div class="details-body"><p>In der EU: Eine Nachrüstung mit Aftermarket-TPMS ist grundsätzlich möglich, aber das System muss UN R141-konform sein. Es gibt spezifische Typgenehmigungen für Nachrüst-TPMS-Systeme. Bei Fahrzeugen die seit 2014 neu typgenehmigt wurden, ist das TPMS Bestandteil der Fahrzeugtypgenehmigung — ein Austausch gegen ein nicht-konformes System kann die Betriebserlaubnis beeinträchtigen. In der Praxis werden OEM-Sensorersatz (gleiche Funktion, kein Eingriff in die Fahrzeuggenehmigung) von vielen Werkstätten angeboten.</p></div>
+    </details>
+    <details>
+      <summary>Gilt die TPMS-Pflicht auch für das Notrad/Ersatzrad?</summary>
+      <div class="details-body"><p>UN R141 schreibt TPMS für die Fahrbereifung vor. Das Notrad (T-Typ) muss nicht zwingend überwacht werden. Bei Runflat-Reifen als Notrad-Ersatz ist TPMS für das Fahrzeug jedoch zwingend (UN R64 Annex 3). In der Praxis werden Direktsensoren häufig auch im Notrad verbaut (verhindert Fehlerleuchte nach Montage), dies ist aber technisch nicht immer erforderlich, wenn das System das fehlende Signal des Notrads als definierten Sonderzustand behandelt.</p></div>
+    </details>
+    <details>
+      <summary>Warum ist in den USA nur Direkt-TPMS erlaubt, in Europa auch indirekt?</summary>
+      <div class="details-body"><p>FMVSS 138 wurde nach einer konkreten Sicherheitsstudie (Firestone/Ford-Rückrufe Ende der 1990er) entwickelt. NHTSA entschied sich bewusst für Direktmessung, da nur diese zuverlässig auch bei langsam schleichenden Druckverlusten warnt, die vom Fahrer nicht wahrgenommen werden. Indirektes TPMS reagiert erst, wenn der Druckverlust groß genug ist, um eine messbare Reifenumfangsänderung zu erzeugen. UN R141 lässt beide Prinzipien zu, setzt aber für beide denselben Schwellenwert (20 % unter Soll) an, was für iTPMS eine anspruchsvollere Kalibrierung erfordert.</p></div>
+    </details>
+    <details>
+      <summary>Wie oft muss ein iTPMS kalibriert werden?</summary>
+      <div class="details-body"><p>UN R141 §5.5 schreibt vor, dass das Kalibrierverfahren im Fahrzeughandbuch beschrieben ist und für den Fahrer durchführbar sein muss. Eine Pflichtperiodizität gibt es nicht — der Fahrer muss nach jedem Reifenwechsel kalibrieren. Viele OEMs empfehlen zusätzlich eine Kalibrierung nach Druckkorrekturen oder bei deutlichem Temperaturwechsel, da Temperaturänderungen den Reifendruck und damit indirekt den Reifenumfang beeinflussen.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="tpms-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Wesentliche Gemeinsamkeiten und Unterschiede in den TPMS-Anforderungen der 9 Märkte.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Anforderung</th><th>🇪🇺 EU</th><th>🇺🇸 USA</th><th>🇨🇳 CN</th><th>🇯🇵 JP</th><th>🇰🇷 KR</th><th>🇧🇷 BR</th><th>🇬🇧 UK</th><th>🇦🇪 GCC</th><th>🇮🇳 IN</th></tr></thead>
+    <tbody>
+      <tr><td>TPMS Pflicht</td><td style="color:var(--green)">✓ 2014</td><td style="color:var(--green)">✓ 2008</td><td style="color:var(--green)">✓ 2014</td><td style="color:var(--green)">✓ 2015</td><td style="color:var(--green)">✓ 2015</td><td style="color:var(--green)">✓ 2017</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓ ~2016</td><td style="color:var(--red)">✗ Entwurf</td></tr>
+      <tr><td>Indirekt-TPMS zulässig</td><td style="color:var(--green)">✓</td><td style="color:var(--red)">✗ verboten</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--green)">✓</td><td style="color:var(--orange)">⚠ offen</td></tr>
+      <tr><td>Warnschwelle</td><td>20 %</td><td>25 % / 1,5 bar</td><td>25 % / 30 kPa</td><td>20 %</td><td>25 %</td><td>25 %</td><td>20 %</td><td>20 %</td><td>— (geplant)</td></tr>
+      <tr><td>Funkfrequenz</td><td>433 MHz</td><td>315 MHz</td><td>433 MHz</td><td>315 MHz</td><td>433 MHz</td><td>433 MHz</td><td>433 MHz</td><td>433 MHz</td><td>433 MHz geplant</td></tr>
+      <tr><td>Regelwerk</td><td>UN R141</td><td>FMVSS 138</td><td>GB 26149</td><td>UN R141</td><td>KMVSS</td><td>CONTRAN 619</td><td>UN R141</td><td>GSO/ECE</td><td>AIS-156</td></tr>
+    </tbody>
+  </table>
+  <hr class="divider">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">🇺🇸</span><h3>USA: Nur Direkt-TPMS</h3></div><p>Einziger Markt unter den Pflicht-Märkten, wo indirektes TPMS explizit verboten ist (FMVSS 138 §S5: pressure-based only).</p></div>
+    <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">📻</span><h3>Frequenztrennung US/JP vs. Rest</h3></div><p>USA + Japan: 315 MHz. Alle anderen Märkte: 433 MHz. Dual-Band-Sensoren oder Marktvarianten notwendig für globale Fahrzeuge.</p></div>
+    <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: Noch kein Pflichtmarkt</h3></div><p>Einziger der 9 Märkte ohne TPMS-Pflicht. AIS-156 liegt als Entwurf vor, Einführung noch nicht terminiert.</p></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Schwellenwert-Unterschied</h3></div><p>20 % (EU/UK/JP/GCC) vs. 25 % (USA/CN/KR/BR). Auswirkung auf Systemauslegung und Warnzeitpunkt.</p></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden/verboten</div>
+</div>
