@@ -355,7 +355,15 @@ async function showSection(id) {
     try {
       const res = await fetch('modules/' + id + '.html');
       if (!res.ok) throw new Error(res.status);
-      mc.innerHTML = await res.text();
+      const html = await res.text();
+      mc.innerHTML = html;
+      // Re-execute inline scripts (innerHTML does not run them)
+      mc.querySelectorAll('script').forEach(old => {
+        const s = document.createElement('script');
+        s.textContent = old.textContent;
+        document.head.appendChild(s);
+        old.remove();
+      });
     } catch(e) {
       mc.innerHTML = '<div class="placeholder-box"><div class="ph-icon">⚠️</div><p>Modul <strong>'+id+'</strong> konnte nicht geladen werden.</p></div>';
     }
@@ -394,6 +402,142 @@ function switchTab(module, tab) {
 function searchContent(q) {
   // Basic: highlight or filter — placeholder for future implementation
 }
+
+/* ===== UPLOAD MODULE ===== */
+const GH_OWNER='Andiagepoint-ops',GH_REPO='Andreas-Henneberger',GH_BRANCH='main';
+function ghToken(){return sessionStorage.getItem('gh_upload_token')||'';}
+function uploadSaveToken(){
+  const t=document.getElementById('gh-token')?.value?.trim();
+  if(!t){uploadShowStatus('err','Token darf nicht leer sein.');return;}
+  sessionStorage.setItem('gh_upload_token',t);
+  document.getElementById('gh-token').value='';
+  const cb=document.getElementById('btn-clear-token');
+  if(cb)cb.style.display='';
+  uploadShowStatus('ok','✓ Token gespeichert (nur diese Browser-Sitzung).');
+  uploadCheckBtn();
+}
+function uploadClearToken(){
+  sessionStorage.removeItem('gh_upload_token');
+  const cb=document.getElementById('btn-clear-token');
+  if(cb)cb.style.display='none';
+  uploadShowStatus('err','Token gelöscht.');
+  uploadCheckBtn();
+}
+function uploadShowStatus(type,msg){
+  const el=document.getElementById('token-status');
+  if(!el)return;
+  el.className='upload-status '+type;
+  el.textContent=msg;
+}
+let _uploadFile=null;
+function uploadHandleSelect(e){uploadSetFile(e.target.files[0]);}
+function uploadHandleDrop(e){
+  e.preventDefault();
+  document.getElementById('drop-zone')?.classList.remove('drag-over');
+  const f=e.dataTransfer.files[0];
+  if(f&&f.type==='application/pdf')uploadSetFile(f);
+}
+function uploadSetFile(f){
+  if(!f)return;
+  _uploadFile=f;
+  const fn=document.getElementById('file-name');
+  const fs=document.getElementById('file-size');
+  const fp=document.getElementById('file-preview');
+  const dz=document.getElementById('drop-zone');
+  if(fn)fn.textContent=f.name;
+  if(fs)fs.textContent=(f.size/1024/1024).toFixed(2)+' MB';
+  if(fp)fp.style.display='flex';
+  if(dz)dz.style.display='none';
+  uploadCheckBtn();
+}
+function uploadClearFile(){
+  _uploadFile=null;
+  const fp=document.getElementById('file-preview');
+  const dz=document.getElementById('drop-zone');
+  const fi=document.getElementById('file-input');
+  if(fp)fp.style.display='none';
+  if(dz)dz.style.display='';
+  if(fi)fi.value='';
+  uploadCheckBtn();
+}
+function uploadCheckBtn(){
+  const btn=document.getElementById('btn-upload');
+  if(btn)btn.disabled=!(ghToken()&&_uploadFile);
+}
+async function uploadFile(){
+  if(!_uploadFile||!ghToken())return;
+  const folder=document.getElementById('upload-folder')?.value||'downloads';
+  const path=folder+'/'+_uploadFile.name;
+  const token=ghToken();
+  const btn=document.getElementById('btn-upload');
+  if(btn){btn.disabled=true;btn.textContent='Uploading…';}
+  const bar=document.getElementById('upload-bar');
+  const progress=document.getElementById('upload-progress');
+  if(progress)progress.style.display='';
+  if(bar)bar.style.width='30%';
+  try{
+    const b64=await new Promise((res,rej)=>{
+      const r=new FileReader();
+      r.onload=e=>res(e.target.result.split(',')[1]);
+      r.onerror=rej;
+      r.readAsDataURL(_uploadFile);
+    });
+    if(bar)bar.style.width='60%';
+    let sha=null;
+    const chk=await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,
+      {headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}});
+    if(chk.ok){const d=await chk.json();sha=d.sha;}
+    if(bar)bar.style.width='80%';
+    const body={message:`docs: upload ${_uploadFile.name}`,content:b64,branch:GH_BRANCH};
+    if(sha)body.sha=sha;
+    const res=await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,
+      {method:'PUT',headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github+json'},body:JSON.stringify(body)});
+    if(bar)bar.style.width='100%';
+    if(res.ok){
+      const rawUrl=`https://andiagepoint-ops.github.io/Andreas-Henneberger/${path}`;
+      const result=document.getElementById('upload-result');
+      if(result){
+        result.className='upload-result ok';
+        result.innerHTML=`✅ <strong>Hochgeladen!</strong><br>Link: <a href="${rawUrl}" target="_blank">${rawUrl}</a> <span class="copy-btn" onclick="navigator.clipboard.writeText('${rawUrl}');this.textContent='✓'">Link kopieren</span>`;
+        result.style.display='';
+      }
+      uploadClearFile();
+    }else{
+      const err=await res.json();
+      throw new Error(err.message||res.status);
+    }
+  }catch(e){
+    const result=document.getElementById('upload-result');
+    if(result){result.className='upload-result err';result.textContent='❌ '+e.message;result.style.display='';}
+  }
+  if(btn){btn.disabled=false;btn.textContent='📤 Hochladen';}
+}
+async function uploadLoadFileList(){
+  const token=ghToken();
+  const el=document.getElementById('file-list');
+  if(!el)return;
+  el.textContent='Lade…';
+  try{
+    const res=await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/downloads`,
+      {headers:token?{'Authorization':'Bearer '+token}:{}});
+    if(!res.ok)throw new Error('Fehler '+res.status);
+    const files=await res.json();
+    if(!Array.isArray(files)||!files.length){el.textContent='Noch keine Dateien.';return;}
+    el.innerHTML=files.filter(f=>f.type==='file').map(f=>{
+      const url=`https://andiagepoint-ops.github.io/Andreas-Henneberger/downloads/${f.name}`;
+      return `<div class="file-list-item"><span>📄</span><a href="${url}" target="_blank">${f.name}</a><span class="copy-btn" onclick="navigator.clipboard.writeText('${url}');this.textContent='✓';setTimeout(()=>this.textContent='Kopieren',1500)">Kopieren</span></div>`;
+    }).join('');
+  }catch(e){el.textContent='Fehler: '+e.message;}
+}
+function uploadInit(){
+  if(ghToken()){
+    const cb=document.getElementById('btn-clear-token');
+    if(cb)cb.style.display='';
+    uploadShowStatus('ok','✓ Token aus Sitzung geladen.');
+  }
+  uploadCheckBtn();
+}
+/* ===== END UPLOAD MODULE ===== */
 
 // Init from hash
 const hash = window.location.hash.replace('#','');

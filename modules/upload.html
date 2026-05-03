@@ -11,8 +11,8 @@
   <div class="upload-section-title">1. GitHub-Token eingeben</div>
   <div class="upload-row">
     <input type="password" id="gh-token" placeholder="ghp_…" class="upload-input" autocomplete="off">
-    <button class="upload-btn primary" onclick="saveToken()">Token speichern</button>
-    <button class="upload-btn danger" onclick="clearToken()" style="display:none" id="btn-clear-token">Token löschen</button>
+    <button class="upload-btn primary" onclick="uploadSaveToken()">Token speichern</button>
+    <button class="upload-btn danger" onclick="uploadClearToken()" style="display:none" id="btn-clear-token">Token löschen</button>
   </div>
   <div id="token-status" class="upload-status"></div>
 </div>
@@ -23,19 +23,19 @@
   <div class="upload-drop-zone" id="drop-zone"
     ondragover="event.preventDefault();this.classList.add('drag-over')"
     ondragleave="this.classList.remove('drag-over')"
-    ondrop="handleDrop(event)">
+    ondrop="uploadHandleDrop(event)">
     <div class="drop-icon">📄</div>
     <div class="drop-text">PDF hierher ziehen oder</div>
     <label class="upload-btn primary" style="cursor:pointer">
       Datei auswählen
-      <input type="file" accept="application/pdf,.pdf" id="file-input" onchange="handleFileSelect(event)" style="display:none">
+      <input type="file" accept="application/pdf,.pdf" id="file-input" onchange="uploadHandleSelect(event)" style="display:none">
     </label>
   </div>
   <div id="file-preview" style="display:none" class="upload-file-preview">
     <span class="file-icon">📄</span>
     <span id="file-name">–</span>
     <span id="file-size" class="file-size">–</span>
-    <button class="upload-btn danger small" onclick="clearFile()">✕</button>
+    <button class="upload-btn danger small" onclick="uploadClearFile()">✕</button>
   </div>
 </div>
 
@@ -60,7 +60,7 @@
 <!-- VORHANDENE DATEIEN -->
 <div class="upload-card">
   <div class="upload-section-title">Hochgeladene Dateien</div>
-  <button class="upload-btn secondary" onclick="loadFileList()">🔄 Laden</button>
+  <button class="upload-btn secondary" onclick="uploadLoadFileList()">🔄 Laden</button>
   <div id="file-list" class="file-list" style="margin-top:12px"></div>
 </div>
 
@@ -102,166 +102,4 @@
 .file-list-item a:hover{text-decoration:underline;}
 .file-list-item .copy-btn{cursor:pointer;padding:3px 8px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.3);border-radius:4px;color:var(--accent);font-size:11px;}
 </style>
-
-<script>
-const GH_OWNER = 'Andiagepoint-ops';
-const GH_REPO  = 'Andreas-Henneberger';
-const GH_BRANCH = 'main';
-
-function getToken(){ return sessionStorage.getItem('gh_upload_token') || ''; }
-
-function saveToken(){
-  const t = document.getElementById('gh-token').value.trim();
-  if(!t){ showStatus('err','Token darf nicht leer sein.'); return; }
-  sessionStorage.setItem('gh_upload_token', t);
-  document.getElementById('gh-token').value = '';
-  document.getElementById('btn-clear-token').style.display = '';
-  showStatus('ok','✓ Token gespeichert (nur in dieser Browser-Sitzung).');
-  checkUploadBtn();
-}
-
-function clearToken(){
-  sessionStorage.removeItem('gh_upload_token');
-  document.getElementById('btn-clear-token').style.display = 'none';
-  showStatus('err','Token gelöscht.');
-  checkUploadBtn();
-}
-
-function showStatus(type, msg){
-  const el = document.getElementById('token-status');
-  el.className = 'upload-status ' + type;
-  el.textContent = msg;
-}
-
-let selectedFile = null;
-
-function handleFileSelect(e){ setFile(e.target.files[0]); }
-function handleDrop(e){
-  e.preventDefault();
-  document.getElementById('drop-zone').classList.remove('drag-over');
-  const f = e.dataTransfer.files[0];
-  if(f && f.type === 'application/pdf') setFile(f);
-}
-
-function setFile(f){
-  if(!f) return;
-  selectedFile = f;
-  document.getElementById('file-name').textContent = f.name;
-  document.getElementById('file-size').textContent = (f.size/1024/1024).toFixed(2) + ' MB';
-  document.getElementById('file-preview').style.display = 'flex';
-  document.getElementById('drop-zone').style.display = 'none';
-  checkUploadBtn();
-}
-
-function clearFile(){
-  selectedFile = null;
-  document.getElementById('file-preview').style.display = 'none';
-  document.getElementById('drop-zone').style.display = '';
-  document.getElementById('file-input').value = '';
-  checkUploadBtn();
-}
-
-function checkUploadBtn(){
-  document.getElementById('btn-upload').disabled = !(getToken() && selectedFile);
-}
-
-async function uploadFile(){
-  if(!selectedFile || !getToken()) return;
-  const folder = document.getElementById('upload-folder').value;
-  const path = folder + '/' + selectedFile.name;
-  const token = getToken();
-  const btn = document.getElementById('btn-upload');
-  btn.disabled = true;
-  btn.textContent = 'Uploading…';
-  const progress = document.getElementById('upload-progress');
-  const bar = document.getElementById('upload-bar');
-  progress.style.display = '';
-  bar.style.width = '30%';
-
-  try {
-    // Read file as base64
-    const b64 = await new Promise((res,rej)=>{
-      const r = new FileReader();
-      r.onload = e => res(e.target.result.split(',')[1]);
-      r.onerror = rej;
-      r.readAsDataURL(selectedFile);
-    });
-    bar.style.width = '60%';
-
-    // Check if file exists (to get SHA for update)
-    let sha = null;
-    const checkRes = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,{
-      headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}
-    });
-    if(checkRes.ok){ const d = await checkRes.json(); sha = d.sha; }
-
-    bar.style.width = '80%';
-
-    // Upload via GitHub API
-    const body = {
-      message: `docs: upload ${selectedFile.name} to ${folder}/`,
-      content: b64,
-      branch: GH_BRANCH
-    };
-    if(sha) body.sha = sha;
-
-    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,{
-      method:'PUT',
-      headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github+json'},
-      body: JSON.stringify(body)
-    });
-    bar.style.width = '100%';
-
-    if(res.ok){
-      const d = await res.json();
-      const rawUrl = `https://andiagepoint-ops.github.io/Andreas-Henneberger/${path}`;
-      const result = document.getElementById('upload-result');
-      result.className = 'upload-result ok';
-      result.innerHTML = `✅ <strong>Hochgeladen!</strong><br>
-        Permanenter Link: <a href="${rawUrl}" target="_blank">${rawUrl}</a><br>
-        <button class="copy-btn" onclick="navigator.clipboard.writeText('${rawUrl}');this.textContent='✓ Kopiert!'">Link kopieren</button>`;
-      result.style.display = '';
-      clearFile();
-    } else {
-      const err = await res.json();
-      throw new Error(err.message || res.status);
-    }
-  } catch(e){
-    const result = document.getElementById('upload-result');
-    result.className = 'upload-result err';
-    result.textContent = '❌ Fehler: ' + e.message;
-    result.style.display = '';
-  }
-  btn.disabled = false;
-  btn.textContent = '📤 Hochladen';
-}
-
-async function loadFileList(){
-  const token = getToken();
-  const el = document.getElementById('file-list');
-  el.textContent = 'Lade…';
-  try {
-    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/downloads`,{
-      headers: token ? {'Authorization':'Bearer '+token} : {}
-    });
-    if(!res.ok) throw new Error('Fehler ' + res.status);
-    const files = await res.json();
-    if(!files.length){ el.textContent = 'Noch keine Dateien.'; return; }
-    el.innerHTML = '';
-    files.filter(f=>f.type==='file').forEach(f=>{
-      const url = `https://andiagepoint-ops.github.io/Andreas-Henneberger/downloads/${f.name}`;
-      el.innerHTML += `<div class="file-list-item">
-        <span>📄</span>
-        <a href="${url}" target="_blank">${f.name}</a>
-        <span class="copy-btn" onclick="navigator.clipboard.writeText('${url}');this.textContent='✓';setTimeout(()=>this.textContent='Kopieren',1500)">Kopieren</span>
-      </div>`;
-    });
-  } catch(e){ el.textContent = 'Fehler: ' + e.message; }
-}
-
-// Init
-if(getToken()){
-  document.getElementById('btn-clear-token').style.display='';
-  showStatus('ok','✓ Token aus Sitzung geladen.');
-}
-</script>
+<script>if(typeof uploadInit==="function")uploadInit();</script>
