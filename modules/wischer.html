@@ -1,0 +1,117 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Scheibenwischer &amp; -wascher</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(26,188,156,.12);border-color:rgba(26,188,156,.3)">🌧️</div>
+  <div><h2>Modul — Scheibenwischer &amp; -wascher</h2><p>VO (EU) 2021/535 Anhang VI · FMVSS 104 und marktspezifische Äquivalente. Wischbereich, Wischfrequenz, Waschanlage in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="wischer-tabs">
+  <div class="tab active" onclick="switchTab('wischer','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('wischer','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('wischer','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('wischer','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('wischer','amendments')">📅 Amendments &amp; Termine</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="wischer-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Scheibenwischer und -wascher sind in EU 2021/535 Anhang VI gemeinsam geregelt. Zone A (Fahrersicht) muss zu 98 % gewischt werden, Zone B (Gesamtfläche) zu 80 %.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Wischbereich</th><th>Frequenz</th><th>Waschanlage</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R0535" target="_blank" class="reg-link">VO (EU) 2021/535 Anhang VI ↗</a></td><td>Zone A: min. 98 %, Zone B: min. 80 %</td><td>2 Stufen + Intervall</td><td>Pflicht (min. 1,0 L Reservoir)</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.104" target="_blank" class="reg-link">FMVSS 104 (49 CFR §571.104) ↗</a></td><td>Wischbereich nach SAE J903</td><td>2 Stufen min.</td><td>Pflicht</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 15085-2006 ↗</a></td><td>Wie ECE</td><td>2 Stufen</td><td>Pflicht</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Safety Standard Art. 18 ↗</a></td><td>Wie ECE</td><td>Wie ECE</td><td>Pflicht</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 18 ↗</a></td><td>Wie ECE</td><td>Wie ECE</td><td>Pflicht</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN (ECE-Basis) ↗</a></td><td>Wie ECE</td><td>Wie ECE</td><td>Pflicht</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://www.legislation.gov.uk/eur/2021/535" target="_blank" class="reg-link">Retained EU 2021/535 Ann.VI ↗</a></td><td>Wie EU</td><td>Wie EU</td><td>Wie EU</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO/ECE ↗</a></td><td>Wie ECE</td><td>Wie ECE</td><td>Pflicht</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-035 (ECE-Basis) ↗</a></td><td>Wie ECE</td><td>Wie ECE</td><td>Pflicht</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="wischer-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#1abc9c"><div class="module-card-header"><span class="module-card-icon">🌧️</span><h3>Wischzonen (Zone A / Zone B)</h3></div><p>EU 2021/535 Anhang VI: Zone A = primäres Sichtfeld Fahrersichtbereich (≥ 98 % gewischt). Zone B = gesamter Wischbereich (≥ 80 %). Messung: Wischfläche als % der theoretischen Gesamtfläche. Tangentialwischer (Tandem) vs. Pantografenwischer: beide erlaubt wenn Wischbereich erfüllt.</p><div class="module-card-footer"><span class="tag">Zone A ≥ 98 %</span><span class="tag">Zone B ≥ 80 %</span></div></div>
+    <div class="module-card" style="--card-color:#16a085"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Wischfrequenzen</h3></div><p>EU: Stufe 1 (langsam): 10–55 Wische/min. Stufe 2 (schnell): 45 Wische/min minimum. Intervallstufe: Pflicht (1 Wisch/4 sec minimum). USA FMVSS 104: ähnliche Anforderungen. Regensensor (automatisch): erlaubt, ersetzt nicht die manuelle Stufenschaltung.</p><div class="module-card-footer"><span class="tag">Stufe 1: 10–55/min</span><span class="tag">Stufe 2: ≥45/min</span></div></div>
+    <div class="module-card" style="--card-color:#0e8a74"><div class="module-card-header"><span class="module-card-icon">💧</span><h3>Scheibenwaschanlage</h3></div><p>EU: Reservoir mind. 1,0 L. Pumpe muss Flüssigkeit bei −18 °C fördern können (kein Einfrieren). Düsen: so ausgerichtet dass Zone A und B befeuchtet werden. USA FMVSS 104: Reservoir-Minimum 0,5 qt (~0,47 L).</p><div class="module-card-footer"><span class="tag">Min. 1,0 L</span><span class="tag">Frostbeständig −18 °C</span></div></div>
+    <div class="module-card" style="--card-color:#0a7060"><div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Heckscheibenwischer</h3></div><p>EU 2021/535 Anhang VI erfasst auch Heckscheibenwischer wenn vorhanden. Für Kombi/SUV mit vertikaler Heckscheibe: Heckwischer in vielen EU-Ländern de facto Standard. Keine Pflicht in allen Märkten, aber bei Einbau gelten Minimalanforderungen.</p><div class="module-card-footer"><span class="tag">Optional</span><span class="tag">Bei Einbau: Norm gilt</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="wischer-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Anwendung der Wischer-Vorschriften nach VO (EU) 2021/535 Anhang VI und FMVSS 104.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Wischzonen nach ISO 3468</summary>
+      <div class="details-body">
+        <p>Wischzonen nach ISO 3468 / SAE J903; Prüfmessung aufwändig. Zone A ist geometrisch aus dem 95. Perzentil der Fahrersitzposition abgeleitet — die Messprozedur erfordert die exakte Vermessung des Fahrzeuginnenraums und eine 3D-Modellierung des Sichtfeldes.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 104 Hot-Soak-Test</summary>
+      <div class="details-body">
+        <p>FMVSS 104 fordert zusätzlich Hot-Soak-Test (Wischer nach Hitzesoak). Das Fahrzeug wird bei hohen Temperaturen abgestellt (Sommer-Hitze-Simulation), dann müssen die Wischergummis nach Wiederinbetriebnahme noch korrekt funktionieren. Hitzealterung von Wischergummis ist ein reales Problem in Südstaaten der USA.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Wischer">+ Frage einreichen</a></div>
+    <details>
+      <summary>Ist ein Regensensor gesetzlich erlaubt?</summary>
+      <div class="details-body"><p>Ja. Regensensoren sind in allen 9 Märkten erlaubt und ersetzt nicht die Pflicht zur manuellen Stufenschaltung. EU 2021/535 Anhang VI erfordert mindestens zwei manuell schaltbare Geschwindigkeitsstufen und eine Intervallstufe — diese müssen auch bei eingebautem Regensensor vorhanden und bedienbar sein. Der Regensensor ist eine komfortsteigernde Zusatzfunktion.</p></div>
+    </details>
+    <details>
+      <summary>Gilt die Wischerpflicht auch für die Heckscheibe?</summary>
+      <div class="details-body"><p>Nicht universell. EU 2021/535 enthält Anforderungen an Heckscheibenwischer wenn sie verbaut sind. Eine grundsätzliche Einbaupflicht für Heckscheibenwischer besteht nicht in allen Märkten. In Deutschland gilt nach §40 StVZO, dass Scheibenwischer an der Frontscheibe vorgeschrieben sind; für die Heckscheibe ist keine eigenständige Pflicht normiert, aber bei Einbau müssen die Geräte den einschlägigen Mindestanforderungen entsprechen.</p></div>
+    </details>
+    <details>
+      <summary>Was passiert wenn Waschdüsen einfrieren?</summary>
+      <div class="details-body"><p>EU 2021/535 Anhang VI §5 schreibt vor, dass die Pumpe bei −18 °C funktionsfähig sein muss. Waschdüsen selbst werden über das Waschwasser mit Frostschutzmittel geschützt. Friert das Waschwasser ein (kein Frostschutz im Reservoir), ist die Anlage inoperabel — dies ist ein häufiger Praxisfehler bei Endverbrauchern, aber kein Homologationsproblem wenn die Anlage mit Frostschutzmittel befüllt ist.</p></div>
+    </details>
+    <details>
+      <summary>Mindest-Reservoirgröße für die Scheibenwaschanlage?</summary>
+      <div class="details-body"><p>EU 2021/535 Anhang VI: mindestens 1,0 Liter. USA FMVSS 104: mindestens 0,5 qt (~0,47 L). In der Praxis bauen OEMs deutlich größere Reservoire ein (typisch 3–5 L), da 1 L für intensive Nutzung (Autobahnfahrt im Winter) schnell aufgebraucht ist. Das Minimum ist ein Homologationsschwellenwert, keine Empfehlung für den Praxisbetrieb.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="wischer-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad: 8 von 9 Märkten folgen dem ECE/EU-Standard. Hauptunterschiede: USA hat eigene SAE J903-Wischbereichsdefinition und Hot-Soak-Test.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>UK</th><th>Rest</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>2021/535 Ann.VI</td><td>FMVSS 104</td><td>GB 15085</td><td>retained EU</td><td>ECE-Basis</td></tr>
+      <tr><td>Zone A</td><td>≥ 98 %</td><td>SAE J903</td><td>~98 %</td><td>≥ 98 %</td><td>~98 %</td></tr>
+      <tr><td>Zone B</td><td>≥ 80 %</td><td>SAE J903</td><td>~80 %</td><td>≥ 80 %</td><td>~80 %</td></tr>
+      <tr><td>Frequenz Min</td><td>45/min</td><td>ähnlich</td><td>ähnlich</td><td>45/min</td><td>~45/min</td></tr>
+      <tr><td>Wascher Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+      <tr><td>Heck</td><td>wenn verbaut</td><td>wenn verbaut</td><td>wenn verbaut</td><td>wenn verbaut</td><td>wenn verbaut</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="wischer-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>VO (EU) 2021/535 Anhang VI</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuell in Kraft; keine größeren Änderungen geplant</td><td>In Kraft</td></tr>
+        <tr><td>Kamerabasierte Wischersysteme</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Diskussion: Camera Monitor Systems ersetzen Spiegel → evtl. auch Auswirkung auf Wischeranforderungen?</td><td>Offen</td></tr>
+        <tr><td>FMVSS 104</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Unverändert</span></td><td>Letztes Update 2001; NHTSA hat keine aktuellen Rulemaking-Aktivitäten</td><td>Kein Rulemaking aktiv</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG, EUR-Lex 2021/535, NHTSA.</div>
+</div>

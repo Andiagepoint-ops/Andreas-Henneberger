@@ -1,0 +1,116 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Entfrostung &amp; Trocknung</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(52,152,219,.12);border-color:rgba(52,152,219,.3)">❄️</div>
+  <div><h2>Modul — Entfrostung &amp; Trocknung (Windschutzscheibe)</h2><p>VO (EU) 2021/535 Anhang IV · FMVSS 103 und marktspezifische Äquivalente. Entfrost- und Trocknungsleistung der Windschutzscheibe in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="entfrostung-tabs">
+  <div class="tab active" onclick="switchTab('entfrostung','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('entfrostung','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('entfrostung','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('entfrostung','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('entfrostung','amendments')">📅 Amendments &amp; Termine</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="entfrostung-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Entfrostungs- und Trocknungsanforderungen sichern die Sicht des Fahrers bei Frost und Beschlag. Die EU-Basis (VO 2021/535 Anhang IV) definiert Zone A und Zone B der Windschutzscheibe mit spezifischen Flächenanteilen und Zeitfenstern.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Pflicht</th><th>Entfrostzone</th><th>Besonderheit</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R0535" target="_blank" class="reg-link">VO (EU) 2021/535 Anhang IV ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Zone A: min. 80 % in 20 min; Zone B: min. 95 % in 25 min</td><td>Prüftemperatur: −18 °C ± 3 °C</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.103" target="_blank" class="reg-link">FMVSS 103 (49 CFR §571.103) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>50 % der zone A in 20 min (defroster area)</td><td>Prüftemp.: −18 °C; separate Defogging-Anforderung</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 11555-2009 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Ähnlich Zone A/B wie EU</td><td>Prüftemp.: −18 °C; AN‑Code-System für Zonen</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Safety Standard Art. 19 (ECE-Basis) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Wie EU</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 19 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Wie EU</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN / ABNT (ECE-Basis) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Wie EU</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://www.legislation.gov.uk/eur/2021/535" target="_blank" class="reg-link">UK-retained VO (EU) 2021/535 Annex IV ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie EU</td><td>Wie EU</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO / ECE-Basis ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Klimarelevanz geringer</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-030 Rev.1 (ECE-Basis) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Heizklimarelevanz sehr gering</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="entfrostung-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#3498db"><div class="module-card-header"><span class="module-card-icon">❄️</span><h3>Entfrostzonen (Zone A / Zone B)</h3></div><p>Zone A = primäre Fahrsicht (Fahrersichtfeld direkt). Zone B = erweiterte Fläche inkl. Beifahrerseite. EU/ECE: Zone A min. 80 % eisfrei in 20 min, Zone B 95 % in 25 min. Prüfung bei −18 °C ± 3 °C mit definiertem Vereisungsvolumen. USA FMVSS 103: 50 % der Sichtzone A in 20 min (weniger streng).</p><div class="module-card-footer"><span class="tag">Zone A/B</span><span class="tag">ISO 1050</span></div></div>
+    <div class="module-card" style="--card-color:#2980b9"><div class="module-card-header"><span class="module-card-icon">🌡️</span><h3>Trocknungssystem (Defogging)</h3></div><p>Verhindert Beschlagen von innen. EU 2021/535 Annex IV §4: Trocknungsleistung bei simulierten Kondensationsbedingungen. Elektrische Heckscheibenheizung (Heizdrähte). Frontscheibe: i.d.R. Heizgebläse (HVAC). Elektrische Frontscheibenheizung (beheizte Scheibe) als Ergänzung möglich.</p><div class="module-card-footer"><span class="tag">Defogging</span><span class="tag">Kondensat</span></div></div>
+    <div class="module-card" style="--card-color:#1a6fa8"><div class="module-card-header"><span class="module-card-icon">💨</span><h3>HVAC-Integration</h3></div><p>Entfrosten/Trocknen ist Bestandteil des HVAC-Systems (Heating, Ventilation, Air Conditioning). In EVs: elektrische Widerstandsheizung oder Wärmepumpe. Wärmepumpen-EVs haben geringere Heizleistung bei Extremkälte (unter −10 °C) — Einfluss auf Entfrostleistung! EU 2021/535 schreibt Leistung vor, nicht die Technologie.</p><div class="module-card-footer"><span class="tag">HVAC</span><span class="tag">Wärmepumpe</span></div></div>
+    <div class="module-card" style="--card-color:#0d5f96"><div class="module-card-header"><span class="module-card-icon">🔌</span><h3>EV-Besonderheiten</h3></div><p>Verbrennerfahrzeuge nutzen Motorabwärme zum Entfrosten (kostenlos). EVs müssen elektrisch heizen → Reichweitenverlust bei Kälte. Typisch: 2–5 kW Heizleistung für Entfrostung. EU 2021/535 gilt identisch für EVs — kein Ausnahme-Abschnitt. Praxisproblem: EV-Erstentfrostung bei −18 °C dauert teils länger als bei Verbrennern.</p><div class="module-card-footer"><span class="tag">EV</span><span class="tag">Reichweite</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="entfrostung-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Anwendung der Entfrostungs-Vorschriften nach VO (EU) 2021/535 Anhang IV und FMVSS 103.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Zone A/B Definition</summary>
+      <div class="details-body">
+        <p>Zone A/B Definition nach ISO 1050 / SAE J902; Prüfaufbau genau festgelegt. Die 80 %-Anforderung für Zone A nach 20 min ist der maßgebliche Homologationsnachweis. Prüflabore führen den Test in Klimakammern bei konstant −18 °C durch.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 103 und Defogging</summary>
+      <div class="details-body">
+        <p>FMVSS 103 hat zusätzlich Defogging-Test (Beschlagen von innen); Anforderung weniger streng als EU. Die 50 %-Zone A in 20 min ist deutlich weniger fordernd als das EU-Pendant (80 %). Für globale Fahrzeugprogramme ist EU der striktere Standard und maßgeblich für die Auslegung.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Entfrostung">+ Frage einreichen</a></div>
+    <details>
+      <summary>Was ist der Unterschied Defroster vs. Defogging?</summary>
+      <div class="details-body"><p>Defroster (Enteisung) beseitigt gefrorenes Wasser auf der Außenseite der Scheibe — primär ein Thermalprozess. Defogging (Trocknung) verhindert Kondensation auf der Innenseite der Scheibe durch Luftentfeuchtung (Klimaanlage) oder Wärme. Beide Systeme sind in EU 2021/535 Anhang IV geregelt, aber konzeptionell und technisch verschieden.</p></div>
+    </details>
+    <details>
+      <summary>Wie wird die Entfrostzone gemessen?</summary>
+      <div class="details-body"><p>Die Windschutzscheibe wird in einer Klimakammer bei −18 °C ± 3 °C mit einer definierten Eismenge bedeckt. Nach Inbetriebnahme des Entfrostungssystems wird nach 20 bzw. 25 Minuten fotographisch oder optisch der eisfreie Flächenanteil der jeweiligen Zone bestimmt. Zone A und B sind geometrisch exakt nach ISO 1050 / SAE J902 definiert und hängen von der Fahrzeuggeometrie (Augpunktlage des Fahrers) ab.</p></div>
+    </details>
+    <details>
+      <summary>Gilt die Anforderung auch für Heck- und Seitenscheiben?</summary>
+      <div class="details-body"><p>EU 2021/535 Anhang IV behandelt primär die Windschutzscheibe (Frontscheibe). Für die Heckscheibe gelten separate oder keine verpflichtenden Anforderungen — elektrische Heckscheibenheizungen sind marktüblich, aber nicht in allen Märkten vorgeschrieben. Seitenscheiben sind in keinem der 9 betrachteten Märkte explizit mit Entfrostanforderungen belegt.</p></div>
+    </details>
+    <details>
+      <summary>Warum haben EVs oft längere Entfrostzeiten?</summary>
+      <div class="details-body"><p>Verbrennerfahrzeuge produzieren thermische Abwärme als Nebenprodukt des Motors (~70 % der Kraftstoffenergie wird als Wärme frei). Diese Motorabwärme steht kostenlos für die Scheibenheizung zur Verfügung und erreicht schnell hohe Temperaturen. EVs müssen elektrisch heizen — was Batterieleistung verbraucht. Bei niedrigem Akkuladestand oder extremer Kälte (unter −20 °C) ist die verfügbare Heizleistung begrenzt. Die EU 2021/535-Anforderung gilt jedoch identisch — EVs müssen die gleichen Leistungswerte erreichen wie Verbrenner.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="entfrostung-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad: 8 von 9 Märkten folgen der ECE/EU-Grundstruktur. Hauptunterschied: USA hat weniger strenge Zone-A-Anforderung (50 % statt 80 %).</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>UK</th><th>Rest</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>2021/535 Ann.IV</td><td>FMVSS 103</td><td>GB 11555</td><td>retained EU</td><td>ECE-Basis</td></tr>
+      <tr><td>Prüftemp.</td><td>−18 °C</td><td>−18 °C</td><td>−18 °C</td><td>−18 °C</td><td>−18 °C</td></tr>
+      <tr><td>Zone A Ziel</td><td>80 % / 20 min</td><td>50 % / 20 min</td><td>~80 %</td><td>80 %</td><td>~80 %</td></tr>
+      <tr><td>Defogging</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+      <tr><td>EV-Sonderregel</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = vorhanden &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="entfrostung-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>VO (EU) 2021/535 Anhang IV</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktueller Stand; Überarbeitung im Kontext EV-Reichweitenverlust diskutiert</td><td>In Kraft</td></tr>
+        <tr><td>EV-spezifische Entfrostanforderungen</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Mögliche künftige Änderung: separate EV-Entfrostanforderungen (Wärmepumpenfahrzeuge)</td><td>Offen</td></tr>
+        <tr><td>FMVSS 103</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Unverändert</span></td><td>Letztes größeres Update 2013; NHTSA-Sondierung für EV-Update offen</td><td>Kein Rulemaking aktiv</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG, EUR-Lex 2021/535, NHTSA.</div>
+</div>

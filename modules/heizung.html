@@ -1,0 +1,115 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Heizung</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(230,126,34,.12);border-color:rgba(230,126,34,.3)">🔥</div>
+  <div><h2>Modul — Heizung (Fahrzeuginnenraum)</h2><p>UN R122 · VO (EU) 2021/535 und marktspezifische Anforderungen an Heizungsanlagen für Fahrzeuginnenräume.</p></div>
+</div>
+<div class="tabs" id="heizung-tabs">
+  <div class="tab active" onclick="switchTab('heizung','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('heizung','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('heizung','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('heizung','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('heizung','amendments')">📅 Amendments &amp; Termine</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="heizung-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>UN R122 regelt alle Heizungstypen im Fahrzeug — von Motorabwärme bis Standheizung und Elektroheizung. Kernanforderung: CO-Konzentration im Fahrgastraum ≤ 15 ppm dauerhaft.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Pflicht</th><th>CO-Grenzwert</th><th>Brennstoffbetriebene Heizung</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/documents/2022/01/standards/un-regulation-no-122" target="_blank" class="reg-link">UN R122 ↗</a> <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R0535" target="_blank" class="reg-link">VO (EU) 2021/535 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>CO &lt; 15 ppm (Innenraum)</td><td>Zulässig mit Sicherheitsvorschriften</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.303" target="_blank" class="reg-link">FMVSS 303/304 + EPA ↗</a></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Teilweise</span></td><td>EPA-Emissionsstandards</td><td>Zulässig (Standheizungen reguliert)</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB/T 17032 + GB 7258 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>CO-Grenzwert vorhanden</td><td>Zulässig</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Safety Standard Art. 16 (UN R122-Basis) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie UN R122</td><td>Zulässig</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS (UN R122-Basis) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie UN R122</td><td>Zulässig</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN (ECE-Basis) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Zulässig</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/documents/2022/01/standards/un-regulation-no-122" target="_blank" class="reg-link">UN R122 (retained) ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie UN R122</td><td>Zulässig</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO / ECE ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Selten (Klima heiß)</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS (ECE-Basis) + CMVR ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Wie ECE</td><td>Selten</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="heizung-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#e67e22"><div class="module-card-header"><span class="module-card-icon">🔥</span><h3>Motorkühlerheizung (Primärsystem)</h3></div><p>Standard-Heizungsprinzip: Motorkühlwasser (ca. 80–90 °C) erwärmt Wärmetauscher → Gebläse bläst Luft durch. Effizient, kostenlos (Abwärme). Nur bei laufendem Motor. UN R122 enthält CO-Prüfung: Abgase dürfen nicht in Innenraum gelangen. Prüfaufbau: CO-Messgerät im Fahrgastraum bei verschiedenen Betriebszuständen.</p><div class="module-card-footer"><span class="tag">Motorabwärme</span><span class="tag">CO-Prüfung</span></div></div>
+    <div class="module-card" style="--card-color:#d35400"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Elektrische Heizung (EV/PHEV)</h3></div><p>Widerstandsheizung (PTC — Positive Temperature Coefficient): günstig, einfach, effektiv. Wärmepumpe (Heat Pump): 2–3× effizienter aber teurer und begrenzt bei Extremkälte (unter −10 °C Leistungsabfall). UN R122 gilt für beide Systeme. Praxisproblem: EV-Reichweitenverlust bei Heizung bis 40–50 % in Extremkälte.</p><div class="module-card-footer"><span class="tag">PTC</span><span class="tag">Wärmepumpe</span><span class="tag">EV</span></div></div>
+    <div class="module-card" style="--card-color:#ba4a00"><div class="module-card-header"><span class="module-card-icon">🛢️</span><h3>Brennstoffbetriebene Zusatzheizung</h3></div><p>Webastokartig: Verbrennt Kraftstoff (Diesel/Benzin) direkt. Kein Motorlauf nötig → ideal für Standheizung. UN R122 Kapitel 5: Sicherheitsanforderungen für Brenner, Abgas, CO-Limit, Überhitzungsschutz. Pflicht: automatische Abschaltung bei CO-Überschreitung im Innenraum.</p><div class="module-card-footer"><span class="tag">Standheizung</span><span class="tag">UN R122 §5.3</span></div></div>
+    <div class="module-card" style="--card-color:#a04000"><div class="module-card-header"><span class="module-card-icon">🌡️</span><h3>CO-Überwachung und Sicherheit</h3></div><p>UN R122 §5.4: CO-Konzentration im Fahrgastraum darf bei keinem Betriebszustand 15 ppm dauerhaft überschreiten. Prüfung: Fahrzeug in Prüfraum, Heizung in verschiedenen Zuständen (Fahrt, Standheizung, Rezirkulation). Direktes Risiko: defekte Abgasführung → CO-Vergiftung. In Europa: mehrere Rückrufe wegen CO-Undichtigkeit Wärmetauscher.</p><div class="module-card-footer"><span class="tag">15 ppm CO</span><span class="tag">Klimakammer</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="heizung-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Anwendung der Heizungs-Vorschriften nach UN R122.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — UN R122 §5.4 CO-Prüfung</summary>
+      <div class="details-body">
+        <p>UN R122 gilt für alle Heizungstypen; §5.4 CO-Prüfung ist kritischste Anforderung. Die Prüfung in einer Klimakammer ist aufwändig und erfordert spezialisierte Prüfstellen. CO ist farb- und geruchlos — ein schleichender Austritt ist für den Fahrer nicht wahrnehmbar, was den Grenzwert besonders sicherheitsrelevant macht.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS und EPA</summary>
+      <div class="details-body">
+        <p>FMVSS deckt Heizung nur indirekt ab; EPA-Standards für Emissionen. Standheizungen (nach UL 896) sind in den USA weniger verbreitet als in Europa — das milde Klima in vielen US-Regionen reduziert den Bedarf. Für den Kaltstaat-Betrieb (Alaska, Nordstaaten) gelten dieselben EPA-Anforderungen.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Heizung">+ Frage einreichen</a></div>
+    <details>
+      <summary>Gilt UN R122 auch für Standheizungen?</summary>
+      <div class="details-body"><p>Ja. UN R122 §5.3 enthält explizite Anforderungen für brennstoffbetriebene Heizungen (Standheizungen). Diese müssen über automatische Sicherheitsabschaltung, Überhitzungsschutz und Flammenüberwachung verfügen. Webasto und Eberspächer als führende Anbieter haben ihre Produkte nach diesen Anforderungen entwickelt. Serienmäßige Standheizungen erhalten eine eigenständige Bauteilgenehmigung oder sind Teil der Fahrzeug-Typgenehmigung.</p></div>
+    </details>
+    <details>
+      <summary>Was ist der CO-Grenzwert nach UN R122?</summary>
+      <div class="details-body"><p>UN R122 §5.2: maximal 15 ppm CO dauerhaft im Fahrgastraum. Kurzfristige Spitzen bis 40 ppm sind für maximal 3 Minuten zulässig. Zum Vergleich: Stadtluft enthält typisch 1–3 ppm CO; erste gesundheitliche Symptome bei Erwachsenen beginnen ab ~35 ppm bei Langzeitexposition (8h); akute Vergiftungssymptome ab ~200 ppm. Der UN R122-Grenzwert ist deutlich unterhalb des Symptom-Schwellenwerts — ein sicherheitsgerichteter Konservativitätspuffer.</p></div>
+    </details>
+    <details>
+      <summary>Wie wird die CO-Prüfung durchgeführt?</summary>
+      <div class="details-body"><p>Das Fahrzeug wird in einer Klimakammer bei 0 °C oder −18 °C (je nach Prüfprotokoll) aufgestellt. CO-Sensoren werden an definierten Messpunkten im Fahrgastraum platziert. Die Heizung wird für 30 Minuten kontinuierlich betrieben. Zusätzlich werden Prüfungen bei Maximalleistung, Kaltstart (für Standheizungen) und Rezirkulationsbetrieb durchgeführt. Die Messung erfolgt nach ISO-Normen für CO-Analytik.</p></div>
+    </details>
+    <details>
+      <summary>Unterschied EV Wärmepumpe vs. PTC-Heizung?</summary>
+      <div class="details-body"><p>PTC (Positive Temperature Coefficient) Widerstandsheizung: wandelt Strom direkt in Wärme um — Wirkungsgrad ca. 1:1 (1 kWh Strom = 1 kWh Wärme). Günstig in der Herstellung, zuverlässig, aber hoher Energieverbrauch. Wärmepumpe: entnimmt Wärme aus der Außenluft und verstärkt sie elektrisch — Wirkungsgrad (COP) typisch 2–3 (1 kWh Strom = 2–3 kWh Wärme). Deutlich effizienter, aber bei Außentemperaturen unter −5 bis −10 °C sinkt der COP stark ab. UN R122 unterscheidet nicht zwischen beiden Technologien — die Ergebnisanforderung (CO-Grenzwert, Sicherheit) gilt für beide gleichermaßen.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="heizung-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>8 von 9 Märkten basieren auf UN R122. USA ist der einzige Markt ohne direkte UN R122-Übernahme — FMVSS/EPA-System erfasst Heizung nur indirekt.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Anforderung</th><th>EU</th><th>USA</th><th>CN</th><th>UK</th><th>Rest</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>UN R122</td><td>FMVSS/EPA</td><td>GB/T 17032</td><td>UN R122</td><td>UN R122</td></tr>
+      <tr><td>CO-Grenzwert</td><td>15 ppm</td><td>EPA-Std.</td><td>vorhanden</td><td>15 ppm</td><td>15 ppm</td></tr>
+      <tr><td>Standheizung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ geregelt</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ UL/EPA</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+      <tr><td>EV-Heizung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = vorhanden/geregelt &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="heizung-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type</th><th>All-Type</th></tr></thead>
+      <tbody>
+        <tr><td>UN R122 02 series, Supplement 4</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung; CO-Grenzwert 15 ppm gültig</td><td>In Kraft</td><td>In Kraft</td></tr>
+        <tr><td>UN R122 — Supplement 5</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>EV-spezifische Heizungsanforderungen (Wärmepumpeneffizienz, Kälteleistung)</td><td>Erwartet 2026/2027</td><td>Erwartet 2028</td></tr>
+        <tr><td>New Type / All Type Supplement 5</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">Geplant</span></td><td>Separate EV-Heizungsanforderungen für Wärmepumpenfahrzeuge erwartet</td><td>2026/2027</td><td>2028+</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG, UN R122 Supplements, EUR-Lex.</div>
+</div>

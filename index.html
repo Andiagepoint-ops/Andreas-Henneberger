@@ -224,6 +224,9 @@
       <a class="sidebar-item" onclick="showSection('bremse')"><span class="icon">🛑</span> Bremse</a>
       <a class="sidebar-item" onclick="showSection('getriebe')"><span class="icon">⚙️</span> Getriebeschaltschema</a>
       <a class="sidebar-item" onclick="showSection('licht')"><span class="icon">💡</span> Beleuchtung</a>
+      <a class="sidebar-item" onclick="showSection('entfrostung')"><span class="icon">❄️</span> Entfrostung &amp; Trocknung</a>
+      <a class="sidebar-item" onclick="showSection('wischer')"><span class="icon">🌧️</span> Scheibenwischer/-wascher</a>
+      <a class="sidebar-item" onclick="showSection('heizung')"><span class="icon">🔥</span> Heizung</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Gesetzestexte &amp; Interpretation</div>
@@ -232,6 +235,9 @@
       <a class="sidebar-item" onclick="showSection('gesetz-r30')" style="padding-left:28px"><span class="icon">⚙️</span> UN R30 — Reifen PKW</a>
       <a class="sidebar-item" onclick="showSection('gesetz-r13h')" style="padding-left:28px"><span class="icon">🛑</span> UN R13-H — Bremse</a>
       <a class="sidebar-item" onclick="showSection('gesetz-r39')" style="padding-left:28px"><span class="icon">🔢</span> UN R39 — Tachometer</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-entfrostung')" style="padding-left:28px"><span class="icon">❄️</span> EU 2021/535 Ann.IV — Entfrostung</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-wischer')" style="padding-left:28px"><span class="icon">🌧️</span> EU 2021/535 Ann.VI — Wischer</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-heizung')" style="padding-left:28px"><span class="icon">🔥</span> UN R122 — Heizung</a>
       <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🇺🇸 USA / FMVSS</a>
       <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss101')" style="padding-left:28px"><span class="icon">🖥️</span> FMVSS 101 — Controls</a>
       <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss135')" style="padding-left:28px"><span class="icon">🛑</span> FMVSS 135 — Brakes</a>
@@ -284,6 +290,9 @@
         <div class="module-card" style="--card-color:#e74c3c" onclick="showSection('bremse')"><div class="module-card-header"><span class="module-card-icon">🛑</span><h3>Bremse</h3></div><p>Betriebsbremse, ABS, AEB-Integration nach UN R13-H in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R13-H · FMVSS 135</span><span class="tag">Amendments</span></div></div>
         <div class="module-card" style="--card-color:#27ae60" onclick="showSection('getriebe')"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Getriebeschaltschema</h3></div><p>P-R-N-D Sequenz, Starter-Interlock nach FMVSS 102 vs. 9 Märkte.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">FMVSS 102 · GB 7258</span><span class="tag">Amendments</span></div></div>
         <div class="module-card" style="--card-color:#f39c12" onclick="showSection('licht')"><div class="module-card-header"><span class="module-card-icon">💡</span><h3>Beleuchtung</h3></div><p>Pflichtleuchten, DRL, ADB und Matrix-LED nach UN R48 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R48 · FMVSS 108</span><span class="tag">ADB · DRL</span></div></div>
+        <div class="module-card" style="--card-color:#3498db" onclick="showSection('entfrostung')"><div class="module-card-header"><span class="module-card-icon">❄️</span><h3>Entfrostung &amp; Trocknung</h3></div><p>Entfrost- und Trocknungsleistung der Windschutzscheibe nach EU 2021/535 Anhang IV.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">EU 2021/535 · FMVSS 103</span><span class="tag">Amendments</span></div></div>
+        <div class="module-card" style="--card-color:#1abc9c" onclick="showSection('wischer')"><div class="module-card-header"><span class="module-card-icon">🌧️</span><h3>Scheibenwischer/-wascher</h3></div><p>Wischbereich, Frequenz und Waschanlage nach EU 2021/535 Anhang VI.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">EU 2021/535 · FMVSS 104</span><span class="tag">Amendments</span></div></div>
+        <div class="module-card" style="--card-color:#e67e22" onclick="showSection('heizung')"><div class="module-card-header"><span class="module-card-icon">🔥</span><h3>Heizung</h3></div><p>Heizungsanlagen, CO-Sicherheit und Standheizung nach UN R122.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R122</span><span class="tag">EV-Heizung</span></div></div>
       </div>
       <hr class="divider">
       <div class="market-strip">
@@ -355,7 +364,8 @@
 const MODULES = ['reifen','tpms','notrad','anzeige','tacho','bremse','getriebe','licht','marktvergleich',
   'markt-eceu','markt-usa','markt-cn','markt-br','markt-jp','markt-kr','markt-gcc','markt-uk','markt-in',
   'gesetz-r121','gesetz-r30','gesetz-r13h','gesetz-r39',
-  'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099','upload'];
+  'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099',
+  'entfrostung','wischer','heizung','gesetz-entfrostung','gesetz-wischer','gesetz-heizung','upload'];
 const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
 let currentSection = 'home';
 
