@@ -192,10 +192,18 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Gesetzestexte &amp; Interpretation</div>
-      <a class="sidebar-item" onclick="showSection('gesetz-r121')"><span class="icon">🖥️</span> UN R121 — Bedienelemente</a>
-      <a class="sidebar-item" onclick="showSection('gesetz-r30')"><span class="icon">⚙️</span> UN R30 — Reifen PKW</a>
-      <a class="sidebar-item" onclick="showSection('gesetz-r13h')"><span class="icon">🛑</span> UN R13-H — Bremse</a>
-      <a class="sidebar-item" onclick="showSection('gesetz-r39')"><span class="icon">🔢</span> UN R39 — Tachometer</a>
+      <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🌐 ECE / UN WP.29</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r121')" style="padding-left:28px"><span class="icon">🖥️</span> UN R121 — Bedienelemente</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r30')" style="padding-left:28px"><span class="icon">⚙️</span> UN R30 — Reifen PKW</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r13h')" style="padding-left:28px"><span class="icon">🛑</span> UN R13-H — Bremse</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r39')" style="padding-left:28px"><span class="icon">🔢</span> UN R39 — Tachometer</a>
+      <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🇺🇸 USA / FMVSS</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss101')" style="padding-left:28px"><span class="icon">🖥️</span> FMVSS 101 — Controls</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss135')" style="padding-left:28px"><span class="icon">🛑</span> FMVSS 135 — Brakes</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss139')" style="padding-left:28px"><span class="icon">⚙️</span> FMVSS 139 — Tires</a>
+      <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🇮🇳 Indien / AIS</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-in-ais039')" style="padding-left:28px"><span class="icon">🔢</span> AIS-039 — Speedometer</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-in-ais099')" style="padding-left:28px"><span class="icon">🛑</span> AIS-099 — Bremse</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Vergleiche</div>
@@ -309,7 +317,8 @@
 <script>
 const MODULES = ['reifen','tpms','notrad','anzeige','tacho','bremse','getriebe','licht','marktvergleich',
   'markt-eceu','markt-usa','markt-cn','markt-br','markt-jp','markt-kr','markt-gcc','markt-uk','markt-in',
-  'gesetz-r121','gesetz-r30','gesetz-r13h','gesetz-r39'];
+  'gesetz-r121','gesetz-r30','gesetz-r13h','gesetz-r39',
+  'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099'];
 const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
 let currentSection = 'home';
 
