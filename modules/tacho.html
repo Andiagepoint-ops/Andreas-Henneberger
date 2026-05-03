@@ -8,6 +8,7 @@
   <div class="tab" onclick="switchTab('tacho','anforderungen')">📋 Technische Anforderungen</div>
   <div class="tab" onclick="switchTab('tacho','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('tacho','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('tacho','amendments')">📅 Amendments &amp; Termine</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -131,4 +132,32 @@
     <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Höchster Harmonisierungsgrad</h3></div><p>7 von 9 Märkten: identische Toleranzformel aus UN R39. Höchster Harmonisierungsgrad aller betrachteten Module.</p></div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="tacho-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R39 — 01 series, Supplement 4</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung; Toleranzformel V₁ ≤ Vₙ ≤ V₁/0.9 + 4 km/h weiterhin gültig</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">R39 ↗</a></td></tr>
+        <tr><td>UN R39 — Supplement 5</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Klarstellung der Toleranzformel für digitale Instrumente und Connected-Vehicle Geschwindigkeitsanzeigen (V2I-Daten als zusätzliche Quelle); Definition der Prüfmethode für digitale Tachometer</td><td>Erwartet 2026</td><td>Erwartet 2028</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></td></tr>
+        <tr><td>GRSG: Head-Up-Display als Tacho</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Diskussion ob Head-Up-Displays (HUD) als primäre Tachoanzeige (Erfüllung UN R39) zulässig sind; Sicherheitsaspekte (Sichtfeld, Helligkeitsanpassung) werden erörtert</td><td>Offen</td><td>Offen</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></td></tr>
+        <tr><td>AIS-145 India — Speed Alert Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Pflichtakustischer Geschwindigkeitswarner: Dauerton bei 80 km/h, Schnellton bei 120 km/h; kein UN-Äquivalent geplant</td><td>01.07.2019 (M1)</td><td>01.04.2021</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">MoRTH ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRSG</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">🖥️</span><h3>Digitale Instrumente &amp; V2I</h3></div><p>V2I (Vehicle-to-Infrastructure) kann GPS-präzise Geschwindigkeitsdaten liefern, die präziser sind als Radsensoren. GRSG diskutiert ob V2I-Daten als sekundäre oder primäre Quelle für UN R39-konforme Anzeige zulässig sein sollen.</p></div>
+      <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">👁️</span><h3>HUD als Primäranzeige</h3></div><p>Head-Up-Displays werden in Premiumfahrzeugen immer häufiger als primäre Informationsquelle genutzt. Rechtsfrage: Erfüllt ein HUD ohne traditionelles Kombiinstrument die Anforderungen des UN R39? GRSG hat noch keine abschließende Position.</p></div>
+      <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🇺🇸</span><h3>USA: Keine Bundesgenauigkeitsnorm</h3></div><p>FMVSS 101 schreibt lediglich eine Geschwindigkeitsanzeige vor, nicht deren Genauigkeit. NHTSA sondiert ob ein Genauigkeitsstandard analog zu UN R39 eingeführt werden soll; kein aktives Rulemaking (Stand 2025).</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG Arbeitsdokumente, UN R39 Supplements, MoRTH AIS-145.</div>
 </div>

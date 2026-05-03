@@ -1,0 +1,146 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Getriebeschaltschema</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(39,174,96,.12);border-color:rgba(39,174,96,.3)">⚙️</div>
+  <div><h2>Modul — Getriebeschaltschema</h2><p>FMVSS 102 · GB 7258 und marktspezifische Anforderungen an die Schaltsequenz von Automatikgetrieben (P-R-N-D).</p></div>
+</div>
+<div class="tabs" id="getriebe-tabs">
+  <div class="tab active" onclick="switchTab('getriebe','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('getriebe','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('getriebe','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('getriebe','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('getriebe','amendments')">📅 Amendments &amp; Termine</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="getriebe-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span><strong>Hinweis:</strong> Es gibt keine direkte UN-Regulation für Getriebeschaltsequenzen. Die USA sind der einzige Markt mit einer expliziten Bundesvorschrift (FMVSS 102). Andere Märkte regeln P-R-N-D über allgemeine Fahrzeugsicherheitsnormen oder gar nicht explizit — die Sequenz ist aber de-facto Industriestandard.</span></div>
+  <table class="doc-table" style="margin-top:1rem">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Schaltsequenz Pflicht</th><th>Starter-Interlock</th><th>Transmission Brake</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018R0858" target="_blank" class="reg-link">EU 2018/858 ↗</a> (allg. Typgenehmigung, keine spez. Schaltsequenznorm)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ De-facto Standard</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Nicht explizit</span></td><td>Nicht geregelt</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.102" target="_blank" class="reg-link">FMVSS 102 ↗</a> (49 CFR §571.102)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ P-R-N-D Pflicht</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td>✓ Engine Braking in L</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 7258-2017 ↗</a> (Abschnitt 12, indirekte Anforderungen)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allg. Fahrsicherheit</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Teilweise</span></td><td>Nicht explizit</td></tr>
+      <tr><td>🇯🇵 Japan</td><td>Road Vehicles Safety Standards Art. 11 (allg. Konstruktionspflicht)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allgemein</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Nicht explizit</td></tr>
+      <tr><td>🇰🇷 Korea</td><td>KMVSS allgemein (allg. Fahrzeugsicherheit)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allgemein</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Nicht explizit</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td>CONTRAN / DENATRAN allgemein</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allgemein</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Teilweise</span></td><td>Nicht explizit</td></tr>
+      <tr><td>🇬🇧 UK</td><td>Road Vehicles (Construction and Use) Regulations 1986</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allgemein</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Nicht explizit</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td>GSO allgemein</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allgemein</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Nicht explizit</span></td><td>Nicht explizit</td></tr>
+      <tr><td>🇮🇳 Indien</td><td>CMVR allgemein / AIS (allg.)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Allgemein</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Nicht explizit</span></td><td>Nicht explizit</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="getriebe-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#27ae60"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>FMVSS 102 Kernforderungen</h3></div><p>Schaltsequenz muss P-R-N-D sein (von P aus nur R erreichbar, von R nur P oder N, etc.). Fahrstufenanzeigezeige Pflicht. Starter darf nur in P oder N funktionieren. Bei Stufe L oder ähnlichem: Engine braking (Motorbremse) muss aktiv sein. Manuelle Stufen (1, 2, L) müssen in absteigender Reihenfolge angeordnet sein.</p><div class="module-card-footer"><span class="tag">FMVSS 102 §S4</span><span class="tag">P-R-N-D Sequenz</span><span class="tag">Fahrstufenzeige</span></div></div>
+    <div class="module-card" style="--card-color:#1e8449"><div class="module-card-header"><span class="module-card-icon">🔒</span><h3>Starter-Interlock</h3></div><p>Fahrzeug darf nur in P oder N gestartet werden (FMVSS 102 §S4.2). Verhindert unbeabsichtigtes Anfahren beim Motorstart. In Japan, UK, Korea ebenfalls technisch umgesetzt (konstruktive Anforderung), aber ohne explizite Bundesvorschrift wie FMVSS 102.</p><div class="module-card-footer"><span class="tag">FMVSS 102 §S4.2</span><span class="tag">P oder N = Start erlaubt</span></div></div>
+    <div class="module-card" style="--card-color:#2ecc71"><div class="module-card-header"><span class="module-card-icon">🖥️</span><h3>Shift-by-Wire &amp; elektronische Schaltung</h3></div><p>Moderne Fahrzeuge nutzen elektronische Wählelemente ohne mechanische Verbindung (Shift-by-Wire). Bei Shift-by-Wire muss im Stromausfall ein definierter sicherer Zustand (meist P oder N) eingenommen werden. FMVSS 102 gilt für die Funktion, nicht die Technologie — also auch für Shift-by-Wire. EU hat keine ähnliche Norm; OEMs erfüllen FMVSS 102 weltweit für Export-Fahrzeuge.</p><div class="module-card-footer"><span class="tag">Shift-by-Wire</span><span class="tag">Fail-Safe = P/N</span></div></div>
+    <div class="module-card" style="--card-color:#f39c12"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>EVs und Eingang-Getriebe</h3></div><p>Elektrische Fahrzeuge haben häufig kein traditionelles Automatikgetriebe, aber eine P-R-N-D Wähleinheit. FMVSS 102 gilt auch für EVs. "D" = Vorwärtsfahrt mit Rekuperation, "P" = Parken + mechanische Parksperre. Starter-Interlock-Äquivalent: "Ready"-Status nur in P oder N möglich. GB 7258 (China) enthält analoge Anforderungen für EV-Fahrstufenwähler in Abschnitt 12.</p><div class="module-card-footer"><span class="tag">EV: P-R-N-D analog</span><span class="tag">Ready = P/N</span><span class="tag">GB 7258 §12</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="getriebe-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise je Markt und häufige Fragen zu Getriebeschaltschema-Vorschriften.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt</div>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 102</summary>
+      <div class="details-body">
+        <p><strong>Einziger Markt mit expliziter P-R-N-D-Pflicht:</strong> FMVSS 102 §S4.1 schreibt die genaue Reihenfolge der Fahrstufen vor. Die Schaltsequenz muss so angeordnet sein, dass der Fahrer intuitiv von P aus nur R erreicht, nicht versehentlich D. Dies verhindert das unbeabsichtigte Einlegen des Rückwärtsgangs beim Anfahren.</p>
+        <p><strong>Engine Braking (Motorbremse):</strong> Wenn der Fahrer in Stufe L oder "1" fährt, muss die Motorbremse aktiv sein. Das bedeutet, beim Loslassen des Gaspedals soll das Fahrzeug spürbar verzögern — wichtig für Bergabfahrten. FMVSS 102 §S4.3 definiert dies als Pflicht.</p>
+        <p><strong>Gilt für CVT und Hybrid:</strong> FMVSS 102 gilt für alle Automatikgetriebe-Typen, inklusive CVT (stufenlos), Doppelkupplungsgetriebe (DCT) und EV-Fahrstufenwähler. Die Fahrstufenanzeige muss in jedem Fall deutlich sichtbar sein.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — Keine explizite Norm</summary>
+      <div class="details-body">
+        <p><strong>De-facto Standard durch globale Fahrzeugarchitekturen:</strong> Da OEMs meist eine weltweit einheitliche Fahrzeugplattform entwickeln, wird FMVSS 102 (USA-Pflicht) faktisch auch in EU-Fahrzeugen umgesetzt. Es gibt keine EU-Verordnung die P-R-N-D explizit vorschreibt, aber die allgemeine Typgenehmigung (EU 2018/858) verlangt sichere Konstruktion — was in der Praxis FMVSS-102-konforme Auslegung bedeutet.</p>
+        <p><strong>Shift-by-Wire in EU:</strong> Die EU-Typgenehmigung für Fahrzeugsicherheit (UN R13-H, UNECE allgemein) enthält keine explizite Regelung für Shift-by-Wire Fail-Safe. Hersteller wenden intern ihre eigenen Sicherheitsstandards an (ISO 26262 für funktionale Sicherheit).</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 7258</summary>
+      <div class="details-body">
+        <p><strong>GB 7258-2017 Abschnitt 12:</strong> Regelt Lenk- und Bremsanlagen allgemein, enthält aber in Abschnitt 12.2 auch Anforderungen an Fahrstufenwähler von Automatikgetrieben: Die Fahrstufenposition muss für den Fahrer eindeutig erkennbar sein, die Anzeige muss im Fahrerblickfeld liegen. Eine explizite P-R-N-D-Sequenz ist jedoch nicht normiert.</p>
+        <p><strong>EV-spezifisch:</strong> Für Elektrofahrzeuge mit elektronischem Fahrstufenwähler gelten die Anforderungen des GB 7258 analog. Chinesische OEMs orientieren sich zudem an den FMVSS 102 Anforderungen für ihre Exportfahrzeuge.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan · 🇰🇷 Korea · 🇬🇧 UK · 🇧🇷 Brasilien · 🇦🇪 GCC · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>Japan/Korea/UK:</strong> Starter-Interlock (Motor startet nur in P/N) ist konstruktive Pflicht, aber ohne explizite Schaltsequenz-Norm. In der Praxis sind alle Fahrzeuge P-R-N-D, da OEMs globale Plattformen nutzen.</p>
+        <p><strong>Brasilien/GCC/Indien:</strong> Keine expliziten Schaltsequenz-Anforderungen. FMVSS 102 wird indirekt über globale OEM-Plattformen erfüllt. Starter-Interlock ist technisch üblich aber nicht normiert.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Getriebeschaltschema">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Warum gibt es keine UN-Regulation für P-R-N-D?</summary>
+      <div class="details-body"><p>Historisch haben automatische Getriebe ihren Ursprung stark in den USA (Chrysler/GM Entwicklungen der 1940er-50er). FMVSS 102 wurde 1967 eingeführt — zu einer Zeit als automatische Getriebe in Europa noch selten waren. In Europa dominierten Schaltgetriebe; eine UN-Norm für Automatik-Schaltschemas entstand nie. Da die P-R-N-D-Sequenz heute De-facto-Standard der Automobilindustrie ist, sehen UNECE-Mitglieder keinen Bedarf für eine separate UN-Regulation. Diskussionen über HMI-Anforderungen für Shift-by-Wire laufen bei GRSG im Kontext von UN R121.</p></div>
+    </details>
+    <details>
+      <summary>Gilt FMVSS 102 auch für CVT-Getriebe und Hybrid?</summary>
+      <div class="details-body"><p>Ja. FMVSS 102 gilt für alle Automatikgetriebe-Typen, die nicht manuell geschaltet werden — also auch CVT (stufenlos) und Hybrid-Getriebe. Bei einem CVT gibt es zwar keine festen Gangstufen, aber die Wählpositionen P, R, N, D müssen in dieser Reihenfolge angeordnet sein. Bei Hybriden mit E-CVT (z.B. Toyota Prius) gilt FMVSS 102 für die Wählereinheit. Rein manuelle Getriebe fallen nicht unter FMVSS 102.</p></div>
+    </details>
+    <details>
+      <summary>Was passiert bei Stromausfall bei einem Shift-by-Wire Fahrzeug?</summary>
+      <div class="details-body"><p>Bei Shift-by-Wire Systemen (keine mechanische Verbindung zwischen Wählhebel und Getriebe) muss im Fehlerfall ein sicherer Zustand eingenommen werden. Die meisten Hersteller implementieren folgende Logik: <strong>Fahrtunterbrechung (Stillstand):</strong> Automatisch in P einrasten. <strong>Während der Fahrt:</strong> Im aktuellen Fahrgang bleiben (N oder D), da plötzliches Einrasten in P bei Fahrt gefährlich wäre. FMVSS 102 schreibt kein konkretes Fail-Safe-Verhalten vor, aber ISO 26262 (funktionale Sicherheit) und OEM-interne Normen definieren diese Logik. In Europa gibt es hierfür keine explizite Vorschrift.</p></div>
+    </details>
+    <details>
+      <summary>Müssen EVs ohne traditionelles Getriebe FMVSS 102 erfüllen?</summary>
+      <div class="details-body"><p>Ja, für den US-Markt. FMVSS 102 gilt für alle Fahrzeuge mit automatischer Kraftübertragung, die für den öffentlichen Straßenverkehr in den USA zugelassen werden — unabhängig vom Antrieb. Ein EV hat zwar kein Automatikgetriebe im klassischen Sinn, aber einen Fahrstufenwähler (P-R-N-D). Dieser fällt unter FMVSS 102. Die Anforderungen sind: P-R-N-D Reihenfolge, Starter-Interlock (hier: Ready-Signal nur in P/N), Fahrstufenanzeigezeige.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="getriebe-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Vergleich der Getriebeschaltschema-Anforderungen in den 9 wichtigsten Märkten.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Anforderung</th><th>🇪🇺 EU</th><th>🇺🇸 USA</th><th>🇨🇳 CN</th><th>🇯🇵 JP</th><th>🇰🇷 KR</th><th>🇧🇷 BR</th><th>🇬🇧 UK</th><th>🇦🇪 GCC</th><th>🇮🇳 IN</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Explizite Schaltsequenz-Norm</strong></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ FMVSS 102</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ GB 7258 §12</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ allg.</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ allg.</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ allg.</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ allg.</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td><strong>Starter-Interlock Pflicht</strong></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗ explizit</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td><strong>P-R-N-D Reihenfolge</strong></td><td>De facto Standard</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td>Teilweise</td><td>De facto</td><td>De facto</td><td>De facto</td><td>De facto</td><td>De facto</td><td>De facto</td></tr>
+      <tr><td><strong>Gilt für EVs</strong></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗ explizit</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ GB 7258</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / de facto &nbsp; <span style="color:var(--red)">✗</span> = keine explizite Vorschrift</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="getriebe-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe (HMI / allg. Sicherheit): <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>FMVSS 102 — Letztes größeres Update</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Letztes größeres Update ~1997; seitdem technische Korrekturen. Gilt für alle Automatikgetriebe-Typen inkl. CVT und EV-Wähler</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.102" target="_blank" class="reg-link">FMVSS 102 ↗</a></td></tr>
+        <tr><td>NHTSA: FMVSS 102 EV-Anpassung</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Sondierung</span></td><td>NHTSA sondiert Anpassungen für EV-spezifische Fahrstufenwähler (Shift-by-Wire, rotary Dial, Lenkrad-Paddle). Kein aktives Rulemaking; laufende Marktbeobachtung</td><td>Offen</td><td>Offen</td><td><a href="https://www.nhtsa.gov/" target="_blank" class="reg-link">NHTSA ↗</a></td></tr>
+        <tr><td>GB 7258 — Revision (China)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">In Vorbereitung</span></td><td>Nächste Revision GB 7258 soll explizitere Anforderungen an elektronische Fahrstufenwähler (Shift-by-Wire) für EVs enthalten; Entwurf erwartet 2025</td><td>Erwartet 2026</td><td>Erwartet 2028</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">SAMR ↗</a></td></tr>
+        <tr><td>GRSG: HMI-Anforderungen Shift-by-Wire</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>GRSG diskutiert allgemeine HMI-Anforderungen für Shift-by-Wire und EV-Wählelemente im Kontext UN R121 (Anzeigen); keine eigenständige Schaltsequenz-Norm geplant</td><td>Offen</td><td>Offen</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></td></tr>
+        <tr><td>Kein UN-Äquivalent zu FMVSS 102 geplant</td><td><span class="tag" style="border-color:var(--text2);color:var(--text2)">Kein Vorhaben</span></td><td>UNECE WP.29 hat kein Arbeitsprogramm für eine eigenständige UN-Regulation zur Getriebeschaltsequenz; P-R-N-D gilt als hinreichend harmonisiert durch Marktpraxis</td><td>—</td><td>—</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29" target="_blank" class="reg-link">WP.29 ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Entwicklungen</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#27ae60"><div class="module-card-header"><span class="module-card-icon">🖥️</span><h3>Shift-by-Wire Normierung</h3></div><p>Rotary Dials, Paddles am Lenkrad, Touchscreen-Wähler — immer mehr EVs haben keine physischen Wählhebel mehr. NHTSA (USA) und GRSG (UNECE) sondieren, ob FMVSS 102 und äquivalente Vorschriften technologiespezifische Anforderungen erhalten sollen.</p></div>
+      <div class="module-card" style="--card-color:#1e8449"><div class="module-card-header"><span class="module-card-icon">🤖</span><h3>Autonome Fahrzeuge</h3></div><p>Bei SAE-Level-4/5-Fahrzeugen ohne Fahrer entfällt der traditionelle Schaltvorgang. GRSG und GRVA diskutieren, ob der P-Zustand bei fahrerlosen Fahrzeugen anders definiert werden muss (automatisches Einparken, kein manueller P-Befehl).</p></div>
+      <div class="module-card" style="--card-color:#f39c12"><div class="module-card-header"><span class="module-card-icon">🌍</span><h3>Globale Harmonisierung via OEMs</h3></div><p>Da OEMs für globale Märkte entwickeln, wird FMVSS 102 faktisch weltweit umgesetzt. Dies reduziert den Druck, eine UN-Regulation zu schaffen. Regulatoren in EU, Japan und Korea sehen derzeit keinen Handlungsbedarf.</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: NHTSA FMVSS 102 Docket, UNECE GRSG Arbeitsdokumente, GB 7258-2017, EU 2018/858.</div>
+</div>

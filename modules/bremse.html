@@ -1,0 +1,154 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Bremse</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(231,76,60,.12);border-color:rgba(231,76,60,.3)">🛑</div>
+  <div><h2>Modul — Bremse (Betriebsbremse PKW)</h2><p>UN R13-H · FMVSS 135 und marktspezifische Äquivalente. Bremswegvorschriften, Prüfverfahren, AEB-Integration.</p></div>
+</div>
+<div class="tabs" id="bremse-tabs">
+  <div class="tab active" onclick="switchTab('bremse','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('bremse','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('bremse','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('bremse','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('bremse','amendments')">📅 Amendments &amp; Termine</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="bremse-tab-vorschriften">
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Pflicht seit</th><th>Besonderheit</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-13-h" target="_blank" class="reg-link">UN R13-H ↗</a> · <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019R2144" target="_blank" class="reg-link">EU 2019/2144 ↗</a></td><td>Neue Typen 1998; alle seit 2001</td><td>ABS Pflicht für M1; EBD empfohlen; AEB-Pflicht ab 07/2024 (All Type)</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.135" target="_blank" class="reg-link">FMVSS 135 ↗</a></td><td>MY1999 für PKW</td><td>Keine UN-Harmonisierung; Bremsweg in Fuß (ft); ABS Pflicht seit MY2000</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 21670-2008 ↗</a></td><td>2012 (Pflicht)</td><td>Weitgehend identisch zu UN R13-H; ABS Pflicht; AEB-Pflicht ab 2022 (New Type)</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-13-h" target="_blank" class="reg-link">UN R13-H ↗</a> + TRIAS 54</td><td>2005 (UN R13-H ratifiziert)</td><td>UN R13-H-Basis; nationale Prüfmethoden (TRIAS) leicht abweichend; ABS Pflicht</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 15 ↗</a> (UN R13-H-Basis)</td><td>2003</td><td>ABS Pflicht; AEB Pflicht ab 2023 (New Type)</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.in.gov.br/" target="_blank" class="reg-link">CONTRAN / ABNT NBR 15296 ↗</a> (UN R13-H-Basis)</td><td>2010</td><td>ABS Pflicht ab 2014; AEB noch nicht Pflicht</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-13-h" target="_blank" class="reg-link">UN R13-H ↗</a> (retained)</td><td>Post-Brexit = EU-Stand übernommen</td><td>Identisch zu ECE/EU; AEB-Pflicht analog EU</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO / ECE-Basis ↗</a></td><td>~2010</td><td>Weitgehend UN R13-H; ABS Pflicht</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-099 ↗</a> (UN R13-H-Basis) + CMVR</td><td>2015</td><td>ABS Pflicht ab 01.04.2019 für M1; AEB in Diskussion</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="bremse-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#e74c3c"><div class="module-card-header"><span class="module-card-icon">🛑</span><h3>Betriebsbremse — UN R13-H</h3></div><p>§5: Bremsverzögerung ≥ 5,8 m/s² (Typ-0-Prüfung, kalte Bremse). Bremsweg aus 100 km/h innerhalb definierter Grenzwerte. Pedalcraft und Pedalkraft limitiert. FMVSS 135: Bremsweg aus 60 mph ≤ 216 ft (Typ I), Pedalweg-Limits — keine direkte Äquivalenz zur m/s²-Angabe.</p><div class="module-card-footer"><span class="tag">UN R13-H §5</span><span class="tag">5,8 m/s² Typ-0</span><span class="tag">FMVSS 135: 216 ft</span></div></div>
+    <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">🔄</span><h3>ABS-Integration</h3></div><p>UN R13-H Annex 4: ABS Pflicht für M1. FMVSS 135 §S5.4: ABS ebenfalls Pflicht seit MY2000. Prüfung auf μ-Split (unterschiedliche Reibwerte links/rechts), Vollbremsung aus verschiedenen Geschwindigkeiten. ABS verhindert Blockieren und erhält Lenkbarkeit.</p><div class="module-card-footer"><span class="tag">ABS Pflicht weltweit (9 Märkte)</span><span class="tag">μ-Split-Prüfung</span></div></div>
+    <div class="module-card" style="--card-color:#e67e22"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Brake Blending (EVs)</h3></div><p>EV-spezifisch: Regenerativer Anteil (Rekuperation) muss mit Hydraulikbremse koordiniert werden. UN R13-H wurde durch Supplement 12 um EV Brake Blending Anforderungen erweitert. FMVSS 135 enthält noch keine spezifischen EV-Brake-Blending-Anforderungen (NHTSA Rulemaking 2023 laufend).</p><div class="module-card-footer"><span class="tag">EU: R13-H Suppl. 12</span><span class="tag">USA: ausstehend</span><span class="tag">CN: GB 21670 EV-Erw.</span></div></div>
+    <div class="module-card" style="--card-color:#8e44ad"><div class="module-card-header"><span class="module-card-icon">🚨</span><h3>AEB-Integration (UN R152)</h3></div><p>UN R152 (Autonomous Emergency Braking) komplementiert UN R13-H. UN R13-H definiert Bremssystemgüte; UN R152 definiert AEB-Systemanforderungen. EU 2022/1426: AEB Pflicht für neue M1-Typen ab 07.2022 (New Type), All Type 07.2024. China: AEB-Pflicht ab 2022 (New Type).</p><div class="module-card-footer"><span class="tag">UN R152</span><span class="tag">EU New Type 07/2022</span><span class="tag">All Type 07/2024</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="bremse-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise je Markt und häufige Fragen zur Anwendung der Bremsvorschriften.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — UN R13-H</summary>
+      <div class="details-body">
+        <p><strong>Typ-0 vs. Typ-I Prüfung:</strong> UN R13-H unterscheidet zwischen Typ-0 (kalte Bremse, maximale Leistung) und Typ-I (heiße Bremse nach Fade-Zyklus, mindestens 80 % der Typ-0-Leistung). Die Typ-0-Prüfung definiert die Maximalbremswirkung; die Typ-I-Prüfung stellt sicher, dass die Bremse nach thermischer Belastung noch funktioniert.</p>
+        <p><strong>μ-Split-Prüfung:</strong> Auf Fahrbahnen mit unterschiedlichem Reibwert links/rechts (z.B. Schnee links, Asphalt rechts) darf das ABS keine übermäßige Gierreaktion erzeugen. Das Fahrzeug muss lenkbar bleiben. UN R13-H Annex 4 §5 definiert die μ-Split-Anforderungen.</p>
+        <p><strong>EBD (Electronic Brake Distribution):</strong> Obwohl UN R13-H EBD nicht explizit vorschreibt, ist EBD bei modernen Fahrzeugen Standard. UN R13-H §5.2.2 verlangt bei Vollbremsung, dass das Hinterrad nie vor dem Vorderrad blockiert (was EBD impliziert).</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 135</summary>
+      <div class="details-body">
+        <p><strong>Bremsweg statt Verzögerung:</strong> FMVSS 135 misst den Bremsweg in Fuß (ft) — nicht die Verzögerung in m/s². Der Stopp aus 60 mph muss innerhalb 216 ft erfolgen (Typ-I). Diese Methode erscheint einfacher, ist aber schwerer mit UN R13-H direkt zu vergleichen, da Fahrzeuggewicht und Prüfbedingungen abweichen.</p>
+        <p><strong>Keine UN-Harmonisierung:</strong> USA hat UN R13-H nicht ratifiziert. FMVSS 135 basiert auf SAE-Normen. Fahrzeuge für beide Märkte müssen beide Anforderungen erfüllen — dies ist in der Regel kein Problem, da FMVSS 135 als etwas weniger streng gilt.</p>
+        <p><strong>AEB/FMVSS:</strong> NHTSA hat AEB für neue Pkw vorgeschlagen (Federal Register 2023); eine verbindliche Regel ist noch nicht in Kraft. Mehrere US-Hersteller bieten AEB freiwillig an (NHTSA-IIHS-Vereinbarung).</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 21670</summary>
+      <div class="details-body">
+        <p><strong>GB 21670-2008:</strong> Inhaltlich sehr nah an UN R13-H, aber als nationaler Standard verabschiedet. Testverfahren und Grenzwerte sind weitgehend identisch. ABS ist seit 2012 Pflicht. China hat AEB als Pflichtausstattung für neue M1-Typen ab 2022 eingeführt (GB/T 38186).</p>
+        <p><strong>EV Brake Blending:</strong> China hat früh EV-spezifische Bremsanforderungen in die Fahrzeugtypgenehmigung integriert (GB 38032). Das Brake Blending zwischen Rekuperation und Hydraulikbremse muss definierte Mindestbremsleistungen garantieren, unabhängig vom SOC der Batterie.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇦🇪 Golf-Staaten · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>Japan:</strong> UN R13-H ratifiziert 2005. Nationales TRIAS-54 Prüfverfahren weicht leicht ab (Messgeschwindigkeiten, Vorkonditionierung). In der Praxis werden beide Methoden bei der Typgenehmigung anerkannt.</p>
+        <p><strong>Korea:</strong> KMVSS Art. 15 basiert auf UN R13-H. AEB-Pflicht ab 2023 (New Type M1) eingeführt. Korea ist einer der ersten Märkte mit umfassender AEB-Pflicht außerhalb der EU.</p>
+        <p><strong>Brasilien:</strong> ABS seit 2014 Pflicht für M1. AEB ist noch nicht vorgeschrieben; DENATRAN/SENATRAN sondiert Einführung. ABNT NBR 15296 folgt UN R13-H eng.</p>
+        <p><strong>Golf-Staaten:</strong> Hohe Temperaturen belasten Bremsbeläge (Fade-Problematik). Keine spezifischen Hochtemperatur-Prüfungen über UN R13-H hinaus; GSO übernimmt ECE-Standard.</p>
+        <p><strong>Indien:</strong> AIS-099 (UN R13-H-Basis) seit 2015. ABS Pflicht ab 01.04.2019 für M1. Brake Blending und AEB sind noch nicht formal vorgeschrieben, werden aber von multinationalen OEMs als Best Practice implementiert.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Bremse">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Was ist der Unterschied zwischen Typ-0 und Typ-I Bremsprüfung?</summary>
+      <div class="details-body"><p><strong>Typ-0 (kalte Bremse):</strong> Bremsanlage ist nicht vorgewärmt; misst maximale Bremsleistung unter Idealbedingungen. Mindestbremsverzögerung nach UN R13-H: ≥ 5,8 m/s² bei Pedalcraft ≤ 500 N. <strong>Typ-I (heiße Bremse / Fade-Test):</strong> Die Bremse wird durch 15 aufeinanderfolgende Bremsungen aus 80 km/h auf 45 km/h stark erhitzt. Danach muss die Bremsleistung noch mindestens 80 % der Typ-0-Leistung erreichen. Ziel: Sicherstellung der Bremsleistung nach Talfahrten oder intensivem Stadtverkehr.</p></div>
+    </details>
+    <details>
+      <summary>Warum misst USA den Bremsweg in Fuß, die EU in m/s²?</summary>
+      <div class="details-body"><p>Historisch gewachsene unterschiedliche Normsysteme. FMVSS 135 (USA, SAE-Basis) misst die Fahrzeugstopleistung als Bremsweg in Fuß — praxisnah und für den durchschnittlichen Fahrer intuitiv. UN R13-H (UNECE-Basis) misst die Bremsverzögerung in m/s² — physikalisch präziser und unabhängig von der Geschwindigkeit. Beide Systeme führen in der Praxis zu vergleichbaren Fahrzeuganforderungen; eine direkte Zahlenwert-Umrechnung ist aber nur näherungsweise möglich.</p></div>
+    </details>
+    <details>
+      <summary>Was ist Brake Blending bei Elektrofahrzeugen?</summary>
+      <div class="details-body"><p>Bei EVs und Hybriden kann beim Bremsen ein Teil der kinetischen Energie durch den E-Motor in Strom umgewandelt werden (Rekuperation). Beim normalen Bremsvorgang entscheidet das Bremssystem-Steuergerät in Millisekunden, wie viel Bremskraft regenerativ und wie viel hydraulisch aufgebracht wird. <strong>Brake Blending</strong> ist diese Koordination. Herausforderung: Der Fahrer merkt keinen Unterschied im Pedalgefühl, egal welcher Anteil regenerativ ist (transparentes Pedalgefühl). UN R13-H Supplement 12 definiert, dass EVs dieselben Bremsweggrenzwerte einhalten müssen, unabhängig vom Ladezustand der Batterie.</p></div>
+    </details>
+    <details>
+      <summary>Gilt UN R13-H auch für Hybridfahrzeuge?</summary>
+      <div class="details-body"><p>Ja. UN R13-H gilt für alle M1-Fahrzeuge (Pkw bis 8 Sitzplätze) unabhängig vom Antrieb. Supplement 12 zu UN R13-H hat explizite Regelungen für elektrische Bremssysteme und Brake Blending ergänzt. Wichtig: Der regenerative Bremsanteil darf in die Gesamtbremswirkung eingerechnet werden, solange die Mindestbremswirkung auch ohne Rekuperation (z.B. bei voller Batterie, die keine weitere Energie aufnehmen kann) gewährleistet ist.</p></div>
+    </details>
+    <details>
+      <summary>Ab wann ist AEB in der EU für alle neuen PKW Pflicht?</summary>
+      <div class="details-body"><p>AEB (Autonomous Emergency Braking) ist in der EU durch die allgemeine Sicherheitsverordnung EU 2019/2144 (GSR II) vorgeschrieben:<br>• <strong>New Type:</strong> 06.07.2022 (neue Fahrzeugtypen benötigen AEB-Typgenehmigung nach UN R152)<br>• <strong>All Type:</strong> 07.07.2024 (alle neu zugelassenen Fahrzeuge müssen AEB haben, auch Auslaufmodelle)<br>Basis: UN Regulation No. 152 definiert die technischen Anforderungen an AEB-Systeme (Erkennung von Fahrzeugen, Fußgängern, Radfahrern).</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="bremse-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Vergleich der Bremsanforderungen in den 9 wichtigsten Märkten.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Anforderung</th><th>🇪🇺 EU</th><th>🇺🇸 USA</th><th>🇨🇳 CN</th><th>🇯🇵 JP</th><th>🇰🇷 KR</th><th>🇧🇷 BR</th><th>🇬🇧 UK</th><th>🇦🇪 GCC</th><th>🇮🇳 IN</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Grundlage</strong></td><td>UN R13-H</td><td>FMVSS 135</td><td>GB 21670</td><td>UN R13-H + TRIAS</td><td>KMVSS</td><td>NBR/CONTRAN</td><td>UN R13-H</td><td>GSO/ECE</td><td>AIS-099</td></tr>
+      <tr><td><strong>ABS Pflicht</strong></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ MY2000</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">✓ ab 2014</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">✓ ab 2019</span></td></tr>
+      <tr><td><strong>Prüfmethode</strong></td><td>Verzögerung m/s²</td><td>Bremsweg ft</td><td>m/s²</td><td>m/s²</td><td>m/s²</td><td>m/s²</td><td>m/s²</td><td>m/s²</td><td>m/s²</td></tr>
+      <tr><td><strong>EV Brake Blending</strong></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Suppl.12</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ausstehend</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GB 38032</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td><strong>AEB-Pflicht</strong></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ All Type 2024</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ proposed</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ New Type 2022</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ New Type 2023</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ All Type 2024</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / in Einführung &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="bremse-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRVA</strong> (Working Party on Automated/Connected Vehicles, ehem. GRRF) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grva" target="_blank" class="reg-link">GRVA ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R13-H — 01 series, Supplement 12</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>EV Brake Blending Anforderungen; Definition der Mindestbremswirkung unabhängig vom Batterie-SOC</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-13-h" target="_blank" class="reg-link">R13-H ↗</a></td></tr>
+        <tr><td>UN R13-H — Supplement 13</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Vollständige Integration EV Brake Blending; Klarstellungen für Brake-by-Wire und Steer-by-Wire Systeme; Definitionen für autonome Fahrzeuge</td><td>Erwartet 2026</td><td>Erwartet 2028</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grva" target="_blank" class="reg-link">GRVA ↗</a></td></tr>
+        <tr><td>UN R152 — AEB (aktueller Stand)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>AEB Pflichtanforderungen für M1/N1 (Pkw und leichte Lkw); Erkennung Fahrzeuge, Fußgänger, Radfahrer</td><td>In Kraft 07.2022 (EU)</td><td>In Kraft 07.2024 (EU)</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-152" target="_blank" class="reg-link">R152 ↗</a></td></tr>
+        <tr><td>UN R152 — Erweiterung auf M2/N2/L</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Erweiterung der AEB-Pflicht auf Motorräder (L-Kategorie), leichte Nutzfahrzeuge (N1), mittelschwere Nutzfahrzeuge; laufende Supplements bei GRVA</td><td>Erwartet 2026</td><td>Erwartet 2028</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grva" target="_blank" class="reg-link">GRVA ↗</a></td></tr>
+        <tr><td>FMVSS 135 (USA) — NHTSA Rulemaking</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Sondierung</span></td><td>EV Brake Blending Anforderungen; NHTSA hat 2023 Advance Notice of Proposed Rulemaking veröffentlicht; keine bindende Regel in Kraft</td><td>Offen</td><td>Offen</td><td><a href="https://www.nhtsa.gov/" target="_blank" class="reg-link">NHTSA ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRVA</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#e74c3c"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Brake-by-Wire</h3></div><p>Moderne Fahrzeuge (besonders EVs) trennen das Bremspedal von der hydraulischen Anlage (Brake-by-Wire). GRVA erarbeitet Sicherheitsanforderungen: definierter Fail-Safe-Zustand bei Stromausfall, Redundanz, Mindestbremswirkung ohne Elektronik.</p></div>
+      <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">🤖</span><h3>Autonome Fahrzeuge</h3></div><p>Bei autonomen Fahrzeugen (ALKS, UN R157) entfällt die Fahrer-Bremskraft. GRVA diskutiert wie UN R13-H für vollautonome Fahrzeuge (SAE Level 4/5) angepasst werden muss — kein Pedal, keine manuelle Kraftanforderung.</p></div>
+      <div class="module-card" style="--card-color:#e67e22"><div class="module-card-header"><span class="module-card-icon">🌍</span><h3>Globale Harmonisierung</h3></div><p>GRVA koordiniert mit NHTSA (USA) und MIIT/MIIT (China) zur Angleichung der EV-Bremsanforderungen. Ziel: eine globale technische Norm (GTR) für EV Brake Blending als Ergänzung zu UN R13-H.</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRVA Arbeitsdokumente, UN R13-H Supplements, UN R152, EU 2019/2144 (GSR II), NHTSA FMVSS 135 Docket.</div>
+</div>

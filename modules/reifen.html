@@ -8,6 +8,7 @@
   <div class="tab" onclick="switchTab('reifen','anforderungen')">📋 Kernanforderungen</div>
   <div class="tab" onclick="switchTab('reifen','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('reifen','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('reifen','amendments')">📅 Amendments &amp; Termine</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -165,4 +166,34 @@
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">
     <span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / in Einführung &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden
   </div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="reifen-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRBP</strong> (Working Party on Noise and Tyres) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grbp" target="_blank" class="reg-link">GRBP ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R30 — 03 series, Suppl. 20</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung für PKW-Reifen (Diagonal &amp; Radial)</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-30" target="_blank" class="reg-link">R30 ↗</a></td></tr>
+        <tr><td>UN R54 — 02 series, aktueller Stand</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Nutzfahrzeugreifen (C1/C2/C3), inkl. EV-bezogene Load-Index-Erweiterungen</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-54" target="_blank" class="reg-link">R54 ↗</a></td></tr>
+        <tr><td>UN R117 — 03 series (EU: Phase 1)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Rollgeräusch, Nasshaftung, Rollwiderstand — EU-Reifenkennzeichnung (EU 2020/740 Phase 1)</td><td>01.05.2021</td><td>01.05.2021</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-117" target="_blank" class="reg-link">R117 ↗</a></td></tr>
+        <tr><td>UN R117 — 04 series (Phase 2)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Angenommen, in Vorbereitung</span></td><td>Schärfere Rollgeräuschgrenzen, Rollwiderstand Klasse A/B-Anhebung, EV-Reifen Anforderungen</td><td>01.2024</td><td>01.2028</td><td><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32020R0740" target="_blank" class="reg-link">EU 2020/740 ↗</a></td></tr>
+        <tr><td>UN R142 — aktuelle Supplements</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Reifenmontage auf Fahrzeugebene; Erweiterung auf M2/M3/N-Kategorien in Bearbeitung</td><td>In Kraft 2021</td><td>In Kraft 2022</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-142" target="_blank" class="reg-link">R142 ↗</a></td></tr>
+        <tr><td>GRBP: EV-Reifen Arbeitsprogramm</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Höhere Traglast durch Batteriegewicht (Load Index +), Reifensteifigkeit, Rollwiderstandsoptimierung für EVs</td><td>Erwartet 2026</td><td>Erwartet 2029</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grbp" target="_blank" class="reg-link">GRBP ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRBP</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>EV-Reifen &amp; Traglast</h3></div><p>Erhöhtes Fahrzeuggewicht durch Traktionsbatterien erfordert angepasste Load-Index-Definitionen und neue Prüflastbedingungen. GRBP erarbeitet Ergänzungen zu UN R30/R54.</p></div>
+      <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🔇</span><h3>Rollgeräusch Phase 2 (R117)</h3></div><p>Schärfere Grenzwerte für Rollgeräusch (externe Geräuschemission); Einführung 2024 für New Type, 2028 für All Type gem. EU-Reifenkennzeichnungsverordnung (EU 2020/740).</p></div>
+      <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">🌱</span><h3>Rollwiderstand &amp; CO₂</h3></div><p>Rollwiderstand beeinflusst direkt CO₂-Emissionen und EV-Reichweite. Phase 2 verschärft Klasse-A/B-Grenzwerte. Diskussion über Pflicht zur A-Klasse für neue PKW-Typen ab 2026.</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRBP Arbeitsdokumente, EU 2020/740 Reifenkennzeichnungsverordnung, UNECE R117 amendment texts.</div>
 </div>

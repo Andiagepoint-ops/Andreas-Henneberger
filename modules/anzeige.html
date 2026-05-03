@@ -8,6 +8,7 @@
   <div class="tab" onclick="switchTab('anzeige','anforderungen')">📋 Kernanforderungen</div>
   <div class="tab" onclick="switchTab('anzeige','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('anzeige','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('anzeige','amendments')">📅 Amendments &amp; Termine</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -121,4 +122,33 @@
     </tbody>
   </table>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="anzeige-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R121 — 01 series, Supplement 8</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung; Pflicht-Icons für MIL, Airbag, Gurt, TPMS, ABS, ESC</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-121" target="_blank" class="reg-link">R121 ↗</a></td></tr>
+        <tr><td>UN R121 — Supplement 9</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Neue Pflicht-Icons für ADAS-Systeme (AEB, LKA, ALC); EV-spezifische Symbole (Ladezustand, Rekuperation, Ladefehler); harmonisiert mit ISO 2575 Rev. 2024</td><td>Erwartet 2025/2026</td><td>Erwartet 2028</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></td></tr>
+        <tr><td>ISO 2575 — Revision 2024</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Angenommen, in Kraft 2024</span></td><td>Update der Symbolbibliothek; neue Icons für ADAS (AEB, LKA), EV-Symbole, Aktualisierung bestehender Symbole; harmonisiert mit UN R121 Suppl. 9</td><td>2024</td><td>Mit R121 Suppl. 9</td><td><a href="https://www.iso.org/standard/83758.html" target="_blank" class="reg-link">ISO 2575 ↗</a></td></tr>
+        <tr><td>EU 2021/1958 — ADAS-Icon-Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>EU-Durchführungsverordnung setzt UNECE R121 Suppl. 9 Anforderungen für ADAS-Icons im EU-Recht um; ergänzt GSR II (EU 2019/2144)</td><td>07.2022 (New Type)</td><td>07.2024 (All Type)</td><td><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R1958" target="_blank" class="reg-link">EU 2021/1958 ↗</a></td></tr>
+        <tr><td>FMVSS 101 (USA) — Aktueller Stand</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Keine größeren Änderungen; NHTSA folgt ISO 2575 nicht zwingend; eigene Symbolanforderungen</td><td>—</td><td>—</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101" target="_blank" class="reg-link">FMVSS 101 ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRSG</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">🤖</span><h3>ADAS-Icons (AEB, LKA, ALC)</h3></div><p>Mit der Einführung von AEB- und Spurhaltesystemen als Pflichtausstattung (EU GSR II ab 2022) müssen diese Systeme standardisierte Statusanzeigen erhalten. UN R121 Supplement 9 definiert die Pflicht-Icons; Einführung via EU 2021/1958.</p></div>
+      <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>EV-Symbole</h3></div><p>Neue Pflicht-Icons für Elektrofahrzeuge: Ladezustandsanzeige (SoC), Ladefehler-MIL, Rekuperationsstufenanzeige. GRSG erarbeitet im Rahmen von Suppl. 9 einheitliche Symbole; Harmonisierung mit ISO 2575 Rev. 2024.</p></div>
+      <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🌍</span><h3>Internationale Harmonisierung</h3></div><p>ISO 2575 und UN R121 werden zunehmend synchronisiert (früher liefen Änderungen asynchron). Neue Symbole sollen gleichzeitig in ISO 2575 und UN R121 eingefügt werden. China (GB 4094) und Indien (AIS-097) folgen typischerweise mit 1–2 Jahren Verzögerung.</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG Arbeitsdokumente, UN R121 Supplements, ISO 2575:2024, EU 2021/1958, EU 2019/2144 (GSR II).</div>
 </div>

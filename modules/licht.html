@@ -1,0 +1,152 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Beleuchtung</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(243,156,18,.12);border-color:rgba(243,156,18,.3)">💡</div>
+  <div><h2>Modul — Beleuchtung (Anbauvorschriften)</h2><p>UN R48 · FMVSS 108 und marktspezifische Äquivalente. Pflichtleuchten, Lichtquellen, Adaptive Beleuchtung.</p></div>
+</div>
+<div class="tabs" id="licht-tabs">
+  <div class="tab active" onclick="switchTab('licht','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('licht','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('licht','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('licht','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('licht','amendments')">📅 Amendments &amp; Termine</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="licht-tab-vorschriften">
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>DRL Pflicht</th><th>ADB erlaubt</th><th>Blinker hinten</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-48" target="_blank" class="reg-link">UN R48 07 series ↗</a> · <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32009R0661" target="_blank" class="reg-link">EU 661/2009 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht New Type 2011</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ UN R149</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.108" target="_blank" class="reg-link">FMVSS 108 ↗</a> (SAE-Basis)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Erlaubt, nicht Pflicht</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Erlaubt ab 2018</span></td><td>Amber oder Rot erlaubt</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB 4785-2007 ↗</a> + <a href="https://std.samr.gov.cn/" target="_blank" class="reg-link">GB/T 35796 ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Erlaubt</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇯🇵 Japan</td><td>Safety Standards Art. 32–48 (UN R48-Basis)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Erlaubt</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Erlaubt</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇰🇷 Korea</td><td>KMVSS / UN R48-Basis</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Erlaubt</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.in.gov.br/" target="_blank" class="reg-link">CONTRAN Res. 780/2019 ↗</a> (UN R48-Basis)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Begrenzt</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-48" target="_blank" class="reg-link">UN R48 ↗</a> (retained)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Erlaubt</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO / UN R48-Basis ↗</a></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Begrenzt</span></td><td>Amber Pflicht</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-008 Rev.2 ↗</a> (UN R48-Basis) + AIS-123</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ Pflicht ab 2017</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Begrenzt</span></td><td>Amber Pflicht</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="licht-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#f39c12"><div class="module-card-header"><span class="module-card-icon">💡</span><h3>Pflichtleuchten nach UN R48</h3></div><p>Abblendlicht, Fernlicht, Brems-, Schluss-, Blinker, Rückfahr-, Nebelschluss-, Kennzeichenbeleuchtung. Positionsleuchten je nach Fahrzeugbreite (> 1.800 mm). Jede Lichtquellenart benötigt eigene Typgenehmigung: Halogen (UN R37), Xenon/HID (UN R99), LED (UN R128), Laser (UN R99 Erw.).</p><div class="module-card-footer"><span class="tag">UN R48 §6</span><span class="tag">R37 / R99 / R128</span></div></div>
+    <div class="module-card" style="--card-color:#e67e22"><div class="module-card-header"><span class="module-card-icon">🌅</span><h3>Tagfahrlicht (DRL)</h3></div><p>EU: DRL Pflicht seit 07.02.2011 (New Type), 07.08.2012 (All Type). FMVSS 108: DRL erlaubt, nicht vorgeschrieben. China: DRL Pflicht. Technische Anforderungen: 400–1.200 cd Lichtstärke (UN R48 Annex), automatisches Abschalten beim Einschalten des Abblendlichts, Dimmung bei Einschalten der Fahrzeugbeleuchtung.</p><div class="module-card-footer"><span class="tag">EU: Pflicht seit 2011</span><span class="tag">USA: nicht Pflicht</span><span class="tag">400–1200 cd</span></div></div>
+    <div class="module-card" style="--card-color:#d35400"><div class="module-card-header"><span class="module-card-icon">🚗</span><h3>Adaptive Driving Beam (ADB)</h3></div><p>Dynamische Fernlichtverteilung: entgegenkommende und vorausfahrende Fahrzeuge werden ausgeblendet (blendfreies Dauerfernlicht). EU: erlaubt nach UN R48 07 series + separate Typgenehmigung nach UN R149. USA: FMVSS 108 Amendment 2018 erlaubt ADB. China GB/T 35796 erlaubt ADB. Großer Sicherheitsvorteil: effektiv dauerhaft Fernlicht ohne Blendung.</p><div class="module-card-footer"><span class="tag">UN R149</span><span class="tag">FMVSS 108 (ab 2018)</span><span class="tag">GB/T 35796</span></div></div>
+    <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">🔆</span><h3>Kurven- und Adaptivlicht (AFLS)</h3></div><p>Adaptives Frontlichtsystem: Leuchtweite und Ausrichtung passen sich Lenkwinkel und Geschwindigkeit an (Kurvenneigung). UN R48 erlaubt AFLS, FMVSS 108 hat AFLS lange nicht explizit erlaubt (gap seit ~2000; ADB-Amendment 2018 adressiert teilweise). Separate Typgenehmigung nach UN R123 für AFLS-Systeme.</p><div class="module-card-footer"><span class="tag">UN R123 (AFLS)</span><span class="tag">UN R48 erlaubt</span></div></div>
+    <div class="module-card" style="--card-color:#8e44ad"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>LED und Matrix-LED</h3></div><p>LED: einheitliche Normung via UN R128 (Lichtquellen) + UN R48 (Einbauvorschriften). Matrix-LED = segmentiertes Fernlicht mit pixelweise schaltbaren Segmenten; ähnlich wie ADB aber diskret. Matrix-LED benötigt UN R149 Typgenehmigung. FMVSS 108 erlaubt LED/Matrix ebenfalls; SAE-Normen definieren die technischen Spezifikationen.</p><div class="module-card-footer"><span class="tag">UN R128 (LED-Quelle)</span><span class="tag">UN R149 (ADB/Matrix)</span><span class="tag">SAE J2240 (USA)</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="licht-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise je Markt und häufige Fragen zu Beleuchtungsvorschriften. Wichtigster Unterschied EU/USA: Blinkerfarbe hinten.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt</div>
+    <details class="interp-market">
+      <summary>🇪🇺 ECE/EU — UN R48 07 series</summary>
+      <div class="details-body">
+        <p><strong>Blinker hinten: Amber Pflicht.</strong> UN R48 §6.5: Heck-Fahrtrichtungsanzeiger müssen Amber (gelb-orange) sein. Rote Blinker hinten sind in der EU unzulässig. Dies ist der auffälligste optische Unterschied zu US-Fahrzeugen.</p>
+        <p><strong>DRL:</strong> Seit 2011 für neue Fahrzeugtypen Pflicht. DRL müssen automatisch einschalten wenn der Motor läuft und Außenbeleuchtung nicht aktiv ist. Bei Einschalten des Abblendlichts müssen DRL abschalten oder auf 10 % gedimmt werden.</p>
+        <p><strong>ADB/Matrix in EU:</strong> Erlaubt seit UN R48 07 series. Erfordert zusätzliche Typgenehmigung nach UN R149. OEM muss nachweisen, dass das System entgegenkommende Fahrzeuge innerhalb definierter Reaktionszeiten ausblendet und keine unzulässige Blendwirkung erzeugt.</p>
+        <p><strong>Nebelschlussleuchte Pflicht:</strong> Hinten (1 oder 2 Stück) Pflicht in EU. Vordere Nebelleuchten sind optional. Farbe: Rot hinten, weiß/gelb vorne. FMVSS 108 kennt keine Pflicht für Nebelschlussleuchten.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 108</summary>
+      <div class="details-body">
+        <p><strong>Rote Blinker hinten erlaubt:</strong> FMVSS 108 §S7.8 erlaubt Fahrtrichtungsanzeiger hinten in Amber oder Rot. Dies ist der markanteste Unterschied zu UN R48. Der Grund: In den USA sind kombinierte Schluss-/Bremslicht-/Blinkleuchten (combination stop/turn lamps) in Rot üblich und erlaubt.</p>
+        <p><strong>Kein DRL-Zwang:</strong> In den USA gibt es keine bundesweite DRL-Pflicht. DRL sind erlaubt (nach SAE J2087) aber optional. Viele US-Fahrzeuge haben DRL, es ist aber kein Zulassungskriterium.</p>
+        <p><strong>SAE-Normen:</strong> FMVSS 108 verweist auf SAE-Standards für technische Details (SAE J585 für Schlussleuchten, SAE J1398 für DRL etc.). Dies ist ein System-in-System-Verweis, der die Norm sehr komplex und schwer vergleichbar mit UN R48 macht.</p>
+        <p><strong>Keine Pflicht für Nebelschlussleuchte:</strong> FMVSS 108 schreibt keine Rear-Fog-Lamp vor. US-Fahrzeuge für den EU-Export müssen eine Nebelschlussleuchte nachgerüstet bekommen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇦🇪 GCC · 🇮🇳 Indien</summary>
+      <div class="details-body">
+        <p><strong>China GB 4785:</strong> Weitgehend UN R48-kongruent; DRL Pflicht; Blinker Amber. Seit 2018 auch ADB erlaubt via GB/T 35796. Hoher UN-Harmonisierungsgrad.</p>
+        <p><strong>Japan:</strong> Sehr nah an UN R48; DRL erlaubt aber nicht obligatorisch (wird in der Praxis verbaut). ADB erlaubt. Blinker Amber.</p>
+        <p><strong>Korea:</strong> DRL Pflicht; ADB erlaubt; Blinker Amber. Einer der UN R48-nähesten Nicht-ECE-Märkte.</p>
+        <p><strong>Brasilien (CONTRAN Res. 780/2019):</strong> DRL Pflicht (ab 2019 für neue Typen). ADB nur begrenzt zugelassen. Blinker Amber. Brasilien hat die UN-R48-Struktur weitgehend übernommen.</p>
+        <p><strong>Golf-Staaten:</strong> Hohe Umgebungstemperaturen (bis +55°C) sind eine besondere Herausforderung für LED-Systeme (Wärmemanagement) und für Lichtverteilung (Hitzeflimmern). GSO übernimmt ECE-Standards; ADB begrenzt zugelassen.</p>
+        <p><strong>Indien AIS-008:</strong> UN R48-Basis seit 2017; DRL Pflicht; Blinker Amber. ADB noch begrenzt/in Einführung. AIS-123 ergänzt für Spezialfahrzeuge.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">
+      Häufige Fragen (FAQ)
+      <a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Beleuchtung">+ Frage einreichen</a>
+    </div>
+    <details>
+      <summary>Warum haben US-Fahrzeuge rote Blinker hinten, europäische aber Amber?</summary>
+      <div class="details-body"><p>Historisch bedingte unterschiedliche Normphilosophie: In den USA haben sich <strong>kombinierte Schluss-/Bremslichter</strong> mit dem Blinklicht in einem Gehäuse (rot) durchgesetzt — kostengünstig, einfach. FMVSS 108 erlaubt daher Amber oder Rot für Heck-Blinker. Europäische Norm (UN R48) sieht <strong>Amber-Pflicht</strong> für Fahrtrichtungsanzeiger, da Amber eindeutig von roten Brems- und Schlusslichtern unterscheidbar ist — dies verbessert die Erkennbarkeit der Fahrtrichtungsabsicht für nachfolgende Fahrzeuge. Studien zeigen, dass Amber-Blinker schneller erkannt werden als rote Blinker im Kontext roter Rücklichter.</p></div>
+    </details>
+    <details>
+      <summary>Was ist der Unterschied zwischen ADB und Matrix-LED?</summary>
+      <div class="details-body"><p><strong>ADB (Adaptive Driving Beam):</strong> Bezeichnet allgemein ein blendfreifreies Fernlichtsystem, das entgegenkommende und vorausfahrende Fahrzeuge detektiert und aus dem Lichtkegel ausblendet. Das System kann kontinuierlich (z.B. drehbarer Reflektor) oder pixelweise (Matrix) arbeiten.<br><strong>Matrix-LED:</strong> Spezifische Technologie für ADB: Der Scheinwerfer besteht aus vielen einzeln schaltbaren LED-Segmenten (Pixel). Segmente im Bereich erkannter Fahrzeuge werden gedimmt oder abgeschaltet, der Rest bleibt auf Fernlicht. Vorteil: Sehr präzise Ausleuchtung ohne Dunkelzonen.<br>Beide Systeme benötigen in ECE-Märkten eine Typgenehmigung nach <strong>UN R149</strong>.</p></div>
+    </details>
+    <details>
+      <summary>Darf ein US-Fahrzeug ohne Nebelschlussleuchte in der EU zugelassen werden?</summary>
+      <div class="details-body"><p>Nein. In der EU ist eine hintere Nebelschlussleuchte (rot) Pflicht nach UN R48 §6.10. Ein US-Exportfahrzeug, das für FMVSS 108 ausgelegt ist und keine Nebelschlussleuchte hat, muss vor der EU-Einzelgenehmigung oder Typgenehmigung entsprechend nachgerüstet werden. Dies ist bei US-Importen ein regelmäßiges Thema bei der Fahrzeugumrüstung. Typische Lösung: Nebelschlussleuchte im Stoßfänger nachrüsten und gemäß UN R38 typgenehmigen.</p></div>
+    </details>
+    <details>
+      <summary>Muss DRL automatisch einschalten?</summary>
+      <div class="details-body"><p>In der EU (UN R48): <strong>Ja</strong> — DRL müssen automatisch aktiviert werden, wenn der Motor läuft und keine andere Fahrzeugbeleuchtung (Abblendlicht, Standlicht) eingeschaltet ist. Der Fahrer darf DRL nicht dauerhaft abschalten können. Bei Einschalten des Abblendlichts müssen DRL automatisch abschalten oder auf ≤ 10 % Lichtstärke gedimmt werden. In den USA: Da keine DRL-Pflicht besteht, gibt es auch keine Anforderung an automatisches Einschalten — OEMs die DRL anbieten, implementieren meist aber dasselbe Verhalten.</p></div>
+    </details>
+    <details>
+      <summary>Welche UN-Nummern sind für Lichttypgenehmigungen relevant?</summary>
+      <div class="details-body"><p>Die Bauteil-Typgenehmigungen (für die Leuchten selbst) sind von der Fahrzeugeinbautypgenehmigung (UN R48) zu unterscheiden:<br>• <strong>UN R37:</strong> Glühlampen (Halogen, H1–H21)<br>• <strong>UN R99:</strong> Gasentladungslampen (Xenon/HID) und zugehörige Vorschaltgeräte<br>• <strong>UN R128:</strong> LED-Lichtquellen (Lichtmodule und Lichtquellen-Module)<br>• <strong>UN R149:</strong> Scheinwerfer mit ADB-Funktion (adaptives Fernlicht)<br>• <strong>UN R123:</strong> Adaptive Front-Lighting Systems (AFLS / Kurvenlicht)<br>• <strong>UN R48:</strong> Einbauvorschriften (Anbau, Anzahl, Position, Schaltung aller Leuchten am Fahrzeug)</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="licht-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Vergleich der Beleuchtungsanforderungen in den 9 wichtigsten Märkten.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Anforderung</th><th>🇪🇺 EU</th><th>🇺🇸 USA</th><th>🇨🇳 CN</th><th>🇯🇵 JP</th><th>🇰🇷 KR</th><th>🇧🇷 BR</th><th>🇬🇧 UK</th><th>🇦🇪 GCC</th><th>🇮🇳 IN</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Basis</strong></td><td>UN R48</td><td>FMVSS 108</td><td>GB 4785</td><td>UN R48-Basis</td><td>UN R48-Basis</td><td>CONTRAN/R48</td><td>UN R48</td><td>GSO/R48</td><td>AIS-008</td></tr>
+      <tr><td><strong>DRL Pflicht</strong></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ seit 2011</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ Erlaubt</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ seit 2019</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ seit 2017</span></td></tr>
+      <tr><td><strong>Blinker hinten</strong></td><td>Amber Pflicht</td><td>Amber oder Rot</td><td>Amber</td><td>Amber</td><td>Amber</td><td>Amber</td><td>Amber Pflicht</td><td>Amber</td><td>Amber</td></tr>
+      <tr><td><strong>Nebelschluss Pflicht</strong></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ hinten</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td><strong>ADB erlaubt</strong></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ UN R149</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ ab 2018</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht/erlaubt &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / in Einführung &nbsp; <span style="color:var(--red)">✗</span> = nicht vorgeschrieben / verboten</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="licht-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRE</strong> (Working Party on Lighting and Light-Signalling) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R48 — 07 series, Supplement 13</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung; ADB erlaubt, dynamische Lichtsignaturen (Begrüßungslicht etc.) geregelt</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-48" target="_blank" class="reg-link">R48 ↗</a></td></tr>
+        <tr><td>UN R48 — 07 series, Supplement 14</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Angenommen, in Kraft 2024</span></td><td>Technische Klarstellungen für LED-Systeme, Matrix-LED Anforderungen, Ambient-Lighting-Regelung für Innenraumbeleuchtung (keine Ablenkung durch rote/grüne Innenlichter)</td><td>2024</td><td>2027</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a></td></tr>
+        <tr><td>UN R48 — 08 series (große Revision)</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Entwicklung (GRE-87)</span></td><td>Umfangreiche Revision: ADB-Überarbeitung, dynamische Lichtsignaturen (V2X Lichtkommunikation), autonome Fahrzeuge Signalgebung (ACSF-Lichtsignale), Laser-Lichtquellen Integration</td><td>Erwartet 2026/2027</td><td>Erwartet 2029/2030</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a></td></tr>
+        <tr><td>UN R149 — ADB (aktueller Stand)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Typgenehmigung für ADB-Scheinwerfer; laufende Supplements für verbesserte Fußgänger-/Radfahrererkennung; Integration mit V2X-Daten</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-149" target="_blank" class="reg-link">R149 ↗</a></td></tr>
+        <tr><td>FMVSS 108 — ADB Amendment 2018</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Erlaubt ADB-Systeme in den USA; erste ADB-Zulassungen seit 2022 auf US-Markt; kein DRL-Pflicht-Amendment geplant</td><td>In Kraft 2018</td><td>In Kraft 2018</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.108" target="_blank" class="reg-link">FMVSS 108 ↗</a></td></tr>
+        <tr><td>UN R128 — LED-Lichtquellen (aktuell)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Erweiterung auf Laser-Lichtquellen (Laser-High-Beam) in Vorbereitung; aktuelle Ergänzung für adaptive LED-Module (variable Lichtstärke)</td><td>In Kraft (LED)</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-128" target="_blank" class="reg-link">R128 ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRE</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#f39c12"><div class="module-card-header"><span class="module-card-icon">🚦</span><h3>V2X Lichtkommunikation</h3></div><p>Fahrzeuge sollen künftig über Licht mit Infrastruktur kommunizieren können (V2X). GRE entwickelt im Rahmen der UN R48 08 series Anforderungen an solche Lichtsignale — damit sie nicht mit Warn- oder Fahrlicht verwechselt werden und Verkehrsteilnehmer nicht blenden.</p></div>
+      <div class="module-card" style="--card-color:#e67e22"><div class="module-card-header"><span class="module-card-icon">🤖</span><h3>Autonome Fahrzeuge Signalgebung</h3></div><p>Bei autonomen Fahrzeugen (ACSF Level 3+) müssen andere Verkehrsteilnehmer erkennen können, dass ein Fahrzeug autonom fährt. GRE erarbeitet spezifische Lichtsignale für autonomen Betrieb im Rahmen der 08 series. Diskussion: türkisfarbenes Licht als internationales Signal.</p></div>
+      <div class="module-card" style="--card-color:#d35400"><div class="module-card-header"><span class="module-card-icon">💎</span><h3>Laser-Lichtquellen</h3></div><p>Laser-High-Beam-Systeme (z.B. BMW Laserlicht) erreichen 600 m Leuchtweite. GRE erarbeitet Erweiterung von UN R149 für Laser-ADB. Sicherheitsaspekte: Laser-Klasse-Einstufung, Fail-Safe bei Systemfehler (kein Laserlicht nach außen), Wartungshinweise.</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRE Arbeitsdokumente, UN R48 07/08 series Entwürfe, UN R149 Supplements, NHTSA FMVSS 108 Docket, GB 4785 Revision.</div>
+</div>

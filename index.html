@@ -165,6 +165,9 @@
       <a class="sidebar-item" onclick="showSection('notrad')"><span class="icon">🔧</span> Notrad / Ersatzrad</a>
       <a class="sidebar-item" onclick="showSection('tacho')"><span class="icon">🔢</span> Geschwindigkeitsmesser</a>
       <a class="sidebar-item" onclick="showSection('placeholder')"><span class="icon">🚦</span> Geschwindigkeitsbegrenzer</a>
+      <a class="sidebar-item" onclick="showSection('bremse')"><span class="icon">🛑</span> Bremse</a>
+      <a class="sidebar-item" onclick="showSection('getriebe')"><span class="icon">⚙️</span> Getriebeschaltschema</a>
+      <a class="sidebar-item" onclick="showSection('licht')"><span class="icon">💡</span> Beleuchtung</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Vergleiche</div>
@@ -205,6 +208,9 @@
         <div class="module-card" style="--card-color:#f76f6f" onclick="showSection('notrad')"><div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Notrad / Ersatzrad</h3></div><p>Space Saver, Runflat, Reparaturkit nach UN R64.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R64 · FMVSS 110</span><span class="tag">Interpretation + FAQ</span></div></div>
         <div class="module-card" style="--card-color:#c0392b" onclick="showSection('tacho')"><div class="module-card-header"><span class="module-card-icon">🔢</span><h3>Geschwindigkeitsmesser</h3></div><p>Toleranzformel, Einheit, Prüfmethoden nach UN R39.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R39 · FMVSS 101</span><span class="tag">Interpretation + FAQ</span></div></div>
         <div class="module-card" style="--card-color:#e879a0" onclick="showSection('placeholder')"><div class="module-card-header"><span class="module-card-icon">🚦</span><h3>Geschwindigkeitsbegrenzer</h3></div><p>ISA, mechanische und elektronische Begrenzer, Einstellwerte.</p><div class="module-card-footer"><span class="tag placeholder">— geplant —</span></div></div>
+        <div class="module-card" style="--card-color:#e74c3c" onclick="showSection('bremse')"><div class="module-card-header"><span class="module-card-icon">🛑</span><h3>Bremse</h3></div><p>Betriebsbremse, ABS, AEB-Integration nach UN R13-H in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R13-H · FMVSS 135</span><span class="tag">Amendments</span></div></div>
+        <div class="module-card" style="--card-color:#27ae60" onclick="showSection('getriebe')"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Getriebeschaltschema</h3></div><p>P-R-N-D Sequenz, Starter-Interlock nach FMVSS 102 vs. 9 Märkte.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">FMVSS 102 · GB 7258</span><span class="tag">Amendments</span></div></div>
+        <div class="module-card" style="--card-color:#f39c12" onclick="showSection('licht')"><div class="module-card-header"><span class="module-card-icon">💡</span><h3>Beleuchtung</h3></div><p>Pflichtleuchten, DRL, ADB und Matrix-LED nach UN R48 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R48 · FMVSS 108</span><span class="tag">ADB · DRL</span></div></div>
       </div>
       <hr class="divider">
       <div class="market-strip">
@@ -273,7 +279,7 @@
 </div>
 
 <script>
-const MODULES = ['reifen','tpms','notrad','anzeige','tacho','marktvergleich',
+const MODULES = ['reifen','tpms','notrad','anzeige','tacho','bremse','getriebe','licht','marktvergleich',
   'markt-eceu','markt-usa','markt-cn','markt-br','markt-jp','markt-kr','markt-gcc','markt-uk','markt-in'];
 const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
 let currentSection = 'home';

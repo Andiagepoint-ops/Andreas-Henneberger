@@ -8,6 +8,7 @@
   <div class="tab" onclick="switchTab('tpms','technik')">🔧 Technik</div>
   <div class="tab" onclick="switchTab('tpms','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('tpms','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('tpms','amendments')">📅 Amendments &amp; Termine</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -138,4 +139,32 @@
     <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Schwellenwert-Unterschied</h3></div><p>20 % (EU/UK/JP/GCC) vs. 25 % (USA/CN/KR/BR). Auswirkung auf Systemauslegung und Warnzeitpunkt.</p></div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden/verboten</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="tpms-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRE</strong> (Working Party on Lighting and Light-Signalling) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R141 — 01 series, Supplement 6</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung; technische Korrekturen für Systemfehleranzeige und Prüfprozeduren</td><td>In Kraft 2022</td><td>In Kraft 2022</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-141" target="_blank" class="reg-link">R141 ↗</a></td></tr>
+        <tr><td>UN R141 — Supplement 7</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>EV-spezifische Druckempfehlungsanzeige im Kombiinstrument; angepasste Schwellenwerte bei veränderter Zuladung durch Batteriegewicht</td><td>Erwartet 2025/2026</td><td>Erwartet 2027</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a></td></tr>
+        <tr><td>GRE: Extended Temperature Range</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Sensorprüfung für extreme Klimazonen (GCC: +55°C, Nordic: −40°C); Erweiterung der Prüfbedingungen in Annex 3</td><td>Erwartet 2026</td><td>Erwartet 2028</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a></td></tr>
+        <tr><td>FMVSS 138 (USA) — Letztes Update</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Keine größeren Änderungen seit 2008; NHTSA sondiert EV-spezifische Anpassungen (höheres Fahrzeuggewicht)</td><td>—</td><td>—</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.138" target="_blank" class="reg-link">FMVSS 138 ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRE</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>TPMS für EVs</h3></div><p>Bei Elektrofahrzeugen beeinflusst der Reifendruck die Reichweite stärker als bei Verbrennerfahrzeugen (bis ±5 % Reichweitenunterschied). GRE prüft ob spezifische Anzeigeschwellenwerte oder optimale Druckempfehlungen im Fahrzeugdisplay standardisiert werden sollen.</p></div>
+      <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🌡️</span><h3>Klimazonen-Erweiterung</h3></div><p>Sensorprüfungen nach UN R141 Annex 3 sollen um extreme Temperaturbereiche erweitert werden. Relevant für Gulf Cooperation Council (GCC) und nordische Märkte. Entwurf liegt GRE-Sitzung 2025 vor.</p></div>
+      <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: AIS-156 Einführung</h3></div><p>Der indische Entwurfsstandard AIS-156 (UN R141-Basis) stagniert seit 2020. CMVR-Komitee erwägt R141-Ratifizierung als Direktweg, um die nationale Norm zu umgehen. Keine konkreten Termine (Stand 2025).</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRE Arbeitsdokumente, UN R141 Supplements, NHTSA FMVSS 138 Docket.</div>
 </div>

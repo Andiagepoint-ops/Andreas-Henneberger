@@ -8,6 +8,7 @@
   <div class="tab" onclick="switchTab('notrad','typen')">🔩 Typen &amp; Technik</div>
   <div class="tab" onclick="switchTab('notrad','interpretation')">💬 Interpretation &amp; FAQ</div>
   <div class="tab" onclick="switchTab('notrad','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('notrad','amendments')">📅 Amendments &amp; Termine</div>
 </div>
 
 <!-- TAB: VORSCHRIFTEN -->
@@ -117,4 +118,32 @@
     </tbody>
   </table>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = erlaubt/Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht erlaubt/geregelt</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="notrad-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSG</strong> (Working Party on General Safety Provisions) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; beschlossene Amendments</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regulation / Amendment</th><th>Status</th><th>Beschreibung</th><th>New-Type-Datum</th><th>All-Type-Datum</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>UN R64 — 03 series, Supplement 4</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktuelle konsolidierte Fassung; enthält Gleichwertigkeit von Space-Saver, Runflat und Reparaturkit</td><td>In Kraft</td><td>In Kraft</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-64" target="_blank" class="reg-link">R64 ↗</a></td></tr>
+        <tr><td>UN R64 — 03 series, Supplement 5</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Bearbeitung</span></td><td>Klarstellungen für batterieelektrische Fahrzeuge: kein Unterflurraum für physisches Reserverad; Anforderungen an Reparaturkits bei EVs</td><td>Erwartet 2026</td><td>Erwartet 2028</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></td></tr>
+        <tr><td>GRSG: Abschaffung Reserverad bei EVs</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Streichung der Pflicht zum physischen Reserverad bei EVs zugunsten von Runflat/Repair-Kit (Gewichts- und Platzargument); kontrovers diskutiert</td><td>Offen</td><td>Offen</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a></td></tr>
+        <tr><td>FMVSS 109 / 110 (USA) — aktueller Stand</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Keine größeren Änderungen; NHTSA beobachtet EV-Trend zur Notrad-Abschaffung; kein aktives Rulemaking</td><td>—</td><td>—</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571" target="_blank" class="reg-link">FMVSS ↗</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="interp-section" style="margin-top:1.5rem">
+    <div class="interp-header">Laufende Arbeiten der GRSG</div>
+    <div class="module-grid" style="margin-top:.75rem">
+      <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>EV &amp; Reserverad-Debatte</h3></div><p>Bei Elektrofahrzeugen fehlt häufig der Unterflurraum für ein Reserverad (Batteriegehause). OEMs liefern zunehmend nur Reparaturkits. GRSG erörtert, ob R64 explizit EV-ausnahmen definieren soll oder ob die bestehenden Gleichwertigkeitsregeln ausreichen.</p></div>
+      <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Runflat-Kompatibilität</h3></div><p>Runflat-Reifen müssen mit TPMS-Pflicht kombiniert werden (UN R64 Annex 3). Bei steigender EV-Verbreitung wird Runflat als bevorzugte Notlauflösung gesehen; GRSG erwägt verbesserte Runflat-Erkennbarkeit durch Fahrzeuganzeige.</p></div>
+      <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🇮🇳🇧🇷🇨🇳</span><h3>Märkte mit Reserverad-Pflicht</h3></div><p>Brasilien und China schreiben physisches Reserverad vor. Bei Einführung von EVs in diesen Märkten entstehen Zulassungsprobleme. Beide Länder diskutieren Ausnahmeregelungen für EVs; konkrete Änderungen noch nicht terminiert.</p></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRSG Arbeitsdokumente, UN R64 Supplements, NHTSA FMVSS 109/110 Docket.</div>
 </div>
