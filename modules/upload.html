@@ -1,0 +1,267 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Dokumente hochladen</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(79,142,247,.12);border-color:rgba(79,142,247,.3)">📤</div>
+  <div><h2>Dokumente hochladen</h2><p>PDF-Dateien dauerhaft ins Repository hochladen. Der Token wird nur im Browser gespeichert.</p></div>
+</div>
+
+<div class="callout"><span class="ci">🔒</span><span>Dein GitHub-Token wird ausschließlich im <strong>sessionStorage</strong> deines Browsers gespeichert — er verlässt nie dieses Gerät außer zum direkten API-Aufruf an GitHub.</span></div>
+
+<!-- TOKEN EINGABE -->
+<div class="upload-card" id="upload-auth">
+  <div class="upload-section-title">1. GitHub-Token eingeben</div>
+  <div class="upload-row">
+    <input type="password" id="gh-token" placeholder="ghp_…" class="upload-input" autocomplete="off">
+    <button class="upload-btn primary" onclick="saveToken()">Token speichern</button>
+    <button class="upload-btn danger" onclick="clearToken()" style="display:none" id="btn-clear-token">Token löschen</button>
+  </div>
+  <div id="token-status" class="upload-status"></div>
+</div>
+
+<!-- DATEI UPLOAD -->
+<div class="upload-card" id="upload-file-card">
+  <div class="upload-section-title">2. Datei auswählen und hochladen</div>
+  <div class="upload-drop-zone" id="drop-zone"
+    ondragover="event.preventDefault();this.classList.add('drag-over')"
+    ondragleave="this.classList.remove('drag-over')"
+    ondrop="handleDrop(event)">
+    <div class="drop-icon">📄</div>
+    <div class="drop-text">PDF hierher ziehen oder</div>
+    <label class="upload-btn primary" style="cursor:pointer">
+      Datei auswählen
+      <input type="file" accept="application/pdf,.pdf" id="file-input" onchange="handleFileSelect(event)" style="display:none">
+    </label>
+  </div>
+  <div id="file-preview" style="display:none" class="upload-file-preview">
+    <span class="file-icon">📄</span>
+    <span id="file-name">–</span>
+    <span id="file-size" class="file-size">–</span>
+    <button class="upload-btn danger small" onclick="clearFile()">✕</button>
+  </div>
+</div>
+
+<!-- ZIELORDNER + UPLOAD -->
+<div class="upload-card">
+  <div class="upload-section-title">3. Zielordner & hochladen</div>
+  <div class="upload-row">
+    <select id="upload-folder" class="upload-input" style="flex:0 0 220px">
+      <option value="downloads">downloads/ (allgemein)</option>
+      <option value="downloads/eceu">downloads/eceu</option>
+      <option value="downloads/usa">downloads/usa</option>
+      <option value="downloads/india">downloads/india</option>
+      <option value="downloads/china">downloads/china</option>
+      <option value="downloads/japan">downloads/japan</option>
+    </select>
+    <button class="upload-btn primary large" onclick="uploadFile()" id="btn-upload" disabled>📤 Hochladen</button>
+  </div>
+  <div id="upload-progress" style="display:none" class="upload-progress-bar"><div id="upload-bar"></div></div>
+  <div id="upload-result" class="upload-result" style="display:none"></div>
+</div>
+
+<!-- VORHANDENE DATEIEN -->
+<div class="upload-card">
+  <div class="upload-section-title">Hochgeladene Dateien</div>
+  <button class="upload-btn secondary" onclick="loadFileList()">🔄 Laden</button>
+  <div id="file-list" class="file-list" style="margin-top:12px"></div>
+</div>
+
+<style>
+.upload-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:16px;}
+.upload-section-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text2);margin-bottom:14px;}
+.upload-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+.upload-input{background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:7px 12px;border-radius:6px;font-size:13px;flex:1;min-width:200px;outline:none;}
+.upload-input:focus{border-color:var(--accent);}
+.upload-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:500;border:none;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.upload-btn.primary{background:var(--accent);color:#fff;}
+.upload-btn.primary:hover{background:#3a78e0;}
+.upload-btn.primary:disabled{background:var(--bg3);color:var(--text2);cursor:not-allowed;}
+.upload-btn.secondary{background:var(--bg3);color:var(--text);border:1px solid var(--border);}
+.upload-btn.secondary:hover{background:var(--bg2);}
+.upload-btn.danger{background:rgba(231,76,60,.15);color:#e74c3c;border:1px solid rgba(231,76,60,.3);}
+.upload-btn.danger:hover{background:rgba(231,76,60,.25);}
+.upload-btn.large{padding:9px 24px;font-size:14px;}
+.upload-btn.small{padding:4px 10px;font-size:11px;}
+.upload-status{margin-top:10px;font-size:12px;padding:6px 10px;border-radius:6px;display:none;}
+.upload-status.ok{background:rgba(62,207,142,.1);border:1px solid rgba(62,207,142,.3);color:#3ecf8e;display:block;}
+.upload-status.err{background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.3);color:#e74c3c;display:block;}
+.upload-drop-zone{border:2px dashed var(--border);border-radius:8px;padding:32px;text-align:center;transition:all .2s;cursor:pointer;}
+.upload-drop-zone.drag-over{border-color:var(--accent);background:rgba(79,142,247,.05);}
+.drop-icon{font-size:32px;margin-bottom:8px;}
+.drop-text{font-size:13px;color:var(--text2);margin-bottom:12px;}
+.upload-file-preview{display:flex;align-items:center;gap:10px;padding:10px;background:rgba(79,142,247,.07);border:1px solid rgba(79,142,247,.2);border-radius:6px;margin-top:10px;}
+.file-icon{font-size:20px;}
+#file-name{font-size:13px;font-weight:500;flex:1;}
+.file-size{font-size:11px;color:var(--text2);}
+.upload-progress-bar{height:6px;background:var(--bg3);border-radius:3px;margin-top:12px;overflow:hidden;}
+#upload-bar{height:100%;background:var(--accent);width:0;transition:width .3s;border-radius:3px;}
+.upload-result{margin-top:12px;padding:12px 16px;border-radius:6px;font-size:13px;}
+.upload-result.ok{background:rgba(62,207,142,.1);border:1px solid rgba(62,207,142,.3);color:var(--text);}
+.upload-result.err{background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.3);color:#e74c3c;}
+.file-list{display:flex;flex-direction:column;gap:6px;}
+.file-list-item{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--bg3);border-radius:6px;font-size:12px;}
+.file-list-item a{color:var(--accent);text-decoration:none;flex:1;word-break:break-all;}
+.file-list-item a:hover{text-decoration:underline;}
+.file-list-item .copy-btn{cursor:pointer;padding:3px 8px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.3);border-radius:4px;color:var(--accent);font-size:11px;}
+</style>
+
+<script>
+const GH_OWNER = 'Andiagepoint-ops';
+const GH_REPO  = 'Andreas-Henneberger';
+const GH_BRANCH = 'main';
+
+function getToken(){ return sessionStorage.getItem('gh_upload_token') || ''; }
+
+function saveToken(){
+  const t = document.getElementById('gh-token').value.trim();
+  if(!t){ showStatus('err','Token darf nicht leer sein.'); return; }
+  sessionStorage.setItem('gh_upload_token', t);
+  document.getElementById('gh-token').value = '';
+  document.getElementById('btn-clear-token').style.display = '';
+  showStatus('ok','✓ Token gespeichert (nur in dieser Browser-Sitzung).');
+  checkUploadBtn();
+}
+
+function clearToken(){
+  sessionStorage.removeItem('gh_upload_token');
+  document.getElementById('btn-clear-token').style.display = 'none';
+  showStatus('err','Token gelöscht.');
+  checkUploadBtn();
+}
+
+function showStatus(type, msg){
+  const el = document.getElementById('token-status');
+  el.className = 'upload-status ' + type;
+  el.textContent = msg;
+}
+
+let selectedFile = null;
+
+function handleFileSelect(e){ setFile(e.target.files[0]); }
+function handleDrop(e){
+  e.preventDefault();
+  document.getElementById('drop-zone').classList.remove('drag-over');
+  const f = e.dataTransfer.files[0];
+  if(f && f.type === 'application/pdf') setFile(f);
+}
+
+function setFile(f){
+  if(!f) return;
+  selectedFile = f;
+  document.getElementById('file-name').textContent = f.name;
+  document.getElementById('file-size').textContent = (f.size/1024/1024).toFixed(2) + ' MB';
+  document.getElementById('file-preview').style.display = 'flex';
+  document.getElementById('drop-zone').style.display = 'none';
+  checkUploadBtn();
+}
+
+function clearFile(){
+  selectedFile = null;
+  document.getElementById('file-preview').style.display = 'none';
+  document.getElementById('drop-zone').style.display = '';
+  document.getElementById('file-input').value = '';
+  checkUploadBtn();
+}
+
+function checkUploadBtn(){
+  document.getElementById('btn-upload').disabled = !(getToken() && selectedFile);
+}
+
+async function uploadFile(){
+  if(!selectedFile || !getToken()) return;
+  const folder = document.getElementById('upload-folder').value;
+  const path = folder + '/' + selectedFile.name;
+  const token = getToken();
+  const btn = document.getElementById('btn-upload');
+  btn.disabled = true;
+  btn.textContent = 'Uploading…';
+  const progress = document.getElementById('upload-progress');
+  const bar = document.getElementById('upload-bar');
+  progress.style.display = '';
+  bar.style.width = '30%';
+
+  try {
+    // Read file as base64
+    const b64 = await new Promise((res,rej)=>{
+      const r = new FileReader();
+      r.onload = e => res(e.target.result.split(',')[1]);
+      r.onerror = rej;
+      r.readAsDataURL(selectedFile);
+    });
+    bar.style.width = '60%';
+
+    // Check if file exists (to get SHA for update)
+    let sha = null;
+    const checkRes = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,{
+      headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json'}
+    });
+    if(checkRes.ok){ const d = await checkRes.json(); sha = d.sha; }
+
+    bar.style.width = '80%';
+
+    // Upload via GitHub API
+    const body = {
+      message: `docs: upload ${selectedFile.name} to ${folder}/`,
+      content: b64,
+      branch: GH_BRANCH
+    };
+    if(sha) body.sha = sha;
+
+    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${path}`,{
+      method:'PUT',
+      headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github+json'},
+      body: JSON.stringify(body)
+    });
+    bar.style.width = '100%';
+
+    if(res.ok){
+      const d = await res.json();
+      const rawUrl = `https://andiagepoint-ops.github.io/Andreas-Henneberger/${path}`;
+      const result = document.getElementById('upload-result');
+      result.className = 'upload-result ok';
+      result.innerHTML = `✅ <strong>Hochgeladen!</strong><br>
+        Permanenter Link: <a href="${rawUrl}" target="_blank">${rawUrl}</a><br>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('${rawUrl}');this.textContent='✓ Kopiert!'">Link kopieren</button>`;
+      result.style.display = '';
+      clearFile();
+    } else {
+      const err = await res.json();
+      throw new Error(err.message || res.status);
+    }
+  } catch(e){
+    const result = document.getElementById('upload-result');
+    result.className = 'upload-result err';
+    result.textContent = '❌ Fehler: ' + e.message;
+    result.style.display = '';
+  }
+  btn.disabled = false;
+  btn.textContent = '📤 Hochladen';
+}
+
+async function loadFileList(){
+  const token = getToken();
+  const el = document.getElementById('file-list');
+  el.textContent = 'Lade…';
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/downloads`,{
+      headers: token ? {'Authorization':'Bearer '+token} : {}
+    });
+    if(!res.ok) throw new Error('Fehler ' + res.status);
+    const files = await res.json();
+    if(!files.length){ el.textContent = 'Noch keine Dateien.'; return; }
+    el.innerHTML = '';
+    files.filter(f=>f.type==='file').forEach(f=>{
+      const url = `https://andiagepoint-ops.github.io/Andreas-Henneberger/downloads/${f.name}`;
+      el.innerHTML += `<div class="file-list-item">
+        <span>📄</span>
+        <a href="${url}" target="_blank">${f.name}</a>
+        <span class="copy-btn" onclick="navigator.clipboard.writeText('${url}');this.textContent='✓';setTimeout(()=>this.textContent='Kopieren',1500)">Kopieren</span>
+      </div>`;
+    });
+  } catch(e){ el.textContent = 'Fehler: ' + e.message; }
+}
+
+// Init
+if(getToken()){
+  document.getElementById('btn-clear-token').style.display='';
+  showStatus('ok','✓ Token aus Sitzung geladen.');
+}
+</script>

@@ -214,6 +214,8 @@
       <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🇮🇳 Indien / AIS</a>
       <a class="sidebar-item" onclick="showSection('gesetz-in-ais039')" style="padding-left:28px"><span class="icon">🔢</span> AIS-039 — Speedometer</a>
       <a class="sidebar-item" onclick="showSection('gesetz-in-ais099')" style="padding-left:28px"><span class="icon">🛑</span> AIS-099 — Bremse</a>
+      <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">📁 Dokumente</a>
+      <a class="sidebar-item" onclick="showSection('upload')" style="padding-left:28px"><span class="icon">📤</span> Dokument hochladen</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Vergleiche</div>
@@ -328,7 +330,7 @@
 const MODULES = ['reifen','tpms','notrad','anzeige','tacho','bremse','getriebe','licht','marktvergleich',
   'markt-eceu','markt-usa','markt-cn','markt-br','markt-jp','markt-kr','markt-gcc','markt-uk','markt-in',
   'gesetz-r121','gesetz-r30','gesetz-r13h','gesetz-r39',
-  'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099'];
+  'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099','upload'];
 const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
 let currentSection = 'home';
 
