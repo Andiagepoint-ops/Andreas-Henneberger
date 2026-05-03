@@ -110,6 +110,26 @@
     .spinner{width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .6s linear infinite;}
     @keyframes spin{to{transform:rotate(360deg);}}
     @media(max-width:768px){.layout{grid-template-columns:1fr;}.sidebar{display:none;}.hero h1{font-size:26px;}}
+  /* GESETZESTEXTE */
+  .gesetz-header{margin-bottom:20px;}
+  .gesetz-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+  .gesetz-reg-link{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.3);border-radius:8px;color:var(--accent);font-size:12px;text-decoration:none;font-weight:500;}
+  .gesetz-reg-link:hover{background:rgba(79,142,247,.2);}
+  .gesetz-section{margin-bottom:12px;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+  .gesetz-section-head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:12px;padding:14px 16px;background:var(--bg2);cursor:pointer;}
+  .gesetz-section-head:hover{background:var(--bg3);}
+  .gesetz-para-ref{font-family:monospace;font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap;padding-top:2px;}
+  .gesetz-para-title{font-size:13px;font-weight:600;color:var(--text);}
+  .gesetz-para-sub{font-size:11px;color:var(--text2);margin-top:2px;}
+  .gesetz-source-link{font-size:11px;color:var(--text2);text-decoration:none;white-space:nowrap;}
+  .gesetz-source-link:hover{color:var(--accent);}
+  .gesetz-body{padding:16px;background:var(--bg);border-top:1px solid var(--border);}
+  .gesetz-req{font-size:13px;color:var(--text);line-height:1.7;margin-bottom:12px;}
+  .gesetz-req strong{color:var(--text);}
+  .gesetz-interp{background:rgba(79,142,247,.07);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:10px 14px;}
+  .gesetz-interp-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin-bottom:4px;}
+  .gesetz-interp p{font-size:12px;color:var(--text);line-height:1.65;}
+  .gesetz-note{background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.25);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--text);margin-bottom:16px;}
   </style>
 </head>
 <body>
@@ -119,6 +139,7 @@
   <div class="nav-links">
     <a href="#" onclick="showSection('home')">Startseite</a>
     <a href="#" onclick="showSection('grundlagen')">Grundlagen</a>
+    <a href="#" onclick="showSection('gesetz-r121')">Gesetzestexte</a>
     <a href="#" onclick="showSection('marktvergleich')">Marktvergleich</a>
     <a href="#" onclick="showSection('maerkte')">Märkte</a>
   </div>
@@ -168,6 +189,13 @@
       <a class="sidebar-item" onclick="showSection('bremse')"><span class="icon">🛑</span> Bremse</a>
       <a class="sidebar-item" onclick="showSection('getriebe')"><span class="icon">⚙️</span> Getriebeschaltschema</a>
       <a class="sidebar-item" onclick="showSection('licht')"><span class="icon">💡</span> Beleuchtung</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-heading">Gesetzestexte &amp; Interpretation</div>
+      <a class="sidebar-item" onclick="showSection('gesetz-r121')"><span class="icon">🖥️</span> UN R121 — Bedienelemente</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r30')"><span class="icon">⚙️</span> UN R30 — Reifen PKW</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r13h')"><span class="icon">🛑</span> UN R13-H — Bremse</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r39')"><span class="icon">🔢</span> UN R39 — Tachometer</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Vergleiche</div>
