@@ -1,0 +1,178 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Elektrische Sicherheit (Hochvolt) &amp; EMV</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(241,196,15,.12);border-color:rgba(241,196,15,.3)">⚡</div>
+  <div><h2>Modul — Elektrische Sicherheit (Hochvolt) &amp; EMV</h2><p>UN R100 · Post-Crash nach R94/R95/R12/R137 · UN R10 · GTR 20 · FMVSS 305/305a · GB 18384 / GB 38031 / GB 34660 · AIS-038 Rev. 2 und marktspezifische Äquivalente. HV-Schutz, REESS, Post-Crash und EMV in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="hv-tabs">
+  <div class="tab active" onclick="switchTab('hv','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('hv','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('hv','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('hv','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('hv','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('hv','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="hv-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Hochvolt im Sinne der Regelwerke = Arbeitsspannung <strong>&gt; 60 V DC bzw. &gt; 30 V AC (eff.)</strong> („Spannungsklasse B“). UN R100 regelt in <strong>Teil I</strong> das Fahrzeug (Berührschutz, Isolation, Fahrbereitschaft, Laden) und in <strong>Teil II</strong> das REESS. Die Sicherheit <em>nach</em> dem Crash wird in den Crash-Regelungen (R94, R95, R12, R137) mitgeprüft. EMV wird getrennt über UN R10 genehmigt.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Hochvolt-Betrieb / REESS</th><th>Post-Crash</th><th>EMV</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="reg-link">UN R100 ↗</a> · <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-1-20" target="_blank" class="reg-link">UN R10 ↗</a> (Pflicht über <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="reg-link">VO (EU) 2019/2144 Anh. I ↗</a>)</td><td>R100 Teil I (Fahrzeug) + Teil II (REESS)</td><td>HV-Anhänge in R94 (Front), R95 (Seite), R12 (Lenkanlage/Front), R137 (Front Vollüberdeckung)</td><td>UN R10 inkl. Lademodus</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.305" target="_blank" class="reg-link">FMVSS 305 ↗</a> · <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.305a" target="_blank" class="reg-link">FMVSS 305a ↗</a></td><td>305a S6 (Normalbetrieb), S11 (REESS-Steuerung), S13 (Thermal-Event-Warnung), S14 (Wasser)</td><td>305a S8/S9: Front ≤ 48 km/h, Heck 79–81 km/h, Seite 52–54 km/h, danach statischer Überschlag</td><td>Kein FMVSS; FCC Part 15 (Funkstörung) nur indirekt</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://openstd.samr.gov.cn/" target="_blank" class="reg-link">GB 18384-2020 ↗</a> · GB 38031-2020 · GB 34660-2017 (jeweils Nachfolger 2025/2026, s. Amendments)</td><td>GB 18384 (Fahrzeug, Spannungsklasse B), GB 38031 (Traktionsbatterie inkl. Thermal Propagation)</td><td>GB 18384 Kap. 5.4 i. V. m. GB 11551 (Front) und GB 20071 (Seite)</td><td>GB 34660</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Safety Regulations for Road Vehicles (保安基準) ↗</a>; UN R100 / R10 übernommen</td><td>UN R100 (Anerkennung über das 1958er Abkommen)</td><td>Japanische Front-/Seitencrash-Vorschriften mit HV-Anforderungen lt. Regelwerk</td><td>UN R10</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS (Hochvolt- und Batteriebestimmungen) ↗</a></td><td>Eigene KMVSS-Anforderungen an HV-Schutz und Traktionsbatterie, R100-nah</td><td>KMVSS-Crashtests mit HV-Kriterien lt. Regelwerk</td><td>KMVSS / Funkrecht (KC)</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resolutionen ↗</a> (UN-R100-Bezug)</td><td>lt. Regelwerk; UN-R100-Nachweis in der Praxis anerkannt</td><td>lt. Regelwerk</td><td>lt. Regelwerk</td></tr>
+      <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung nach <a href="https://www.legislation.gov.uk/uksi/2020/818/contents/made" target="_blank" class="reg-link">Road Vehicles (Approval) Regulations 2020 ↗</a> · <a href="https://www.legislation.gov.uk/eur/2019/2144/annex/I" target="_blank" class="reg-link">assimilierte VO 2019/2144 Anh. I ↗</a></td><td>Wie UN R100</td><td>Wie UN R94/R95/R137</td><td>Wie UN R10</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Standards für Elektrofahrzeuge ↗</a></td><td>UN R100 bzw. FMVSS 305 als Nachweis akzeptiert (lt. GSO-Standard)</td><td>Wie Nachweisbasis</td><td>UN R10 bzw. nationale Funkzulassung</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-038 Rev. 2 (M, N) ↗</a> · AIS-156 (L-Klassen) · CMVR</td><td>AIS-038 Rev. 2: R100-basiert inkl. REESS-Prüfungen</td><td>Über AIS-098/AIS-099 (Front/Seite) lt. Regelwerk</td><td>AIS-004 Teil 3 (R10-basiert)</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft (eCFR, Stand 25.10.2026): Anwendungsbereich und Crashgeschwindigkeiten FMVSS 305a; Ausgabe-/Einführungsdaten der GB-Normen (chinesestandard.net-Vorschau). Japan, Korea, Brasilien, Golf-Staaten und Indien sowie die Zuordnung der HV-Anhänge in den Crash-Regelungen sind aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="hv-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#f1c40f"><div class="module-card-header"><span class="module-card-icon">✋</span><h3>Schutz gegen direktes Berühren</h3></div><p>Aktive HV-Teile im Innen- und Gepäckraum: Schutzgrad <strong>IPXXD</strong> (Prüfdraht), außerhalb: <strong>IPXXB</strong> (gegliederter Prüffinger). HV-Leitungen außerhalb von Gehäusen mit <strong>orangefarbener</strong> Ummantelung, HV-Warnsymbol (gelb, schwarz umrandet) an Energiespeichern und abnehmbaren Abdeckungen. Werkzeuglos öffnende Abdeckungen: Spannung innerhalb von 1 s ≤ 60 V DC / 30 V AC oder Energie &lt; 0,2 J (GB 18384).</p><div class="module-card-footer"><span class="tag">IPXXD innen</span><span class="tag">IPXXB außen</span></div></div>
+    <div class="module-card" style="--card-color:#d4ac0d"><div class="module-card-header"><span class="module-card-icon">🔩</span><h3>Indirektes Berühren &amp; Potenzialausgleich</h3></div><p>Berührbare leitfähige Gehäuse müssen mit der elektrischen Masse verbunden sein. FMVSS 305a: Widerstand Gehäuse–Masse <strong>&lt; 0,1 Ω</strong>, zwischen zwei gleichzeitig berührbaren Teilen im Abstand &lt; 2,5 m <strong>&lt; 0,2 Ω</strong>. UN R100 fordert vergleichbare Werte lt. Regelwerk. Konduktiv ladbare Fahrzeuge brauchen eine Erdverbindung des Chassis während des Ladens.</p><div class="module-card-footer"><span class="tag">&lt; 0,1 Ω</span><span class="tag">Erdung beim Laden</span></div></div>
+    <div class="module-card" style="--card-color:#b7950b"><div class="module-card-header"><span class="module-card-icon">📏</span><h3>Isolationswiderstand</h3></div><p>Mindestwerte bezogen auf die Arbeitsspannung: <strong>100 Ω/V</strong> für DC-Kreise, <strong>500 Ω/V</strong> für AC-Kreise; 100 Ω/V für AC-Kreise nur, wenn sie leitend mit DC verbunden sind und zusätzlicher Berührschutz nachgewiesen ist (FMVSS 305a S6.3.1, UN R100 analog). Bei Brennstoffzellenfahrzeugen ist eine Isolationsüberwachung mit Fahrerwarnung Pflicht (305a S6.4).</p><div class="module-card-footer"><span class="tag">DC ≥ 100 Ω/V</span><span class="tag">AC ≥ 500 Ω/V</span></div></div>
+    <div class="module-card" style="--card-color:#9a7d0a"><div class="module-card-header"><span class="module-card-icon">💥</span><h3>Post-Crash-Sicherheit</h3></div><p>Nach dem Crash muss jede HV-Quelle <em>eines</em> der Kriterien erfüllen: Spannung ≤ 60 V DC / 30 V AC, Isolation lt. Grenzwert, physischer Berührschutz (IPXXB) oder Kondensatorenergie <strong>&lt; 0,2 J</strong>. Zusätzlich: Batterie bleibt befestigt, keine Intrusion in den Innenraum, Elektrolytaustritt begrenzt (FMVSS 305a: ≤ 5,0 L in 30 min, keiner in den Innenraum), kein Feuer/keine Explosion (305a: bis 1 h nach der Prüfsequenz).</p><div class="module-card-footer"><span class="tag">&lt; 0,2 J</span><span class="tag">≤ 5,0 L (US)</span></div></div>
+    <div class="module-card" style="--card-color:#7d6608"><div class="module-card-header"><span class="module-card-icon">🔋</span><h3>REESS-Prüfungen &amp; Thermal Propagation</h3></div><p>R100 Teil II / GB 38031 / GTR 20: Vibration, Thermoschock, mechanischer Stoß und Quetschung, Feuerbeständigkeit, externer Kurzschluss, Über- und Tiefentladung, Übertemperatur, Überstrom. Thermal Propagation: Warnung an den Fahrer und Zeitreserve bis zur Gefährdung des Innenraums. GB 38031-2020: Warnung <strong>5 min</strong> vor Gefährdung des Innenraums; FMVSS 305a S13: Warnung innerhalb von <strong>3 min</strong> nach Beginn des Thermal Events, akustisch + optisch, mind. 5 min aktiv.</p><div class="module-card-footer"><span class="tag">GB: 5 min Vorwarnung</span><span class="tag">US: Warnung ≤ 3 min</span></div></div>
+    <div class="module-card" style="--card-color:#5e4c06"><div class="module-card-header"><span class="module-card-icon">📡</span><h3>EMV (UN R10)</h3></div><p>Fahrzeug- und EUB-Prüfungen: Breitband- und Schmalbandemission, Störfestigkeit gegen eingestrahlte Felder, für EUB zusätzlich leitungsgeführte Transienten. Seit der 05./06. Änderungsserie Zusatzprüfungen im <strong>Lademodus</strong>: Oberschwingungen, Flicker, leitungsgeführte Emissionen und Störfestigkeit auf AC-/DC-Ladeleitungen. Feldstärken und Grenzwertkurven lt. Regelwerk.</p><div class="module-card-footer"><span class="tag">Fahrzeug + EUB</span><span class="tag">Lademodus</span></div></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Werte aus FMVSS 305a (eCFR) und den Vorschauen von GB 18384-2020 / GB 38031-2020 sind geprüft. Gleichwertigkeit der R100-Werte, die Zuordnung der R10-Prüfungen zur 05./06. Serie und die ECE-Elektrolytgrenze sind aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="hv-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Auslegungshinweise und häufige Fragen zu UN R100, FMVSS 305/305a, GB 18384 / GB 38031 und UN R10.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — R100 genehmigt nicht den Crash</summary>
+      <div class="details-body">
+        <p>Die Post-Crash-Kriterien (Spannung, Isolation, Berührschutz, Elektrolyt, Batteriebefestigung) werden im jeweiligen Crashversuch nach R94, R95, R137 bzw. R12 bewertet und stehen dort in einem eigenen Anhang. Ein neuer Batterieeinbau kann also Erweiterungen mehrerer Crash-Genehmigungen auslösen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — Übergang FMVSS 305 → 305a</summary>
+      <div class="details-body">
+        <p>FMVSS 305a (übernimmt GTR 20) ist für Fahrzeuge ≤ 4.536 kg GVWR ab <strong>01.09.2027</strong> verpflichtend, für schwerere Fahrzeuge ab <strong>01.09.2028</strong>; Kleinserien-, Endstufenhersteller und Umrüster erhalten ein Jahr mehr. FMVSS 305 gilt laut Überschrift weiter, „sofern das Fahrzeug nicht nach § 571.305a zertifiziert ist“ – freiwillige Vorab-Zertifizierung nach 305a ist möglich. Neu gegenüber 305: REESS-Steuerungsprüfungen (S11/S12), Thermal-Event-Warnung (S13), Wasserexposition (S14) und Anforderungen an schwere Fahrzeuge.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — „Kein Feuer, keine Explosion“ ab GB 38031-2025</summary>
+      <div class="details-body">
+        <p>GB 38031-2020 verlangte bei Thermal Propagation eine Warnung 5 min vor Gefährdung des Innenraums. Der Nachfolger GB 38031-2025 (ausgegeben 28.03.2025, umgesetzt ab 01.07.2026) verschärft das Prüfziel nach öffentlicher Berichterstattung auf „kein Feuer, keine Explosion“ beim Thermal-Propagation-Test und ergänzt u. a. Prüfungen zu Unterbodenstoß und Schnellladezyklen. Diese inhaltlichen Punkte und die Übergangsfrist für Bestandstypen sind vor Projektverwendung gegen den Originaltext zu prüfen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇮🇳 Indien — AIS-038 vs. AIS-156</summary>
+      <div class="details-body">
+        <p>AIS-038 Rev. 2 gilt für M- und N-Fahrzeuge und ist an UN R100 angelehnt; AIS-156 regelt dasselbe für L-Fahrzeuge (Zwei-/Dreiräder). Nach Batteriebränden bei E-Zweirädern wurden beide Standards phasenweise verschärft. Phasentermine vor Projektverwendung gegen den Originaltext prüfen.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Hochvolt%20%26%20EMV">+ Frage einreichen</a></div>
+    <details>
+      <summary>Fällt ein 48-V-Mildhybrid unter R100?</summary>
+      <div class="details-body"><p>In der Regel nicht. R100, FMVSS 305a und GB 18384 setzen erst bei Arbeitsspannungen über 60 V DC / 30 V AC an. Ein 48-V-System bleibt darunter, sofern die maximale Arbeitsspannung die Grenze nicht überschreitet. Die EMV-Prüfung nach R10 gilt dagegen unabhängig von der Spannungslage.</p></div>
+    </details>
+    <details>
+      <summary>Muss jede Crash-Regelung bei E-Fahrzeugen erneut gefahren werden?</summary>
+      <div class="details-body"><p>Die HV-Kriterien werden im selben Versuch mitbewertet, der auch den Insassenschutz prüft. Eine eigene „HV-Crashprüfung“ gibt es in der ECE-Welt nicht. In den USA verlangt FMVSS 305a einen der Lastfälle Front, Heck oder Seite, jeweils gefolgt von einem statischen Überschlag (Drehung in 90°-Schritten) – der Heckaufprall ist dort ein eigener Lastfall.</p></div>
+    </details>
+    <details>
+      <summary>Wird das Laden über R100 oder R10 genehmigt?</summary>
+      <div class="details-body"><p>Beides: R100 deckt die elektrische Sicherheit beim Laden ab (Erdung, Berührschutz am Ladeanschluss, Wegfahrsperre bei gestecktem Ladestecker – FMVSS 305a: max. 150 mm Eigenbewegung), R10 die EMV im Lademodus.</p></div>
+    </details>
+    <details>
+      <summary>Gilt ein R100-Nachweis in China?</summary>
+      <div class="details-body"><p>Nicht direkt. China ist nicht Vertragspartei des 1958er Abkommens; für CCC und den MIIT-Katalog sind Prüfungen nach GB 18384, GB 38031 und GB 34660 in einem chinesischen Prüfinstitut nötig.</p></div>
+    </details>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">FMVSS-305a-Termine und -Inhalte geprüft (eCFR). Inhalte von GB 38031-2025, AIS-038/AIS-156-Phasen und die R100-/R10-Zuordnung beim Laden aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="hv-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad bei den Grundwerten (60 V DC / 30 V AC, 100/500 Ω/V, IPXXB/IPXXD, 0,2 J) über GTR 20. Unterschiede liegen bei Crash-Lastfällen (USA: Heckaufprall + Überschlag), Thermal-Propagation-Zielen (China am strengsten) und bei der EMV (keine bundesrechtliche Fahrzeug-EMV-Genehmigung in den USA).</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU / UK</th><th>USA</th><th>CN</th><th>IN</th><th>JP / KR</th><th>BR / GCC</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>UN R100 / R10</td><td>FMVSS 305 / 305a</td><td>GB 18384 / 38031 / 34660</td><td>AIS-038 Rev. 2 / AIS-004</td><td>UN R100 bzw. KMVSS</td><td>R100- bzw. FMVSS-Nachweis</td></tr>
+      <tr><td>Berührschutz IPXXB/IPXXD</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Isolation 100 / 500 Ω/V</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>REESS-Prüfungen (Bauteil)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Thermal-Event-Warnung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Post-Crash-HV-Kriterien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Heckaufprall mit HV-Bewertung</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Fahrzeug-EMV-Genehmigung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = gefordert &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / erst mit FMVSS 305a (USA) / EU-Heckaufprall nur über UN R153 / national unklar &nbsp; <span style="color:var(--red)">✗</span> = nicht gefordert &nbsp; · USA-Spalte gegen eCFR geprüft; übrige Einstufungen (insb. EU/CN-Heckaufprall, IN, JP/KR, BR/GCC) vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="hv-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSP</strong> (Working Party on Passive Safety) für UN R100 und GTR 20 — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsp" target="_blank" class="reg-link">GRSP ↗</a>. Die EMV-Regelung UN R10 liegt bei <strong>GRE</strong> (Working Party on Lighting and Light-Signalling) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/gre" target="_blank" class="reg-link">GRE ↗</a>.</span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>FMVSS 305a (GTR 20)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Veröffentlicht</span></td><td>Final Rule FR-Dok. 2024-28707, Folgeregel 2025-02582; verpflichtend ab 01.09.2027 (≤ 4.536 kg) bzw. 01.09.2028 (&gt; 4.536 kg)</td><td>20.12.2024 / 14.02.2025</td></tr>
+        <tr><td>FMVSS 305a – Folgeänderung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>FR-Dok. 2026-11072: Verweise auf gestrichene Abschnitte von FMVSS 214 bereinigt (redaktionell)</td><td>wirksam 06.07.2026</td></tr>
+        <tr><td>FMVSS 305</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Auslaufend</span></td><td>Gilt, sofern nicht nach 305a zertifiziert; letzte Änderung lt. eCFR 20.03.2025</td><td>bis Pflichtbeginn 305a</td></tr>
+        <tr><td>GB 38031-2025 (China)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Ersetzt GB 38031-2020; Traktionsbatterie, verschärfte Thermal Propagation, neues Kapitel „Bestimmung desselben Typs“</td><td>ausgegeben 28.03.2025, umgesetzt 01.07.2026</td></tr>
+        <tr><td>GB 18384-2025 (China)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Ersetzt GB 18384-2020; neu u. a. Unterbodenschutz und Kapitel Typbestimmung</td><td>ausgegeben 31.12.2025, umgesetzt 01.07.2026</td></tr>
+        <tr><td>GB 34660-2026 (China)</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">Veröffentlicht</span></td><td>Ersetzt GB 34660-2017 (EMV Fahrzeug und EUB)</td><td>ausgegeben 27.02.2026, umgesetzt 01.07.2027</td></tr>
+        <tr><td>UN R100, 03er Serie</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Übernahme der GTR-20-Inhalte Phase 1 (u. a. Thermal-Propagation-Warnung, Wasserschutz)</td><td>lt. Regelwerk</td></tr>
+        <tr><td>GTR 20 Phase 2</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Arbeitsgruppe EVS: Thermal-Propagation-Prüfverfahren, Wasser-/Eintauchprüfung, schwere Fahrzeuge</td><td>Offen</td></tr>
+        <tr><td>UN R10, 06er Serie</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>EMV inkl. Lademodus; Ergänzungen laufend</td><td>lt. Regelwerk</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: eCFR-Versionsdaten (571.305, 571.305a), Federal Register API, chinesestandard.net-Vorschau (GB 18384-2025, GB 38031-2025, GB 34660-2026). Inhalte und Daten der UN-R100-/R10-Serien und von GTR 20 Phase 2 sowie die Arbeitsgruppen-Zuordnung sind aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: TYPABGRENZENDE MERKMALE -->
+<div id="hv-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>UN R100 unterscheidet den <strong>Fahrzeugtyp hinsichtlich der elektrischen Sicherheit</strong> (Teil I) und den <strong>REESS-Typ</strong> (Teil II). GB 38031-2025 und GB 18384-2025 enthalten eigene Kapitel zur Bestimmung desselben Typs. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🔋</span><h3>REESS: Zellchemie und Aufbau</h3></div>
+    <p>Zellchemie (z. B. NMC ↔ LFP), Zellformat und Hersteller, Anzahl und Verschaltung der Zellen/Module, Nennspannung und Kapazität, Gehäuse und Kühlkonzept. Ein Wechsel der Zellchemie führt praktisch immer zu einem neuen REESS-Typ.</p>
+    <div class="module-card-footer"><span class="tag">Neue Genehmigung: bei Chemie-/Aufbauwechsel</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">📍</span><h3>Einbaulage des REESS</h3></div>
+    <p>Position und Befestigung im Fahrzeug, Crashstruktur um die Batterie, Unterbodenschutz. Änderungen beeinflussen die Post-Crash-Ergebnisse in R94/R95/R137/R12 und können dort Erweiterungen mit Crashnachweis auslösen.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: Crash-Regelungen mitbetroffen</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">⚡</span><h3>HV-Architektur</h3></div>
+    <p>Arbeitsspannungsniveau (z. B. 400 V ↔ 800 V), Topologie der HV-Kreise, galvanische Trennung, Lage und Art der Trennschütze und Service-Disconnects, Isolationsüberwachung.</p>
+    <div class="module-card-footer"><span class="tag">Neue Prüfung: bei Architekturwechsel</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🔌</span><h3>Ladesystem</h3></div>
+    <p>Art der Ladeschnittstelle (AC, DC, kombiniert), Onboard-Lader, Steckersystem und Erdungskonzept. Neue Ladeoptionen betreffen R100 (Laden) und R10 (EMV im Lademodus) gleichzeitig.</p>
+    <div class="module-card-footer"><span class="tag">Erweiterung R100 + R10</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">📡</span><h3>EMV: Elektrik-/Elektronikkonzept</h3></div>
+    <p>R10-Fahrzeugtyp: Größe und Form des Motorraums, Gesamtanordnung der elektrischen/elektronischen Bauteile und der Verkabelung, Werkstoff des Aufbaus. Bei neuen Funkmodulen oder Steuergeräten prüfen, ob sie Emission oder Störfestigkeit beeinflussen.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei neuer E/E-Architektur</span></div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: Definitionen „Fahrzeugtyp“ und „REESS-Typ“ in UN R100 sowie „Fahrzeugtyp hinsichtlich der EMV“ in UN R10; Merkmale hier sinngemäß zusammengefasst – Wortlaut und vollständige Liste vor Projektverwendung gegen den Originaltext prüfen. Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>

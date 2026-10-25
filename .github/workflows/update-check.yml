@@ -1,0 +1,36 @@
+name: Update-Check
+
+on:
+  schedule:
+    - cron: "15 4 * * *"   # täglich 04:15 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Quellen abfragen
+        run: python3 scripts/check_updates.py
+      - name: Änderungen committen
+        run: |
+          if git diff --quiet -- data/updates.json; then
+            echo "Keine neuen Updates."
+            exit 0
+          fi
+          git config user.name "HomoloBase Update-Check"
+          git config user.email "update-check@homolobase"
+          git add data/updates.json
+          git commit -m "data: Update-Check $(date -u +%Y-%m-%d)"
+          git push

@@ -1,0 +1,189 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> eCall / Notrufsystem</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(192,57,43,.12);border-color:rgba(192,57,43,.3)">🆘</div>
+  <div><h2>Modul — eCall / Notrufsystem (AECS)</h2><p>VO (EU) 2015/758 · DelVO 2017/79 · DelVO 2024/1180 und 2025/1871 (NG-eCall) · UN R144 · AIS-140. Automatischer Unfallnotruf, Mindestdatensatz und Umstieg auf 4G/5G in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="ecall-tabs">
+  <div class="tab active" onclick="switchTab('ecall','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('ecall','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('ecall','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('ecall','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('ecall','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('ecall','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="ecall-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Die EU schreibt seit dem <strong>31.03.2018</strong> für alle neuen Typen der Klassen <strong>M1 und N1</strong> ein bordeigenes 112-eCall-System vor (VO (EU) 2015/758, Prüfanforderungen in DelVO (EU) 2017/79). DelVO (EU) 2024/1180 und 2025/1871 stellen auf paketvermitteltes <strong>NG-eCall (4G/5G)</strong> um. Außerhalb von EU, UK und EAWU (ERA-GLONASS) besteht für PKW meist <strong>keine Pflicht</strong>.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Pflicht / Geltungsbereich</th><th>Technik / Netz</th><th>Status &amp; Fristen</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32015R0758" target="_blank" class="reg-link">VO (EU) 2015/758 ↗</a> · <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32017R0079" target="_blank" class="reg-link">DelVO (EU) 2017/79 ↗</a> · <a href="https://eur-lex.europa.eu/eli/reg_del/2024/1180/oj" target="_blank" class="reg-link">DelVO (EU) 2024/1180 ↗</a> · <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1871" target="_blank" class="reg-link">DelVO (EU) 2025/1871 ↗</a>; alternativ <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="reg-link">UN R144 (AECS) ↗</a></td><td>Ja – neue Typen M1/N1; ausgenommen u. a. Kleinserien und gepanzerte Fahrzeuge mit Verglasung BR 7 (Anh. IX DelVO 2017/79)</td><td>112, automatisch + manuell, MSD nach EN 15722:2020, Galileo/EGNOS; NG-eCall nach EN 17184/17240:2024</td><td>Seit 31.03.2018; ab 01.01.2026 nur NG-fähige Neugenehmigungen; CoC ungültig ab 01.01.2027 (rein leitungsvermittelt) bzw. 01.01.2028 (ohne EN-Fassung 2024)</td></tr>
+      <tr><td>🇺🇸 USA</td><td>Kein FMVSS für Notrufsysteme; verwandt: <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-563" target="_blank" class="reg-link">49 CFR Part 563 (Event Data Recorder) ↗</a></td><td>Nein – keine Bundespflicht</td><td>Freiwillige herstellerspezifische Automatic Crash Notification (ACN/AACN) über Telematikdienste; Weiterleitung an 911-PSAPs</td><td>Kein NHTSA-Rulemaking zu einer ACN-Pflicht bekannt</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://openstd.samr.gov.cn/" target="_blank" class="reg-link">GB 45086.1 (AECS, Teil 1) ↗</a> – Normnummer/Status prüfen</td><td>Nach Kenntnisstand nationale Pflichtnorm für automatische Unfallnotrufsysteme in Einführung; Geltungsbereich lt. Norm</td><td>Anbindung an chinesische Notrufinfrastruktur, BeiDou-Ortung zu erwarten – lt. Norm</td><td>Anwendungsbeginn vor Projektverwendung gegen den Originaltext prüfen</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">MLIT – Safety Regulations for Road Vehicles ↗</a>; UN R144 als Genehmigungsgrundlage möglich</td><td>Keine Ausrüstungspflicht für PKW bekannt</td><td>Freiwilliger AACN-Betrieb über Herstellertelematik und das Notrufnetz „D-Call Net“</td><td>Stand vor Projektverwendung prüfen</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS ↗</a></td><td>Keine Ausrüstungspflicht für PKW bekannt</td><td>Herstellertelematik (freiwillig)</td><td>Stand vor Projektverwendung prüfen</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resolutionen ↗</a></td><td>Keine eCall-Pflicht bekannt</td><td>—</td><td>Stand vor Projektverwendung prüfen</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://www.legislation.gov.uk/eur/2015/758" target="_blank" class="reg-link">Assimilated VO (EU) 2015/758 ↗</a> · geändert durch <a href="https://www.legislation.gov.uk/uksi/2025/661" target="_blank" class="reg-link">S.I. 2025/661 ↗</a></td><td>Ja – neue Typen M1/N1 (GB-Typgenehmigung); Ausnahmen wie EU, zusätzlich Mittelserien</td><td>Wie EU; Normenliste Art. 5(8): EN 16072:2025, CEN/TS 17184:2022 <em>oder</em> EN 17184:2024, CEN/TS 17240:2018 <em>oder</em> EN 17240:2024, EN 15722:2020</td><td>Leitungsvermittelte Normen für neue Typen bis 31.12.2025; CoC rein leitungsvermittelter Fahrzeuge ab 01.01.2027 ungültig</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a></td><td>Keine harmonisierte GSO-Pflicht bekannt; Einzelstaaten (insb. VAE, KSA) prüfen</td><td>—</td><td>Stand je Mitgliedstaat vor Projektverwendung prüfen</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-140 ↗</a></td><td>PKW (privat): keine eCall-Pflicht. Öffentliche Personenverkehrsfahrzeuge (Busse, Taxis): Ortungsgerät (VLT) mit Notruftaste(n) nach AIS-140</td><td>VLT mit GNSS (inkl. NavIC/IRNSS) und Mobilfunk, Anbindung an Leitstellen der Bundesstaaten – kein Crash-getriggerter Notruf</td><td>Notifikation und Anwendungsbeginn vor Projektverwendung gegen den Originaltext prüfen</td></tr>
+    </tbody>
+  </table>
+  <div class="callout" style="margin-top:12px"><span class="ci">🚫</span><span><strong>Abgrenzung ERA-GLONASS:</strong> Russland/EAWU verlangen ein eigenes System (GLONASS-Ortung, GOST-Normen, Pflicht über das EAWU-Fahrzeugreglement). Kein Zielmarkt dieser Übersicht; EU-eCall erfüllt ERA-GLONASS nicht automatisch.</span></div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">EU/UK geprüft (Amtsblatt via CELLAR, legislation.gov.uk). CN (GB 45086.1), JP, KR, BR, GCC, IN (AIS-140) und ERA-GLONASS aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="ecall-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">🆘</span><h3>Systemaufbau</h3></div><p>Steuermodul (meist in der TCU), Mobilfunkmodul, GNSS-Empfänger mit Antenne, Mikrofon/Lautsprecher, SOS-Taste, Statusanzeige und Energieversorgung inkl. optionaler Backup-Batterie. Die „repräsentative Anordnung“ (DelVO 2017/79 Art. 4) umfasst alle Teile, die zum Senden des MSD nötig sind.</p><div class="module-card-footer"><span class="tag">TCU · GNSS · Audio</span><span class="tag">Backup-Versorgung</span></div></div>
+    <div class="module-card" style="--card-color:#a93226"><div class="module-card-header"><span class="module-card-icon">💥</span><h3>Auslösung</h3></div><p><strong>Automatisch</strong> bei schwerem Unfall, erkannt über Sensoren/Steuergeräte im Fahrzeug (in der Praxis Airbag-Steuergerät); geprüft im Fahrzeugcrash nach UN R94 (Anh. 3) bzw. UN R95 (Anh. 4). Zusätzlich <strong>manuelle</strong> Auslösung, deren Bedienteil gegen Fehlbedienung gestaltet sein muss (VO 2015/758 Art. 5(2)).</p><div class="module-card-footer"><span class="tag">Auto + manuell</span><span class="tag">R94 / R95</span></div></div>
+    <div class="module-card" style="--card-color:#922b21"><div class="module-card-header"><span class="module-card-icon">📦</span><h3>Mindestdatensatz (MSD)</h3></div><p>Datensatz nach <strong>EN 15722:2020</strong>, u. a. Zeitstempel, Position, Fahrtrichtung, Fahrzeugidentifikation, Antriebsart, Auslöseart. Die Fassung 2020 fordert zusätzlich die <strong>zwei letzten Positionen vor dem Unfallort</strong> (ErwG 3 DelVO 2024/1084). Parallel: Sprachverbindung zur Notrufzentrale (PSAP).</p><div class="module-card-footer"><span class="tag">EN 15722:2020</span><span class="tag">MSD + Sprache</span></div></div>
+    <div class="module-card" style="--card-color:#7b241c"><div class="module-card-header"><span class="module-card-icon">📶</span><h3>NG-eCall (4G/5G)</h3></div><p>Klassisches eCall läuft leitungsvermittelt über 2G/3G (EN 16062 / EN 16454). Wegen der Netzabschaltung 2025–2030 fordert die EU Notruf über IMS: CEN/TS 17184:2022 bzw. <strong>EN 17184:2024</strong> (Protokoll) und CEN/TS 17240:2018 bzw. <strong>EN 17240:2024</strong> (Konformitätsprüfung).</p><div class="module-card-footer"><span class="tag">IMS über LTE/5G</span><span class="tag">EN 17184 · EN 17240</span></div></div>
+    <div class="module-card" style="--card-color:#641e16"><div class="module-card-header"><span class="module-card-icon">🧪</span><h3>Prüfungen nach DelVO 2017/79</h3></div><p>Anh. I Schlittentest, Anh. II Fahrzeugcrash, Anh. III Audio nach Crash. Anh. VI GNSS: Positionsfehler ≤ 15 m (freier Himmel) bzw. ≤ 40 m (Häuserschlucht) bei 95 % Konfidenz; Kaltstart-TTFF ≤ 60 s (−130 dBm) bzw. ≤ 300 s (−140 dBm). Neu ab 2027: Anh. X Backup-Versorgung.</p><div class="module-card-footer"><span class="tag">≤ 15 m / ≤ 40 m</span><span class="tag">TTFF ≤ 60 s</span></div></div>
+    <div class="module-card" style="--card-color:#4a1610"><div class="module-card-header"><span class="module-card-icon">🔒</span><h3>Selbsttest &amp; Datenschutz</h3></div><p>Selbsttest mit Warnung der Insassen bei kritischem Fehler (VO 2015/758 Art. 5(6), Anh. VII DelVO 2017/79). Nach Anh. VIII ist das System im Normalbetrieb <strong>nicht verfolgbar</strong>; gespeichert wird nur das MSD. TPS-eCall nach EN 16102 ist zusätzlich zulässig.</p><div class="module-card-footer"><span class="tag">Selbsttest</span><span class="tag">Keine Verfolgbarkeit</span></div></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">GNSS-Werte, Anhänge und Normfassungen geprüft gegen die Amtsblatt-Texte (DelVO 2017/79, 2024/1084, 2024/1180, 2025/1871). MSD-Datenfelder aus Fachwissen – vor Projektverwendung gegen den Originaltext (EN 15722:2020) prüfen.</div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="ecall-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zu eCall nach VO (EU) 2015/758, den delegierten Verordnungen zum NG-eCall und den nationalen Äquivalenten.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Drei Stichtage beim Umstieg auf NG-eCall</summary>
+      <div class="details-body">
+        <p>DelVO 2024/1180: CEN/TS 17184:2022 und 17240:2018 ab 01.01.2025 auf Antrag, ab 01.01.2026 Voraussetzung für neue Genehmigungen und Erweiterungen. DelVO 2025/1871 ersetzt sie durch <strong>EN 17184:2024</strong> und <strong>EN 17240:2024</strong> (ab 01.01.2027). Für Neufahrzeuge mit Genehmigung nach dem 31.03.2018 ist die CoC ab <strong>01.01.2027</strong> ungültig, wenn weder CEN/TS- noch EN-Fassung erfüllt ist, ab <strong>01.01.2028</strong> ohne EN-Fassung 2024. Das betrifft die Produktions- und Zulassungsplanung, nicht nur den Genehmigungsplan.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Erweiterung bestehender Genehmigungen beim Modemtausch</summary>
+      <div class="details-body">
+        <p>DelVO 2025/1871 ergänzt DelVO 2017/79 Art. 5 um Abs. 4: Bei Erweiterung einer vor dem 01.01.2027 erteilten Genehmigung kann der Technische Dienst auf Fahrzeugcrash (Anh. II) und Audiotest (Anh. III) verzichten, wenn nur das Kommunikationsteil geändert und dies dokumentiert wird. Wirkt die Änderung auf andere Teile oder läuft ohnehin ein Crashtest, sind Anh. II/III durchzuführen. So lassen sich Bestandstypen per 4G/5G-Modulwechsel nachqualifizieren.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇬🇧 UK — eigene Normenliste nach S.I. 2025/661</summary>
+      <div class="details-body">
+        <p>S.I. 2025/661 hat die assimilierte VO 2015/758 zum 03.07.2025 angepasst. Art. 5(8) lässt wahlweise die CEN/TS- <em>oder</em> die EN-Fassung 2024 zu; eine Pflicht entsprechend dem EU-Datum 01.01.2028 enthält der UK-Text (Stand 25.10.2026) nicht. Leitungsvermittelte Normen: neue Typen bis 31.12.2025, CoC ab 01.01.2027 ungültig. UK- und EU-Genehmigung getrennt führen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — Telematik ohne Ausrüstungspflicht</summary>
+      <div class="details-body">
+        <p>Kein FMVSS schreibt einen automatischen Notruf vor. Die Federal-Register-Suche (NHTSA, „automatic crash notification“) liefert nur Dokumente zu EDR (Part 563), NCAP und Notfallmedizin, kein Pflicht-Rulemaking. ACN ist Marktausstattung; EU-eCall-Hardware kann weiterverwendet werden, Software und Dienstanbindung (911) sind herstellerspezifisch.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇮🇳 Indien — AIS-140 ist kein eCall</summary>
+      <div class="details-body">
+        <p>AIS-140 regelt Ortungsgeräte (VLT) mit Notruftasten für den öffentlichen Personenverkehr; Auslösung durch Fahrgäste oder Personal, nicht durch Crash-Sensorik, Meldung an Leitstellen der Bundesstaaten. Für private PKW besteht keine vergleichbare Pflicht. Geltungsbereich, Notifikation und Fristen vor Projektverwendung gegen den Originaltext prüfen.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20eCall">+ Frage einreichen</a></div>
+    <details>
+      <summary>Darf zusätzlich ein herstellereigener Notrufdienst (TPS-eCall) verbaut werden?</summary>
+      <div class="details-body"><p>Ja, nach VO 2015/758 Art. 5(3), wenn er EN 16102:2011 erfüllt, nur ein System gleichzeitig aktiv ist, bei TPS-Ausfall automatisch das 112-eCall auslöst, der Halter jederzeit auf 112-eCall wechseln kann und das Handbuch darauf hinweist. Prüfung nach Anh. IV DelVO 2017/79.</p></div>
+    </details>
+    <details>
+      <summary>Ermöglicht eCall eine Ortung des Fahrzeugs im Normalbetrieb?</summary>
+      <div class="details-body"><p>Nein. Das 112-eCall-System darf im Normalbetrieb nicht verfolgbar sein (Nachweis nach Anh. VIII DelVO 2017/79). Herstellereigene Telematik mit Ortung ist davon getrennt und unterliegt dem Datenschutzrecht.</p></div>
+    </details>
+    <details>
+      <summary>Müssen Bestandsfahrzeuge mit 2G/3G-eCall nachgerüstet werden?</summary>
+      <div class="details-body"><p>Die Verordnungen regeln Typgenehmigung, CoC und Erstzulassung neuer Fahrzeuge; eine Nachrüstpflicht enthalten sie nicht. Nach 2G/3G-Abschaltung kann ein leitungsvermitteltes System ausfallen; PSAP nehmen solche Anrufe an, solange die Netze bestehen (DelVO 2024/1084). Nationale Regeln (z. B. Hauptuntersuchung) gesondert prüfen.</p></div>
+    </details>
+    <details>
+      <summary>Ersetzt eine UN-R144-Genehmigung die EU-eCall-Genehmigung?</summary>
+      <div class="details-body"><p>Für die EU-Typgenehmigung sind VO 2015/758 und DelVO 2017/79 maßgeblich (inkl. Galileo und 112-Spezifika). UN R144 regelt das AECS infrastrukturunabhängig für Anwender des 1958er-Abkommens. Ob und wie weit R144 in der EU als gleichwertig gilt, vor Projektverwendung gegen den Originaltext prüfen.</p></div>
+    </details>
+    <details>
+      <summary>Gilt die eCall-Pflicht auch für Busse und Lkw?</summary>
+      <div class="details-body"><p>In EU und UK nicht: Die Pflicht betrifft nur M1 und N1 (VO 2015/758 Art. 2); eine Ausweitung wird diskutiert. In Indien betrifft AIS-140 gerade den öffentlichen Personenverkehr (auch Busse), jedoch als Ortungs- und Notruftastensystem.</p></div>
+    </details>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Aussagen zu UN R144, zur Ausweitung auf weitere Klassen und zu AIS-140: vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="ecall-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Geringe Harmonisierung: Pflicht-eCall für PKW nur in EU und UK (ERA-GLONASS außerhalb der Übersicht). China führt nach Kenntnisstand eine eigene Norm ein, Indien regelt den öffentlichen Personenverkehr, die übrigen Märkte setzen auf freiwillige Telematik.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>UK</th><th>USA</th><th>CN</th><th>JP / KR</th><th>BR / GCC</th><th>IN</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>VO 2015/758 + DelVO 2017/79</td><td>assim. 2015/758</td><td>—</td><td>GB 45086.1 (prüfen)</td><td>— (R144 möglich)</td><td>—</td><td>AIS-140</td></tr>
+      <tr><td>Pflicht PKW (M1)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>Pflicht Busse / öff. Verkehr</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td>lt. Norm</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Automatische Crash-Auslösung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>freiwillig</td><td>lt. Norm</td><td>freiwillig</td><td>freiwillig</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>Paketvermittelt (4G/5G) gefordert</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>—</td><td>lt. Norm</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td>Galileo/EGNOS-Kompatibilität</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>—</td><td>BeiDou (prüfen)</td><td>—</td><td>—</td><td>NavIC (prüfen)</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = gefordert &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / in Einführung / nur bestimmte Fahrzeuggruppen &nbsp; <span style="color:var(--red)">✗</span> = keine Pflicht bekannt &nbsp; · Spalten CN, JP/KR, BR/GCC und IN beruhen auf Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="ecall-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe für UN R144 (AECS): <strong>GRSG</strong> (Working Party on General Safety Provisions) – <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsg" target="_blank" class="reg-link">GRSG ↗</a>. Den EU-Rahmen (VO 2015/758 + delegierte Rechtsakte) schreibt die Kommission eigenständig fort.</span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>VO (EU) 2015/758</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>112-eCall-Pflicht für neue Typen M1/N1</td><td>angewandt seit 31.03.2018</td></tr>
+        <tr><td>DelVO (EU) 2017/79</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Technische Anforderungen und Prüfverfahren (Anh. I–IX), Ausnahmen</td><td>erlassen 12.09.2016</td></tr>
+        <tr><td>DelVO (EU) 2024/1180</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Neue Normenfassungen; CEN/TS 17184:2022 / 17240:2018 (paketvermittelt) Pflicht für Neugenehmigungen und Erweiterungen</td><td>ABl. 19.04.2024; ab 01.01.2026</td></tr>
+        <tr><td>DelVO (EU) 2024/1084</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Notrufzentralen (PSAP) müssen paketvermittelte eCalls annehmen; leitungsvermittelt weiter, solange Netze bestehen</td><td>für bestehende PSAP ab 01.01.2026</td></tr>
+        <tr><td>DelVO (EU) 2025/1871</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Übergang</span></td><td>EN 17184/17240:2024, EN 16072:2025; technologieneutrale Tests; Erweiterungsregel Art. 5(4); Backup-Versorgung (Anh. X); PTI-Fähigkeit</td><td>erlassen 23.07.2025, ABl. 28.10.2025</td></tr>
+        <tr><td>Stichtag NG-eCall Stufe 2</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Termin</span></td><td>Neue Typen nur mit EN 17184/17240:2024 und Backup-Versorgung nach Anh. X; CoC rein leitungsvermittelter Neufahrzeuge ungültig</td><td>01.01.2027</td></tr>
+        <tr><td>Stichtag NG-eCall Stufe 3</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Termin</span></td><td>CoC ungültig ohne EN 17184/17240:2024; neue Typen müssen die PTI-Anforderungen (Anh. VII) erfüllen</td><td>01.01.2028</td></tr>
+        <tr><td>UK S.I. 2025/661</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Neue Normenliste Art. 5(8) und Übergangstabelle (alte Normen für neue Typen bis 31.12.2025, CoC-Ungültigkeit ab 01.01.2027)</td><td>03.07.2025</td></tr>
+        <tr><td>UN R144 – Anpassung an NG-eCall</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Anpassung der AECS-Regelung an paketvermittelte Netze in der GRSG – Stand vor Projektverwendung prüfen</td><td>Offen</td></tr>
+        <tr><td>EU – Ausweitung auf weitere Fahrzeugklassen</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Diskutierte Einbeziehung schwerer Nutzfahrzeuge, Busse und L-Klassen – Stand vor Projektverwendung prüfen</td><td>Offen</td></tr>
+        <tr><td>China GB 45086.1</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">Prüfen</span></td><td>Nationale AECS-Pflichtnorm; Normnummer, Geltungsbereich und Anwendungsbeginn vor Projektverwendung gegen den Originaltext prüfen</td><td>lt. Norm</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: Amtsblatt der EU (CELLAR), legislation.gov.uk, UNECE GRSG. Zeilen „In Diskussion“/„Prüfen“ ungeprüft – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: TYPABGRENZENDE MERKMALE -->
+<div id="ecall-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>DelVO 2017/79 Art. 4 unterscheidet drei Typbegriffe: den <strong>Fahrzeugtyp hinsichtlich des Einbaus</strong> (Merkmale der Integration im Fahrzeug sowie Funktion und Leistungsfähigkeit der wesentlichen Hardware), den <strong>Typ der selbstständigen technischen Einheit (STU)</strong> und den <strong>Bauteiltyp</strong>. Änderungen innerhalb dieser Merkmale können als Erweiterung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">🚗</span><h3>Integration im Fahrzeug</h3></div>
+    <p>Einbauort und Befestigung von Steuer-/Mobilfunkmodul und Backup-Versorgung, Anbindung an die Crash-Sensorik und Auslösestrategie (Anh. V). Bei Mehrstufen-Sonderfahrzeugen gilt die Vorstufen-Genehmigung nur ohne Änderung von System und Sensoren (Art. 3).</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Einbau-/Sensoränderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">📶</span><h3>Kommunikationsmodul</h3></div>
+    <p>Wechsel von 2G/3G auf 4G/5G (IMS) oder auf ein anderes Modem. Für Genehmigungen vor dem 01.01.2027 ist eine Erweiterung ohne erneuten Fahrzeugcrash möglich, wenn nur das Kommunikationsteil geändert wird (Art. 5(4) DelVO 2017/79 i. d. F. 2025/1871).</p>
+    <div class="module-card-footer"><span class="tag">Erweiterung + Dokumentation</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">🛰️</span><h3>GNSS-Empfänger und Antenne</h3></div>
+    <p>Empfängertyp, Systeme (mind. Galileo, GPS, SBAS) und Antennenposition bestimmen Genauigkeit und TTFF (Anh. VI); ein Wechsel erfordert i. d. R. neuen Nachweis.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: Anh. VI</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🎙️</span><h3>Audioeinrichtung</h3></div>
+    <p>Mikrofon und Lautsprecher der PSAP-Sprachverbindung müssen den Crash überstehen (Anh. III). Lautsprecherwechsel (z. B. Infotainment → eigener eCall-Lautsprecher) oder neuer Einbauort ist typrelevant.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: Anh. III</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🔋</span><h3>Energieversorgung</h3></div>
+    <p>Haupt-, sekundäre Fahrzeug- und optionale Backup-Versorgung. Neue Typen müssen ab 01.01.2027 Anh. X (Backup) erfüllen. Änderungen an Batterietyp oder Versorgungskonzept sind typrelevant.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: Anh. X (ab 2027)</span></div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: DelVO (EU) 2017/79 Art. 3–5 i. d. F. 2025/1871. Die Zuordnung einzelner Änderungen zu „neue Prüfung“ oder „Erweiterung“ ist Praxiserfahrung und mit dem Technischen Dienst abzustimmen. UN R144 und nationale Regelwerke haben eigene Typdefinitionen – vor Projektverwendung gegen den Originaltext prüfen.</span></div>
+</div>

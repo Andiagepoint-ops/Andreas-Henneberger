@@ -1,0 +1,65 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Vorschriftenliste</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(124,106,247,.12);border-color:rgba(124,106,247,.3)">🧾</div>
+  <div><h2>Vorschriftenliste — Generator</h2><p>Zielmärkte und Themen wählen, Liste der anwendbaren Vorschriften erzeugen und als Excel-Datei (CSV) oder PDF exportieren – als Grundlage für einen Homologationsplan.</p></div>
+</div>
+<div class="callout"><span class="ci">ℹ️</span><span>Die Liste wird aus dem Tab „Vorschriften“ der Themenmodule zusammengesetzt und zeigt den Prüfstand je Modul. Sie ersetzt keine verbindliche Vorschriftenliste der Genehmigungsbehörde.</span></div>
+<div class="gen-box">
+  <div class="gen-col"><div class="gen-head">Märkte <a href="#" onclick="genAll('gen-m',true);return false">alle</a> · <a href="#" onclick="genAll('gen-m',false);return false">keine</a></div><div id="gen-markets"></div></div>
+  <div class="gen-col"><div class="gen-head">Themenmodule <a href="#" onclick="genAll('gen-t',true);return false">alle</a> · <a href="#" onclick="genAll('gen-t',false);return false">keine</a></div><div id="gen-topics"></div></div>
+</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 18px">
+  <button class="reg-docs-btn primary" onclick="genBuild()">▶ Liste erstellen</button>
+  <button class="reg-docs-btn ghost" id="gen-csv" onclick="genCsv()" disabled>⬇ Excel (CSV)</button>
+  <button class="reg-docs-btn ghost" id="gen-print" onclick="genPrint()" disabled>🖨 Drucken / PDF</button>
+</div>
+<div id="gen-out"></div>
+<script>
+(function(){
+  const MK=[['🇪🇺','EU'],['🇺🇸','USA'],['🇨🇳','China'],['🇯🇵','Japan'],['🇰🇷','Korea'],['🇧🇷','Brasilien'],['🇬🇧','UK'],['🇦🇪','Golf-Staaten'],['🇮🇳','Indien']];
+  const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const topics=(window.TOPIC_MODULES||[]);
+  document.getElementById('gen-markets').innerHTML=MK.map(([f,n])=>'<label class="upd-check gen-cb"><input type="checkbox" class="gen-m" value="'+f+'" checked> '+f+' '+n+'</label>').join('');
+  document.getElementById('gen-topics').innerHTML=topics.map(t=>'<label class="upd-check gen-cb"><input type="checkbox" class="gen-t" value="'+t.id+'" checked> '+t.icon+' '+esc(t.title)+'</label>').join('');
+  window.genAll=(cls,v)=>document.querySelectorAll('.'+cls).forEach(c=>c.checked=v);
+  const txt=el=>el.textContent.replace(/↗/g,'').replace(/\s+/g,' ').trim();
+  window.genBuild=async function(){
+    const ms=[...document.querySelectorAll('.gen-m:checked')].map(c=>c.value), ts=[...document.querySelectorAll('.gen-t:checked')].map(c=>c.value);
+    const out=document.getElementById('gen-out');
+    if(!ms.length||!ts.length){out.innerHTML='<div class="placeholder-box"><p>Mindestens einen Markt und ein Modul wählen.</p></div>';return;}
+    out.innerHTML='<div class="loading"><div class="spinner"></div> Lese Module …</div>';
+    let pruef={}; try{pruef=(window._pruefData||await (await fetch('data/pruefstatus.json',{cache:'no-cache'})).json()).modules||{};}catch(e){}
+    const rows=[];
+    for(const id of ts){
+      const t=topics.find(x=>x.id===id);
+      try{
+        const doc=new DOMParser().parseFromString(await (await fetch('modules/'+id+'.html')).text(),'text/html');
+        const tab=doc.getElementById(id+'-tab-vorschriften'); if(!tab)continue;
+        const table=tab.querySelector('table'); if(!table)continue;
+        const heads=[...table.querySelectorAll('thead th')].map(txt);
+        table.querySelectorAll('tbody tr').forEach(tr=>{
+          const td=[...tr.querySelectorAll('td')]; if(td.length<2)return;
+          const first=txt(td[0]); const f=MK.find(([fl])=>first.startsWith(fl)); if(!f||!ms.includes(f[0]))return;
+          const link=td[1].querySelector('a');
+          rows.push({modul:t.title,id,markt:f[1],flag:f[0],regelwerk:txt(td[1]),url:link?link.href:'',
+            details:td.slice(2).map((c,i)=>(heads[i+2]?heads[i+2]+': ':'')+txt(c)).join(' · '),pruef:(pruef[id]||{}).status||'ungeprueft'});
+        });
+      }catch(e){}
+    }
+    window._genRows=rows;
+    const lab={geprueft:'geprüft',teilweise:'teilweise',ungeprueft:'ungeprüft'};
+    out.innerHTML='<div style="font-size:12px;color:var(--text2);margin-bottom:8px">'+rows.length+' Einträge · '+ms.length+' Märkte · '+ts.length+' Module · erstellt '+new Date().toLocaleString('de-DE')+'</div>'+
+      '<table class="doc-table gen-table"><thead><tr><th>Modul</th><th>Markt</th><th>Regelwerk</th><th>Anforderungen (Kurzfassung)</th><th>Prüfstand</th></tr></thead><tbody>'+
+      rows.map(r=>'<tr><td><a href="#" class="reg-link" onclick="showSection(\''+r.id+'\');return false">'+esc(r.modul)+'</a></td><td>'+r.flag+' '+esc(r.markt)+'</td><td>'+(r.url?'<a class="reg-link" target="_blank" href="'+esc(r.url)+'">'+esc(r.regelwerk)+'</a>':esc(r.regelwerk))+'</td><td style="font-size:12px">'+esc(r.details)+'</td><td>'+lab[r.pruef]+'</td></tr>').join('')+'</tbody></table>';
+    document.getElementById('gen-csv').disabled=document.getElementById('gen-print').disabled=!rows.length;
+  };
+  window.genCsv=function(){
+    const rows=window._genRows||[]; const q=s=>'"'+String(s).replace(/"/g,'""')+'"';
+    const lab={geprueft:'geprüft',teilweise:'teilweise',ungeprueft:'ungeprüft'};
+    const csv='\ufeff'+['Modul;Markt;Regelwerk;Link;Anforderungen;Prüfstand'].concat(rows.map(r=>[r.modul,r.markt,r.regelwerk,r.url,r.details,lab[r.pruef]].map(q).join(';'))).join('\r\n');
+    const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+    a.download='Vorschriftenliste_'+new Date().toISOString().slice(0,10)+'.csv'; document.body.appendChild(a); a.click(); a.remove();
+  };
+  window.genPrint=function(){window.print();};
+})();
+</script>

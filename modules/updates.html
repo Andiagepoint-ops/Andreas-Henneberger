@@ -1,0 +1,89 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Updates</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(62,207,142,.12);border-color:rgba(62,207,142,.3)">🔔</div>
+  <div><h2>Updates — Änderungen an Vorschriften</h2><p>Automatisch ermittelte Neuerungen aus amtlichen Quellen, täglich geprüft und den Themenmodulen zugeordnet.</p></div>
+</div>
+<div class="callout"><span class="ci">ℹ️</span><span><strong>Quellen:</strong> eCFR (Rechtsstand jeder FMVSS), Federal Register (NHTSA-Regeln und Regelentwürfe), EU-Amtsblatt (veröffentlichte UN-Regelungen und EU-Typgenehmigungsrecht). <strong>Grenzen:</strong> UNECE-Arbeitsdokumente (WP.29, GR-Sitzungen) blockieren automatische Abrufe – Änderungen an UN-Regelungen erscheinen hier erst mit der Veröffentlichung im EU-Amtsblatt. China, Japan, Korea, Indien, Brasilien und GCC haben keine maschinenlesbaren Quellen; dafür stehen unten Direktlinks.</span></div>
+<div id="upd-status" style="font-size:12px;color:var(--text2);margin:-4px 0 14px">Lade Daten …</div>
+<div class="upd-filters">
+  <select id="upd-market" onchange="updRender()"><option value="">Alle Märkte</option><option>EU</option><option>USA</option></select>
+  <select id="upd-kind" onchange="updRender()"><option value="">Alle Arten</option></select>
+  <select id="upd-module" onchange="updRender()"><option value="">Alle Module</option></select>
+  <input id="upd-q" type="text" placeholder="Filtern …" oninput="updRender()">
+  <label class="upd-check"><input type="checkbox" id="upd-new" onchange="updRender()"> nur neue</label>
+  <label class="upd-check"><input type="checkbox" id="upd-ecfr" onchange="updRender()"> eCFR-Rechtsstand einblenden</label>
+  <button class="reg-docs-btn ghost" onclick="updMarkRead()">✓ Alle als gelesen markieren</button>
+</div>
+<div id="upd-list"><div class="loading"><div class="spinner"></div> Lade Updates …</div></div>
+
+<h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin:28px 0 12px">Prüfstand der Module</h3>
+<div class="callout"><span class="ci">🔎</span><span>Zeigt, welche Module am Originaltext geprüft sind. <strong>Ungeprüft</strong> heißt: Inhalt aus Fachwissen und Sekundärquellen – Werte vor Projektverwendung gegen den Originaltext prüfen.</span></div>
+<div id="upd-pruef"></div>
+
+<h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin:28px 0 12px">Manuell prüfen (keine automatische Quelle)</h3>
+<table class="doc-table">
+  <thead><tr><th>Markt / Gremium</th><th>Wo</th><th>Was dort erscheint</th></tr></thead>
+  <tbody>
+    <tr><td>🌐 UNECE WP.29</td><td><a class="reg-link" target="_blank" href="https://unece.org/transport/vehicle-regulations/world-forum-harmonization-vehicle-regulations-wp29">WP.29-Sitzungen ↗</a></td><td>Beschlossene Änderungen (3× jährlich), Inkrafttreten ca. 7 Monate später</td></tr>
+    <tr><td>🌐 GR-Arbeitsgruppen</td><td><a class="reg-link" target="_blank" href="https://unece.org/transport/vehicle-regulations-wp29/working-parties">GRSG · GRE · GRVA · GRBP · GRSP · GRPE ↗</a></td><td>Arbeitsdokumente, Vorschläge für neue Änderungsserien</td></tr>
+    <tr><td>🇨🇳 China</td><td><a class="reg-link" target="_blank" href="https://std.samr.gov.cn/">SAMR-Normendatenbank ↗</a> · <a class="reg-link" target="_blank" href="https://www.miit.gov.cn/">MIIT ↗</a></td><td>Neue GB-Pflichtnormen, Entwürfe zur Kommentierung</td></tr>
+    <tr><td>🇯🇵 Japan</td><td><a class="reg-link" target="_blank" href="https://www.mlit.go.jp/jidosha/">MLIT Kraftfahrzeugabteilung ↗</a></td><td>Änderungen der Safety Regulations</td></tr>
+    <tr><td>🇰🇷 Korea</td><td><a class="reg-link" target="_blank" href="https://www.law.go.kr/">law.go.kr ↗</a> · <a class="reg-link" target="_blank" href="https://www.molit.go.kr/">MOLIT ↗</a></td><td>KMVSS-Änderungen</td></tr>
+    <tr><td>🇮🇳 Indien</td><td><a class="reg-link" target="_blank" href="https://morth.nic.in/">MoRTH ↗</a> · <a class="reg-link" target="_blank" href="https://araiindia.com/">ARAI (AIS-Entwürfe) ↗</a></td><td>CMVR-Notifikationen (G.S.R.), neue AIS</td></tr>
+    <tr><td>🇧🇷 Brasilien</td><td><a class="reg-link" target="_blank" href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes">CONTRAN-Resolutionen ↗</a></td><td>Neue Resolutionen und Fristen</td></tr>
+    <tr><td>🇬🇧 UK</td><td><a class="reg-link" target="_blank" href="https://www.legislation.gov.uk/new">legislation.gov.uk – neu ↗</a></td><td>Neue Statutory Instruments zu Fahrzeugen</td></tr>
+    <tr><td>🇦🇪 Golf-Staaten</td><td><a class="reg-link" target="_blank" href="https://www.gso.org.sa/">GSO ↗</a></td><td>Neue und überarbeitete GSO-Normen</td></tr>
+  </tbody>
+</table>
+
+<script>
+(function(){
+  const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const title=id=>(window.MODULE_TITLES&&MODULE_TITLES[id])||id;
+  window.updRender=function(){
+    const d=window._updData; if(!d)return;
+    const mk=document.getElementById('upd-market'); if(!mk)return;
+    const m=mk.value, k=document.getElementById('upd-kind').value, mo=document.getElementById('upd-module').value;
+    const q=document.getElementById('upd-q').value.toLowerCase(), onlyNew=document.getElementById('upd-new').checked, ecfr=document.getElementById('upd-ecfr').checked;
+    const last=localStorage.getItem('upd_lastRead')||'';
+    let it=d.items.filter(i=>(ecfr||i.source!=='eCFR'||k==='Rechtsstand')&&(!m||i.market===m)&&(!k||i.kind===k)&&(!mo||(i.modules||[]).includes(mo))
+      &&(!q||(i.title+' '+(i.summary||'')).toLowerCase().includes(q))&&(!onlyNew||isNewItem(i,last)));
+    const box=document.getElementById('upd-list');
+    if(!it.length){box.innerHTML='<div class="placeholder-box"><p>Keine Einträge für diese Auswahl.</p></div>';return;}
+    let html='',month='';
+    it.slice(0,300).forEach(i=>{
+      const mo2=i.date.slice(0,7);
+      if(mo2!==month){month=mo2;html+='<div class="upd-month">'+new Date(i.date+'T00:00:00').toLocaleDateString('de-DE',{month:'long',year:'numeric'})+'</div>';}
+      html+='<div class="upd-item'+(isNewItem(i,last)?' is-new':'')+'"><div class="upd-date">'+new Date(i.date+'T00:00:00').toLocaleDateString('de-DE')+'</div><div class="upd-body">'
+       +'<div class="upd-meta"><span class="tag">'+esc(i.market)+'</span><span class="tag">'+esc(i.kind)+'</span>'+(isNewItem(i,last)?'<span class="upd-new">NEU</span>':'')+(i.effective?'<span class="tag">wirksam ab '+new Date(i.effective+'T00:00:00').toLocaleDateString('de-DE')+'</span>':'')+'</div>'
+       +'<a class="upd-title" href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.title)+' ↗</a>'
+       +(i.summary?'<div class="upd-sum">'+esc(i.summary)+(i.summary.length>=400?' …':'')+'</div>':'')
+       +((i.modules||[]).length?'<div class="upd-mods">'+i.modules.map(x=>'<a href="#" onclick="showSection(\''+x+'\');return false" class="upd-mod">→ '+esc(title(x))+'</a>').join('')+'</div>':'')
+       +'</div></div>';
+    });
+    if(it.length>300)html+='<div class="sr-empty">… '+(it.length-300)+' weitere – Filter nutzen.</div>';
+    box.innerHTML=html;
+  };
+  window.updMarkRead=function(){localStorage.setItem('upd_lastRead',new Date().toISOString().slice(0,10));updRender();if(window.updBadges)updBadges();};
+  async function init(){
+    try{ window._updData = window._updData || await (await fetch('data/updates.json',{cache:'no-cache'})).json(); }
+    catch(e){ document.getElementById('upd-list').innerHTML='<div class="placeholder-box"><p>Update-Daten konnten nicht geladen werden.</p></div>'; return; }
+    const d=window._updData;
+    const st=Object.entries(d.sources||{}).map(([n,s])=>n+': '+(s.ok?'✓ '+s.count:'✗ '+esc(s.error||'Fehler'))).join(' · ');
+    document.getElementById('upd-status').innerHTML='Daten zuletzt aktualisiert: <strong>'+new Date(d.generated).toLocaleString('de-DE')+'</strong> · Zeitraum ab '+new Date(d.since+'T00:00:00').toLocaleDateString('de-DE')+' · '+st+' · <a class="reg-link" target="_blank" href="https://github.com/Andiagepoint-ops/Andreas-Henneberger/actions/workflows/update-check.yml">Prüfläufe ↗</a>';
+    const kinds=[...new Set(d.items.map(i=>i.kind))].sort();
+    document.getElementById('upd-kind').innerHTML='<option value="">Alle Arten</option>'+kinds.map(k=>'<option>'+esc(k)+'</option>').join('');
+    const mods=[...new Set(d.items.flatMap(i=>i.modules||[]))].sort((a,b)=>title(a).localeCompare(title(b)));
+    document.getElementById('upd-module').innerHTML='<option value="">Alle Module</option>'+mods.map(x=>'<option value="'+x+'">'+esc(title(x))+'</option>').join('');
+    const pre=sessionStorage.getItem('upd_filter_module'); if(pre){document.getElementById('upd-module').value=pre;sessionStorage.removeItem('upd_filter_module');}
+    updRender();
+    try{
+      const p=window._pruefData||await (await fetch('data/pruefstatus.json',{cache:'no-cache'})).json(); window._pruefData=p;
+      const lab={geprueft:['Geprüft','var(--green)'],teilweise:['Teilweise geprüft','var(--orange)'],ungeprueft:['Ungeprüft','var(--red)']};
+      document.getElementById('upd-pruef').innerHTML='<table class="doc-table"><thead><tr><th>Modul</th><th>Prüfstand</th><th>Stand</th><th>Hinweis</th></tr></thead><tbody>'+
+        Object.entries(p.modules).sort((a,b)=>title(a[0]).localeCompare(title(b[0]))).map(([id,s])=>'<tr><td><a href="#" class="reg-link" onclick="showSection(\''+id+'\');return false">'+esc(title(id))+'</a></td><td><span class="tag" style="border-color:'+lab[s.status][1]+';color:'+lab[s.status][1]+'">'+lab[s.status][0]+'</span></td><td>'+esc(s.date||'—')+'</td><td>'+esc(s.note||'')+'</td></tr>').join('')+'</tbody></table>';
+    }catch(e){}
+  }
+  init();
+})();
+</script>

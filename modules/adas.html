@@ -1,0 +1,175 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Fahrerassistenz (ADAS)</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(142,68,173,.12);border-color:rgba(142,68,173,.3)">🎯</div>
+  <div><h2>Modul — Fahrerassistenz (Notbremse, Spurhaltung, Lenkung)</h2><p>UN R152 · R79 · R130 · R157 · R171 · VO (EU) 2019/2144 · FMVSS 127 · GB 39901 und marktspezifische Äquivalente. AEB, Spurhalte- und Lenkassistenz, Müdigkeits- und Ablenkungswarnung in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="adas-tabs">
+  <div class="tab active" onclick="switchTab('adas','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('adas','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('adas','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('adas','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('adas','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('adas','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="adas-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Fahrerassistenz ist kein einzelnes Regelwerk, sondern ein Bündel: <strong>Notbremse</strong> (UN R152 für M1/N1, FMVSS 127, GB 39901), <strong>Lenkung/Spurführung</strong> (UN R79 inkl. ACSF, R171 DCAS, R157 ALKS), <strong>Warnsysteme</strong> (R130 LDWS) sowie in der EU die Einbaupflichten aus VO (EU) 2019/2144 (u. a. ELKS, DDAW, ADDW).</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Notbremse (AEB)</th><th>Spurhaltung / Lenkung</th><th>Status / Pflicht</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="reg-link">UN R152 · R157 ↗</a> · <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="reg-link">UN R79 ↗</a> · <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-121-140" target="_blank" class="reg-link">UN R130 ↗</a> · <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-161-180" target="_blank" class="reg-link">UN R171 ↗</a> · Pflicht über <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="reg-link">VO (EU) 2019/2144 ↗</a></td><td>R152: Fahrzeug-, Fußgänger- und Radfahrerszenarien (Phasen lt. 2019/2144)</td><td>ELKS (Notfall-Spurhalteassistent) Pflicht; LKA/ACSF nach R79; DCAS nach R171; ALKS (Level 3) nach R157</td><td>Pflicht für M1/N1 in Stufen (neue Typen / alle Neufahrzeuge); Termine siehe Amendments</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.127" target="_blank" class="reg-link">FMVSS 127 (49 CFR §571.127) ↗</a></td><td>FCW + AEB gegenüber Fahrzeug &gt; 10 bis &lt; 145 km/h; FCW + PAEB gegenüber Fußgänger &gt; 10 bis &lt; 73 km/h</td><td>Kein FMVSS für Spurhalte- oder Lenkassistenz</td><td>Pflicht für Fahrzeuge hergestellt ab 01.09.2029 (GVWR ≤ 4.536 kg); Kleinserie/Final-Stage +1 Jahr</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://openstd.samr.gov.cn/" target="_blank" class="reg-link">GB 39901-2025 ↗</a> (ersetzt GB/T 39901-2021) · GB/T 39323-2020 (LKA) · GB/T 26773-2011 (LDWS)</td><td>GB 39901-2025: M1 Fahrzeugziel 10–80 km/h, N1 10–60 km/h; Fußgänger/Radfahrer 20–60 km/h</td><td>LKA (GB/T 39323) und LDWS (GB/T 26773) als Empfehlungsnormen; Pflichtnorm zu kombinierter Fahrassistenz in Erarbeitung</td><td>AEB verpflichtend ab 01.01.2028 (Umsetzungsdatum GB 39901-2025); Übergangsregeln Kap. 9</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Safety Regulation ↗</a>; UN R152/R79/R157 übernommen</td><td>AEBS-Pflicht für PKW auf Basis UN R152</td><td>R79/R157 als UN-Vertragspartei angewandt</td><td>AEBS-Pflicht in Kraft (Termine lt. MLIT-Bekanntmachung)</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS ↗</a></td><td>AEBS-Anforderungen im KMVSS (an UN R152 angelehnt)</td><td>LDWS-/LKAS-Anforderungen im KMVSS; Level-3-Regelung nach R157-Vorbild</td><td>Pflichtumfang je Fahrzeugklasse lt. KMVSS</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resoluções ↗</a></td><td>Keine allgemeine AEB-Pflicht für PKW bekannt</td><td>Keine eigene Regelung bekannt</td><td>Stand ausdrücklich prüfen (Latin NCAP treibt Ausstattung)</td></tr>
+      <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung (UN-Regelungen) · retained <a href="https://www.legislation.gov.uk/eur/2019/2144" target="_blank" class="reg-link">VO 2019/2144 ↗</a> widerrufen durch <a href="https://www.legislation.gov.uk/uksi/2022/1273/regulation/84" target="_blank" class="reg-link">SI 2022/1273 reg. 84 ↗</a></td><td>UN R152 als Prüfgrundlage</td><td>UN R79 / R157 / R171</td><td>Umfang der GB-Einbaupflichten (GSR2-Äquivalent) prüfen</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Normen ↗</a> (UN-/FMVSS-Nachweise)</td><td>Keine eigenständige AEB-Pflicht bekannt</td><td>Keine eigenständige Regelung bekannt</td><td>Akzeptanz von UN- bzw. US-Nachweisen; Stand prüfen</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-185 ↗</a> (über <a href="https://www.araiindia.com/" target="_blank" class="reg-link">ARAI ↗</a>)</td><td>ADAS-Anforderungen nach AIS-185 (UN-basiert)</td><td>Lt. AIS-185</td><td>Inhalt, Umfang und Pflichttermine per MoRTH-Notifikation prüfen</td></tr>
+    </tbody>
+  </table>
+  <div class="callout" style="margin-top:12px"><span class="ci">⚠️</span><span><strong>Prüfstatus:</strong> Geprüft: FMVSS 127 (eCFR), GB 39901-2025, GB/T 39323-2020, GB/T 26773-2011 (chinesestandard.net-Vorschau), UK-Widerruf (legislation.gov.uk). Alle übrigen Angaben (UN-Regelungen, EU-Termine, Japan, Korea, Brasilien, Golf, Indien/AIS-185) stammen aus Fachwissen — <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</span></div>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="adas-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#8e44ad"><div class="module-card-header"><span class="module-card-icon">🛑</span><h3>Notbremsassistent (AEB/AEBS)</h3></div><p>Kette aus Umfelderkennung (Radar, Kamera, ggf. Lidar), Situationsbewertung (Time-to-Collision), Warnkaskade und autonomer Betriebsbremsung. UN R152 prüft Szenarien gegen stehendes/fahrendes Fahrzeug sowie Fußgänger und Radfahrer; FMVSS 127 fordert darüber hinaus Kollisionsfreiheit in den Prüffahrten und einen deutlich höheren Geschwindigkeitsbereich (Fahrzeugziel bis &lt; 145 km/h).</p><div class="module-card-footer"><span class="tag">R152 · FMVSS 127</span><span class="tag">GB 39901</span></div></div>
+    <div class="module-card" style="--card-color:#7d3c98"><div class="module-card-header"><span class="module-card-icon">📢</span><h3>Warnkaskade (FCW)</h3></div><p>Vor der Notbremsung ist eine Kollisionswarnung gefordert. FMVSS 127 S5.1.1 legt das akustische Signal konkret fest: Grundfrequenz ≥ 800 Hz, 6–12 Pulse/s, 15–30 dB über Innengeräusch; nicht zugehöriges Audio wird abgesenkt. UN R152 fordert optische und akustische/haptische Warnung mit Mindestvorlauf lt. Regelwerk.</p><div class="module-card-footer"><span class="tag">≥ 800 Hz (US)</span><span class="tag">optisch + akustisch</span></div></div>
+    <div class="module-card" style="--card-color:#6c3483"><div class="module-card-header"><span class="module-card-icon">🛣️</span><h3>Spurhaltung: LDWS · ELKS · LKA</h3></div><p><strong>LDWS</strong> (UN R130) warnt nur. <strong>ELKS</strong> (Notfall-Spurhalteassistent, EU 2019/2144) greift korrigierend ein, wenn das Fahrzeug die Spur zu verlassen droht; abschaltbar, aber bei jedem Fahrzyklus aktiv startend. <strong>LKA</strong> mit dauerhafter Lenkunterstützung ist eine ACSF der Kategorie B1 nach UN R79.</p><div class="module-card-footer"><span class="tag">R130 · R79</span><span class="tag">ELKS</span></div></div>
+    <div class="module-card" style="--card-color:#5b2c6f"><div class="module-card-header"><span class="module-card-icon">🎛️</span><h3>Lenkfunktionen nach UN R79</h3></div><p>R79 unterscheidet u. a. ACSF-Kategorien A (Parken, niedrige Geschwindigkeit), B1 (Spurhalten, Hände am Lenkrad), C (Spurwechsel auf Fahrerbefehl) sowie die Notlenkfunktion (ESF) und die Risk Mitigation Function. Der Anhang zu komplexen elektronischen Systemen verlangt Sicherheitskonzept und Dokumentation. Hands-on-Erkennung und Warnkaskaden lt. Regelwerk.</p><div class="module-card-footer"><span class="tag">ACSF A/B1/C</span><span class="tag">ESF</span></div></div>
+    <div class="module-card" style="--card-color:#a569bd"><div class="module-card-header"><span class="module-card-icon">🤖</span><h3>DCAS (R171) und ALKS (R157)</h3></div><p><strong>DCAS</strong> (Level 2): Fahrer bleibt verantwortlich, System übernimmt Längs- und Querführung, mit Anforderungen an Fahrerüberwachung und Systemgrenzen. <strong>ALKS</strong> (Level 3): System fährt im definierten Betriebsbereich selbst; Übernahmeaufforderung und Minimal-Risk-Manöver lt. R157. Grenzen (Geschwindigkeit, Spurwechsel, Hands-off) je Änderungsserie.</p><div class="module-card-footer"><span class="tag">Level 2: R171</span><span class="tag">Level 3: R157</span></div></div>
+    <div class="module-card" style="--card-color:#bb8fce"><div class="module-card-header"><span class="module-card-icon">😴</span><h3>Fahrerzustand: DDAW · ADDW</h3></div><p>EU 2019/2144 verlangt eine Warnung bei Müdigkeit/nachlassender Aufmerksamkeit (<strong>DDAW</strong>) und eine fortgeschrittene Ablenkungswarnung (<strong>ADDW</strong>, typ. kamerabasiertes Blick-/Kopftracking). Die technischen Details stehen in eigenen Durchführungs- bzw. delegierten Rechtsakten. Datenschutz: Verarbeitung im geschlossenen System ohne Weitergabe an Dritte lt. 2019/2144.</p><div class="module-card-footer"><span class="tag">DDAW</span><span class="tag">ADDW</span></div></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft: FMVSS-127-Werte (S5.1.1, S5.1.2, S5.2) gegen eCFR. ACSF-Kategorien, R152-/R157-/R171-Inhalte und die EU-Detailanforderungen (ELKS, DDAW, ADDW) aus Fachwissen — vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="adas-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise zu Notbremse, Spurhaltung und Lenkassistenz. Grundregel: Die UN-Regelung beschreibt das System, das jeweilige Marktrecht entscheidet, ob es eingebaut sein muss.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Einbaupflicht vs. Genehmigung nach UN-Regelung</summary>
+      <div class="details-body">
+        <p>VO (EU) 2019/2144 schreibt die Systeme vor und verweist für die technischen Anforderungen auf UN-Regelungen (z. B. R152 für AEB, R79 für Lenkung) bzw. eigene Durchführungsrechtsakte (ELKS, DDAW, ADDW). Ein Fahrzeug kann also eine R79-Genehmigung haben und trotzdem die ELKS-Pflicht verfehlen, wenn die Funktion nicht im geforderten Umfang aktiv ist. Beide Nachweise getrennt im Genehmigungsplan führen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — FMVSS 127 als Selbstzertifizierung</summary>
+      <div class="details-body">
+        <p>FMVSS 127 kennt keine Typgenehmigung; der Hersteller zertifiziert selbst, NHTSA prüft nachträglich. Gegenüber R152 ist der Prüfraum größer: Fahrzeugszenarien bis knapp 145 km/h, Fußgängerszenarien bis knapp 73 km/h, und in den Prüffahrten darf es keinen Kontakt geben. Eine R152-Genehmigung ist daher kein Nachweis für den US-Markt. Der Standard wurde nach Petitionen nachgebessert (FR 26.11.2024; Inkrafttreten der Änderung auf 20.03.2025 verschoben).</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — Von GB/T zu GB (Pflichtnorm)</summary>
+      <div class="details-body">
+        <p>GB 39901-2025 ersetzt die Empfehlungsnorm GB/T 39901-2021 (nur M1), erweitert den Geltungsbereich auf M1 und N1 und wird ab 01.01.2028 verbindlich. Die Norm enthält ein eigenes Kapitel zur Typgleichheit (Kap. 8), Anforderungen an funktionale Sicherheit (Anhang A) und an Simulationsprüfungen (Anhang B). Laut Abschnitt 4.3 darf das System über 10 km/h nicht aktiv abschaltbar sein; die Abschaltung erfordert langes Drücken oder mindestens zwei bewusste Bedienschritte.</p>
+      </div>
+    </details>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">FMVSS-127- und GB-39901-Aussagen sind gegen eCFR, Federal Register und die chinesestandard.net-Vorschau geprüft. Aussagen zu EU-Durchführungsrechtsakten und R79/R171 aus Fachwissen — vor Projektverwendung gegen den Originaltext prüfen.</div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Fahrerassistenz">+ Frage einreichen</a></div>
+    <details>
+      <summary>Darf der Fahrer den Notbremsassistenten abschalten?</summary>
+      <div class="details-body"><p>In der EU (R152 / 2019/2144) ja, aber nur über eine bewusste Bedienhandlung; mit jedem neuen Fahrzyklus muss das System wieder aktiv sein (Details lt. Regelwerk, vor Projektverwendung gegen den Originaltext prüfen). In China verlangt GB 39901-2025 eine Abschaltung durch langes Drücken oder mindestens zwei bewusste Bedienschritte und verbietet die aktive Abschaltung oberhalb von 10 km/h. Abschaltbedingungen gehören in die Systembeschreibung für die Genehmigung.</p></div>
+    </details>
+    <details>
+      <summary>Reicht eine Spurverlassenswarnung (LDWS) für die EU-ELKS-Pflicht?</summary>
+      <div class="details-body"><p>Nein. Eine reine Warnung nach UN R130 erfüllt nicht die Anforderung an einen Notfall-Spurhalteassistenten, der korrigierend eingreift. ELKS wird in der Praxis über einen Lenkeingriff (R79) umgesetzt; die Prüfszenarien stehen im zugehörigen EU-Durchführungsrechtsakt. Vor Projektverwendung gegen den Originaltext prüfen.</p></div>
+    </details>
+    <details>
+      <summary>Ist eine UN-R152-Genehmigung in den USA anerkannt?</summary>
+      <div class="details-body"><p>Nein. Die USA sind nicht Vertragspartei des 1958er Abkommens. FMVSS 127 ist separat zu erfüllen und selbst zu zertifizieren. Wesentliche Unterschiede: höherer Geschwindigkeitsbereich (Fahrzeug &gt; 10 bis &lt; 145 km/h), Kollisionsfreiheit in den Prüffahrten, detaillierte FCW-Signalvorgaben (S5.1.1). Pflicht für Fahrzeuge hergestellt ab 01.09.2029.</p></div>
+    </details>
+    <details>
+      <summary>Ist freihändiges Fahren (Hands-off) genehmigungsfähig?</summary>
+      <div class="details-body"><p>Nicht unter R79 ACSF B1 — dort ist Hands-on-Erkennung mit Warnkaskade gefordert. Hands-off-Funktionen im Level-2-Betrieb werden über R171 (DCAS) adressiert, mit Anforderungen an die Fahrerüberwachung; Level-3-Systeme laufen über R157 (ALKS). Zulässige Bedingungen hängen von der jeweiligen Änderungsserie ab — vor Projektverwendung gegen den Originaltext prüfen.</p></div>
+    </details>
+    <details>
+      <summary>Gilt GB 39901-2025 auch für bereits genehmigte Typen?</summary>
+      <div class="details-body"><p>Die Norm enthält ein eigenes Kapitel 9 („Implementation of the Standard“) mit den Übergangsregeln. Umsetzungsdatum der Norm ist der 01.01.2028; ob und ab wann bestehende Typen nachziehen müssen, steht im Volltext von Kapitel 9 — in der öffentlich einsehbaren Vorschau nicht enthalten, daher vor Projektverwendung gegen den Originaltext prüfen.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="adas-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Geringe Harmonisierung: Die EU schreibt das breiteste Paket vor, die USA regeln nur AEB (FMVSS 127, eigene Prüflogik), China zieht mit GB 39901-2025 ab 2028 nach. Lenk- und Level-2/3-Funktionen sind fast nur über UN-Regelungen erfasst.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>IN</th><th>Rest (BR, GCC)</th></tr></thead>
+    <tbody>
+      <tr><td>Basis AEB</td><td>R152 / 2019/2144</td><td>FMVSS 127</td><td>GB 39901-2025</td><td>R152</td><td>KMVSS</td><td>AIS-185</td><td>—</td></tr>
+      <tr><td>AEB Fahrzeug Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 09/2029</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 01/2028</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>AEB Fußgänger</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 09/2029</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 01/2028</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>AEB Radfahrer</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 01/2028</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>Spurhaltung Pflicht (ELKS/LKA)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗ (nur GB/T)</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>Müdigkeit/Ablenkung (DDAW/ADDW)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht bzw. geregelt &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt, terminiert oder Stand unklar &nbsp; <span style="color:var(--red)">✗</span> = keine Pflicht / keine Regelung bekannt</div>
+  <div style="margin-top:6px;font-size:12px;color:var(--text2)">UK folgt weitgehend der UN/ECE-Spalte (Umfang der GB-Einbaupflichten prüfen). Geprüft: USA-Spalte zu AEB (FMVSS 127 regelt Fahrzeug- und Fußgängerszenarien) und China-AEB (GB 39901-2025). Alle übrigen Einstufungen aus Fachwissen — vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="adas-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRVA</strong> (Working Party on Automated/Autonomous and Connected Vehicles) für R79, R130, R152, R157 und R171 — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grva" target="_blank" class="reg-link">GRVA ↗</a></span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>FMVSS 127 (Final Rule)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">Verabschiedet</span></td><td>Neuer Standard AEB/PAEB/FCW für leichte Fahrzeuge (GVWR ≤ 4.536 kg)</td><td>09.05.2024 (eCFR-Fassung)</td></tr>
+        <tr><td>FMVSS 127 (Reconsideration)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Teilstattgabe von Petitionen (FR 2024-27349), Korrektur (FR 2024-28998); Inkrafttreten verschoben (FR 2025-01832)</td><td>26.11.2024 / 11.12.2024 / in Kraft 20.03.2025</td></tr>
+        <tr><td>FMVSS 127 Pflichttermin</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Terminiert</span></td><td>Alle Fahrzeuge hergestellt ab Stichtag; Kleinserie, Final-Stage und Alterer ein Jahr später (S5(b)). Keine weitere FR-Änderung zu FMVSS 127 gefunden (Suche Stand 25.10.2026)</td><td>01.09.2029 / 01.09.2030</td></tr>
+        <tr><td>GB 39901-2025 (China)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Terminiert</span></td><td>Pflichtnorm AEBS M1/N1, ersetzt GB/T 39901-2021</td><td>Ausgabe 31.12.2025 · Umsetzung 01.01.2028</td></tr>
+        <tr><td>China: Pflichtnorm kombinierte Fahrassistenz (L2)</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Geplante Sicherheitsanforderungen an kombinierte Assistenzsysteme (Längs-/Querführung, Fahrerüberwachung); Nummer und Termine offen</td><td>Offen</td></tr>
+        <tr><td>VO (EU) 2019/2144 — GSR2-Stufen</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>AEB (Fahrzeug, dann Fußgänger/Radfahrer), ELKS, DDAW, ADDW gestaffelt für neue Typen und alle Neufahrzeuge</td><td>Stufen 07/2022, 07/2024, 07/2026 (lt. Anhang II)</td></tr>
+        <tr><td>UN R171 (DCAS)</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Weiterentwicklung</span></td><td>Grundfassung für Level-2-Systeme; Folgeserien zu systeminitiierten Manövern und Hands-off in GRVA</td><td>Lt. WP.29-Sitzungskalender</td></tr>
+        <tr><td>UN R157 (ALKS) 01-Serie</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Erweiterung u. a. Höchstgeschwindigkeit und Spurwechsel</td><td>Lt. Regelwerk</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout" style="margin-top:12px"><span class="ci">⚠️</span><span>Geprüft: alle FMVSS-127-Daten (eCFR-Versionshistorie, Federal Register API) und GB 39901-2025 (chinesestandard.net). EU-Stufendaten, Inhalte/Daten der UN-Änderungsserien (R152, R157, R171) und der chinesische L2-Normentwurf stammen aus Fachwissen — <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</span></div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: eCFR, Federal Register, chinesestandard.net, UNECE GRVA.</div>
+</div>
+
+<!-- TAB: TYPABGRENZENDE MERKMALE -->
+<div id="adas-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung behandelt werden, meist mit Nachprüfung ausgewählter Szenarien.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#8e44ad">
+    <div class="module-card-header"><span class="module-card-icon">📡</span><h3>Sensorik und Anbau</h3></div>
+    <p>Sensorprinzip (Radar, Mono-/Stereokamera, Lidar, Fusion), Sensorhersteller/-generation sowie Einbauort und -höhe hinter Stoßfänger oder Scheibe. Ein Wechsel des Sensorprinzips ist typabgrenzend; Änderungen an Abdeckung, Scheibe oder Halter erfordern meist den Nachweis unveränderter Erkennungsleistung.</p>
+    <div class="module-card-footer"><span class="tag">Neue Genehmigung: bei Sensorprinzipwechsel</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#7d3c98">
+    <div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Fahrzeugmasse und Bremssystem</h3></div>
+    <p>Die AEB-Leistung hängt von Masse, Achslastverteilung und Bremsanlage (Regelsystem, Bremskraftverstärkung) ab. Änderungen, die die verfügbare Verzögerung beeinflussen, ziehen eine Nachprüfung der Notbremsszenarien nach sich (Schnittstelle zu R13-H).</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Bremsen-/Massenänderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#6c3483">
+    <div class="module-card-header"><span class="module-card-icon">🎛️</span><h3>Lenksystem und ACSF-Kategorie</h3></div>
+    <p>Lenkungsbauart (EPS-Typ, Übersetzung, Steer-by-Wire) und genehmigte ACSF-Kategorien nach R79 bzw. Funktionsumfang nach R171. Das Hinzufügen einer neuen Kategorie (z. B. Spurwechsel) ist keine reine Softwareänderung, sondern erweitert den Genehmigungsumfang.</p>
+    <div class="module-card-footer"><span class="tag">Neue Prüfung: bei neuer Kategorie</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#5b2c6f">
+    <div class="module-card-header"><span class="module-card-icon">💾</span><h3>Software und Steuergerät</h3></div>
+    <p>Software-Updates, die Auslöseschwellen, Warnzeitpunkte oder Systemgrenzen ändern, sind genehmigungsrelevant. Bewertung über das Softwareupdate-Managementsystem (UN R156, RXSWIN); Sicherheitskonzept fortschreiben.</p>
+    <div class="module-card-footer"><span class="tag">Bewertung: über R156-Prozess</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#a569bd">
+    <div class="module-card-header"><span class="module-card-icon">👁️</span><h3>HMI, Warnstrategie und Fahrerüberwachung</h3></div>
+    <p>Art der Warnsignale (optisch/akustisch/haptisch), Bedienlogik der Abschaltung sowie Kamera/Sensor der Fahrerüberwachung (DDAW/ADDW, R171). Änderungen der Abschaltlogik betreffen direkt Pflichtanforderungen und sind stets zu bewerten.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei HMI-/Abschaltänderung</span></div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Maßgeblich sind die Typdefinitionen der jeweiligen Regelung (z. B. „Fahrzeugtyp hinsichtlich AEBS“ in UN R152, Typbegriff in R79) sowie in China Kapitel 8 („Same-type Determination“) von GB 39901-2025. Die hier genannten Merkmale sind eine fachliche Zusammenfassung — Typdefinitionen vor Projektverwendung gegen den Originaltext prüfen. Bei Unsicherheit ist die zuständige Genehmigungsbehörde bzw. der Technische Dienst zu konsultieren.</span></div>
+</div>

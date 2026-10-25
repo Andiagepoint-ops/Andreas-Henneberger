@@ -176,6 +176,45 @@
   .reg-doc-row{display:flex;gap:6px;align-items:center;}
   .reg-doc-row .reg-doc-item{flex:1;}
   .reg-doc-viewer{width:100%;height:75vh;border:1px solid var(--border);border-radius:6px;margin-top:12px;background:#fff;}
+  .sb-badge{display:inline-block;margin-left:6px;padding:0 6px;border-radius:9px;background:var(--green);color:#0f1117;font-size:10px;font-weight:700;line-height:16px;vertical-align:middle;}
+  .upd-filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:16px;}
+  .upd-filters select,.upd-filters input[type=text]{background:var(--bg3);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:6px;font-size:12px;}
+  .upd-check{font-size:12px;color:var(--text2);display:inline-flex;align-items:center;gap:5px;cursor:pointer;}
+  .upd-month{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text2);margin:18px 0 8px;}
+  .upd-item{display:flex;gap:14px;padding:12px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;margin-bottom:8px;}
+  .upd-item.is-new{border-left:3px solid var(--green);}
+  .upd-item.fr-past{opacity:.55;}
+  .upd-date{min-width:84px;font-size:12px;color:var(--text2);}
+  .upd-body{flex:1;min-width:0;}
+  .upd-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:5px;}
+  .upd-new{font-size:10px;font-weight:700;background:var(--green);color:#0f1117;border-radius:4px;padding:1px 6px;}
+  .upd-title{display:block;font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;line-height:1.45;}
+  .upd-title:hover{text-decoration:underline;}
+  .upd-sum{font-size:12px;color:var(--text2);margin-top:4px;line-height:1.5;}
+  .upd-mods{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;}
+  .upd-mod{font-size:11px;color:var(--text2);text-decoration:none;border:1px solid var(--border);border-radius:4px;padding:1px 7px;}
+  .upd-mod:hover{color:var(--text);background:var(--bg3);}
+  .fr-today{font-size:12px;font-weight:700;color:var(--accent);margin:14px 0 6px;}
+  .gen-box{display:grid;grid-template-columns:1fr 2fr;gap:16px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px;}
+  .gen-head{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text2);margin-bottom:8px;}
+  .gen-head a{color:var(--accent);text-transform:none;font-weight:400;text-decoration:none;}
+  #gen-topics{columns:2;}
+  .gen-cb{display:flex;margin-bottom:4px;}
+  .mod-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:-8px 0 16px;}
+  .mod-toolbar .tag{cursor:default;}
+  .print-only{display:none;}
+  @media print{
+    :root{--bg:#fff;--bg2:#fff;--bg3:#f2f2f2;--border:#ccc;--text:#111;--text2:#444;}
+    body{background:#fff;color:#111;font-size:11pt;}
+    nav,.sidebar,#hero,.tabs,.mod-toolbar,.reg-docs-box,.nav-search,.faq-submit,.upd-filters,.gen-box,.reg-docs-btn,.breadcrumb a{display:none!important;}
+    .layout{display:block!important;}
+    .content{padding:0!important;max-width:none!important;}
+    .print-only{display:block!important;font-size:13pt;margin:18px 0 8px;border-bottom:1px solid #999;padding-bottom:3px;}
+    .module-card,.upd-item,.doc-table tr,details{break-inside:avoid;}
+    .module-card:hover{transform:none;box-shadow:none;}
+    a{color:#111;}
+    .reg-doc-viewer{display:none;}
+  }
   </style>
 </head>
 <body>
@@ -187,6 +226,7 @@
     <a href="#" onclick="showSection('grundlagen')">Grundlagen</a>
     <a href="#" onclick="showSection('gesetz-r121')">Gesetzestexte</a>
     <a href="#" onclick="showSection('marktvergleich')">Marktvergleich</a>
+    <a href="#" onclick="showSection('updates')">Updates</a>
     <a href="#" onclick="showSection('maerkte')">Märkte</a>
   </div>
   <div class="nav-search">
@@ -216,6 +256,9 @@
     <div class="sidebar-section">
       <div class="sidebar-heading">Navigation</div>
       <a class="sidebar-item active" onclick="showSection('home')"><span class="icon">🏠</span> Startseite</a>
+      <a class="sidebar-item" onclick="showSection('updates')"><span class="icon">🔔</span> Updates</a>
+      <a class="sidebar-item" onclick="showSection('fristen')"><span class="icon">📅</span> Fristenkalender</a>
+      <a class="sidebar-item" onclick="showSection('generator')"><span class="icon">🧾</span> Vorschriftenliste</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Grundlagen</div>
@@ -240,6 +283,14 @@
       <a class="sidebar-item" onclick="showSection('wischer')"><span class="icon">🌧️</span> Scheibenwischer/-wascher</a>
       <a class="sidebar-item" onclick="showSection('heizung')"><span class="icon">🔥</span> Heizung</a>
       <a class="sidebar-item" onclick="showSection('fanfare')"><span class="icon">📯</span> Fanfare</a>
+      <a class="sidebar-item" onclick="showSection('passiv')"><span class="icon">🛡️</span> Passive Sicherheit</a>
+      <a class="sidebar-item" onclick="showSection('rueckhalte')"><span class="icon">🪢</span> Gurte &amp; Kindersitze</a>
+      <a class="sidebar-item" onclick="showSection('adas')"><span class="icon">🎯</span> Fahrerassistenz (ADAS)</a>
+      <a class="sidebar-item" onclick="showSection('cyber')"><span class="icon">🔐</span> Cybersecurity &amp; Updates</a>
+      <a class="sidebar-item" onclick="showSection('hv')"><span class="icon">⚡</span> Hochvolt &amp; EMV</a>
+      <a class="sidebar-item" onclick="showSection('geraeusch')"><span class="icon">🔈</span> Fahrgeräusch &amp; AVAS</a>
+      <a class="sidebar-item" onclick="showSection('sicht')"><span class="icon">🪞</span> Indirekte Sicht &amp; Rücksicht</a>
+      <a class="sidebar-item" onclick="showSection('ecall')"><span class="icon">🆘</span> eCall / Notrufsystem</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-heading">Gesetzestexte &amp; Interpretation</div>
@@ -297,6 +348,12 @@
         </div>
       </div>
       <div class="callout"><span class="ci">ℹ️</span><span>Jedes Modul enthält separate Tabs für Vorschriften, technische Anforderungen, <strong>Interpretation &amp; FAQ</strong> und Marktvergleich. Inhalte werden bei Bedarf geladen.</span></div>
+      <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin-bottom:14px;">Werkzeuge</h3>
+      <div class="module-grid">
+        <div class="module-card" style="--card-color:#3ecf8e" onclick="showSection('updates')"><div class="module-card-header"><span class="module-card-icon">🔔</span><h3>Updates</h3></div><p>Täglich automatisch ermittelte Änderungen aus eCFR, Federal Register und EU-Amtsblatt, den Modulen zugeordnet.</p><div class="module-card-footer"><span class="tag">täglich</span><span class="tag">EU · USA</span></div></div>
+        <div class="module-card" style="--card-color:#4f8ef7" onclick="showSection('fristen')"><div class="module-card-header"><span class="module-card-icon">📅</span><h3>Fristenkalender</h3></div><p>Übergangsfristen für neue Typen und alle Neuzulassungen auf einer Zeitachse, filterbar nach Markt und Modul.</p><div class="module-card-footer"><span class="tag">GSR2 · Euro 7 · FMVSS 127</span></div></div>
+        <div class="module-card" style="--card-color:#7c6af7" onclick="showSection('generator')"><div class="module-card-header"><span class="module-card-icon">🧾</span><h3>Vorschriftenliste</h3></div><p>Märkte und Themen wählen, Vorschriftenliste erzeugen und als Excel (CSV) oder PDF exportieren.</p><div class="module-card-footer"><span class="tag">Export</span><span class="tag">Homologationsplan</span></div></div>
+      </div>
       <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin-bottom:14px;">Themenmodule</h3>
       <div class="module-grid">
         <div class="module-card" style="--card-color:#4f8ef7" onclick="showSection('modul1')"><div class="module-card-header"><span class="module-card-icon">🚗</span><h3>PKW Homologation</h3></div><p>Gesamtfahrzeug-Genehmigungsprozesse, marktspezifische Anforderungen und Grundlagen.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">Vorschriften</span></div></div>
@@ -313,6 +370,14 @@
         <div class="module-card" style="--card-color:#1abc9c" onclick="showSection('wischer')"><div class="module-card-header"><span class="module-card-icon">🌧️</span><h3>Scheibenwischer/-wascher</h3></div><p>Wischbereich, Frequenz und Waschanlage nach EU 2021/535 Anhang VI.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">EU 2021/535 · FMVSS 104</span><span class="tag">Amendments</span></div></div>
         <div class="module-card" style="--card-color:#e67e22" onclick="showSection('heizung')"><div class="module-card-header"><span class="module-card-icon">🔥</span><h3>Heizung</h3></div><p>Heizungsanlagen, CO-Sicherheit und Standheizung nach UN R122.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R122</span><span class="tag">EV-Heizung</span></div></div>
         <div class="module-card" style="--card-color:#9b59b6" onclick="showSection('fanfare')"><div class="module-card-header"><span class="module-card-icon">📯</span><h3>Fanfare</h3></div><p>Schallzeichen: Pegel, Klangcharakter und Mehrklang-Fanfaren nach UN R28 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R28 · StVZO §55</span><span class="tag">Interpretation + FAQ</span></div></div>
+        <div class="module-card" style="--card-color:#2980b9" onclick="showSection('passiv')"><div class="module-card-header"><span class="module-card-icon">🛡️</span><h3>Passive Sicherheit</h3></div><p>Frontal-, Seiten-, Pfahl- und Heckcrash sowie Fußgängerschutz nach UN R94/R95/R135/R137/R127, FMVSS 208/214/301 und GB 11551/20071/24550 – Prüfkonfigurationen, Dummys und Typmerkmale in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R94 · R95 · R137</span><span class="tag">FMVSS 208 · 214 · 301</span></div></div>
+        <div class="module-card" style="--card-color:#16a085" onclick="showSection('rueckhalte')"><div class="module-card-header"><span class="module-card-icon">🪢</span><h3>Gurte &amp; Kindersitze</h3></div><p>Gurtverankerungen, Sicherheitsgurte, Gurtwarner, Sitze sowie ISOFIX/i-Size und Kinderrückhaltesysteme nach UN R14/R16/R17/R129, FMVSS 207–225 und GB 14166/14167/27887 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R16 · R129</span><span class="tag">FMVSS 209 · 213</span></div></div>
+        <div class="module-card" style="--card-color:#8e44ad" onclick="showSection('adas')"><div class="module-card-header"><span class="module-card-icon">🎯</span><h3>Fahrerassistenz (ADAS)</h3></div><p>Notbremse, Spurhaltung und Lenkassistenz: UN R152/R79/R130/R157/R171, GSR2 (VO 2019/2144), FMVSS 127 und GB 39901-2025 im Vergleich über 9 Märkte.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R152 · R79 · R171</span><span class="tag">FMVSS 127 · GB 39901</span></div></div>
+        <div class="module-card" style="--card-color:#34495e" onclick="showSection('cyber')"><div class="module-card-header"><span class="module-card-icon">🔐</span><h3>Cybersecurity &amp; Updates</h3></div><p>CSMS und SUMS nach UN R155/R156, ISO/SAE 21434 und ISO 24089, chinesische GB 44495/44496, indische AIS-189/190 sowie die US-Lage (NHTSA Best Practices, BIS-Connected-Vehicles-Regel) in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R155 · UN R156</span><span class="tag">GB 44495/44496</span></div></div>
+        <div class="module-card" style="--card-color:#f1c40f" onclick="showSection('hv')"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Hochvolt &amp; EMV</h3></div><p>Elektrische Sicherheit von E-Fahrzeugen im Normalbetrieb und nach dem Crash: Berührschutz, Isolation, REESS und Thermal Propagation sowie EMV (UN R100, R10, GTR 20, FMVSS 305a, GB 18384/38031/34660, AIS-038) in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R100 · FMVSS 305a</span><span class="tag">GB 38031 · UN R10</span></div></div>
+        <div class="module-card" style="--card-color:#7f8c8d" onclick="showSection('geraeusch')"><div class="module-card-header"><span class="module-card-icon">🔈</span><h3>Fahrgeräusch &amp; AVAS</h3></div><p>Außengeräusch nach UN R51 / VO (EU) 540/2014 mit Phasen 1–3 und akustische Fußgängerwarnung (AVAS) nach UN R138, FMVSS 141, GB/T 37153 und AIS-173 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R51 · UN R138</span><span class="tag">FMVSS 141</span></div></div>
+        <div class="module-card" style="--card-color:#2c3e50" onclick="showSection('sicht')"><div class="module-card-header"><span class="module-card-icon">🪞</span><h3>Indirekte Sicht &amp; Rücksicht</h3></div><p>Spiegel und Kamera-Monitor-Systeme der Klassen I–VII, Rückfahrkamera bzw. Erkennung hinter dem Fahrzeug und Sichtfeld nach vorn in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R46 · R158 · R125</span><span class="tag">FMVSS 111</span></div></div>
+        <div class="module-card" style="--card-color:#c0392b" onclick="showSection('ecall')"><div class="module-card-header"><span class="module-card-icon">🆘</span><h3>eCall / Notrufsystem</h3></div><p>Automatischer Unfallnotruf: EU-Pflicht für M1/N1 nach VO (EU) 2015/758, die Stichtage für den Umstieg auf 4G/5G-NG-eCall (2026/2027/2028), UK-Sonderweg, UN R144, AIS-140 und Stand je Markt.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">VO (EU) 2015/758 · UN R144</span><span class="tag">NG-eCall 2026–2028</span></div></div>
       </div>
       <hr class="divider">
       <div class="market-strip">
@@ -490,7 +555,8 @@ const MODULES = ['reifen','tpms','notrad','anzeige','tacho','bremse','getriebe',
   'gesetz-r121','gesetz-r30','gesetz-r13h','gesetz-r39',
   'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099',
   'entfrostung','wischer','heizung','gesetz-entfrostung','gesetz-wischer','gesetz-heizung','fanfare','gesetz-r28',
-  'begrenzer','gesetz-r48','gesetz-r64','gesetz-r89','gesetz-r141','gesetz-usa-fmvss102','upload'];
+  'begrenzer','gesetz-r48','gesetz-r64','gesetz-r89','gesetz-r141','gesetz-usa-fmvss102','updates','fristen','generator',
+  'passiv','rueckhalte','adas','cyber','hv','geraeusch','sicht','ecall','upload'];
 const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
 let currentSection = 'home';
 
@@ -525,6 +591,7 @@ async function showSection(id) {
         old.remove();
       });
       mc.querySelectorAll('.reg-docs-btn.ghost[onclick^="loadRegDocs"]').forEach(b=>b.click());
+      afterModuleLoad(id);
     } catch(e) {
       mc.innerHTML = '<div class="placeholder-box"><div class="ph-icon">⚠️</div><p>Modul <strong>'+id+'</strong> konnte nicht geladen werden.</p></div>';
     }
@@ -824,6 +891,92 @@ async function submitRegUpload() {
 }
 /* ===== END REGULATION DOCS ===== */
 
+
+/* ===== UPDATES, PRÜFSTAND, DRUCK ===== */
+const MODULE_TITLES={};
+const TOPIC_MODULES=[];
+(function(){
+  let inTopics=false;
+  document.querySelectorAll('.sidebar .sidebar-section').forEach(sec=>{
+    const h=sec.querySelector('.sidebar-heading'); const topic=h&&h.textContent.trim()==='Themenmodule';
+    sec.querySelectorAll('.sidebar-item[onclick]').forEach(a=>{
+      const m=(a.getAttribute('onclick')||'').match(/showSection\('([^']+)'\)/); if(!m)return;
+      const ic=a.querySelector('.icon'); const t=a.textContent.replace(ic?ic.textContent:'','').trim();
+      if(!MODULE_TITLES[m[1]])MODULE_TITLES[m[1]]=t;
+      if(topic&&m[1]!=='modul1')TOPIC_MODULES.push({id:m[1],title:t,icon:ic?ic.textContent:''});
+    });
+  });
+})();
+function isNewItem(i,last){
+  const d30=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
+  if(i.source==='eCFR')return i.date>=d30 && (!last||i.date>last);
+  const d120=new Date(Date.now()-120*864e5).toISOString().slice(0,10);
+  if(i.date<d120)return false;
+  return last?((i.firstSeen||i.date)>last):i.date>=d30;
+}
+function updNewByModule(){
+  const d=window._updData; const out={}; if(!d)return out;
+  const last=localStorage.getItem('upd_lastRead')||'';
+  d.items.forEach(i=>{ if(isNewItem(i,last)){ out._total=(out._total||0)+1; (i.modules||[]).forEach(m=>out[m]=(out[m]||0)+1); } });
+  return out;
+}
+function updBadges(){
+  const n=updNewByModule();
+  document.querySelectorAll('.sidebar-item[onclick]').forEach(a=>{
+    const m=(a.getAttribute('onclick')||'').match(/showSection\('([^']+)'\)/); if(!m)return;
+    let b=a.querySelector('.sb-badge'); const c=m[1]==='updates'?n._total:n[m[1]];
+    if(c){ if(!b){b=document.createElement('span');b.className='sb-badge';a.appendChild(b);} b.textContent=c; b.title=c+' neue Änderung(en)'; }
+    else if(b) b.remove();
+  });
+}
+async function loadSiteData(){
+  try{ window._updData=await (await fetch('data/updates.json',{cache:'no-cache'})).json(); }catch(e){}
+  try{ window._pruefData=await (await fetch('data/pruefstatus.json',{cache:'no-cache'})).json(); }catch(e){}
+  updBadges();
+  if(MODULES.includes(currentSection))afterModuleLoad(currentSection);
+}
+function updOpenFor(id){ sessionStorage.setItem('upd_filter_module',id); showSection('updates'); }
+function afterModuleLoad(id){
+  const mc=document.getElementById('module-container'); if(!mc)return;
+  const old=mc.querySelector('.mod-toolbar'); if(old)old.remove();
+  const head=mc.querySelector('.section-header'); if(!head||['upload'].includes(id))return;
+  const bar=document.createElement('div'); bar.className='mod-toolbar';
+  const p=window._pruefData&&window._pruefData.modules&&window._pruefData.modules[id];
+  const lab={geprueft:['✓ Am Originaltext geprüft','var(--green)'],teilweise:['◐ Teilweise geprüft','var(--orange)'],ungeprueft:['○ Nicht am Originaltext geprüft','var(--red)']};
+  let html='';
+  if(p&&lab[p.status]) html+='<span class="tag" title="'+(p.note||'').replace(/"/g,'&quot;')+'" style="border-color:'+lab[p.status][1]+';color:'+lab[p.status][1]+'">'+lab[p.status][0]+(p.date?' · Stand '+new Date(p.date+'T00:00:00').toLocaleDateString('de-DE'):'')+'</span>';
+  const d=window._updData;
+  if(d&&!['updates','fristen','generator'].includes(id)){
+    const d365=new Date(Date.now()-365*864e5).toISOString().slice(0,10);
+    const rel=d.items.filter(i=>(i.modules||[]).includes(id)&&i.source!=='eCFR'&&i.date>=d365).length;
+    const nw=updNewByModule()[id]||0;
+    if(rel) html+='<button class="reg-docs-btn ghost" onclick="updOpenFor(\''+id+'\')">🔔 '+rel+' Änderung(en) in 12 Monaten'+(nw?' · '+nw+' neu':'')+'</button>';
+  }
+  html+='<button class="reg-docs-btn ghost" onclick="window.print()">🖨 Drucken / PDF</button>';
+  bar.innerHTML=html; head.insertAdjacentElement('afterend',bar);
+}
+let _printState=null;
+window.addEventListener('beforeprint',()=>{
+  const mc=document.getElementById('module-container'); if(!mc||mc.style.display==='none')return;
+  _printState={divs:[],det:[],hdr:[]};
+  mc.querySelectorAll('.tabs').forEach(bar=>{
+    const mod=(bar.id||'').replace(/-tabs$/,'');
+    bar.querySelectorAll('.tab').forEach(t=>{
+      const m=(t.getAttribute('onclick')||'').match(/switchTab\('[^']+','([^']+)'\)/); if(!m)return;
+      const div=mc.querySelector('#'+mod+'-tab-'+m[1]); if(!div)return;
+      _printState.divs.push([div,div.style.display]); div.style.display='';
+      const h=document.createElement('h3'); h.className='print-only'; h.textContent=t.textContent.trim(); div.insertAdjacentElement('beforebegin',h); _printState.hdr.push(h);
+    });
+  });
+  mc.querySelectorAll('details').forEach(d=>{_printState.det.push([d,d.open]);d.open=true;});
+});
+window.addEventListener('afterprint',()=>{
+  if(!_printState)return;
+  _printState.divs.forEach(([d,v])=>d.style.display=v); _printState.det.forEach(([d,o])=>d.open=o); _printState.hdr.forEach(h=>h.remove()); _printState=null;
+});
+/* ===== ENDE UPDATES ===== */
+
+loadSiteData();
 // Init from hash
 const hash = window.location.hash.replace('#','');
 if (hash) showSection(hash); else showSection('home');

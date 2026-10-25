@@ -1,0 +1,205 @@
+{
+ "hinweis": "Prüfstand je Modul. status: geprueft | teilweise | ungeprueft. Bei Abgleich mit dem Originaltext status, date und note aktualisieren.",
+ "modules": {
+  "anzeige": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "reifen": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "tpms": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "notrad": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "tacho": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "bremse": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "getriebe": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "licht": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "entfrostung": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "wischer": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "begrenzer": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "marktvergleich": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+  },
+  "heizung": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Am 25.10.2026 korrigiert: falsche US-Angabe FMVSS 303/304 (das sind Erdgas-Kraftstoffnormen) entfernt. Übrige Inhalte nicht am Originaltext geprüft."
+  },
+  "fanfare": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: GB 15742-2019 (87 dB(A), 50.000 Zyklen), UK C&U Reg. 37, StVZO §55 (105 dB(A)). Nicht geprüft: UN R28-Pegel 93–112 / 105–118 dB(A), Korea, Indien."
+  },
+  "gesetz-r121": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r30": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r13h": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r39": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-entfrostung": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-wischer": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-heizung": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-in-ais039": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-in-ais099": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r28": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r48": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r64": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r89": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-r141": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen."
+  },
+  "gesetz-usa-fmvss101": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen. Volltext frei im eCFR verfügbar."
+  },
+  "gesetz-usa-fmvss135": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen. Volltext frei im eCFR verfügbar."
+  },
+  "gesetz-usa-fmvss139": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen. Volltext frei im eCFR verfügbar."
+  },
+  "gesetz-usa-fmvss102": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Paraphrase, nicht gegen den Originaltext abgeglichen. Volltext frei im eCFR verfügbar."
+  },
+  "passiv": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: FMVSS 208; FMVSS 214; FMVSS 301; eCFR Versioner u. a.. Nicht geprüft: 11 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "rueckhalte": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: FMVSS 210; FMVSS 209; FMVSS 207; FMVSS 207/210 u. a.. Nicht geprüft: 17 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "adas": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: FMVSS 127; FMVSS 127; FMVSS 127; FMVSS 127 FCW-Warnton u. a.. Nicht geprüft: 11 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "cyber": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: VO; UN R155 ist im EU-Amtsblatt als 2021/387 veröffentlicht; GB 44495-2024 „Technical requirements for vehicle cybersecurity“; GB 44496-2024 „General technical requirements for software update of vehicles“ u. a.. Nicht geprüft: 12 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "hv": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: FMVSS 305a gilt für Fahrzeuge mit elektrischen Antriebskomponenten über 60 V DC bzw. 30 V AC und mehr als 40 km/h auf 1,6 km. Pflicht ab 01.09.2027 bei GVWR bis 4.536 kg und ab 01.09.2028 darüber; Kleinserien- und Endstufenhersteller sowie Umrüster haben ein Jahr länger; FMVSS 305 gilt laut eCFR-Überschrift weiter, 'unless a vehicle is certified to § 571.305a'; letzte Änderung 20.03.2025; FMVSS 305a Isolation; FMVSS 305a Post-Crash u. a.. Nicht geprüft: 10 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "geraeusch": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: VO; 540/2014 Anh. III Fußnoten; 540/2014 Art. 8; 540/2014 Anh. VIII u. a.. Nicht geprüft: 12 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "sicht": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: FMVSS 111; FMVSS 111 S5.2.1; FMVSS 111 S5.4; FMVSS 111 S5.5/S6.2 u. a.. Nicht geprüft: 13 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "ecall": {
+   "status": "teilweise",
+   "date": "2026-10-25",
+   "note": "Geprüft: VO; Art. 5; DelVO; DelVO u. a.. Nicht geprüft: 12 Angaben aus Fachwissen (im Modul markiert)."
+  }
+ }
+}

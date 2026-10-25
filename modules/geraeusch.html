@@ -1,0 +1,177 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Fahrgeräusch &amp; AVAS</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(127,140,141,.12);border-color:rgba(127,140,141,.3)">🔈</div>
+  <div><h2>Modul — Fahrgeräusch &amp; AVAS (Außengeräusch, Mindestgeräusch E-Fahrzeuge)</h2><p>UN R51 (03-Serie) · VO (EU) 540/2014 · UN R138 · FMVSS 141 · GB 1495 / GB/T 37153 · AIS-173 und marktspezifische Äquivalente. Vorbeifahrtpegel, ASEP und akustische Fußgängerwarnung in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="geraeusch-tabs">
+  <div class="tab active" onclick="switchTab('geraeusch','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('geraeusch','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('geraeusch','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('geraeusch','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('geraeusch','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('geraeusch','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="geraeusch-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Das Thema umfasst zwei gegenläufige Anforderungen: <strong>Höchstwerte</strong> für das Außengeräusch beim Beschleunigen (UN R51 / VO (EU) 540/2014, Lärmschutz) und <strong>Mindestwerte</strong> für leise Elektro- und Hybridfahrzeuge bei niedriger Geschwindigkeit (AVAS nach UN R138 bzw. FMVSS 141, Fußgängerschutz). Krafträder (Klasse L3) fallen unter UN R41 und sind hier nur abgegrenzt; die Einrichtung für Schallzeichen (Hupe) behandelt das Modul <a href="#" onclick="showSection('fanfare')" class="reg-link">Fanfare ↗</a>.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Fahrgeräusch PKW (M1)</th><th>AVAS / Mindestgeräusch</th><th>Hinweise</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://eur-lex.europa.eu/eli/reg/2014/540/oj" target="_blank" class="reg-link">VO (EU) 540/2014 ↗</a> · UN R51 (03) · <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-121-140" target="_blank" class="reg-link">UN R138 ↗</a></td><td>M1 ≤ 120 kW/t: <strong>72 / 70 / 68 dB(A)</strong> (Phase 1 / 2 / 3)</td><td>AVAS Pflicht für HEV/BEV: neue Typen ab 01.07.2019, alle Neufahrzeuge ab 01.07.2021 (Art. 8, Anh. VIII)</td><td>ASEP nach Anh. VII; Messverfahren nach Anh. II (R51.03-Verfahren)</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.141" target="_blank" class="reg-link">FMVSS 141 (49 CFR §571.141) ↗</a> · <a href="https://www.ecfr.gov/current/title-40/chapter-I/subchapter-G/part-205" target="_blank" class="reg-link">40 CFR 205 ↗</a></td><td>Kein Bundesgrenzwert für PKW; EPA-Lärmvorschrift 40 CFR 205 Subpart B nur für Lkw &gt; 10.000 lb GVWR; ggf. Staaten-/Kommunalrecht</td><td>FMVSS 141: HEV/EV ≤ 4.536 kg GVWR sowie LSV; Stillstand (Fahrstufe), Rückwärts, Vorwärts bis &lt; 30 km/h</td><td>Volle Pflicht ab 01.03.2021 (nach Verschiebung um 6 Monate)</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://www.chinesestandard.net/PDF.aspx/GB1495-2002" target="_blank" class="reg-link">GB 1495-2002 ↗</a> · <a href="https://www.chinesestandard.net/PDF.aspx/GBT37153-2018" target="_blank" class="reg-link">GB/T 37153-2018 ↗</a></td><td>Grenzwerte lt. GB 1495-2002 Tabelle 1 (Messverfahren auf Basis R51.02 / ISO 362:1998); Neufassung in Arbeit</td><td>GB/T 37153: Betriebsbereich &gt; 0 bis ≤ 20 km/h; Fahrgeräusch mit AVAS max. 75 dB(A)</td><td>GB/T = empfehlende Norm; Verbindlichkeit über Zulassungs-/CCC-Anforderungen klären</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Sicherheitsvorschriften für Straßenfahrzeuge Art. 30 (騒音防止装置) ↗</a>; UN R51 / R138 übernommen</td><td>Lt. UN R51 (03) in japanischer Umsetzung</td><td>AVAS nach UN R138 (Einführungsdaten lt. MLIT-Bekanntmachung)</td><td>Zusätzlich Standgeräusch (近接排気騒音) im Prüfprogramm</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">Lärm- und Vibrationsschutzgesetz (소음·진동관리법) ↗</a> · KMVSS</td><td>Beschleunigungs- und Standgeräusch lt. Durchführungsverordnung (Umweltministerium)</td><td>Warnton für geräuscharme Fahrzeuge lt. KMVSS (Artikel und Pegel lt. Regelwerk)</td><td>Zuständigkeit geteilt: Umwelt (Lärm) / MOLIT (AVAS)</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://conama.mma.gov.br/" target="_blank" class="reg-link">CONAMA-Resolutionen (Ruído) ↗</a> · CONTRAN</td><td>Grenzwerte Beschleunigungsgeräusch lt. CONAMA (Verfahren an ISO 362 / R51 angelehnt)</td><td>Keine eigene AVAS-Regelung bekannt – Stand prüfen</td><td>Lärmzertifizierung über IBAMA im PROCONVE-Rahmen</td></tr>
+      <tr><td>🇬🇧 UK</td><td><a href="https://www.legislation.gov.uk/eur/2014/540" target="_blank" class="reg-link">Retained VO 540/2014 ↗</a> · GB-Typgenehmigung</td><td>Wie EU: 72 / 70 / 68 dB(A)</td><td>Wie EU (Art. 8, Anh. VIII)</td><td>Änderungsbefugnis nach 2024 c. 10 s. 91 – künftige Abweichungen beobachten</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Fahrzeugregelwerk ↗</a></td><td>UN R51- bzw. US-Nachweise lt. GSO-Regelwerk akzeptiert</td><td>Für E-Fahrzeuge: R138- bzw. FMVSS-141-Nachweis lt. GSO</td><td>Akzeptanz je Mitgliedstaat prüfen</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 120 · EP Rules (Lärm) · AIS-173 ↗</a></td><td>Grenzwerte lt. Environment (Protection) Rules, Stufen an R51.03 angelehnt</td><td>AIS-173: AVAS für leise Elektro-/Hybridfahrzeuge (R138-Basis); Pflichttermine lt. MoRTH-Notifikation</td><td>Prüfung über ARAI / ICAT</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft: EU/UK-Grenzwerte und AVAS-Termine (legislation.gov.uk, Retained VO 540/2014 Art. 8, Anh. III, Anh. VIII), FMVSS 141 (eCFR), 40 CFR 205.50 (eCFR), GB 1495-2002 und GB/T 37153-2018 (chinesestandard.net-Vorschau). Alle Angaben zu Japan, Korea, Brasilien, Golf-Staaten und Indien sowie die konkreten GB-1495-Grenzwerte stammen aus Fachwissen bzw. sind bewusst nicht beziffert – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="geraeusch-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#7f8c8d"><div class="module-card-header"><span class="module-card-icon">📏</span><h3>Messverfahren UN R51.03</h3></div><p>Vorbeifahrt auf ISO-10844-Prüffläche, Mikrofone beidseits in <strong>7,5 m</strong> Abstand zur Fahrspurmitte und <strong>1,2 m</strong> Höhe. Kombination aus Volllast-Beschleunigung und Konstantfahrt bei 50 km/h, gewichtet über einen Teillastfaktor zum Ergebnis <strong>L<sub>urban</sub></strong>. Gangwahl abhängig von der Referenzbeschleunigung, die sich aus dem Leistungsgewicht (PMR) ergibt.</p><div class="module-card-footer"><span class="tag">7,5 m / 1,2 m</span><span class="tag">L_urban</span></div></div>
+    <div class="module-card" style="--card-color:#95a5a6"><div class="module-card-header"><span class="module-card-icon">📊</span><h3>Grenzwertklassen M1 (EU)</h3></div><p>Einteilung nach Leistungsgewicht: ≤ 120 kW/t (72/70/68 dB(A)), 120–160 kW/t (73/71/69), &gt; 160 kW/t (75/73/71), Sonderklasse &gt; 200 kW/t mit ≤ 4 Sitzen und R-Punkt ≤ 450 mm (75/74/72). M1 abgeleitet von N1 mit R-Punkt &gt; 850 mm und &gt; 2.500 kg: N1-Werte. Zuschläge: Geländefahrzeuge +1 dB (M1 nur &gt; 2 t), rollstuhlgerechte und gepanzerte Fahrzeuge +2 dB(A).</p><div class="module-card-footer"><span class="tag">Anh. III 540/2014</span><span class="tag">gerundet auf ganze dB</span></div></div>
+    <div class="module-card" style="--card-color:#6c7a7d"><div class="module-card-header"><span class="module-card-icon">🔀</span><h3>ASEP – Zusatzbestimmungen</h3></div><p>Additional Sound Emission Provisions (Anh. VII 540/2014 / Anhang 7 R51.03) sollen „Cycle Beating“ verhindern: Das Geräusch außerhalb des Prüfpunktes (andere Gänge, Drehzahlen, Geschwindigkeiten) darf nicht sprunghaft ansteigen. Relevant für Klappenauspuffanlagen und aktive Sound-Generatoren. Kontrollbereich und Bewertungsgrößen lt. Regelwerk.</p><div class="module-card-footer"><span class="tag">Anti-Cycle-Beating</span><span class="tag">Klappenauspuff</span></div></div>
+    <div class="module-card" style="--card-color:#5d6d7e"><div class="module-card-header"><span class="module-card-icon">🔊</span><h3>AVAS nach UN R138</h3></div><p>Automatischer, kontinuierlicher Warnton von Start bis ca. <strong>20 km/h</strong> und bei Rückwärtsfahrt. Anforderungen an Mindestpegel (Gesamt und Terzbänder), Frequenzverschiebung mit der Geschwindigkeit (Paragraph 6.2.3) und Höchstpegel. Fahrzeuge, die die Gesamtpegel nach Paragraph 6.2.8 mit +3 dB(A) Reserve bereits ohne AVAS erreichen, brauchen in der EU kein AVAS.</p><div class="module-card-footer"><span class="tag">0–20 km/h + R</span><span class="tag">Frequenzverschiebung</span></div></div>
+    <div class="module-card" style="--card-color:#4d5656"><div class="module-card-header"><span class="module-card-icon">🇺🇸</span><h3>FMVSS 141 – Terzbandmethode</h3></div><p>13 Terzbänder 315–5.000 Hz. Wahlweise <strong>4-Band-</strong> (vier nicht benachbarte Bänder über ≥ 9 Bänder) oder <strong>2-Band-Nachweis</strong> (315–3.150 Hz plus Bandsumme). Prüfzustände: Stillstand mit Fahrstufe, Rückwärts, &lt; 10, 10–20 und 20–30 km/h. Beispiel 20–30 km/h: 52 dB(A) bei 315 Hz bis 43 dB(A) bei 5.000 Hz. Lautstärke muss beim Beschleunigen steigen (≥ 3 dB zwischen Stillstand und 10 km/h).</p><div class="module-card-footer"><span class="tag">315–5.000 Hz</span><span class="tag">bis 30 km/h</span></div></div>
+    <div class="module-card" style="--card-color:#424949"><div class="module-card-header"><span class="module-card-icon">🧩</span><h3>Abgrenzung R41 / R28 / Schalldämpfer</h3></div><p><strong>UN R41</strong>: Geräusch von Krafträdern (L3/L4) – nicht Gegenstand dieses Moduls. <strong>UN R28</strong> (Hupe): siehe <a href="#" onclick="showSection('fanfare')" class="reg-link">Fanfare ↗</a>; AVAS ersetzt die Hupe nicht. <strong>Austauschschalldämpfer</strong> sind in VO 540/2014 mitgeregelt (Bauteilgenehmigung) und dürfen den Fahrzeugpegel nicht verschlechtern.</p><div class="module-card-footer"><span class="tag">R41 Krad</span><span class="tag">R28 Hupe</span></div></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft: Grenzwertklassen/Zuschläge (Anh. III), R138-Bezüge und +3-dB(A)-Regel (Anh. VIII), FMVSS-141-Werte (eCFR). R51.03-Messgeometrie (7,5 m / 1,2 m / 50 km/h) und ASEP-Details aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="geraeusch-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Auslegungshinweise und häufige Fragen zu Fahrgeräusch und AVAS.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Hybride mit laufendem Verbrenner</summary>
+      <div class="details-body">
+        <p>Anh. VIII 540/2014 stellt klar: Läuft im AVAS-Geschwindigkeitsbereich der Verbrennungsmotor, soll das AVAS keinen Ton erzeugen. Für Fahrzeuge, die die Gesamtpegel nach R138 Paragraph 6.2.8 mit 3 dB(A) Reserve ohnehin erreichen, entfällt die AVAS-Pflicht; Terzband- und Frequenzverschiebungsanforderungen gelten dann nicht. Verfügt das Fahrzeug über eine Rückfahrwarneinrichtung, die R138 Paragraph 6.2 (2. Unterabsatz) und 6.2.2 erfüllt, muss das AVAS rückwärts nicht zusätzlich tönen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Pause-Schalter nach Abschnitt III vs. IV</summary>
+      <div class="details-body">
+        <p>Abschnitt III (Typen 01.07.2019 – 31.08.2021) erlaubt eine leicht erreichbare Pause-Funktion, die beim Neustart wieder auf „ein“ zurückfällt. Ab Abschnitt IV (Typen ab 01.09.2021, alle Neuzulassungen ab 01.09.2023) muss jede Pause-Funktion Paragraph 6.2.6 von UN R138, 01-Änderungsserie, erfüllen. Den genauen Inhalt von 6.2.6 vor Projektverwendung gegen den Originaltext prüfen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — „Sameness“ und keine wählbaren Sounds</summary>
+      <div class="details-body">
+        <p>FMVSS 141 S5.5 verlangt, dass alle Fahrzeuge gleicher Marke, Modell, Modelljahr, Karosserie und Ausstattungslinie denselben Warnton abgeben. Der Vorschlag von 2019, fahrerseitig wählbare Warntöne zuzulassen, wurde mit der Final Rule vom 13.07.2022 mangels Daten <em>nicht</em> übernommen. Ein OTA-Update des Warntons ist daher zertifizierungsrelevant.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB/T 37153 als empfehlende Norm</summary>
+      <div class="details-body">
+        <p>GB/T 37153-2018 (gültig seit 01.07.2019, nicht äquivalent zu R138) gilt für reine Elektrofahrzeuge M1/N1, Hybride mit rein elektrischem Fahrmodus und Brennstoffzellenfahrzeuge. Mindestens zwei Terzbänder müssen Tabelle 1 erfüllen, davon eines ≤ 1.600 Hz. Ein Pause-Schalter ist optional, muss dann aber in Sicht- und Reichweite des Fahrers liegen und seine Aktivierung deutlich anzeigen. Ob der Warnton über verbindliche Vorschriften (z. B. GB 7258 oder eine neue GB-Pflichtnorm) eingefordert wird, vor Projektverwendung prüfen.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Fahrger%C3%A4usch%20%26%20AVAS">+ Frage einreichen</a></div>
+    <details>
+      <summary>Gilt UN R51 auch für reine Elektrofahrzeuge?</summary>
+      <div class="details-body"><p>Ja. Auch Elektrofahrzeuge benötigen in der EU eine Genehmigung nach VO 540/2014 bzw. UN R51; meist dominiert das Reifen-Fahrbahn-Geräusch. Zusätzlich gilt für sie die AVAS-Pflicht (Mindestgeräusch).</p></div>
+    </details>
+    <details>
+      <summary>Darf ein AVAS-Lautsprecher auch als Hupe dienen?</summary>
+      <div class="details-body"><p>Nur wenn das Bauteil die Anforderungen beider Regelungen eigenständig erfüllt. AVAS ersetzt die Einrichtung für Schallzeichen nicht; Einzelheiten zur Hupe im Modul <a href="#" onclick="showSection('fanfare')" class="reg-link">Fanfare ↗</a>.</p></div>
+    </details>
+    <details>
+      <summary>Bis zu welcher Geschwindigkeit muss das AVAS tönen?</summary>
+      <div class="details-body"><p>EU/UN R138 und China: bis ca. 20 km/h (GB/T 37153: &gt; 0 bis ≤ 20 km/h). USA: Anforderungen bis unter 30 km/h, inklusive Stillstand mit eingelegter Fahrstufe. Ein global einheitliches AVAS muss also bis 30 km/h ausgelegt sein und darf in EU/CN darüber abschalten.</p></div>
+    </details>
+    <details>
+      <summary>Was bedeutet Phase 3 für laufende Typen?</summary>
+      <div class="details-body"><p>In der EU gilt Phase 3 für neue Typen seit 01.07.2024 und für alle Erstzulassungen ab 01.07.2026 (M1 ≤ 120 kW/t: 68 dB(A)). Nach Phase 2 genehmigte Typen brauchen bis dahin einen neuen Nachweis. Für einige schwere Klassen gelten laut Fußnote zwei Jahre (Typ) bzw. ein Jahr (Zulassung) später.</p></div>
+    </details>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft: Anh. VIII 540/2014 (legislation.gov.uk), FMVSS 141 S5.3/S5.5 und Federal-Register-Zusammenfassungen 2016/2022, GB/T 37153-2018 (Vorschau). Die Aussagen zu GB 7258 und zur Anwendung von R51 auf Elektrofahrzeuge stammen aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="geraeusch-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Beim Außengeräusch ist UN R51 (03) der Referenzstandard; die USA haben für PKW keinen Bundesgrenzwert. Beim AVAS bestehen zwei Welten: UN R138 (bis 20 km/h, EU/UK/JP und angelehnt CN/IN) und FMVSS 141 (bis 30 km/h, eigene Terzbandwerte). Ein globales Fahrzeug muss beide Profile gleichzeitig erfüllen.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>UK</th><th>IN</th><th>BR / GCC</th></tr></thead>
+    <tbody>
+      <tr><td>Basis Außengeräusch</td><td>540/2014 · R51.03</td><td>—</td><td>GB 1495-2002</td><td>R51.03</td><td>nationales Lärmrecht</td><td>540/2014 (retained)</td><td>EP Rules</td><td>CONAMA / GSO</td></tr>
+      <tr><td>Grenzwert PKW-Vorbeifahrt</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Verfahren R51.03 + ASEP</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Basis AVAS</td><td>R138 / Anh. VIII</td><td>FMVSS 141</td><td>GB/T 37153</td><td>R138</td><td>KMVSS</td><td>Anh. VIII (retained)</td><td>AIS-173</td><td>lt. Regelwerk</td></tr>
+      <tr><td>AVAS Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>AVAS-Bereich vorwärts</td><td>bis ca. 20 km/h</td><td>bis &lt; 30 km/h</td><td>≤ 20 km/h</td><td>bis ca. 20 km/h</td><td>lt. Regelwerk</td><td>bis ca. 20 km/h</td><td>lt. Regelwerk</td><td>lt. Regelwerk</td></tr>
+      <tr><td>Pause-Schalter zulässig</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = gefordert bzw. zulässig &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt, empfehlend oder Stand unklar &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden bzw. nicht vorgesehen &nbsp; · Spalten EU, UK, USA (außer Pause-Schalter) und CN-AVAS geprüft; Bewertungen für JP, KR, IN, BR/GCC sowie „Pause-Schalter USA ✗“ aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="geraeusch-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRBP</strong> (Working Party on Noise and Tyres) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grbp" target="_blank" class="reg-link">GRBP ↗</a>. Zuständig für UN R51, R41, R138 sowie R28 (Hupe).</span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>VO (EU) 540/2014 Anh. III – Phase 3</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>M1 ≤ 120 kW/t: 68 dB(A); Erstzulassungsstufe läuft</td><td>Typen 01.07.2024 · Erstzulassung 01.07.2026</td></tr>
+        <tr><td>VO (EU) 540/2014 Anh. VIII Abschnitt IV</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>AVAS nach R138 inkl. Pause-Funktion gem. R138.01 Paragraph 6.2.6</td><td>Typen 01.09.2021 · alle Neuzulassungen 01.09.2023</td></tr>
+        <tr><td>UN R138 01-Änderungsserie</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Referenzfassung (mit Ergänzung 1) im ABl. L 204 vom 05.08.2017</td><td>Veröffentlichung 05.08.2017</td></tr>
+        <tr><td>FMVSS 141 – Phase-in</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>50 % der Produktion 01.03.2020–28.02.2021, danach 100 % (nach Interim Final Rule vom 01.09.2020: Verschiebung um 6 Monate, COVID-19)</td><td>Voll ab 01.03.2021</td></tr>
+        <tr><td>FMVSS 141 – Final Rule 87 FR 41618</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Präzisierung der Umgebungsgeräusch-Auswertung (S6.7.3); wählbare Warntöne nicht übernommen</td><td>Wirksam 12.08.2022</td></tr>
+        <tr><td>GB/T 37153-2018 (China)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>AVAS für Elektrofahrzeuge bei niedriger Geschwindigkeit</td><td>seit 01.07.2019</td></tr>
+        <tr><td>GB 1495 – Neufassung (China)</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Nachfolger von GB 1495-2002 mit neuem Messverfahren (R51.03-Basis) und verschärften Grenzwerten; Stand vor Projektverwendung prüfen</td><td>Offen</td></tr>
+        <tr><td>UN R51 – weitere Stufe / RD-ASEP</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>GRBP-Arbeiten zu realitätsnäheren Zusatzbestimmungen (Real-Driving-ASEP) und möglicher nächster Grenzwertstufe; Stand vor Projektverwendung prüfen</td><td>Offen</td></tr>
+        <tr><td>AIS-173 (Indien)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Geplant</span></td><td>Verpflichtende AVAS-Einführung für Elektrofahrzeuge über MoRTH-Notifikation; Termine vor Projektverwendung prüfen</td><td>lt. Notifikation</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: legislation.gov.uk (540/2014), eCFR §571.141 (letzte Änderung 12.08.2022), Federal Register (81 FR 90416, 85 FR 54273, 87 FR 41618), chinesestandard.net. Einträge „In Diskussion“ / „Geplant“ ungeprüft – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: TYPABGRENZENDE MERKMALE -->
+<div id="geraeusch-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann für das Fahrgeräusch bzw. das AVAS eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Antrieb</h3></div>
+    <p>Verbrenner: Bauart, Zylinderzahl und Hubraum, Gemischaufbereitung, Aufladung, Nennleistung. Elektro: Anzahl und Bauart der Antriebsmotoren. Hybrid: Betriebsstrategie, soweit sie das Zuschalten des Verbrenners im Messbereich bestimmt.</p>
+    <div class="module-card-footer"><span class="tag">Neue Prüfung: bei Antriebsänderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">🔩</span><h3>Getriebe &amp; Leistungsgewicht</h3></div>
+    <p>Getriebeart, Anzahl und Übersetzungen der Gänge sowie Achsübersetzung bestimmen Gangwahl und Drehzahl im R51-Test. PMR-Klassenwechsel ändert den Grenzwert.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei PMR-Klassenwechsel</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">💨</span><h3>Abgas- und Ansauganlage</h3></div>
+    <p>Anzahl, Typ und Lage der Schalldämpfer, Klappensteuerung, Ansaugschalldämpfer. Software-Änderungen an Klappen oder aktiven Sound-Generatoren sind wegen ASEP genehmigungsrelevant.</p>
+    <div class="module-card-footer"><span class="tag">Erweiterung + Vorbeifahrtmessung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🚘</span><h3>Karosserie &amp; Kapselung</h3></div>
+    <p>Karosserieform und Abmessungen, Motorraumkapselung und Schalldämmmaterialien, soweit sie den Außenpegel beeinflussen.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Facelift / Kapselung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🔈</span><h3>AVAS-System</h3></div>
+    <p>Lautsprecher-Typ, Anzahl und Einbauort, Klangdatensatz und Ansteuerlogik (Pegel, Frequenzverschiebung, Pause-Funktion). USA: Sameness-Anforderung beachten.</p>
+    <div class="module-card-footer"><span class="tag">Neue Prüfung: bei Klang- oder Einbauänderung</span></div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Die Merkmalslisten folgen sinngemäß den Typdefinitionen von UN R51 („Fahrzeugtyp hinsichtlich seines Geräuschpegels“) und UN R138 („Fahrzeugtyp hinsichtlich seiner Hörbarkeit“); sie sind aus Fachwissen zusammengestellt und vor Projektverwendung gegen den Originaltext prüfen. Geprüft ist nur die Sameness-Anforderung (FMVSS 141 S5.5.1, eCFR). Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>

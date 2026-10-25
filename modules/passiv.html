@@ -1,0 +1,177 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Passive Sicherheit (Crash &amp; Fußgängerschutz)</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(41,128,185,.12);border-color:rgba(41,128,185,.3)">🛡️</div>
+  <div><h2>Modul — Passive Sicherheit (Crash &amp; Fußgängerschutz)</h2><p>UN R94 · R95 · R135 · R137 · R127 / GTR 9 · FMVSS 208 / 214 / 301 · GB 11551 / GB 20071 / GB 24550 · AIS-098 / AIS-099 und marktspezifische Äquivalente. Frontal-, Seiten-, Pfahl- und Heckaufprall sowie Fußgängerschutz in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="passiv-tabs">
+  <div class="tab active" onclick="switchTab('passiv','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('passiv','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('passiv','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('passiv','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('passiv','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('passiv','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="passiv-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Passive Sicherheit umfasst die <strong>Insassenschutz-Crashtests</strong> (Frontal-Offset, Frontal voll, Seite, Pfahl, ggf. Heck für das Kraftstoffsystem) und den <strong>Fußgängerschutz</strong>. ECE-Märkte nutzen UN-Regelungen, die USA eigene FMVSS-Konfigurationen und -Dummys, China ECE-nahe GB-Normen mit eigenen Übergangsregeln.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Frontal</th><th>Seite / Pfahl</th><th>Fußgängerschutz</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="reg-link">UN R94 / R95 ↗</a> · R137 · R135 · R127 (Pflicht über <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="reg-link">VO (EU) 2019/2144 Anh. I ↗</a>)</td><td>R94 Offset (deformierbare Barriere) + R137 Vollüberdeckung (starre Wand)</td><td>R95 MDB-Seitenaufprall · R135 Pfahl</td><td>R127 (Basis GTR 9); ergänzend erweiterte Kopfaufprallzone Windschutzscheibe lt. 2019/2144</td></tr>
+      <tr><td>🇺🇸 USA</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.208" target="_blank" class="reg-link">FMVSS 208 ↗</a> · <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.214" target="_blank" class="reg-link">FMVSS 214 ↗</a> · <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.301" target="_blank" class="reg-link">FMVSS 301 ↗</a></td><td>Starre Wand bis 56 km/h angegurtet (S14.3/14.4-Fahrzeuge) · ungegurtet 32–40 km/h · Offset-ODB bis 40 km/h mit 5%-Frau</td><td>MDB 53 ±1 km/h (ES-2re vorn, SID-IIs hinten) · Pfahl ⌀ 254 mm bis 32 km/h, 75°</td><td>Kein FMVSS (GTR 9 nicht umgesetzt)</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://openstd.samr.gov.cn/" target="_blank" class="reg-link">GB 11551-2014 ↗</a> · GB/T 20913 · GB 20071-2025 · GB 24550-2024</td><td>GB 11551 Frontal (M1, N1 ≤ 2500 kg); Offset nach GB/T 20913</td><td>GB 20071-2025: WorldSID 50th oder ES-2re, HIC36 ≤ 1000</td><td>GB 24550-2024 (verbindlich, ersetzt GB/T 24550-2009)</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Sicherheitsvorschriften (保安基準) ↗</a>; UN-Regelungen übernommen</td><td>UN R94 + R137 (Vollfrontal hat in JP lange Tradition)</td><td>UN R95; R135 lt. Übernahmestand</td><td>UN R127 / GTR 9</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS (Insassen-/Fußgängerschutz-Artikel) ↗</a></td><td>Vollfrontal + Offset lt. KMVSS (US-/ECE-nah)</td><td>Seitenaufprall lt. KMVSS</td><td>Fußgängerschutz lt. KMVSS (GTR-9-Basis)</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resolutionen ↗</a> (ECE-/FMVSS-Nachweis)</td><td>Frontalcrash Pflicht lt. CONTRAN</td><td>Seitenaufprall lt. CONTRAN (gestaffelte Einführung)</td><td>In Einführung lt. CONTRAN</td></tr>
+      <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung · <a href="https://www.legislation.gov.uk/eur/2019/2144" target="_blank" class="reg-link">Retained VO 2019/2144 ↗</a> (UN-Regelungen)</td><td>Wie EU (R94, R137)</td><td>Wie EU (R95, R135)</td><td>Wie EU (R127)</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Fahrzeugstandards ↗</a></td><td>ECE- oder FMVSS-Nachweis akzeptiert</td><td>ECE- oder FMVSS-Nachweis</td><td>Keine eigenständige Pflicht bekannt</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-098 / AIS-099 / AIS-100 ↗</a></td><td>AIS-098 Offset (R94-Basis)</td><td>AIS-099 Seitenaufprall (R95-Basis)</td><td>AIS-100 (R127-Basis)</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft: FMVSS-Werte (eCFR, 10/2026); GB-Nummern und -Daten (chinesestandard.net). AIS-098/099/100 sowie JP-, KR-, BR- und GSO-Angaben stammen aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>. Die Wiki-Seite „Indien AIS-099“ beschreibt derzeit Bremsen – Zuordnung dort ebenfalls prüfen.</div>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="passiv-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#2980b9"><div class="module-card-header"><span class="module-card-icon">🚧</span><h3>Frontal-Offset (UN R94)</h3></div><p>Fahrzeug gegen <strong>deformierbare Barriere</strong> mit 40 % Überdeckung auf der Fahrerseite, Prüfgeschwindigkeit lt. Regelwerk (übliche Angabe 56 km/h). Zwei Hybrid-III-50%-Dummys vorn. Bewertet werden Kopf, Hals, Thorax, Beine sowie Lenkradverschiebung, Türöffnen und Kraftstoff-/HV-Integrität.</p><div class="module-card-footer"><span class="tag">ODB 40 %</span><span class="tag">Hybrid III 50 %</span></div></div>
+    <div class="module-card" style="--card-color:#2471a3"><div class="module-card-header"><span class="module-card-icon">🧱</span><h3>Frontal voll (UN R137 / FMVSS 208)</h3></div><p>Vollüberdeckung gegen <strong>starre Wand</strong>: R137 mit 50%-Mann (Fahrer) und 5%-Frau (Beifahrer), Geschwindigkeit lt. Regelwerk (übliche Angabe 50 km/h). FMVSS 208 (eCFR): angegurtet bis 56 km/h, ungegurtet 32–40 km/h, zusätzlich Offset-ODB bis 40 km/h mit 5%-Frau links; HIC15 ≤ 700.</p><div class="module-card-footer"><span class="tag">Starre Wand</span><span class="tag">HIC15 ≤ 700 (US)</span></div></div>
+    <div class="module-card" style="--card-color:#1f618d"><div class="module-card-header"><span class="module-card-icon">🚪</span><h3>Seitenaufprall (UN R95 / FMVSS 214)</h3></div><p>Fahrbare deformierbare Barriere (MDB) trifft das stehende Fahrzeug im Bereich des Fahrersitzes. R95: senkrechter Stoß, MDB-Masse und Geschwindigkeit lt. Änderungsserie, Dummy ES-2 bzw. WorldSID. FMVSS 214 (eCFR): <strong>53 ±1 km/h</strong>, ES-2re vorn und SID-IIs hinten, HIC ≤ 1000, Abdominalkraft ≤ 2500 N, Schambeinkraft ≤ 6000 N (ES-2re).</p><div class="module-card-footer"><span class="tag">MDB</span><span class="tag">ES-2re · SID-IIs · WorldSID</span></div></div>
+    <div class="module-card" style="--card-color:#1a5276"><div class="module-card-header"><span class="module-card-icon">🌳</span><h3>Pfahlaufprall (UN R135 / FMVSS 214)</h3></div><p>Fahrzeug wird seitlich gegen einen starren Pfahl geschoben. FMVSS 214 (eCFR): Pfahl <strong>⌀ 254 mm</strong>, bis <strong>32 km/h</strong>, Stoßwinkel <strong>75°</strong> (±3°) zur Fahrzeuglängsachse, Dummy ES-2re oder SID-IIs. UN R135 ist auf Basis GTR 14 harmonisiert (WorldSID 50 %). Kritisch: Kopfairbag und Schwellerintrusion bei Batteriefahrzeugen.</p><div class="module-card-footer"><span class="tag">⌀ 254 mm</span><span class="tag">32 km/h · 75°</span></div></div>
+    <div class="module-card" style="--card-color:#154360"><div class="module-card-header"><span class="module-card-icon">🚶</span><h3>Fußgängerschutz (UN R127 / GTR 9)</h3></div><p>Komponententests an der Fahrzeugfront: <strong>Beinform</strong> (FlexPLI) gegen den Stoßfänger, <strong>Hüftform</strong> gegen die Haubenvorderkante (je nach Stoßfängerhöhe), <strong>Kopfformen</strong> Kind/Erwachsener gegen Haube und Windschutzscheiben-Unterkante. GB 24550-2024 (China) nutzt Stoßfängerunterkanten-Schwellen 425 mm / 500 mm für die Wahl des Beinform-Verfahrens. Grenzwerte und Impaktorgeschwindigkeiten lt. Regelwerk.</p><div class="module-card-footer"><span class="tag">FlexPLI</span><span class="tag">Kopfform Kind / Erw.</span></div></div>
+    <div class="module-card" style="--card-color:#3498db"><div class="module-card-header"><span class="module-card-icon">⛽</span><h3>Kraftstoff- &amp; HV-Integrität</h3></div><p>FMVSS 301 (eCFR): Frontal bis 48 km/h, Heck-MDB <strong>80 ±1 km/h</strong> mit 70 % Überdeckung; Auslauf ≤ 28 g bis Stillstand, ≤ 142 g in den folgenden 5 min, danach ≤ 28 g je Minute; zusätzlich Überschlagprüfung. In ECE-Märkten sind Kraftstoffleckage und Elektrosicherheit nach dem Crash Teil von R94/R95/R137 (HV-Anforderungen).</p><div class="module-card-footer"><span class="tag">Heck 80 km/h (US)</span><span class="tag">≤ 28 g / 142 g</span></div></div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">US-Werte (FMVSS 208/214/301) gegen eCFR geprüft. Werte zu UN R94/R95/R135/R137/R127 („übliche Angabe“, „lt. Regelwerk“) stammen aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong> (Änderungsserie beachten).</div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="passiv-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Auslegungshinweise und häufige Fragen zu Crash- und Fußgängerschutz-Vorschriften; sie ersetzen nicht die Abstimmung mit dem Technischen Dienst.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — R94 und R137 sind keine Alternativen</summary>
+      <div class="details-body">
+        <p>R94 prüft Struktur und Intrusion, R137 die Rückhaltesysteme bei hoher Verzögerung. Für M1 sind über VO (EU) 2019/2144 beide verbindlich; Anwendungsbereich und geforderte Änderungsserie lt. Anhang I bzw. Regelung – vor Projektverwendung gegen den Originaltext prüfen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — Selbstzertifizierung und „any speed up to“</summary>
+      <div class="details-body">
+        <p>FMVSS-Prüfgeschwindigkeiten sind als <em>„at any speed up to and including“</em> formuliert (eCFR, FMVSS 208 S5.1, FMVSS 214 S9.1.2). Die Anforderungen gelten bei jeder Geschwindigkeit bis zum Höchstwert; NHTSA wählt im Compliance-Test frei. Bei FMVSS 208 kommen die Advanced-Airbag-Anforderungen (Unterdrückung bzw. Low-Risk-Deployment bei Kindersitzen) hinzu; die Liste der Prüf-Kindersitze wurde mit Wirkung zum 21.10.2024 aktualisiert.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 20071-2025 mit WorldSID</summary>
+      <div class="details-body">
+        <p>Die Neufassung (veröffentlicht 25.04.2025, Einführung 01.07.2026) ersetzt GB 20071-2006 und lässt WorldSID 50th oder ES-2re auf dem Fahrerplatz zu; bei asymmetrischer Struktur ist die ungünstigere Seite zu prüfen. Die Fassung 2006 war eine modifizierte Übernahme von ECE R95. Übergangsfristen für bestehende Typen sind dem Kapitel „Implementation“ der Norm zu entnehmen – vor Projektverwendung prüfen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 24550-2024 jetzt verbindlich</summary>
+      <div class="details-body">
+        <p>Fußgängerschutz war in China bis 2024 nur als Empfehlungsnorm GB/T 24550-2009 geregelt. GB 24550-2024 (veröffentlicht 28.05.2024, Einführung 01.01.2025) ist verbindlich und gilt für M1 und N1; ausgenommen sind u. a. Fahrzeuge, bei denen der R-Punkt des Fahrersitzes vor oder höchstens 1100 mm hinter der Vorderachsmitte liegt (bei M1 nur, wenn &gt; 2500 kg). Inhaltlich eng an UN R127 / GTR 9 angelehnt.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Passive%20Sicherheit">+ Frage einreichen</a></div>
+    <details>
+      <summary>Reicht ein Euro NCAP- oder IIHS-Ergebnis als Nachweis?</summary>
+      <div class="details-body"><p>Nein. Verbraucherschutz-Ratings (Euro NCAP, IIHS, US-NCAP, C-NCAP) sind keine Typgenehmigungsprüfungen. Konfigurationen, Dummys und Grenzen weichen ab; für die Genehmigung zählen nur die regulatorischen Tests bzw. die Selbstzertifizierung (USA).</p></div>
+    </details>
+    <details>
+      <summary>Kann ein Crashtest mehrere Märkte gleichzeitig abdecken?</summary>
+      <div class="details-body"><p>Nur eingeschränkt. In der ECE-Welt (EU, UK, JP, GCC, weitgehend IN) ist ein R94/R95-Nachweis mehrfach nutzbar. Für die USA sind wegen anderer Dummys (ES-2re, SID-IIs), Geschwindigkeiten und Pfahlwinkel eigene Tests nötig. China verlangt Prüfungen in benannten chinesischen Laboren.</p></div>
+    </details>
+    <details>
+      <summary>Was ändert sich bei Elektrofahrzeugen?</summary>
+      <div class="details-body"><p>Zusätzlich zu den Insassenkriterien sind nach dem Crash Elektrosicherheit (Berührschutz, Isolationswiderstand bzw. Spannungsfreiheit), Elektrolytaustritt und Batteriebefestigung nachzuweisen – in den ECE-Regelungen R94/R95/R137 integriert, in den USA über FMVSS 305a, in China u. a. über GB/T 31498.</p></div>
+    </details>
+    <details>
+      <summary>Gilt der Fußgängerschutz auch für große SUVs und Pick-ups?</summary>
+      <div class="details-body"><p>Grundsätzlich ja für M1 und N1, aber mit Anwendungsausnahmen je Regelwerk (z. B. Masse, Lage des R-Punkts relativ zur Vorderachse, Frontlenker-Bauweise). Bei hohen Stoßfängern ändert sich zudem das Beinform-Verfahren (GB 24550-2024: Schwellen 425 mm / 500 mm). In den USA gibt es keinen FMVSS-Fußgängerschutz.</p></div>
+    </details>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Daten zu FMVSS 208 (Kindersitzliste) und zu GB 20071-2025 / GB 24550-2024 sind geprüft (Federal Register, chinesestandard.net). Anwendungsausnahmen und Übergangsfristen der UN-Regelungen und AIS-Standards: <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="passiv-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Mittlerer Harmonisierungsgrad: ECE-Märkte (EU, UK, JP, GCC, weitgehend IN) nutzen dieselben UN-Regelungen. Die USA weichen bei Konfiguration, Dummys und Geschwindigkeit ab und haben keinen Fußgängerschutz. China ist ECE-nah, verlangt aber nationale Prüfungen.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>UK</th><th>IN</th><th>BR / GCC</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>UN R94/95/127/135/137</td><td>FMVSS 208/214/301</td><td>GB 11551/20071/24550</td><td>UN-Regelungen</td><td>KMVSS</td><td>retained EU</td><td>AIS</td><td>national / Nachweis</td></tr>
+      <tr><td>Frontal-Offset</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Frontal voll (starre Wand)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Seitenaufprall MDB</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Pfahlaufprall</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>
+      <tr><td>Fußgängerschutz</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>Heckaufprall (Kraftstoff)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = gefordert &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / abweichende Konfiguration / nur über Fremdnachweis oder andere Regelung (z. B. UN R34 für Heckaufprall) &nbsp; <span style="color:var(--red)">✗</span> = keine regulatorische Pflicht bekannt &nbsp; · USA-Spalte gegen eCFR geprüft; alle übrigen Einstufungen aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="passiv-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRSP</strong> (Working Party on Passive Safety) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grsp" target="_blank" class="reg-link">GRSP ↗</a>. Zuständig für R94, R95, R127, R135, R137, GTR 9 und GTR 14.</span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>FMVSS 208 – Kindersitzliste Advanced Airbags</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Aktualisierung der zur Prüfung der Airbag-Unterdrückung verwendeten Kindersitze (FR 2024-18114)</td><td>wirksam 21.10.2024</td></tr>
+        <tr><td>FMVSS 208 – Gurtwarner Fondsitze</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Gurtwarnung für Rücksitze, erweiterte Anforderungen Fahrer/Beifahrer; Folgeänderung FMVSS 101 (FR 2024-30340); Einführungsstufen lt. Regel</td><td>wirksam 04.03.2025</td></tr>
+        <tr><td>FMVSS 214 – Bereinigung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Entfernung obsoleter Anforderungen, Folgeänderungen FMVSS 305a / 307 (FR 2026-11072)</td><td>wirksam 06.07.2026</td></tr>
+        <tr><td>FMVSS 301 – Bereinigung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Entfernung obsoleter Anforderungen (NPRM 30.05.2025, Final Rule FR 2026-11077)</td><td>wirksam 06.07.2026</td></tr>
+        <tr><td>FMVSS 208 – weitere Änderungen 2026</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Prüfen</span></td><td>eCFR verzeichnet substanzielle Änderungen von §571.208 mit Datum 06.04.2026 und 10.04.2026; Inhalt im Federal Register prüfen</td><td>04/2026</td></tr>
+        <tr><td>GB 24550-2024 (China)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Fußgängerschutz verbindlich, ersetzt GB/T 24550-2009</td><td>seit 01.01.2025</td></tr>
+        <tr><td>GB 20071-2025 (China)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Seitenaufprall neu, WorldSID 50th / ES-2re, ersetzt GB 20071-2006</td><td>seit 01.07.2026</td></tr>
+        <tr><td>GB 11551-2014 Änderung 1 (China)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Prüfen</span></td><td>Änderungsblatt „2026XG1“ zur Frontalnorm veröffentlicht; Inhalt und Termin vor Projektverwendung prüfen</td><td>2026</td></tr>
+        <tr><td>UN R135 / GTR 14, UN R127 / GTR 9</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Laufende GRSP-Arbeiten (u. a. WorldSID, Kopfaufprallbereiche); Stand in GRSP-Dokumenten prüfen</td><td>Offen</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: Federal Register, eCFR Versioner, chinesestandard.net, UNECE GRSP. Termine der UN-Änderungsserien bewusst nicht aufgeführt – vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: TYPABGRENZENDE MERKMALE -->
+<div id="passiv-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Die Crash-Regelungen definieren jeweils einen <strong>„Fahrzeugtyp hinsichtlich …“</strong> (Insassenschutz frontal, seitlich, Fußgängerschutz). Änderungen innerhalb der Merkmale können als Erweiterung behandelt werden – oft mit Simulation oder Teilversuch statt Vollcrash.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">📏</span><h3>Abmessungen &amp; Masse</h3></div>
+    <p>Länge, Breite, Höhe und Referenz- bzw. Prüfmasse, soweit sie das Crashverhalten beeinflussen. Massezuwachs über die geprüfte Variante hinaus ist der häufigste Auslöser für Nachweise.</p>
+    <div class="module-card-footer"><span class="tag">Erweiterung: bei Massezuwachs</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">🏗️</span><h3>Struktur &amp; Fahrgastzelle</h3></div>
+    <p>Bauart, Abmessungen, Form und Werkstoffe der Vorderwagen- bzw. Seitenstruktur und der Fahrgastzelle (Längsträger, Crashboxen, B-Säule, Schweller, Türverstärkungen). Werkstoff- oder Geometriewechsel tragender Teile erfordern einen Nachweis.</p>
+    <div class="module-card-footer"><span class="tag">Neue Prüfung: bei Strukturänderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">🎈</span><h3>Rückhaltesystem</h3></div>
+    <p>Typ des Schutzsystems: Airbags (Anzahl, Lage, Stufen), Gurt mit Straffer und Kraftbegrenzer, Lenkrad/Lenksäule, Instrumententafel, Sitze und Verankerungen.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Airbag-/Gurtänderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🚘</span><h3>Fahrzeugfront (Fußgänger)</h3></div>
+    <p>Form, Abmessungen, Werkstoffe und Struktur der Front: Stoßfänger und -querträger, Haube und Scharniere, Windschutzscheiben-Unterkante, Wischerlagerung, aktive Haube. Ein Facelift ist praktisch immer relevant.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Facelift / Frontänderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">🔋</span><h3>Antrieb &amp; Energiespeicher</h3></div>
+    <p>Lage und Bauart von Motor, Kraftstoffbehälter bzw. HV-Batterie. Ein Wechsel Verbrenner ↔ Elektro oder eine neue Batteriegeneration verändert Masse, Lastpfade und Post-Crash-Anforderungen (Leckage, Elektrosicherheit).</p>
+    <div class="module-card-footer"><span class="tag">Neue Prüfung: bei Antriebswechsel</span></div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: Definitionen „Fahrzeugtyp“ und „Typ des Schutzsystems“ in UN R94, R95, R137 und R127 bzw. GB 11551-2014 Abschnitt 3 und Kapitel 6 („Vehicle type change and expansion“). Die genaue Merkmalsliste unterscheidet sich je Regelung und Änderungsserie – vor Projektverwendung gegen den Originaltext prüfen. In den USA gibt es keine Typgenehmigung; der Hersteller verantwortet die Zertifizierung jeder Variante selbst. Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>

@@ -1,0 +1,2246 @@
+{
+ "generated": "2026-10-25T21:16:37+00:00",
+ "since": "2024-10-25",
+ "sources": {
+  "eCFR": {
+   "ok": true,
+   "count": 25
+  },
+  "Federal Register": {
+   "ok": true,
+   "count": 63
+  },
+  "EU-Amtsblatt": {
+   "ok": true,
+   "count": 90
+  }
+ },
+ "items": [
+  {
+   "id": "fr-2026-21794",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-10-26",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21794/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped",
+   "summary": "NHTSA is proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 108, \"Lamps, reflective devices, and associated equipment.\" The proposed updates to the standard are intended to remove unnecessary requirements and to provide design flexibility without impact on vehicle safety. The first two proposed changes would amend the test voltage specification for integral beam type headlamps an",
+   "effective": null,
+   "modules": [
+    "licht"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-10-26"
+  },
+  {
+   "id": "eu-42026X0139R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-10-19",
+   "title": "Berichtigung der UN-Regelung Nr. 107 — Einheitliche Bestimmungen für die Genehmigung von Fahrzeugen der Klassen M2 oder M3 hinsichtlich ihrer allgemeinen Konstruktionsmerkmale [2026/139] (ABl. L, 2026/139, 29.1.2026)",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0139R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-10-19"
+  },
+  {
+   "id": "eu-32026R1753R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-10-14",
+   "title": "Berichtigung der Delegierten Verordnung (EU) 2026/1753 der Kommission vom 13. Juli 2026 zur Änderung der Verordnung (EU) 2018/858 des Europäischen Parlaments und des Rates hinsichtlich der Anforderungen an die Umweltverträglichkeit und der Emissionsanforderungen für die Dauerhaltbarkeit von bordeige",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1753R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-10-14"
+  },
+  {
+   "id": "eu-52026PC0548",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2026-10-13",
+   "title": "Vorschlag für einen BESCHLUSS DES RATES über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im November 2026 zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52026PC0548",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-10-13"
+  },
+  {
+   "id": "ecfr-571.213-2026-10-09",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2026-10-09",
+   "title": "FMVSS 213 – Child restraint systems: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.213",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-10-09"
+  },
+  {
+   "id": "eu-32026R2214",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-10-05",
+   "title": "Durchführungsverordnung (EU) 2026/2214 der Kommission vom 5. Oktober 2026 zur Berichtigung bestimmter Sprachfassungen der Durchführungsverordnung (EU) 2024/2215 zur Festlegung — gemäß der Verordnung (EU) 2024/573 des Europäischen Parlaments und des Rates — der Mindestanforderungen an die Ausstellung",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2214",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-10-05"
+  },
+  {
+   "id": "fr-2026-18380",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-09-09",
+   "title": "Federal Motor Vehicle Safety Standard No. 213a; Child Restraint Systems-Side Impact Protection; Federal Motor Vehicle Safety Standard No. 213; Child Restraint Systems, Federal Motor Vehicle Safety Standard No. 213b; Child Restraint Systems; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18380/federal-motor-vehicle-safety-standard-no-213a-child-restraint-systems-side-impact-protection-federal",
+   "summary": "This final rule amends the safety standards for child restraint systems (CRSs). NHTSA is amending Federal motor vehicle safety standard (FMVSS) No. 213a, \"Child restraint systems--side impact protection,\" to exempt school bus CRSs from the standard's requirements as long as they meet specified labeling requirements; to delay the compliance date from June 30, 2025 to December 5, 2026; to amend the ",
+   "effective": "2026-10-09",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-09-09"
+  },
+  {
+   "id": "eu-42026X1534",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-08-28",
+   "title": "UN-Regelung Nr. 129 – Einheitliche Bedingungen für die Genehmigung von verbesserten Kinderrückhaltesystemen zur Verwendung in Kraftfahrzeugen [2026/1534]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1534",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-08-28"
+  },
+  {
+   "id": "eu-42026X1695",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-08-17",
+   "title": "UN-Regelung Nr. 100 – Einheitliche Bedingungen für die Genehmigung der Fahrzeuge hinsichtlich der besonderen Anforderungen an den Elektroantrieb [2026/1695]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1695",
+   "modules": [
+    "hv"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-08-17"
+  },
+  {
+   "id": "fr-2026-15743",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-08-04",
+   "title": "Federal Motor Vehicle Safety Standards; Child Restraint Anchorage Systems; Child Restraint Systems",
+   "url": "https://www.federalregister.gov/documents/2026/08/04/2026-15743/federal-motor-vehicle-safety-standards-child-restraint-anchorage-systems-child-restraint-systems",
+   "summary": "This NPRM responds to petitions for reconsideration of the January 7, 2025 final rule amending Federal Motor Vehicle Safety Standard (FMVSS) No. 225. NHTSA proposes granting the requests to extend the 3-year phase-in period to a 4-year phase-in period to comply with updated requirements in FMVSS No. 225 and to extend the lead time for small-volume manufacturers to comply fully with the updated req",
+   "effective": null,
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-08-04"
+  },
+  {
+   "id": "fr-2026-15231",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-07-28",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 135 To Accommodate ADS-Equipped Vehicles; Extension of Comment Period",
+   "url": "https://www.federalregister.gov/documents/2026/07/28/2026-15231/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-135-to-accommodate-ads-equipped",
+   "summary": "In response to a request from Varnum LLP (Varnum), NHTSA is announcing a 30-day extension of the public comment period for the notice of proposed rulemaking (NPRM) published on June 26, 2026 proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 135, \"Light vehicle brake systems.\" The proposed modifications would distinguish how regulations apply to vehicles with and without manually",
+   "effective": "2026-06-26",
+   "modules": [
+    "bremse"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-07-28"
+  },
+  {
+   "id": "eu-32026R1791",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-07-23",
+   "title": "Verordnung (EU) 2026/1791 der Kommission vom 23. Juli 2026 zur Änderung und Berichtigung der Verordnung (EU) 2017/1151 hinsichtlich der Emissionstypgenehmigungsverfahren für leichte Personenkraftwagen und Nutzfahrzeuge in Bezug auf Enddaten von Euro-6-Fahrzeugen und bestimmte spezifische technische ",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1791",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-07-23"
+  },
+  {
+   "id": "eu-32026R1753",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-07-13",
+   "title": "Delegierte Verordnung (EU) 2026/1753 der Kommission vom 13. Juli 2026 zur Änderung der Verordnung (EU) 2018/858 des Europäischen Parlaments und des Rates hinsichtlich der Anforderungen an die Umweltverträglichkeit und der Emissionsanforderungen für die Dauerhaltbarkeit von bordeigenen Batterien, die",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1753",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-07-13"
+  },
+  {
+   "id": "eu-32026R1738",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-07-08",
+   "title": "Verordnung (EU) 2026/1738 des Europäischen Parlaments und des Rates vom 8. Juli 2026 über Anforderungen an die kreislauforientierte Konstruktion von Fahrzeugen und über die Bewirtschaftung von Altfahrzeugen, zur Änderung der Verordnungen (EU) Nr. 168/2013, (EU) 2018/858, (EU) 2019/1020 und (EU) 2023",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1738",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-07-08"
+  },
+  {
+   "id": "eu-32026R1540",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-07-06",
+   "title": "Durchführungsverordnung (EU) 2026/1540 der Kommission vom 6. Juli 2026 zur Einführung eines endgültigen Antidumpingzolls auf die Einfuhren neuer Luftreifen aus Kautschuk von der für Personenkraftwagen, Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art mit einer Tragfähigkeitsk",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1540",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-07-06"
+  },
+  {
+   "id": "ecfr-571.301-2026-07-06",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2026-07-06",
+   "title": "FMVSS 301 – Fuel system integrity: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.301",
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-07-06"
+  },
+  {
+   "id": "ecfr-571.214-2026-07-06",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2026-07-06",
+   "title": "FMVSS 214 – Side impact protection: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.214",
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-07-06"
+  },
+  {
+   "id": "ecfr-571.210-2026-07-06",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2026-07-06",
+   "title": "FMVSS 210 – Seat belt assembly anchorages: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.210",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-07-06"
+  },
+  {
+   "id": "ecfr-571.207-2026-07-06",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2026-07-06",
+   "title": "FMVSS 207 – Seating systems: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.207",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-07-06"
+  },
+  {
+   "id": "eu-42026X1365",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-06-29",
+   "title": "UN-Regelung Nr. 166 – Einheitliche Vorschriften für die Genehmigung von Einrichtungen und Kraftfahrzeugen hinsichtlich der Wahrnehmung ungeschützter Verkehrsteilnehmer im Nahbereich vor und neben dem Fahrzeug durch den Fahrer [2026/1365]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1365",
+   "modules": [
+    "sicht"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-06-29"
+  },
+  {
+   "id": "fr-2026-12981",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-06-26",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 135 To Accommodate ADS-Equipped Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/06/26/2026-12981/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-135-to-accommodate-ads-equipped",
+   "summary": "NHTSA is proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 135, \"Light vehicle brake systems.\" The proposed modifications would distinguish how regulations apply to vehicles with and without manually operated driving controls. The proposed modifications would clarify definitions, telltale requirements, performance requirements, and test procedures in the standard and remove sect",
+   "effective": null,
+   "modules": [
+    "bremse"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-26"
+  },
+  {
+   "id": "fr-2026-12912",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-06-26",
+   "title": "Response to Petition for Reconsideration, Federal Motor Vehicle Safety Standards; Seat Belt Assembly Anchorages",
+   "url": "https://www.federalregister.gov/documents/2026/06/26/2026-12912/response-to-petition-for-reconsideration-federal-motor-vehicle-safety-standards-seat-belt-assembly",
+   "summary": "NHTSA published a final rule on September 17, 2024 that amended the regulation on seat belt assembly anchorages. The final rule updated the test procedure for existing test devices and added an alternative test device as a compliance option. In response to the 2024 final rule, the agency received a petition for reconsideration from the Truck and Engine Manufacturers Association. After considering ",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-26"
+  },
+  {
+   "id": "eu-42026X1130",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-06-26",
+   "title": "UN-Regelung Nr. 154 – Einheitliche Bedingungen für die Genehmigung von leichten Personenkraftwagen und Nutzfahrzeugen in Bezug auf die Kriterien Emissionen, Kohlendioxidemissionen und Kraftstoffverbrauch und/oder die Messung des Stromverbrauchs und der elektrischen Reichweite (WLTP) [2026/1130]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1130",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-26"
+  },
+  {
+   "id": "eu-52026SC0175",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2026-06-25",
+   "title": "ARBEITSUNTERLAGE DER KOMMISSIONSDIENSTSTELLEN EVALUIERUNG (ZUSAMMENFASSUNG) [Optional element] der Verordnung (EU) Nr. 461/2010 der Kommission über die Anwendung von Artikel 101 Absatz 3 des Vertrags über die Arbeitsweise der Europäischen Union (AEUV) auf Gruppen von vertikalen Vereinbarungen und au",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52026SC0175",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-25"
+  },
+  {
+   "id": "eu-32025R1706R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-06-25",
+   "title": "Berichtigung der Durchführungsverordnung (EU) 2025/1706 der Kommission vom 25. Juli 2025 mit Vorschriften, Verfahren und Prüfmethoden für die Anwendung der Verordnung (EU) 2024/1257 in Bezug auf die Typgenehmigung von Fahrzeugen der Klassen M1 und N1 hinsichtlich ihrer Abgasund Verdunstungsemissione",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1706R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-25"
+  },
+  {
+   "id": "eu-32026D1411",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-06-22",
+   "title": "Beschluss (EU) 2026/1411 des Rates vom 22. Juni 2026 über den im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu VN-Regelungen im Juni 2026 zu vertretenden Standpunkt",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026D1411",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-22"
+  },
+  {
+   "id": "eu-42025X2412R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-06-19",
+   "title": "Berichtigung der UN-Regelung Nr. 41 — Einheitliche Bedingungen für die Genehmigung der Krafträder hinsichtlich ihrer Geräuschentwicklung [2025/2412] (ABl. L, 2025/2412, 12.12.2025)",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X2412R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-19"
+  },
+  {
+   "id": "eu-42026X1900",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-06-15",
+   "title": "Änderungen der UN-Regelung Nr. 168 — Einheitliche Bedingungen für die Genehmigung von leichten Personenkraftwagen und Nutzfahrzeugen hinsichtlich der Emissionen im praktischen Fahrbetrieb (RDE) [2026/1900]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1900",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-15"
+  },
+  {
+   "id": "fr-2026-11640",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-10",
+   "title": "Federal Motor Vehicle Safety Standards No. 210; Seat Belt Assembly Anchorages; Correction",
+   "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11640/federal-motor-vehicle-safety-standards-no-210-seat-belt-assembly-anchorages-correction",
+   "summary": "The National Highway Traffic Safety Administration (NHTSA) is correcting a final rule that appeared in the Federal Register on June 3, 2026. The original document issued a final rule removing unnecessary regulatory text from Federal Motor Vehicle Safety Standard (FMVSS) No. 210, Seat belt assembly anchorages. This document corrects an amendatory instruction to ensure that only the introductory tex",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-10"
+  },
+  {
+   "id": "eu-42026X1095",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-06-05",
+   "title": "UN-Regelung Nr. 95 — Einheitliche Bedingungen für die Genehmigung von Kraftfahrzeugen hinsichtlich des Schutzes der Insassen bei einem Seitenaufprall [2026/1095",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1095",
+   "modules": [
+    "passiv"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-06-05"
+  },
+  {
+   "id": "fr-2026-11082",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 205; Glazing Materials; No. 205(a), Glazing Equipment Manufactured Before September 1, 2006, and Glazing Materials Used in Vehicles Manufactured Before November 1, 2006",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11082/federal-motor-vehicle-safety-standards-no-205-glazing-materials-no-205a-glazing-equipment",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove the obsolete Federal Motor Vehicle Safety Standard (FMVSS) No. 205(a), Glazing equipment manufactured before September 1, 2006, and glazing materials used in vehicles manufactured before November 1, 2006. The agency received no comment on the proposed removal of FMVSS No. 205(a) and therefore the agency is ",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11081",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 210; Seat Belt Assembly Anchorages",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11081/federal-motor-vehicle-safety-standards-no-210-seat-belt-assembly-anchorages",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove unnecessary regulatory text from Federal Motor Vehicle Safety Standard (FMVSS) No. 210, Seat belt assembly anchorages. The agency received no comment on the proposed changes to FMVSS No. 210, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11080",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 204; Steering Control Rearward Displacement",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11080/federal-motor-vehicle-safety-standards-no-204-steering-control-rearward-displacement",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to amend Federal Motor Vehicle Safety Standard No. 204, Steering Control Rearward Displacement, so that it no longer applies to vehicles certified to the frontal barrier crash protection requirements of Federal Motor Vehicle Safety Standard No. 208, Occupant Crash Protection. The agency received one comment that supp",
+   "effective": "2026-07-06",
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11079",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 206; Door Locks and Door Retention Components",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11079/federal-motor-vehicle-safety-standards-no-206-door-locks-and-door-retention-components",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 206, \"Door locks and door retention components.\" The agency received no comment on the proposed changes to FMVSS No. 206 and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11078",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 207; Seating Systems",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11078/federal-motor-vehicle-safety-standards-no-207-seating-systems",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standards (FMVSS) No. 207, Seating Systems. The agency received no comment on the proposed changes to FMVSS No. 207, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11077",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 301; Fuel System Integrity",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11077/federal-motor-vehicle-safety-standards-no-301-fuel-system-integrity",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 301, \"Fuel System Integrity.\" The agency received three comments on the proposed changes to FMVSS No. 301. The agency is adopting a revised version of the proposed changes in this final rule based on the comments received.",
+   "effective": "2026-07-06",
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11076",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 222; School Bus Passenger Seating and Crash Protection",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11076/federal-motor-vehicle-safety-standards-no-222-school-bus-passenger-seating-and-crash-protection",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 222, \"School bus passenger seating and crash protection.\" The agency received no comment on the proposed changes to FMVSS No. 222, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11075",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 304; Compressed Natural Gas Fuel Container Integrity",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11075/federal-motor-vehicle-safety-standards-no-304-compressed-natural-gas-fuel-container-integrity",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete text in Federal Motor Vehicle Safety Standard (FMVSS) No. 304, \"Compressed natural gas fuel container integrity\". The agency received no comment on the proposed changes to FMVSS No. 304, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11074",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Removing Obsolete Procedures From the Consumer Assistance To Recycle and Save Act of 2009",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11074/removing-obsolete-procedures-from-the-consumer-assistance-to-recycle-and-save-act-of-2009",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete regulations related to the Consumer Assistance to Recycle and Save Act of 2009. The agency received no comment on the proposed changes to the Consumer Assistance to Recycle and Save Act of 2009, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11072",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standard No. 214; Side Impact Protection; Federal Motor Vehicle Safety Standard No. 305a; Electric-Powered Vehicles: Electric Powertrain Integrity; Federal Motor Vehicle Safety Standard No. 307; Fuel System Integrity of Hydrogen Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11072/federal-motor-vehicle-safety-standard-no-214-side-impact-protection-federal-motor-vehicle-safety",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 214, \"Side Impact Protection.\" The agency received two comments that supported the changes to FMVSS No. 214. In addition, one of the commenters suggested amendments to remove additional obsolete regulatory text. NHTSA is adopting t",
+   "effective": "2026-07-06",
+   "modules": [
+    "hv",
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11071",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Removing Obsolete Directives From Phase-In Reporting Requirements",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11071/removing-obsolete-directives-from-phase-in-reporting-requirements",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete directives from the phase-in reporting requirements. The agency received no comment on the proposed changes to the phase-in reporting requirements, and therefore the agency is adopting the changes in this final rule. NHTSA is also updating some sections of Part 585 with the agency's current address",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11070",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 217; Bus Emergency Exits and Window Retention and Release",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11070/federal-motor-vehicle-safety-standards-no-217-bus-emergency-exits-and-window-retention-and-release",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 217, Bus emergency exits and window retention and release. The agency received no comment on the proposed changes to FMVSS No. 217, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11069",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 303; Fuel System Integrity of Compressed Natural Gas Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11069/federal-motor-vehicle-safety-standards-no-303-fuel-system-integrity-of-compressed-natural-gas",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) proposing to remove obsolete text in Federal Motor Vehicle Safety Standard (FMVSS) No. 303, \"Fuel system integrity of compressed natural gas vehicles\". The agency received no comment on the proposed changes to FMVSS No. 303, and therefore the agency is adopting the changes in this final rule.",
+   "effective": "2026-07-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "fr-2026-11068",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-06-03",
+   "title": "Federal Motor Vehicle Safety Standards No. 216; Roof Crush Resistance, Federal Motor Vehicle Safety Standard No. 216a; Roof Crush Resistance; Upgraded Standard",
+   "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11068/federal-motor-vehicle-safety-standards-no-216-roof-crush-resistance-federal-motor-vehicle-safety",
+   "summary": "On May 30, 2025, NHTSA published a notice of proposed rulemaking (NPRM) to remove the obsolete Federal Motor Vehicle Safety Standard (FMVSS) No. 216, related to roof crush resistance. The agency received one comment, but the comment is not within the scope of the proposed rule. Therefore, the agency is removing the obsolete FMVSS No. 216 as proposed.",
+   "effective": "2026-07-06",
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-06-03"
+  },
+  {
+   "id": "eu-52026PC0243",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2026-06-01",
+   "title": "Vorschlag für einen BESCHLUSS DES RATES über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im Juni 2026 zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52026PC0243",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-06-01"
+  },
+  {
+   "id": "eu-42026X1086",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-05-29",
+   "title": "UN-Regelung Nr. 83 – Einheitliche Bedingungen für die Genehmigung der Fahrzeuge hinsichtlich der Emission von Schadstoffen aus dem Motor entsprechend den Kraftstofferfordernissen des Motors [2026/1086]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1086",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-05-29"
+  },
+  {
+   "id": "eu-42026X0275R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-05-28",
+   "title": "Berichtigung der UN-Regelung Nr. 55 — Einheitliche Bedingungen für die Genehmigung von Bauteilen mechanischer Verbindungseinrichtungen für Fahrzeugkombinationen (ABl. L, 2026/275, 25.2.2026)",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0275R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-05-28"
+  },
+  {
+   "id": "eu-42026X1075",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-05-22",
+   "title": "UN-Regelung Nr. 94 — Einheitliche Bedingungen für die Genehmigung von Kraftfahrzeugen hinsichtlich des Schutzes der Insassen bei einem Frontalaufprall [2026/1075]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1075",
+   "modules": [
+    "passiv"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-05-22"
+  },
+  {
+   "id": "eu-42026X1044",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-05-18",
+   "title": "UN-Regelung Nr. 179 – Einheitliche Bedingungen für die Genehmigung leichter Nutzfahrzeuge hinsichtlich der Messung von Bremsemissionen im Prüfstand [2026/1044]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X1044",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-05-18"
+  },
+  {
+   "id": "eu-32025R1707R(02)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-05-13",
+   "title": "Berichtigung der Durchführungsverordnung (EU) 2025/1707 der Kommission vom 25. Juli 2025 mit Durchführungsbestimmungen zur Verordnung (EU) 2024/1257 des Europäischen Parlaments und des Rates hinsichtlich spezifischer Methoden, Anforderungen und Prüfungen, einschließlich Einhaltungsgrenzen, für OBFCM",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1707R(02)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-05-13"
+  },
+  {
+   "id": "eu-42026X0906",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-04-24",
+   "title": "UN-Regelung Nr. 145 — Einheitliche Bedingungen für die Genehmigung von Fahrzeugen hinsichtlich der ISOFIX-Verankerungssysteme, der Verankerungen des oberen ISOFIX-Haltegurtes und der i-Size-Sitzplätze [2026/906]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0906",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-04-24"
+  },
+  {
+   "id": "eu-42026X0746",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-04-13",
+   "title": "UN-Regelung Nr. 13 – Einheitliche Vorschriften für die Typgenehmigung von Fahrzeugen der Klassen M, N und O hinsichtlich der Bremsen [2026/746]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0746",
+   "modules": [
+    "bremse"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-04-13"
+  },
+  {
+   "id": "eu-42026X0502",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-04-13",
+   "title": "UN-Regelung Nr. 13-H — Einheitliche Bedingungen für die Genehmigung von Personenkraftwagen hinsichtlich der Bremsen [2026/502]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0502",
+   "modules": [
+    "bremse"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-04-13"
+  },
+  {
+   "id": "ecfr-571.208-2026-04-10",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2026-04-10",
+   "title": "FMVSS 208 – Occupant crash protection: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.208",
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-04-10"
+  },
+  {
+   "id": "fr-2026-06614",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-04-06",
+   "title": "Federal Motor Vehicle Safety Standards; Occupant Crash Protection, Seat Belt Reminder Systems",
+   "url": "https://www.federalregister.gov/documents/2026/04/06/2026-06614/federal-motor-vehicle-safety-standards-occupant-crash-protection-seat-belt-reminder-systems",
+   "summary": "This interim final rule amends the seat belt warning requirements in Federal Motor Vehicle Safety Standard (FMVSS) No. 208, \"Occupant crash protection\" in response to petitions for reconsideration of the January 2025 final rule. This interim final rule delays the compliance dates and makes technical clarifications to the regulatory text. NHTSA denies the remainder of the requests. Though these ame",
+   "effective": "2026-04-06",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-04-06"
+  },
+  {
+   "id": "fr-2026-06254",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-04-01",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 110 To Accommodate ADS-Equipped Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/04/01/2026-06254/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-110-to-accommodate-ads-equipped",
+   "summary": "NHTSA is proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 110, \"Tire selection and rims and motor home/ recreation vehicle trailer load carrying capacity information for motor vehicles with a GVWR of 4,536 kilograms (10,000 pounds) or less.\" The proposed modification would amend a single section of the standard to enable compliance by affixing the required placard on the left s",
+   "effective": null,
+   "modules": [
+    "reifen"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-04-01"
+  },
+  {
+   "id": "eu-32026R1188",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-03-23",
+   "title": "Delegierte Verordnung (EU) 2026/1188 der Kommission vom 23. März 2026 zur Änderung des Anhangs II der Verordnung (EU) 2018/858 des Europäischen Parlaments und des Rates hinsichtlich der Anforderungen an die Umweltverträglichkeit und der Emissionsanforderungen für in unbegrenzter Serie hergestellte F",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1188",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-23"
+  },
+  {
+   "id": "eu-32026R0699",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-03-23",
+   "title": "Delegierte Verordnung (EU) 2026/699 der Kommission vom 23. März 2026 zur Änderung der Verordnung (EU) 2018/858 des Europäischen Parlaments und des Rates hinsichtlich des standardisierten Zugangs zu Fahrzeug-OBD-Informationen und zu Reparatur- und Wartungsinformationen sowie der Anforderungen und Ver",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0699",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-23"
+  },
+  {
+   "id": "eu-52026AE0266",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2026-03-18",
+   "title": "Stellungnahme des Europäischen Wirtschafts- und Sozialausschusses — Vorschlag für eine Verordnung des Europäischen Parlaments und des Rates zur Änderung der Verordnungen (EG) Nr. 561/2006, (EU) 2018/858, (EU) 2019/2144 und (EU) 2024/1257 des Europäischen Parlaments und des Rates hinsichtlich der Ver",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52026AE0266",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-18"
+  },
+  {
+   "id": "eu-42026X0535",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-03-17",
+   "title": "UN-Regelung Nr. 118 — Einheitliche Bestimmungen über das Brennverhalten und/oder die Eigenschaft von beim Bau von Kraftfahrzeugen bestimmter Klassen verwendeten Materialien, Kraftstoff oder Schmiermittel abzuweisen [2026/535]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0535",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-17"
+  },
+  {
+   "id": "fr-2026-05024",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-03-16",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 102 To Accommodate ADS-Equipped Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/03/16/2026-05024/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-102-to-accommodate-ads-equipped",
+   "summary": "NHTSA is proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 102, \"Transmission shift position sequence, starter interlock, and transmission braking effect.\" The proposed modification would except vehicles equipped with Automated Driving Systems (ADS) that do not have manually operated driving controls from the requirement for a transmission shift position display. This rulemaking",
+   "effective": null,
+   "modules": [
+    "getriebe"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-03-16"
+  },
+  {
+   "id": "fr-2026-05023",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-03-16",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 103 and FMVSS No. 104 To Accommodate ADS-Equipped Vehicles; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2026/03/16/2026-05023/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-103-and-fmvss-no-104-to-accommodate",
+   "summary": "NHTSA is proposing to amend Federal Motor Vehicle Safety Standards (FMVSS) No. 103, \"Windshield defrosting and defogging systems,\" and FMVSS No. 104, \"Windshield wiping and washing systems.\" The proposed modifications would except vehicles equipped with Automated Driving Systems (ADS) that do not have manually operated driving controls from these standards. This rulemaking would remove unnecessary",
+   "effective": null,
+   "modules": [
+    "entfrostung",
+    "wischer"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-03-16"
+  },
+  {
+   "id": "eu-42026X0493",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-03-09",
+   "title": "UN-Regelung Nr. 170 – Einheitliche Bedingungen für die Genehmigung von Kinderrückhaltesystemen zur sichereren Beförderung von Kindern in Kraftomnibussen [2026/493]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0493",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-09"
+  },
+  {
+   "id": "eu-42026X0308",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-03-06",
+   "title": "UN-Regelung Nr. 109 — Einheitliche Bedingungen für die Genehmigung der Herstellung runderneuerter Luftreifen für Nutzfahrzeuge und ihre Anhänger [2026/308]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0308",
+   "modules": [
+    "reifen"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-03-06"
+  },
+  {
+   "id": "eu-42026X0302",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-03-06",
+   "title": "UN-Regelung Nr. 108 — Einheitliche Bedingungen für die Genehmigung der Herstellung runderneuerter Luftreifen für Kraftfahrzeuge und ihre Anhänger [2026/302]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0302",
+   "modules": [
+    "reifen"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-03-06"
+  },
+  {
+   "id": "eu-42026X0301",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-03-05",
+   "title": "UN-Regelung Nr. 172 — Einheitliche Bedingungen für die Genehmigung runderneuerter Reifen hinsichtlich ihrer Leistung auf Schnee und/oder ihrer Einstufung als Traktionsreifen [2026/301]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0301",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-05"
+  },
+  {
+   "id": "eu-32026D0563",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-03-05",
+   "title": "Beschluss (EU) 2026/563 des Rates vom 5. März 2026 über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im März 2026 zu vertreten ",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026D0563",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-05"
+  },
+  {
+   "id": "eu-32026R0481",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-03-03",
+   "title": "Durchführungsverordnung (EU) 2026/481 der Kommission vom 3. März 2026 zur Änderung der Durchführungsverordnung (EU) 2022/1426 mit detaillierten Regelungen zur Durchführung der Verordnung (EU) 2019/2144 des Europäischen Parlaments und des Rates im Hinblick auf die einheitlichen Verfahren und technisc",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0481",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-03"
+  },
+  {
+   "id": "eu-42026X0430",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-03-02",
+   "title": "UN-Regelung Nr. 164 — Einheitliche Bedingungen für die Genehmigung von Spikereifen hinsichtlich ihrer Leistung auf Schnee [2026/430]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0430",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-03-02"
+  },
+  {
+   "id": "eu-42026X0275",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-02-25",
+   "title": "UN-Regelung Nr. 55 — Einheitliche Bedingungen für die Genehmigung von Bauteilen mechanischer Verbindungseinrichtungen für Fahrzeugkombinationen [2026/275]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0275",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-02-25"
+  },
+  {
+   "id": "eu-42026X0300",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-02-19",
+   "title": "UN-Regelung Nr. 12 — Einheitliche Bedingungen für die Genehmigung von Fahrzeugen hinsichtlich des Schutzes des Fahrzeugführers vor der Lenkanlage bei einem Aufprall [2026/300]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0300",
+   "modules": [
+    "passiv"
+   ],
+   "market": "EU",
+   "firstSeen": "2026-02-19"
+  },
+  {
+   "id": "eu-32026R0361",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-02-19",
+   "title": "Verordnung (EU) 2026/361 der Kommission vom 19. Februar 2026 zur Änderung der Verordnung (EU) Nr. 582/2011 in Bezug auf die Typgenehmigung hinsichtlich der Emissionen von schweren Nutzfahrzeugen mit On-Board-Überwachungseinrichtungen für den Kraftstoff- und Stromverbrauch",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0361",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-02-19"
+  },
+  {
+   "id": "eu-42026X0272",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-02-16",
+   "title": "UN-Regelung Nr. 167 — Einheitliche Vorschriften für die Genehmigung von Kraftfahrzeugen hinsichtlich ihrer direkten Sicht [2026/272]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0272",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-02-16"
+  },
+  {
+   "id": "eu-52026PC0087",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2026-02-12",
+   "title": "Vorschlag für einen BESCHLUSS DES RATES über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im März 2026 zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52026PC0087",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-02-12"
+  },
+  {
+   "id": "eu-42026X0139",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-01-29",
+   "title": "UN-Regelung Nr. 107 – Einheitliche Bestimmungen für die Genehmigung von Fahrzeugen der Klassen M2 oder M3 hinsichtlich ihrer allgemeinen Konstruktionsmerkmale [2026/139]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0139",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-01-29"
+  },
+  {
+   "id": "eu-32026R0130",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-01-21",
+   "title": "Durchführungsverordnung (EU) 2026/130 der Kommission vom 21. Januar 2026 zur zollamtlichen Erfassung der Einfuhren neuer Luftreifen aus Kautschuk von der für Personenkraftwagen, Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art mit einer Tragfähigkeitskennzahl von 121 oder wen",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0130",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-01-21"
+  },
+  {
+   "id": "eu-42026X0054",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-01-16",
+   "title": "UN-Regelung Nr. 80 — Einheitliche Vorschriften für die Genehmigung der Sitze von Kraftomnibussen sowie dieser Fahrzeuge hinsichtlich der Widerstandsfähigkeit der Sitze und ihrer Verankerungen [2026/54]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X0054",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-01-16"
+  },
+  {
+   "id": "fr-2026-00728",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2026-01-15",
+   "title": "Federal Motor Vehicle Safety Standards: Anti-Ejection Glazing for Bus Portals; Mandatory Applicability Beginning October 30, 2027",
+   "url": "https://www.federalregister.gov/documents/2026/01/15/2026-00728/federal-motor-vehicle-safety-standards-anti-ejection-glazing-for-bus-portals-mandatory-applicability",
+   "summary": "This document partially grants a petition for reconsideration of the October 30, 2024 final rule that established Federal Motor Vehicle Safety Standard (FMVSS) No. 217a, \"Anti-ejection glazing for bus portals; Mandatory applicability beginning October 30, 2027.\" The standard intends to drive installation of advanced glazing in over-the- road buses (motorcoaches) and other large buses to reduce occ",
+   "effective": "2026-01-15",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2026-01-15"
+  },
+  {
+   "id": "eu-52025PC0993",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-12-16",
+   "title": "Vorschlag für eine VERORDNUNG DES EUROPÄISCHEN PARLAMENTS UND DES RATES zur Änderung der Verordnungen (EG) Nr. 561/2006, (EU) 2018/858, (EU) 2019/2144 und (EU) 2024/1257 des Europäischen Parlaments und des Rates hinsichtlich der Vereinfachung der technischen Anforderungen und der Prüfverfahren für K",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0993",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-12-16"
+  },
+  {
+   "id": "eu-42025X2463",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-12-12",
+   "title": "UN-Regelung Nr. 92 – Einheitliche Bedingungen für die Genehmigung von nicht originalen Austauschschalldämpferanlagen (NORESS) für Fahrzeuge der Klassen L1, L2, L3, L4 und L5 hinsichtlich der Geräuschemissionen [2025/2463]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X2463",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-12-12"
+  },
+  {
+   "id": "eu-42025X2412",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-12-12",
+   "title": "UN-Regelung Nr. 41 — Einheitliche Bedingungen für die Genehmigung der Krafträder hinsichtlich ihrer Geräuschentwicklung [2025/2412]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X2412",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-12-12"
+  },
+  {
+   "id": "eu-32021R1958R(03)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-12-02",
+   "title": "Berichtigung der Delegierten Verordnung (EU) 2021/1958 der Kommission vom 23. Juni 2021 zur Ergänzung der Verordnung (EU) 2019/2144 des Europäischen Parlaments und des Rates durch Festlegung detaillierter Vorschriften für die spezifischen Prüfverfahren und technischen Anforderungen für die Typgenehm",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R1958R(03)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-12-02"
+  },
+  {
+   "id": "eu-32024R1610R(03)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-11-07",
+   "title": "Berichtigung der Verordnung (EU) 2024/1610 des Europäischen Parlaments und des Rates vom 14. Mai 2024 zur Änderung der Verordnung (EU) 2019/1242 im Hinblick auf die Verschärfung der CO2-Emissionsnormen für neue schwere Nutzfahrzeuge und die Einbeziehung von Meldepflichten, zur Änderung der Verordnun",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1610R(03)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-11-07"
+  },
+  {
+   "id": "eu-52025XC05924",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-11-06",
+   "title": "Bekanntmachung der Einleitung eines Antisubventionsverfahrens betreffend die Einfuhren neuer Luftreifen aus Kautschuk von der für Personenkraftwagen, Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art mit einer Tragfähigkeitskennzahl von 121 oder weniger mit Ursprung in der Vol",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025XC05924",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-11-06"
+  },
+  {
+   "id": "eu-32025D2234",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-10-27",
+   "title": "Beschluss (EU) 2025/2234 des Rates vom 27. Oktober 2025 über den im Namen der Europäischen Union auf der 197. Sitzung des Weltforums für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu vertretenden Standpunkt",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025D2234",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-10-27"
+  },
+  {
+   "id": "eu-32024R1689R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-10-09",
+   "title": "Berichtigung der Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom 13. Juni 2024 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz und zur Änderung der Verordnungen (EG) Nr. 300/2008, (EU) Nr. 167/2013, (EU) Nr. 168/2013, (EU) 2018/858, (EU) 2018/1139 und (E",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-10-09"
+  },
+  {
+   "id": "eu-52025PC0627",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-10-08",
+   "title": "Vorschlag für einen BESCHLUSS DES RATES über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im November 2025 zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0627",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-10-08"
+  },
+  {
+   "id": "eu-42025X1910",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-09-26",
+   "title": "UN-Regelung Nr. 177 – Einheitliche Bedingungen zur Ermittlung der Systemleistung von Hybridelektrofahrzeugen und von Elektrofahrzeugen mit mehr als einer elektrischen Maschine als Antrieb [2025/1910]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X1910",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-09-26"
+  },
+  {
+   "id": "eu-42025X1902",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-09-26",
+   "title": "UN-Regelung Nr. 39 — Einheitliche Bedingungen für die Genehmigung der Fahrzeuge hinsichtlich der Geschwindigkeitsmess- und Kilometerzähleinrichtung einschließlich ihres Einbaus [2025/1902]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X1902",
+   "modules": [
+    "tacho"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-09-26"
+  },
+  {
+   "id": "eu-42025X1899",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-09-26",
+   "title": "UN-Regelung Nr. 171 — Einheitliche Vorschriften für die Genehmigung von Kraftfahrzeugen hinsichtlich Fahrerassistenzsystemen (driver control assistance systems, DCAS) [2025/1899]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X1899",
+   "modules": [
+    "adas"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-09-26"
+  },
+  {
+   "id": "eu-52025AE1216",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-09-18",
+   "title": "Stellungnahme des Europäischen Wirtschafts- und Sozialausschusses — Vorschlag für eine Richtlinie des Europäischen Parlaments und des Rates zur Änderung der Richtlinie 2014/45/EU über die regelmäßige technische Überwachung von Kraftfahrzeugen und Kraftfahrzeuganhängern und der Richtlinie 2014/47/EU ",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025AE1216",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-09-18"
+  },
+  {
+   "id": "eu-32025R1538R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-08-19",
+   "title": "Berichtigung der Durchführungsverordnung (EU) 2025/1538 der Kommission vom 25. Juli 2025 zur zollamtlichen Erfassung der Einfuhren neuer Luftreifen aus Kautschuk von der für Personenkraftwagen, Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art mit einer Tragfähigkeitskennzahl ",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1538R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-08-19"
+  },
+  {
+   "id": "eu-42025X1453",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-08-07",
+   "title": "UN-Regelung Nr. 117 — Einheitliche Bedingungen für die Genehmigung der Reifen hinsichtlich der Rollgeräuschemissionen und der Haftung auf nassen Oberflächen und/oder des Rollwiderstandes [2025/1453]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X1453",
+   "modules": [
+    "reifen"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-08-07"
+  },
+  {
+   "id": "eu-42025X1454",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-07-29",
+   "title": "UN-Regelung Nr. 34 — Einheitliche Bedingungen für die Genehmigung von Fahrzeugen hinsichtlich der Verhütung von Brandgefahren s [2025/1454]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X1454",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-07-29"
+  },
+  {
+   "id": "eu-32025R1707",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-07-25",
+   "title": "Durchführungsverordnung (EU) 2025/1707 der Kommission vom 25. Juli 2025 mit Durchführungsbestimmungen zur Verordnung (EU) 2024/1257 des Europäischen Parlaments und des Rates hinsichtlich spezifischer Methoden, Anforderungen und Prüfungen, einschließlich Einhaltungsgrenzen, für OBFCM-Einrichtungen un",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1707",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-07-25"
+  },
+  {
+   "id": "eu-32025R1706",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-07-25",
+   "title": "Durchführungsverordnung (EU) 2025/1706 der Kommission vom 25. Juli 2025 mit Vorschriften, Verfahren und Prüfmethoden für die Anwendung der Verordnung (EU) 2024/1257 in Bezug auf die Typgenehmigung von Fahrzeugen der Klassen M1 und N1 hinsichtlich ihrer Abgas- und Verdunstungsemissionen und zur Änder",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1706",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-07-25"
+  },
+  {
+   "id": "eu-32025R1538",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-07-25",
+   "title": "Durchführungsverordnung (EU) 2025/1538 der Kommission vom 25. Juli 2025 zur zollamtlichen Erfassung der Einfuhren neuer Luftreifen aus Kautschuk von der für Personenkraftwagen, Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art mit einer Tragfähigkeitskennzahl von 121 oder weni",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1538",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-07-25"
+  },
+  {
+   "id": "eu-32025R1871",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-07-23",
+   "title": "Delegierte Verordnung (EU) 2025/1871 der Kommission vom 23. Juli 2025 zur Änderung der Verordnung (EU) 2015/758 des Europäischen Parlaments und des Rates hinsichtlich der Normen für eCalls und zur Änderung der Delegierten Verordnung (EU) 2017/79 hinsichtlich der technischen Anforderungen und Prüfver",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1871",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-07-23"
+  },
+  {
+   "id": "eu-42025X1329",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-07-11",
+   "title": "UN-Regelung Nr. 131 — Einheitliche Bedingungen für die Genehmigung von Kraftfahrzeugen hinsichtlich des Notbremsassistenzsystems (AEBS) in Fahrzeugen der Klassen M2, M3, N2 und N3 [2025/1329]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X1329",
+   "modules": [
+    "adas"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-07-11"
+  },
+  {
+   "id": "fr-2025-12311",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-07-02",
+   "title": "Federal Motor Vehicle Safety Standard No. 213a; Child Restraint Systems-Side Impact Protection; Federal Motor Vehicle Safety Standard No. 213; Child Restraint Systems, Federal Motor Vehicle Safety Standard No. 213b; Child Restraint Systems",
+   "url": "https://www.federalregister.gov/documents/2025/07/02/2025-12311/federal-motor-vehicle-safety-standard-no-213a-child-restraint-systems-side-impact-protection-federal",
+   "summary": "This notice announces that NHTSA will not take enforcement action against regulated entities for failing to comply with Federal Motor Vehicle Safety Standard (FMVSS) No. 213a, Child restraint systems--side impact protection until the publication of any final rule finalizing NHTSA's May 30, 2025 proposal.",
+   "effective": "2025-06-30",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-07-02"
+  },
+  {
+   "id": "eu-32025D1273",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-06-20",
+   "title": "Beschluss (EU) 2025/1273 des Rates vom 20. Juni 2025 über den Standpunkt, der im Namen der Europäischen Union auf der 196. Sitzung des Weltforums für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025D1273",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-06-20"
+  },
+  {
+   "id": "eu-32025R1122",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-06-05",
+   "title": "Delegierte Verordnung (EU) 2025/1122 der Kommission vom 5. Juni 2025 zur Änderung der Verordnung (EU) 2019/2144 des Europäischen Parlaments und des Rates, um den regulatorischen Entwicklungen in Bezug auf die vom Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommi",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1122",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-06-05"
+  },
+  {
+   "id": "fr-2025-09751",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Removing Obsolete Directives From Phase-In Reporting Requirements",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09751/removing-obsolete-directives-from-phase-in-reporting-requirements",
+   "summary": "NHTSA is proposing to remove obsolete directives from the phase-in reporting requirements.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09750",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standard No. 213a; Child Restraint Systems-Side Impact Protection; Federal Motor Vehicle Safety Standard No. 213; Child Restraint Systems, Federal Motor Vehicle Safety Standard No. 213b; Child Restraint Systems",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09750/federal-motor-vehicle-safety-standard-no-213a-child-restraint-systems-side-impact-protection-federal",
+   "summary": "This document proposes amendments to the safety standards for child restraint systems (CRSs). NHTSA is proposing to amend FMVSS No. 213a, \"Child restraint systems--side impact protection,\" to exempt school bus CRSs from the standard's requirements as long as they meet specified labeling requirements; to delay the compliance date from June 30, 2025 to December 5, 2026; to provide that the Child Res",
+   "effective": null,
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09749",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 304, Compressed Natural Gas Fuel Container Integrity",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09749/federal-motor-vehicle-safety-standards-no-304-compressed-natural-gas-fuel-container-integrity",
+   "summary": "NHTSA is proposing to remove obsolete directives from the phase-in reporting requirements in Federal Motor Vehicle Safety Standard (FMVSS) No. 304.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09748",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 303, Fuel System Integrity of Compressed Natural Gas Vehicles",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09748/federal-motor-vehicle-safety-standards-no-303-fuel-system-integrity-of-compressed-natural-gas",
+   "summary": "NHTSA is proposing to remove obsolete directives from the phase-in reporting requirements for Federal Motor Vehicle Safety Standard (FMVSS) No. 303.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09747",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 301, Fuel System Integrity",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09747/federal-motor-vehicle-safety-standards-no-301-fuel-system-integrity",
+   "summary": "NHTSA is proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 301, Fuel system integrity.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09746",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 222; School Bus Passenger Seating and Crash Protection",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09746/federal-motor-vehicle-safety-standards-no-222-school-bus-passenger-seating-and-crash-protection",
+   "summary": "NHTSA is proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 222, \"School bus passenger seating and crash protection.\"",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09745",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standard No. 217; Bus Emergency Exits and Window Retention and Release",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09745/federal-motor-vehicle-safety-standard-no-217-bus-emergency-exits-and-window-retention-and-release",
+   "summary": "NHTSA is proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 217, Bus emergency exits and window retention and release.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09744",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standard; No. 216; Roof Crush Resistance, Federal Motor Vehicle Safety Standard No. 216a; Roof Crush Resistance; Upgraded Standard",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09744/federal-motor-vehicle-safety-standard-no-216-roof-crush-resistance-federal-motor-vehicle-safety",
+   "summary": "NHTSA is proposing to remove the obsolete Federal Motor Vehicle Safety Standard (FMVSS) No. 216, related to roof crush resistance.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09743",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 214, Side Impact Protection",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09743/federal-motor-vehicle-safety-standards-no-214-side-impact-protection",
+   "summary": "NHTSA is proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 214, Side impact protection.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09742",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standard No. 210; Seat Belt Assembly Anchorages",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09742/federal-motor-vehicle-safety-standard-no-210-seat-belt-assembly-anchorages",
+   "summary": "NHTSA is proposing to remove unnecessary regulatory text from Federal Motor Vehicle Safety Standard (FMVSS) No. 210, Seat belt assembly anchorages.",
+   "effective": null,
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09741",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 207; Seating systems",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09741/federal-motor-vehicle-safety-standards-no-207-seating-systems",
+   "summary": "NHTSA is proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standards (FMVSS) No. 207, Seating Systems.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09740",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 206; Door Locks and Door Retention Components",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09740/federal-motor-vehicle-safety-standards-no-206-door-locks-and-door-retention-components",
+   "summary": "NHTSA is proposing to remove obsolete requirements from Federal Motor Vehicle Safety Standard (FMVSS) No. 206, \"Door locks and door retention components.\"",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09739",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 205, Glazing Materials; No. 205(a), Glazing Equipment Manufactured Before September 1, 2006, and Glazing Materials Used in Vehicles Manufactured Before November 1, 2006",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09739/federal-motor-vehicle-safety-standards-no-205-glazing-materials-no-205a-glazing-equipment",
+   "summary": "NHTSA is proposing to remove the obsolete Federal Motor Vehicle Safety Standard (FMVSS) No. 205(a), Glazing equipment manufactured before September 1, 2006, and glazing materials used in vehicles manufactured before November 1, 2006.",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09738",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standard No. 204; Steering Control Rearward Displacement",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09738/federal-motor-vehicle-safety-standard-no-204-steering-control-rearward-displacement",
+   "summary": "NHTSA is proposing to amend Federal Motor Vehicle Safety Standard No. 204, Steering Control Rearward Displacement, so that it no longer applies to vehicles that are certified to the frontal barrier crash protection requirements of Federal Motor Vehicle Safety Standard No. 208, Occupant Crash Protection.",
+   "effective": null,
+   "modules": [
+    "passiv"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "fr-2025-09712",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-05-30",
+   "title": "Federal Motor Vehicle Safety Standards No. 218; Motorcycle Helmets; Withdrawal",
+   "url": "https://www.federalregister.gov/documents/2025/05/30/2025-09712/federal-motor-vehicle-safety-standards-no-218-motorcycle-helmets-withdrawal",
+   "summary": "This action withdraws the notice of proposed rulemaking (NPRM) published in the Federal Register on May 21, 2015 proposing amendments to Federal Motor Vehicle Safety Standard (FMVSS) No. 218, \"Motorcycle Helmets.\" The NPRM proposed three main changes to FMVSS No. 218: adding a definition of motorcycle helmet, adding preliminary screening requirements, and adding an alternate compliance process. Ba",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-05-30"
+  },
+  {
+   "id": "eu-52025SC0099R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-05-26",
+   "title": "ARBEITSUNTERLAGE DER KOMMISSIONSDIENSTSTELLEN EVALUIERUNG (ZUSAMMENFASSUNG) Begleitunterlage zum Vorschlag für eine Richtlinie des Europäischen Parlaments und des Rates zur Änderung der Richtlinie 2014/45/EU über die regelmäßige technische Überwachung von Kraftfahrzeugen und Kraftfahrzeuganhängern u",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025SC0099R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-05-26"
+  },
+  {
+   "id": "eu-52025SC0097R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-05-26",
+   "title": "ARBEITSUNTERLAGE DER KOMMISSIONSDIENSTSTELLEN BERICHT ÜBER DIE FOLGENABSCHÄTZUNG (ZUSAMMENFASSUNG) Begleitunterlage zum Vorschlag für eine Richtlinie des Europäischen Parlaments und des Rates zur Änderung der Richtlinie 2014/45/EU über die regelmäßige technische Überwachung von Kraftfahrzeugen und K",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025SC0097R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-05-26"
+  },
+  {
+   "id": "eu-52025PC0251",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-05-23",
+   "title": "Vorschlag für einen BESCHLUSS DES RATES über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im Juni 2025 zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0251",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-05-23"
+  },
+  {
+   "id": "eu-52025XC02778",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-05-21",
+   "title": "Bekanntmachung der Einleitung eines Antidumpingverfahrens betreffend die Einfuhren neuer Luftreifen aus Kautschuk von der für Personenkraftwagen, Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art mit einer Tragfähigkeitskennzahl von 121 oder weniger mit Ursprung in der Volksre",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025XC02778",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-05-21"
+  },
+  {
+   "id": "eu-42025X0891",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-05-21",
+   "title": "UN-Regelung Nr. 125 — Einheitliche Bedingungen für die Genehmigung von Kraftfahrzeugen hinsichtlich des Sichtfelds des Fahrers nach vorn [2025/891]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X0891",
+   "modules": [
+    "sicht"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-05-21"
+  },
+  {
+   "id": "eu-42025X0844",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-04-30",
+   "title": "UN-Regelung Nr. 59 — Einheitliche Bedingungen für die Genehmigung von Austauschschalldämpferanlagen [2025/844]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X0844",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-04-30"
+  },
+  {
+   "id": "eu-32025R0828",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-04-28",
+   "title": "Durchführungsverordnung (EU) 2025/828 der Kommission vom 28. April 2025 zur Berichtigung der Durchführungsverordnung (EU) 2025/500 zur Einführung endgültiger Ausgleichszölle auf die Einfuhren bestimmter Kraftfahrzeugräder aus Aluminium mit Ursprung in Marokko",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R0828",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-04-28"
+  },
+  {
+   "id": "eu-52025PC0180",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-04-24",
+   "title": "Vorschlag für eine RICHTLINIE DES EUROPÄISCHEN PARLAMENTS UND DES RATES zur Änderung der Richtlinie 2014/45/EU über die regelmäßige technische Überwachung von Kraftfahrzeugen und Kraftfahrzeuganhängern und der Richtlinie 2014/47/EU über die technische Unterwegskontrolle der Verkehrs- und Betriebssic",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0180",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-04-24"
+  },
+  {
+   "id": "ecfr-571.305-2025-03-20",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2025-03-20",
+   "title": "FMVSS 305 – Electric-powered vehicles: electrolyte spillage and electrical shock protection: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.305",
+   "modules": [
+    "hv"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-03-20"
+  },
+  {
+   "id": "ecfr-571.225-2025-03-20",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2025-03-20",
+   "title": "FMVSS 225 – Child restraint anchorage systems: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.225",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-03-20"
+  },
+  {
+   "id": "ecfr-571.127-2025-03-20",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2025-03-20",
+   "title": "FMVSS 127 – Automatic emergency braking: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.127",
+   "modules": [
+    "adas"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-03-20"
+  },
+  {
+   "id": "ecfr-571.101-2025-03-20",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2025-03-20",
+   "title": "FMVSS 101 – Controls and displays: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101",
+   "modules": [
+    "anzeige"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-03-20"
+  },
+  {
+   "id": "eu-42025X0460",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-03-17",
+   "title": "UN-Regelung Nr. 127 — Einheitliche Bedingungen für die Genehmigung von Kraftfahrzeugen hinsichtlich ihrer Eigenschaften im Zusammenhang mit der Fußgängersicherheit [2025/460]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X0460",
+   "modules": [
+    "passiv"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-03-17"
+  },
+  {
+   "id": "eu-32025R0500",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-03-13",
+   "title": "Durchführungsverordnung (EU) 2025/500 der Kommission vom 13. März 2025 zur Einführung endgültiger Ausgleichszölle auf die Einfuhren bestimmter Kraftfahrzeugräder aus Aluminium mit Ursprung in Marokko",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R0500",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-03-13"
+  },
+  {
+   "id": "fr-2025-03348",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-03-03",
+   "title": "Federal Motor Vehicle Safety Standards; Child Restraint Systems, Child Restraint Anchorage Systems, Incorporation by Reference; Correction",
+   "url": "https://www.federalregister.gov/documents/2025/03/03/2025-03348/federal-motor-vehicle-safety-standards-child-restraint-systems-child-restraint-anchorage-systems",
+   "summary": "This document corrects a January 7, 2025 final rule that amended Federal Motor Vehicle Safety Standard (FMVSS) No. 225; \"Child restraint anchorage systems,\" and FMVSS No. 213b; \"Child restraint systems,\" to improve ease-of-use of the lower and tether anchorages, improve correct use of child restraint systems in vehicles, and maintain or improve the correct use and effectiveness of child restraint ",
+   "effective": "2025-03-20",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-03-03"
+  },
+  {
+   "id": "fr-2025-03347",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-03-03",
+   "title": "Federal Motor Vehicle Safety Standards; Bus Rollover Structural Integrity",
+   "url": "https://www.federalregister.gov/documents/2025/03/03/2025-03347/federal-motor-vehicle-safety-standards-bus-rollover-structural-integrity",
+   "summary": "This notice announces that NHTSA will not take enforcement action against regulated entities for failing to comply with the Bus Rollover Structural Integrity final rule and the Bus Rollover Structural Integrity final rule; partial grant of petitions for reconsideration until March 20, 2025.",
+   "effective": "2024-12-30",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-03-03"
+  },
+  {
+   "id": "eu-32025D0433",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-02-25",
+   "title": "Beschluss (EU) 2025/433 des Rates vom 25. Februar 2025 über den Standpunkt, der im Namen der Europäischen Union auf der 195. Tagung des Weltforums für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025D0433",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-02-25"
+  },
+  {
+   "id": "fr-2025-02584",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-02-14",
+   "title": "Federal Motor Vehicle Safety Standards; Occupant Crash Protection, Seat Belt Reminder Systems, Controls and Displays",
+   "url": "https://www.federalregister.gov/documents/2025/02/14/2025-02584/federal-motor-vehicle-safety-standards-occupant-crash-protection-seat-belt-reminder-systems-controls",
+   "summary": "This document delays until March 20, 2025, the effective date of the January 3, 2025, final rule that amended Federal Motor Vehicle Safety Standard (FMVSS) No. 208, \"Occupant crash protection,\" to require a seat belt use warning system for rear seats and enhance the seat belt warning requirements for the front outboard seats.",
+   "effective": "2025-03-20",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-02-14"
+  },
+  {
+   "id": "fr-2025-02583",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-02-14",
+   "title": "Federal Motor Vehicle Safety Standards; Child Restraint Systems, Child Restraint Anchorage Systems; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2025/02/14/2025-02583/federal-motor-vehicle-safety-standards-child-restraint-systems-child-restraint-anchorage-systems",
+   "summary": "This document delays until March 20, 2025, the effective date of the January 7, 2025, final rule that amends Federal Motor Vehicle Safety Standard (FMVSS) No. 225; Child restraint systems, and FMVSS No. 213b; Child restraint systems.",
+   "effective": "2025-01-07",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-02-14"
+  },
+  {
+   "id": "fr-2025-02582",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-02-14",
+   "title": "Federal Motor Vehicle Safety Standards; FMVSS No. 305a Electric-Powered Vehicles: Electric Powertrain Integrity Global Technical Regulation No. 20; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2025/02/14/2025-02582/federal-motor-vehicle-safety-standards-fmvss-no-305a-electric-powered-vehicles-electric-powertrain",
+   "summary": "This document delays until March 20, 2025, the effective date of the December 20, 2024, final rule that adopted Federal Motor Vehicle Safety Standard (FMVSS) No. 305a to replace FMVSS No. 305, \"Electric- powered vehicles: Electrolyte spillage and electrical shock protection.\" FMVSS No. 305a applies to light and heavy vehicles and includes performance requirements for the propulsion battery. The fi",
+   "effective": "2025-03-20",
+   "modules": [
+    "hv"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-02-14"
+  },
+  {
+   "id": "eu-32025R0258",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-02-07",
+   "title": "Verordnung (EU) 2025/258 der Kommission vom 7. Februar 2025 zur Änderung der Verordnung (EU) 2017/2400 hinsichtlich der Bestimmung der CO2-Emissionen und des Kraftstoffverbrauchs von mittelschweren Lastkraftwagen, schweren Lastkraftwagen und schweren Bussen, zur Einbeziehung von mit Wasserstoff betr",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R0258",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-02-07"
+  },
+  {
+   "id": "eu-52025PC0031",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2025-02-04",
+   "title": "Vorschlag für einen BESCHLUSS DES RATES über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im März 2025 zu vertreten ist",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52025PC0031",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-02-04"
+  },
+  {
+   "id": "fr-2025-01832",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-01-27",
+   "title": "Federal Motor Vehicle Safety Standards; Automatic Emergency Braking Systems for Light Vehicles",
+   "url": "https://www.federalregister.gov/documents/2025/01/27/2025-01832/federal-motor-vehicle-safety-standards-automatic-emergency-braking-systems-for-light-vehicles",
+   "summary": "This document delays the effective date of the November 26, 2024 final rule partially granting petitions for reconsideration of a May 9, 2024 final rule that adopted Federal Motor Vehicle Safety Standard (FMVSS) No. 127, \"Automatic Emergency Braking for Light Vehicles,\" which requires automatic emergency braking (AEB), pedestrian automatic emergency braking (PAEB), and forward collision warning (F",
+   "effective": "2025-03-20",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-01-27"
+  },
+  {
+   "id": "fr-2024-31367",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-01-17",
+   "title": "Federal Motor Vehicle Safety Standards; Fuel System Integrity of Hydrogen Vehicles; Compressed Hydrogen Storage System Integrity; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2025/01/17/2024-31367/federal-motor-vehicle-safety-standards-fuel-system-integrity-of-hydrogen-vehicles-compressed",
+   "summary": "This final rule establishes two new Federal Motor Vehicle Safety Standards (FMVSS) specifying performance requirements for all motor vehicles that use hydrogen as a fuel source. The final rule is based on Global Technical Regulation (GTR) No. 13, Hydrogen and Fuel Cell Vehicles. FMVSS No. 307, \"Fuel system integrity of hydrogen vehicles,\" specifies requirements for the integrity of the fuel system",
+   "effective": "2025-07-16",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-01-17"
+  },
+  {
+   "id": "fr-2024-30854",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-01-15",
+   "title": "ADS-Equipped Vehicle Safety, Transparency, and Evaluation Program",
+   "url": "https://www.federalregister.gov/documents/2025/01/15/2024-30854/ads-equipped-vehicle-safety-transparency-and-evaluation-program",
+   "summary": "This document proposes a voluntary framework for the evaluation and oversight of motor vehicles equipped with automated driving systems (ADS). The ADS-equipped Vehicle Safety, Transparency, and Evaluation Program (AV STEP) would establish a national program for ADS-equipped vehicles that operate or may operate on public roads in the United States under NHTSA's oversight with the goal of improving ",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-01-15"
+  },
+  {
+   "id": "eu-32025R0061",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-01-15",
+   "title": "Durchführungsverordnung (EU) 2025/61 der Kommission vom 15. Januar 2025 zur Einführung eines endgültigen Ausgleichszolls auf die Einfuhren einer für Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art bestimmter neuer oder runderneuerter Luftreifen aus Kautschuk mit einer Tragfä",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R0061",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-01-15"
+  },
+  {
+   "id": "eu-32025R0058",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2025-01-15",
+   "title": "Durchführungsverordnung (EU) 2025/58 der Kommission vom 15. Januar 2025 zur Einführung eines endgültigen Antidumpingzolls auf die Einfuhren einer für Omnibusse und Kraftfahrzeuge für den Transport von Waren verwendeten Art bestimmter neuer oder runderneuerter Luftreifen aus Kautschuk mit einer Tragf",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R0058",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2025-01-15"
+  },
+  {
+   "id": "fr-2024-31011",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2025-01-10",
+   "title": "Updated Means of Providing Recall Notification",
+   "url": "https://www.federalregister.gov/documents/2025/01/10/2024-31011/updated-means-of-providing-recall-notification",
+   "summary": "In accordance with the Moving Ahead for Progress in the 21st Century Act (MAP-21) and the Fixing America's Surface Transportation Act (FAST Act), NHTSA is proposing to amend the means of required recall notification to include notification by electronic means, in addition to first-class mail, and proposing certain other attendant obligations related to this requirement. NHTSA is also proposing to ",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-01-10"
+  },
+  {
+   "id": "eu-42025X0005",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-01-10",
+   "title": "UN-Regelung Nr. 155 — Einheitliche Bedingungen für die Genehmigung von Fahrzeugen hinsichtlich der Cybersicherheit und des Cybersicherheitsmanagementsystems [2025/5]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X0005",
+   "modules": [
+    "cyber"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-01-10"
+  },
+  {
+   "id": "eu-42025X0003",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2025-01-10",
+   "title": "UN-Regelung Nr. 79 – Einheitliche Bedingungen für die Genehmigung der Fahrzeuge hinsichtlich der Lenkanlage [2025/3]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42025X0003",
+   "modules": [
+    "adas"
+   ],
+   "market": "EU",
+   "firstSeen": "2025-01-10"
+  },
+  {
+   "id": "fr-2024-31142",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-01-07",
+   "title": "Federal Motor Vehicle Safety Standards; Child Restraint Systems, Child Restraint Anchorage Systems, Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2025/01/07/2024-31142/federal-motor-vehicle-safety-standards-child-restraint-systems-child-restraint-anchorage-systems",
+   "summary": "This final rule amends Federal Motor Vehicle Safety Standard (FMVSS) No. 225; Child restraint systems, and FMVSS No. 213b; Child restraint systems, to improve ease-of-use of the lower and tether anchorages, improve correct use of child restraint systems in vehicles, and maintain or improve the correct use and effectiveness of child restraint systems (CRSs) in motor vehicles. This final rule fulfil",
+   "effective": "2025-03-10",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-01-07"
+  },
+  {
+   "id": "fr-2024-30985",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-01-03",
+   "title": "Anthropomorphic Test Devices, HIII 5TH Percentile Female Test Dummy; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2025/01/03/2024-30985/anthropomorphic-test-devices-hiii-5th-percentile-female-test-dummy-incorporation-by-reference",
+   "summary": "This document revises the chest jacket and spine box specifications for the Hybrid III 5th Percentile Female Test Dummy (HIII-5F). The jacket revisions resolve discrepancies between the jacket specifications in subpart O and jackets available in the field, and ensure a sufficiently low level of variation between jackets fabricated by different manufacturers. The spine box revisions eliminate a sou",
+   "effective": "2025-02-18",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2025-01-03"
+  },
+  {
+   "id": "fr-2024-30340",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2025-01-03",
+   "title": "Federal Motor Vehicle Safety Standards; Occupant Crash Protection, Seat Belt Reminder Systems, Controls and Displays",
+   "url": "https://www.federalregister.gov/documents/2025/01/03/2024-30340/federal-motor-vehicle-safety-standards-occupant-crash-protection-seat-belt-reminder-systems-controls",
+   "summary": "This document amends Federal Motor Vehicle Safety Standard (FMVSS) No. 208, \"Occupant crash protection,\" to require a seat belt use warning system for rear seats. The rule also updates and enhances the current seat belt warning requirements for the driver's seat belt and extends these requirements to the front outboard passenger seat. The final rule applies (with some exceptions) to passenger cars",
+   "effective": "2025-03-04",
+   "modules": [
+    "anzeige"
+   ],
+   "market": "USA",
+   "firstSeen": "2025-01-03"
+  },
+  {
+   "id": "fr-2024-31141",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-12-30",
+   "title": "Federal Motor Vehicle Safety Standards; Lamps, Reflective Devices, and Associated Equipment, Adaptive Driving Beam Headlamps",
+   "url": "https://www.federalregister.gov/documents/2024/12/30/2024-31141/federal-motor-vehicle-safety-standards-lamps-reflective-devices-and-associated-equipment-adaptive",
+   "summary": "This document responds to the petitions for reconsideration of the February 22, 2022, final rule that amended Federal Motor Vehicle Safety Standard (FMVSS) No. 108, \"Lamps, reflective devices, and associated equipment,\" to enable certification of adaptive driving beam (ADB) headlighting systems on vehicles sold in the United States. This document denies all petitions for reconsideration received i",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-12-30"
+  },
+  {
+   "id": "fr-2024-28707",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-12-20",
+   "title": "Federal Motor Vehicle Safety Standards; FMVSS No. 305a Electric-Powered Vehicles: Electric Powertrain Integrity Global Technical Regulation No. 20 Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2024/12/20/2024-28707/federal-motor-vehicle-safety-standards-fmvss-no-305a-electric-powered-vehicles-electric-powertrain",
+   "summary": "Consistent with a Global Technical Regulation on electric vehicle safety, NHTSA is establishing Federal Motor Vehicle Safety Standard (FMVSS) No. 305a to replace FMVSS No. 305, \"Electric-powered vehicles: Electrolyte spillage and electrical shock protection.\" Among other improvements, FMVSS No. 305a applies to light and heavy vehicles and includes performance requirements for the propulsion batter",
+   "effective": "2025-02-18",
+   "modules": [
+    "hv"
+   ],
+   "market": "USA",
+   "firstSeen": "2024-12-20"
+  },
+  {
+   "id": "fr-2024-29862",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-12-18",
+   "title": "Event Data Recorders",
+   "url": "https://www.federalregister.gov/documents/2024/12/18/2024-29862/event-data-recorders",
+   "summary": "This final rule amends regulations regarding event data recorders (EDRs) to extend the EDR recording period for timed data metrics from 5 seconds of pre-crash data at a frequency of 2 Hz to 20 seconds of pre-crash data at a frequency of 10 Hz. This final rule responds to the mandate of the Fixing America's Surface Transportation Act (FAST Act) to establish the appropriate recording period in NHTSA",
+   "effective": "2025-01-17",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-12-18"
+  },
+  {
+   "id": "eu-52024DC0582",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Vorschlag / Mitteilung",
+   "date": "2024-12-18",
+   "title": "BERICHT DER KOMMISSION AN DAS EUROPÄISCHE PARLAMENT UND DEN RAT über die Ausübung der der Kommission übertragenen Befugnis zum Erlass delegierter Rechtsakte gemäß Verordnung (EU) 2019/2144 des Europäischen Parlaments und des Rates vom 27. November 2019 über die Typgenehmigung von Kraftfahrzeugen und",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52024DC0582",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2024-12-18"
+  },
+  {
+   "id": "fr-2024-29268",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-12-17",
+   "title": "Implementing the Whistleblower Provisions of the Vehicle Safety Act",
+   "url": "https://www.federalregister.gov/documents/2024/12/17/2024-29268/implementing-the-whistleblower-provisions-of-the-vehicle-safety-act",
+   "summary": "This final rule addresses an important source of motor vehicle safety information and fulfills a requirement in the Motor Vehicle Safety Whistleblower Act (Whistleblower Act) that NHTSA promulgate regulations on the requirements of the Act, in complement to NHTSA's existing whistleblower program. The Whistleblower Act authorizes the Secretary of Transportation to pay an award, subject to certain l",
+   "effective": "2025-01-16",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-12-17"
+  },
+  {
+   "id": "fr-2024-28998",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-12-11",
+   "title": "Federal Motor Vehicle Safety Standards; Automatic Emergency Braking Systems for Light Vehicles; Correction",
+   "url": "https://www.federalregister.gov/documents/2024/12/11/2024-28998/federal-motor-vehicle-safety-standards-automatic-emergency-braking-systems-for-light-vehicles",
+   "summary": "This document corrects a November 26, 2024 final rule partially granting petitions for reconsideration of a May 9, 2024, final rule that adopted Federal Motor Vehicle Safety Standard (FMVSS) No. 127, \"Automatic Emergency Braking for Light Vehicles,\" which requires automatic emergency braking (AEB), pedestrian automatic emergency braking (PAEB), and forward collision warning (FCW) systems on all ne",
+   "effective": "2025-01-27",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-12-11"
+  },
+  {
+   "id": "fr-2024-28165",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-12-04",
+   "title": "Federal Motor Vehicle Safety Standards; FMVSS No. 213, “Child Restraint Systems,” FMVSS No. 213a, “Child Restraint Systems-Side Impact Protection,” and FMVSS No. 213b, “Child Restraint Systems”-Response to Petitions for Reconsideration; Correction",
+   "url": "https://www.federalregister.gov/documents/2024/12/04/2024-28165/federal-motor-vehicle-safety-standards-fmvss-no-213-child-restraint-systems-fmvss-no-213a-child",
+   "summary": "On October 9, 2024, NHTSA issued a final rule responding to petitions for reconsideration of a June 2022 final rule establishing Federal Motor Vehicle Safety Standard (FMVSS) No. 213a and the December 2023 final rule establishing FMVSS No. 213b. That rule contained an amendatory instruction to amend a section of text that did not exist. This document provides the correct amendatory instruction. It",
+   "effective": "2024-12-04",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2024-12-04"
+  },
+  {
+   "id": "fr-2024-27349",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-11-26",
+   "title": "Federal Motor Vehicle Safety Standards; Automatic Emergency Braking Systems for Light Vehicles",
+   "url": "https://www.federalregister.gov/documents/2024/11/26/2024-27349/federal-motor-vehicle-safety-standards-automatic-emergency-braking-systems-for-light-vehicles",
+   "summary": "This document grants parts of petitions for reconsideration of a May 9, 2024, final rule that adopted Federal Motor Vehicle Safety Standard (FMVSS) No. 127, \"Automatic Emergency Braking for Light Vehicles,\" which requires automatic emergency braking (AEB), pedestrian automatic emergency braking (PAEB), and forward collision warning (FCW) systems on all new light vehicles. This final rule clarifies",
+   "effective": "2025-01-27",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-11-26"
+  },
+  {
+   "id": "fr-2024-26985",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2024-11-20",
+   "title": "Federal Motor Vehicle Safety Standards; Pedestrian Head Protection, Global Technical Regulation No. 9; Incorporation by Reference",
+   "url": "https://www.federalregister.gov/documents/2024/11/20/2024-26985/federal-motor-vehicle-safety-standards-pedestrian-head-protection-global-technical-regulation-no-9",
+   "summary": "NHTSA received a request to extend the comment period for the September 19, 2024, Notice of Proposed Rulemaking (NPRM) proposing a new Federal Motor Vehicle Safety Standard (FMVSS) to ensure passenger vehicles are designed to mitigate the risk of serious to fatal injury in pedestrian crashes. The NPRM is based on Global Technical Regulation (GTR) No. 9 on pedestrian safety, with focused enhancemen",
+   "effective": null,
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-11-20"
+  },
+  {
+   "id": "eu-32024D2868",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2024-11-05",
+   "title": "Beschluss (EU) 2024/2868 des Rates vom 5. November 2024 über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu Vorschlägen für Änderungen der UN-Regelungen Nr. 0, 10",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024D2868",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2024-11-05"
+  },
+  {
+   "id": "eu-42024X2689",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2024-11-04",
+   "title": "UN-Regelung Nr. 171 — Einheitliche Vorschriften für die Genehmigung von Kraftfahrzeugen hinsichtlich Fahrerassistenzsysteme (driver control assistance systems, DCAS) [2024/2689]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42024X2689",
+   "modules": [
+    "adas"
+   ],
+   "market": "EU",
+   "firstSeen": "2024-11-04"
+  },
+  {
+   "id": "fr-2024-24462",
+   "source": "Federal Register",
+   "kind": "Regel (Final Rule)",
+   "date": "2024-10-30",
+   "title": "Federal Motor Vehicle Safety Standards; Anti-Ejection Glazing for Bus Portals; Bus Emergency Exits and Window Retention and Release",
+   "url": "https://www.federalregister.gov/documents/2024/10/30/2024-24462/federal-motor-vehicle-safety-standards-anti-ejection-glazing-for-bus-portals-bus-emergency-exits-and",
+   "summary": "This final rule establishes Federal Motor Vehicle Safety Standard (FMVSS) No. 217a, \"Anti-ejection glazing for bus portals; Mandatory applicability beginning October 30, 2027,\" to drive the installation of advanced glazing in over-the-road buses (motorcoaches) and other large buses to reduce passenger and driver ejections. This final rule, issued pursuant to the Moving Ahead for Progress in the 21",
+   "effective": "2024-12-30",
+   "modules": [],
+   "market": "USA",
+   "firstSeen": "2024-10-30"
+  },
+  {
+   "id": "eu-32024R1610R(01)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2024-10-29",
+   "title": "Berichtigung der Verordnung (EU) 2024/1610 des Europäischen Parlaments und des Rates vom 14. Mai 2024 zur Änderung der Verordnung (EU) 2019/1242 im Hinblick auf die Verschärfung der CO2-Emissionsnormen für neue schwere Nutzfahrzeuge und die Einbeziehung von Meldepflichten, zur Änderung der Verordnun",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1610R(01)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2024-10-29"
+  },
+  {
+   "id": "ecfr-571.139-2023-12-05",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2023-12-05",
+   "title": "FMVSS 139 – New pneumatic radial tires: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.139",
+   "modules": [
+    "reifen"
+   ],
+   "market": "USA",
+   "firstSeen": "2023-12-05"
+  },
+  {
+   "id": "ecfr-571.135-2023-12-05",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2023-12-05",
+   "title": "FMVSS 135 – Light vehicle brake systems: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.135",
+   "modules": [
+    "bremse"
+   ],
+   "market": "USA",
+   "firstSeen": "2023-12-05"
+  },
+  {
+   "id": "ecfr-571.108-2023-12-05",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2023-12-05",
+   "title": "FMVSS 108 – Lamps and reflective devices: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.108",
+   "modules": [
+    "licht"
+   ],
+   "market": "USA",
+   "firstSeen": "2023-12-05"
+  },
+  {
+   "id": "ecfr-571.141-2022-08-12",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2022-08-12",
+   "title": "FMVSS 141 – Minimum sound requirements: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.141",
+   "modules": [
+    "geraeusch"
+   ],
+   "market": "USA",
+   "firstSeen": "2022-08-12"
+  },
+  {
+   "id": "ecfr-571.126-2022-07-08",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2022-07-08",
+   "title": "FMVSS 126 – Electronic stability control: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.126",
+   "modules": [
+    "bremse"
+   ],
+   "market": "USA",
+   "firstSeen": "2022-07-08"
+  },
+  {
+   "id": "ecfr-571.105-2022-07-08",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2022-07-08",
+   "title": "FMVSS 105 – Hydraulic and electric brake systems: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.105",
+   "modules": [
+    "bremse"
+   ],
+   "market": "USA",
+   "firstSeen": "2022-07-08"
+  },
+  {
+   "id": "ecfr-571.110-2021-09-20",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2021-09-20",
+   "title": "FMVSS 110 – Tire selection and rims: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.110",
+   "modules": [
+    "reifen"
+   ],
+   "market": "USA",
+   "firstSeen": "2021-09-20"
+  },
+  {
+   "id": "ecfr-571.109-2021-09-20",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2021-09-20",
+   "title": "FMVSS 109 – New pneumatic tires: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.109",
+   "modules": [
+    "reifen"
+   ],
+   "market": "USA",
+   "firstSeen": "2021-09-20"
+  },
+  {
+   "id": "ecfr-571.209-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 209 – Seat belt assemblies: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.209",
+   "modules": [
+    "rueckhalte"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  },
+  {
+   "id": "ecfr-571.138-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 138 – Tire pressure monitoring systems: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.138",
+   "modules": [
+    "tpms"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  },
+  {
+   "id": "ecfr-571.114-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 114 – Theft protection and rollaway prevention: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.114",
+   "modules": [
+    "getriebe"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  },
+  {
+   "id": "ecfr-571.111-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 111 – Rear visibility: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.111",
+   "modules": [
+    "sicht"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  },
+  {
+   "id": "ecfr-571.104-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 104 – Windshield wiping and washing: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.104",
+   "modules": [
+    "wischer"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  },
+  {
+   "id": "ecfr-571.103-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 103 – Windshield defrosting: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.103",
+   "modules": [
+    "entfrostung"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  },
+  {
+   "id": "ecfr-571.102-2016-12-27",
+   "source": "eCFR",
+   "kind": "Rechtsstand",
+   "date": "2016-12-27",
+   "title": "FMVSS 102 – Transmission shift sequence: letzte inhaltliche Änderung im eCFR",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.102",
+   "modules": [
+    "getriebe"
+   ],
+   "market": "USA",
+   "firstSeen": "2016-12-27"
+  }
+ ]
+}
