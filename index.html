@@ -954,6 +954,7 @@ const TOPIC_MODULES=[];
     });
   });
 })();
+window.TOPIC_MODULES=TOPIC_MODULES; window.MODULE_TITLES=MODULE_TITLES; /* const-Bindings sind nicht automatisch window-Eigenschaften; Generator/Fristen/Updates lesen window.* */
 function isNewItem(i,last){
   const d30=new Date(Date.now()-30*864e5).toISOString().slice(0,10);
   if(i.source==='eCFR')return i.date>=d30 && (!last||i.date>last);
