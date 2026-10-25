@@ -1,0 +1,186 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Fanfare (Schallzeichen)</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(155,89,182,.12);border-color:rgba(155,89,182,.3)">📯</div>
+  <div><h2>Modul — Fanfare / Hupe (Einrichtung für Schallzeichen)</h2><p>UN R28 · StVZO §55 · GB 15742 · US-Bundesstaatenrecht und marktspezifische Äquivalente. Schalldruckpegel, Klangcharakter, Mehrklang-Fanfaren und Verbote in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="fanfare-tabs">
+  <div class="tab active" onclick="switchTab('fanfare','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('fanfare','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('fanfare','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('fanfare','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('fanfare','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('fanfare','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<!-- TAB: VORSCHRIFTEN -->
+<div id="fanfare-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>UN R28 regelt in <strong>Teil I</strong> das Bauteil (Fanfare/Horn, Bauteilgenehmigung mit E-Zeichen) und in <strong>Teil II</strong> das Fahrzeug hinsichtlich seines Schallzeichens (Anbau, Pegel in 7 m). Für PKW (M1) gilt Klasse II. Grundforderung in allen Märkten: <strong>gleichbleibender, ununterbrochener Ton</strong> – Tonfolgen, Melodien und Sirenen sind Sonder- und Wegerechtsfahrzeugen vorbehalten.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>Pflicht</th><th>Pegel Fahrzeug</th><th>Klang / Verbote</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-21-40" target="_blank" class="reg-link">UN R28 ↗</a> (Pflicht über <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="reg-link">VO (EU) 2019/2144 Anh. I ↗</a>)</td><td>Ja (M, N)</td><td>93–112 dB(A) in 7 m</td><td>Gleichbleibender Ton; Mehrklang nur gleichzeitig über ein Bedienteil</td></tr>
+      <tr><td>🇩🇪 national</td><td><a href="https://www.gesetze-im-internet.de/stvzo_2012/__55.html" target="_blank" class="reg-link">StVZO §55 ↗</a> · Nutzung <a href="https://www.gesetze-im-internet.de/stvo_2013/__16.html" target="_blank" class="reg-link">StVO §16 ↗</a></td><td>Ja</td><td>max. 105 dB(A) in 7 m</td><td>Keine Folge verschieden hoher Töne; bei mehreren Einrichtungen nur eine gleichzeitig betätigbar</td></tr>
+      <tr><td>🇺🇸 USA</td><td>Kein FMVSS für Hornleistung; Bundesstaatenrecht nach <em>Uniform Vehicle Code §12-401</em>; Bedienteil-Kennzeichnung <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571/section-571.101" target="_blank" class="reg-link">FMVSS 101 ↗</a></td><td>Ja (Staatenrecht)</td><td>Hörbar auf ≥ 200 ft (~61 m)</td><td>Kein „unreasonably loud or harsh sound“, keine Pfeife; Industrie-Referenz SAE J377</td></tr>
+      <tr><td>🇨🇳 China</td><td><a href="https://openstd.samr.gov.cn/" target="_blank" class="reg-link">GB 15742-2019 ↗</a> · GB 7258</td><td>Ja</td><td>min. 87 dB(A) (seit 2020; vorher 93)</td><td>Gleichbleibender, ununterbrochener Ton</td></tr>
+      <tr><td>🇯🇵 Japan</td><td><a href="https://www.mlit.go.jp/" target="_blank" class="reg-link">Safety Regulation Art. 43 (警音器) ↗</a>; UN R28 anerkannt</td><td>Ja</td><td>Bereich lt. Art. 43 / Detailbekanntmachung</td><td>Lautstärke und Klangfarbe konstant; Sirene/Melodie verboten</td></tr>
+      <tr><td>🇰🇷 Korea</td><td><a href="https://www.law.go.kr/" target="_blank" class="reg-link">KMVSS Art. 53 (경음기) ↗</a> · Lärmschutzgesetz</td><td>Ja</td><td>min. 90 dB(C) in 2 m; max. 110 dB(C)</td><td>Gleichbleibender, kontinuierlicher Ton</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CTB Art. 105 + CONTRAN-Resolution ↗</a></td><td>Ja (Pflichtausrüstung „buzina“)</td><td>Eigener Pegelbereich lt. CONTRAN</td><td>Tonfolgen nur für Einsatzfahrzeuge</td></tr>
+      <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung (UN R28) · <a href="https://www.legislation.gov.uk/uksi/1986/1078/regulation/37" target="_blank" class="reg-link">C&amp;U Reg. 37 ↗</a> · Nutzung Reg. 99</td><td>Ja (&gt; 20 mph)</td><td>Wie UN R28</td><td>„continuous, uniform, not strident“; keine Glocke, Gong, Sirene, Two-Tone-Horn</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO (Allg. Fahrzeuganforderungen) ↗</a></td><td>Ja</td><td>UN R28 bzw. US-Nachweis akzeptiert</td><td>Wie ECE</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 119 ↗</a> · IS 1884 · EP Rules (Lärm)</td><td>Ja</td><td>93–112 dB(A) (Lärmgrenzwert Horn)</td><td>Kein Mehrton-Horn mit Tonfolge, kein „unduly harsh, shrill, loud or alarming noise“</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Pegelangaben für Japan und Brasilien sind bewusst nicht beziffert – Wert vor Verwendung im Projekt gegen den aktuellen Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: TECHNIK -->
+<div id="fanfare-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#9b59b6"><div class="module-card-header"><span class="module-card-icon">📯</span><h3>Bauarten</h3></div><p><strong>Scheibenhupe</strong> (Flachhorn, Membran + Resonanzscheibe, heller Klang) und <strong>Fanfare</strong> (Trompeten-/Schneckenhorn mit Schalltrichter, voller Klang). PKW tragen meist ein Fanfarenpaar (Hoch-/Tiefton, typ. ca. 400–500 Hz Grundton). Druckluft- und elektropneumatische Fanfaren sind im PKW selten.</p><div class="module-card-footer"><span class="tag">Klasse II (M, N)</span><span class="tag">Elektrisch / pneumatisch</span></div></div>
+    <div class="module-card" style="--card-color:#8e44ad"><div class="module-card-header"><span class="module-card-icon">🔊</span><h3>Bauteilprüfung (R28 Teil I)</h3></div><p>Messung im (Halb-)Freifeld in <strong>2 m</strong> Abstand auf massivem Prüfgestell. Klasse II: Pegel im Band <strong>1800–3550 Hz</strong> über allen Anteilen oberhalb 3550 Hz, Gesamtpegel <strong>105–118 dB(A)</strong>. Prüfspannung 6,5 / 13 / 26 V für 6 / 12 / 24 V-Bordnetze.</p><div class="module-card-footer"><span class="tag">2 m</span><span class="tag">105–118 dB(A)</span></div></div>
+    <div class="module-card" style="--card-color:#7d3c98"><div class="module-card-header"><span class="module-card-icon">🔁</span><h3>Dauerlauf</h3></div><p>Klasse II: <strong>50.000 Betätigungen</strong> (Klasse I / Krafträder ≤ 7 kW: 10.000). Danach darf der Pegel um max. <strong>5 dB(A)</strong> vom Ausgangswert abweichen, der Klangcharakter muss erhalten bleiben. China GB 15742-2019 identisch – Nachjustieren während des Tests ist dort seit 2020 unzulässig.</p><div class="module-card-footer"><span class="tag">50.000 Zyklen</span><span class="tag">Δ ≤ 5 dB(A)</span></div></div>
+    <div class="module-card" style="--card-color:#6c3483"><div class="module-card-header"><span class="module-card-icon">🚗</span><h3>Fahrzeugmessung (R28 Teil II)</h3></div><p>Mikrofon <strong>7 m vor dem Fahrzeug</strong>, Höhe 0,5–1,5 m, Motor aus, Nennspannung. Gefordert: <strong>93–112 dB(A)</strong>. Kritisch sind Einbauort hinter Stoßfänger/Grill, Abschattung durch Kühlermodul und Frontsensorik (Radar, Kamera-Abdeckungen).</p><div class="module-card-footer"><span class="tag">7 m</span><span class="tag">93–112 dB(A)</span></div></div>
+    <div class="module-card" style="--card-color:#5b2c6f"><div class="module-card-header"><span class="module-card-icon">🎛️</span><h3>Bedienteil &amp; Elektrik</h3></div><p>Betätigung vom Fahrersitz leicht erreichbar, meist Lenkradpralltopf (Airbagmodul) mit Wickelfeder. Kennzeichnung über Hornsymbol (UN R121 / FMVSS 101). Relaisansteuerung über BCM; Diagnose der Fanfare ist üblich, aber nicht vorgeschrieben.</p><div class="module-card-footer"><span class="tag">R121 · FMVSS 101</span><span class="tag">Lenkrad</span></div></div>
+    <div class="module-card" style="--card-color:#4a235a"><div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Abgrenzung AVAS / Alarm</h3></div><p><strong>AVAS</strong> (Fußgängerwarnton für E-Fahrzeuge, UN R138) ist <em>keine</em> Einrichtung für Schallzeichen und ersetzt die Fanfare nicht. Die Fanfare darf als Alarmgeber einer Diebstahlwarnanlage (UN R116) mitgenutzt werden.</p><div class="module-card-footer"><span class="tag">UN R138</span><span class="tag">UN R116</span></div></div>
+  </div>
+</div>
+
+<!-- TAB: INTERPRETATION & FAQ -->
+<div id="fanfare-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Praktische Auslegungshinweise und häufige Fragen zur Fanfare nach UN R28, StVZO §55 und den nationalen Äquivalenten.</span></div>
+
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market">
+      <summary>🇪🇺 EU — Mehrklang-Fanfare vs. Tonfolge</summary>
+      <div class="details-body">
+        <p>Ein Fanfarenpaar (z. B. Hoch- und Tiefton, die als Akkord <em>gleichzeitig</em> erklingen) gilt als eine Einrichtung mit mehreren Schallquellen und ist zulässig, solange alle Hörner über <strong>ein</strong> Bedienteil betätigt werden und der Gesamtklang gleichbleibend ist. Unzulässig ist eine <em>zeitliche Folge</em> unterschiedlicher Töne (Martinshorn-Charakter, Melodie). Gemessen wird im Fahrzeugtest mit allen Hörnern gleichzeitig.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇩🇪 Deutschland — StVZO §55 neben UN R28</summary>
+      <div class="details-body">
+        <p>Für Fahrzeuge mit EU-Typgenehmigung ist UN R28 maßgeblich. StVZO §55 greift bei nationalen Einzelgenehmigungen (§21) und in der Hauptuntersuchung; relevant ist vor allem, dass keine Folge verschieden hoher Töne erzeugt wird und nachgerüstete Zweitanlagen (z. B. Druckluftfanfaren) nicht parallel zur Serienfanfare betätigbar sein dürfen. Nachrüstfanfaren benötigen ein ECE-Prüfzeichen (R28).</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇺🇸 USA — kein Bundes-Performance-Standard</summary>
+      <div class="details-body">
+        <p>NHTSA regelt die Fanfare nicht leistungsseitig; FMVSS 101 betrifft nur Kennzeichnung und Erreichbarkeit des Bedienteils. Die Pflicht ergibt sich aus Bundesstaatenrecht (Muster: Uniform Vehicle Code §12-401: hörbar unter normalen Bedingungen auf mindestens 200 ft). OEMs weisen die Leistung in der Praxis über SAE J377 nach. Eine R28-Fanfare erfüllt die US-Anforderungen in aller Regel ohne Änderung.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — GB 15742-2019 senkt den Mindestpegel</summary>
+      <div class="details-body">
+        <p>Die Revision 2019 (gültig seit 01.01.2020) senkt den Fahrzeug-Mindestpegel für M/N von 93 auf 87 dB(A), nimmt Mopeds (L1/L2) auf und verbietet das Nachjustieren der Fanfare während des Dauerlaufs. Pneumatische Hörner: max. 125 dB(A) in 2 m, Ansprechzeit ≤ 0,2 s. Eine Fahrzeugauslegung nach R28 (≥ 93 dB(A)) erfüllt den chinesischen Mindestwert damit automatisch.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇬🇧 UK — „Two-Tone Horn“ ist nicht das Fanfarenpaar</summary>
+      <div class="details-body">
+        <p>Reg. 37 der Construction &amp; Use Regulations verbietet „two-tone horns“ – gemeint ist das abwechselnde Zweiton-Signal von Einsatzfahrzeugen, nicht ein gleichzeitig klingendes Hoch-/Tiefton-Paar. Zusätzlich verbietet Reg. 99 die Benutzung im Stand sowie auf innerörtlichen Straßen („restricted road“) zwischen 23:30 und 07:00 Uhr.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇮🇳 Indien — Mehrton-Hörner</summary>
+      <div class="details-body">
+        <p>CMVR Rule 119 verlangt eine elektrische Hupe nach IS 1884 und verbietet ausdrücklich „multi-toned horns giving a succession of different notes“. Indische Behörden setzen das Verbot schriller Nachrüsthörner im Feld aktiv durch; für die Typprüfung (ARAI/ICAT) ist die Serienausstattung maßgeblich.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Fanfare">+ Frage einreichen</a></div>
+    <details>
+      <summary>Ersetzt der AVAS-Warnton bei E-Fahrzeugen die Fanfare?</summary>
+      <div class="details-body"><p>Nein. AVAS (UN R138) ist ein automatisch erzeugtes Fahrgeräusch bis ca. 20 km/h zur Wahrnehmbarkeit leiser Fahrzeuge. Die Einrichtung für Schallzeichen nach R28 ist zusätzlich in jedem Fahrzeug Pflicht. Eine Kombination beider Funktionen in einem Lautsprecher ist nur möglich, wenn das Bauteil beide Regelungen eigenständig erfüllt.</p></div>
+    </details>
+    <details>
+      <summary>Sind Melodie- oder „Sound“-Hupen zulässig?</summary>
+      <div class="details-body"><p>Nein, in keinem der 9 Märkte. Alle Regelwerke fordern einen gleichbleibenden Ton bzw. verbieten Tonfolgen. Lautsprecherbasierte Hupen sind technisch denkbar, müssen aber im Betrieb einen konstanten Klang abgeben und die R28-Pegel- und Frequenzanforderungen erfüllen.</p></div>
+    </details>
+    <details>
+      <summary>Wie viele Fanfaren muss ein PKW haben?</summary>
+      <div class="details-body"><p>Mindestens eine Einrichtung für Schallzeichen. Die übliche Doppelfanfare (Hoch-/Tiefton) ist keine Pflicht, sondern Klang- und Pegeldesign. Werden zwei Hörner verbaut, müssen sie gemeinsam über ein Bedienteil ausgelöst und als Gesamtsystem im Fahrzeug gemessen werden.</p></div>
+    </details>
+    <details>
+      <summary>Was passiert bei Wechsel des Fanfarenlieferanten?</summary>
+      <div class="details-body"><p>Das neue Bauteil braucht eine eigene R28-Bauteilgenehmigung (E-Zeichen). Ändert sich damit der Bauteiltyp im Fahrzeug, ist eine Erweiterung der Fahrzeuggenehmigung nach R28 Teil II nötig – in der Regel mit erneuter 7-m-Messung. Siehe Tab „Typabgrenzende Merkmale“.</p></div>
+    </details>
+    <details>
+      <summary>Darf die Fanfare für akustische Rückmeldungen (Verriegeln, Alarm) genutzt werden?</summary>
+      <div class="details-body"><p>Als Alarmgeber einer Diebstahlwarnanlage ja (UN R116, mit begrenzter Alarmdauer). Kurze Quittungstöne beim Verriegeln sind in der EU üblich; einzelne Märkte schränken das über Lärmschutzregeln ein. Eine Tonfolge darf dabei nicht entstehen.</p></div>
+    </details>
+  </div>
+</div>
+
+<!-- TAB: MARKTVERGLEICH -->
+<div id="fanfare-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad beim Klangcharakter (überall gleichbleibender Ton). Unterschiede bestehen bei Messabstand, Bewertungskurve (dB(A) vs. dB(C)) und Mindestpegel. Eine Auslegung nach UN R28 (93–112 dB(A) in 7 m) deckt CN, UK, GCC und IN ab; für Korea ist die 2-m-Messung in dB(C) separat nachzuweisen.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>KR</th><th>UK</th><th>IN</th><th>JP / BR / GCC</th></tr></thead>
+    <tbody>
+      <tr><td>Basis</td><td>UN R28</td><td>Staatenrecht / SAE J377</td><td>GB 15742</td><td>KMVSS Art. 53</td><td>UN R28 + C&amp;U</td><td>CMVR 119 / IS 1884</td><td>national, R28-nah</td></tr>
+      <tr><td>Messabstand Fzg.</td><td>7 m</td><td>200 ft hörbar</td><td>7 m</td><td>2 m</td><td>7 m</td><td>7 m</td><td>lt. Regelwerk</td></tr>
+      <tr><td>Min. Pegel</td><td>93 dB(A)</td><td>—</td><td>87 dB(A)</td><td>90 dB(C)</td><td>93 dB(A)</td><td>93 dB(A)</td><td>lt. Regelwerk</td></tr>
+      <tr><td>Max. Pegel</td><td>112 dB(A)</td><td>„not unreasonably loud“</td><td>112 dB(A)</td><td>110 dB(C)</td><td>112 dB(A)</td><td>112 dB(A)</td><td>lt. Regelwerk</td></tr>
+      <tr><td>Bauteilgenehmigung</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>R28 anerkannt</td></tr>
+      <tr><td>Tonfolge verboten</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = gefordert &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / nur über Staatenrecht bzw. Selbstzertifizierung &nbsp; · CN-Maximalwert und IN-Werte vor Projektverwendung gegen Originaltext prüfen.</div>
+</div>
+
+<!-- TAB: AMENDMENTS & TERMINE -->
+<div id="fanfare-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRBP</strong> (Working Party on Noise and Tyres) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grbp" target="_blank" class="reg-link">GRBP ↗</a>. Dort liegt auch AVAS (UN R138).</span></div>
+
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>UN R28 (Originalfassung + Ergänzungen)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Keine Änderungsserie; Anpassungen erfolgen über Ergänzungen (Supplements)</td><td>In Kraft</td></tr>
+        <tr><td>VO (EU) 2019/2144 Anhang I</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>UN R28 als verbindliche Regelung für M, N (General Safety Regulation)</td><td>seit 06.07.2022</td></tr>
+        <tr><td>GB 15742-2019 (China)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Ersetzt GB 15742-2001; Mindestpegel Fahrzeug 87 dB(A), Mopeds aufgenommen</td><td>seit 01.01.2020</td></tr>
+        <tr><td>Indien – Hupenklang</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Öffentlich diskutierte Initiative des Verkehrsministeriums zu „angenehmeren“ Hupenklängen; Stand vor Projektverwendung prüfen</td><td>Offen</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: UNECE GRBP, EUR-Lex 2019/2144, SAMR (GB 15742-2019), legislation.gov.uk, gesetze-im-internet.de.</div>
+</div>
+
+<!-- TAB: TYPABGRENZENDE MERKMALE -->
+<div id="fanfare-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>UN R28 unterscheidet zwei Typbegriffe: den <strong>Bauteiltyp</strong> (Fanfare, Teil I) und den <strong>Fahrzeugtyp hinsichtlich Schallzeichen</strong> (Teil II). Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7">
+    <div class="module-card-header"><span class="module-card-icon">📯</span><h3>Bauteiltyp Fanfare</h3></div>
+    <p>Fabrik- oder Handelsmarke, Funktionsprinzip, Stromart (Gleich-/Wechselstrom, Druckluft), Gehäuseform, Form und Abmessungen der Membran(en), Form/Art der Schallaustritte, Nennfrequenz und Nennspannung.</p>
+    <div class="module-card-footer"><span class="tag">Neue Bauteilgenehmigung: bei Abweichung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#3ecf8e">
+    <div class="module-card-header"><span class="module-card-icon">🔢</span><h3>Anzahl und Typ der Einrichtungen</h3></div>
+    <p>Anzahl und Bauteiltyp(en) der verbauten Fanfaren sind fahrzeugtypabgrenzend. Wechsel von Einzel- auf Doppelfanfare oder auf einen anderen genehmigten Fanfarentyp → Erweiterung mit Nachmessung.</p>
+    <div class="module-card-footer"><span class="tag">Erweiterung + 7-m-Messung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f5a623">
+    <div class="module-card-header"><span class="module-card-icon">📍</span><h3>Einbauort und Halter</h3></div>
+    <p>Position der Fanfare(n) am Fahrzeug, Haltewinkel und Steifigkeit der tragenden Strukturteile. Schon ein weicherer Halter kann Pegel und Klang deutlich verändern.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Positions-/Halteränderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#f76f6f">
+    <div class="module-card-header"><span class="module-card-icon">🚘</span><h3>Frontgestaltung</h3></div>
+    <p>Form und Werkstoffe der Fahrzeugfront, soweit sie den Pegel beeinflussen oder abschirmen können: Stoßfänger, Kühlergrill, geschlossene Front bei E-Fahrzeugen, Aero-Klappen, Sensorabdeckungen.</p>
+    <div class="module-card-footer"><span class="tag">Prüfung: bei Facelift / Frontänderung</span></div>
+  </div>
+  <div class="module-card" style="--card-color:#7c6af7">
+    <div class="module-card-header"><span class="module-card-icon">⚡</span><h3>Bordnetzspannung</h3></div>
+    <p>Wechsel der Nennspannung (z. B. 12 V → 48 V-Bordnetz) betrifft den Bauteiltyp der Fanfare und erfordert eine neue Bauteilgenehmigung sowie die Nachmessung am Fahrzeug.</p>
+    <div class="module-card-footer"><span class="tag">Neue Genehmigung: bei Spannungswechsel</span></div>
+  </div>
+</div>
+
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R28 Definitionen „Typ der Einrichtung für Schallzeichen“ und „Fahrzeugtyp hinsichtlich seines Schallzeichens“. Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>
