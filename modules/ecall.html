@@ -30,6 +30,7 @@
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-140 ↗</a></td><td>PKW (privat): keine eCall-Pflicht. Öffentliche Personenverkehrsfahrzeuge (Busse, Taxis): Ortungsgerät (VLT) mit Notruftaste(n) nach AIS-140</td><td>VLT mit GNSS (inkl. NavIC/IRNSS) und Mobilfunk, Anbindung an Leitstellen der Bundesstaaten – kein Crash-getriggerter Notruf</td><td>Notifikation und Anwendungsbeginn vor Projektverwendung gegen den Originaltext prüfen</td></tr>
     </tbody>
   </table>
+  <div class="gesetz-links" style="font-size:12.5px;margin:-6px 0 18px;color:var(--text2)">📜 <strong>Gesetzestexte &amp; Interpretation:</strong> <a href="#" class="reg-link" onclick="showSection('gesetz-eu-2015-758');return false">VO (EU) 2015/758 — eCall</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-r144');return false">UN R144 — Unfallnotruf (AECS)</a></div>
   <div class="callout" style="margin-top:12px"><span class="ci">🚫</span><span><strong>Abgrenzung ERA-GLONASS:</strong> Russland/EAWU verlangen ein eigenes System (GLONASS-Ortung, GOST-Normen, Pflicht über das EAWU-Fahrzeugreglement). Kein Zielmarkt dieser Übersicht; EU-eCall erfüllt ERA-GLONASS nicht automatisch.</span></div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">EU/UK geprüft (Amtsblatt via CELLAR, legislation.gov.uk). CN (GB 45086.1), JP, KR, BR, GCC, IN (AIS-140) und ERA-GLONASS aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
 </div>
@@ -81,6 +82,42 @@
       <summary>🇮🇳 Indien — AIS-140 ist kein eCall</summary>
       <div class="details-body">
         <p>AIS-140 regelt Ortungsgeräte (VLT) mit Notruftasten für den öffentlichen Personenverkehr; Auslösung durch Fahrgäste oder Personal, nicht durch Crash-Sensorik, Meldung an Leitstellen der Bundesstaaten. Für private PKW besteht keine vergleichbare Pflicht. Geltungsbereich, Notifikation und Fristen vor Projektverwendung gegen den Originaltext prüfen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇨🇳 China — eigene AECS-Norm statt EU-eCall</summary>
+      <div class="details-body">
+        <p>China führt nach Kenntnisstand eine nationale Pflichtnorm für automatische Unfallnotrufsysteme ein (GB 45086.1) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Für die Entwicklung heißt das: eigene Notrufnummer und Leitstellenanbindung, BeiDou-fähige Ortung und Datenformate nach chinesischer Norm statt 112/MSD nach EN 15722. EU-Genehmigungen oder UN-R144-Nachweise werden im CCC-Verfahren nicht als Ersatz anerkannt; Prüfungen laufen bei chinesischen Prüfstellen. Zusätzlich gelten die chinesischen Vorgaben zu Datensicherheit und Datenexport für Fahrzeugdaten, was die Architektur eines gemeinsamen Telematik-Backends beeinflusst. Geltungsbereich und Anwendungsbeginn <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan — freiwilliges AACN über D-Call Net</summary>
+      <div class="details-body">
+        <p>Für PKW besteht nach Kenntnisstand keine Ausrüstungspflicht <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Verbreitet ist herstellerseitiges AACN, das über das Netzwerk „D-Call Net“ eine Unfallschwere-Abschätzung an Notärzte bzw. Rettungshubschrauber weitergibt. Japan hat an UN R144 mitgearbeitet; ob und für welche Fälle R144 in die japanischen Sicherheitsvorschriften übernommen ist, <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Praktisch: Die EU-eCall-Hardware kann genutzt werden, Notrufnummer, Netzbetreiber-Anbindung und Dienstvertrag sind landesspezifisch; das Funkmodul braucht die japanische Funkzulassung.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇰🇷 Korea — keine Pflicht, Telematik als Ausstattung</summary>
+      <div class="details-body">
+        <p>Die KMVSS enthalten nach Kenntnisstand keine Pflicht für einen automatischen Unfallnotruf <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Notrufdienste werden als Telematikausstattung der Hersteller angeboten und an die Leitstellen (119) weitergeleitet. Für Importfahrzeuge im Selbstzertifizierungssystem ist eCall daher kein Zulassungsthema. Relevant bleiben die Funkzulassung des Mobilfunkmoduls und die koreanischen Vorgaben zum Schutz von Standortdaten <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇧🇷 Brasilien — keine eCall-Pflicht, Anatel-Zulassung des Moduls</summary>
+      <div class="details-body">
+        <p>Eine CONTRAN-Pflicht für automatischen Unfallnotruf ist nicht bekannt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Eine frühere CONTRAN-Vorgabe zu Ortungs- und Diebstahlschutzgeräten (Res. 245/2007) zielte auf Diebstahl, nicht auf Notruf, und wurde nicht dauerhaft umgesetzt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Wird Telematik mit Notruffunktion angeboten, braucht das Mobilfunkmodul eine Anatel-Zertifizierung; Notruf erfolgt über die nationalen Nummern (z. B. 190/192/193), nicht über 112 mit MSD. EU- oder UN-Nachweise ersetzen die Anatel-Prüfung nicht.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇦🇪 Golf-Staaten — keine harmonisierte GSO-Regel</summary>
+      <div class="details-body">
+        <p>Eine GSO-Norm, die einen automatischen Unfallnotruf vorschreibt, ist nicht bekannt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; Pflichten können auf Ebene einzelner Mitgliedstaaten entstehen und sind je Land zu prüfen. Ein EU-eCall-System kann im GCC zwar einen Sprachanruf aufbauen, die PSAP verarbeiten aber nach Kenntnisstand kein MSD nach EN 15722 <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; der Mehrwert entsteht daher meist über herstellerseitige TPS-Dienste. Zu klären sind die Funkzulassung des Mobilfunkmoduls je Land (z. B. TDRA in den VAE) und lokale Datenschutz- bzw. Datenlokalisierungsregeln.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇸🇦 Saudi-Arabien — GSO-Basis, Nachweis über SABER</summary>
+      <div class="details-body">
+        <p>Für Saudi-Arabien gilt die GSO-Basis: Eine SASO-Technische Regelung, die eCall vorschreibt, ist nicht bekannt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Praktisch weicht ab, dass das Fahrzeug über SABER (Konformitätszertifikat auf Basis der SASO-Regelungen) eingeführt wird und das Mobilfunkmodul zusätzlich die Zulassung der Kommunikationsbehörde CST benötigt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Notrufe laufen über die nationale Nummer 911 <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; ein MSD-Empfang durch saudische Leitstellen ist nicht bekannt. EU-eCall-Hardware kann verbaut bleiben, eine Funktion als behördlicher Unfallnotruf ist daraus nicht ableitbar.</p>
       </div>
     </details>
   </div>

@@ -29,6 +29,7 @@
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-156 (Entwurf) ↗</a> · CMVR vorgesehen</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">Noch nicht Pflicht</span></td><td>Offen (beide erwartet)</td><td>Geplant: R141-basiert</td></tr>
     </tbody>
   </table>
+  <div class="gesetz-links" style="font-size:12.5px;margin:-6px 0 18px;color:var(--text2)">📜 <strong>Gesetzestexte &amp; Interpretation:</strong> <a href="#" class="reg-link" onclick="showSection('gesetz-r141');return false">UN R141 — TPMS</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-usa-fmvss138');return false">FMVSS 138 — Reifendrucküberwachung (TPMS)</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-cn-gb26149');return false">GB 26149-2017 — TPMS Pkw</a></div>
 </div>
 
 <!-- TAB: TECHNIK -->
@@ -79,8 +80,16 @@
         <p><strong>Korea:</strong> 25 %-Schwellenwert (wie USA/CN/BR); 433 MHz Frequenz (wie EU). Enge Anlehnung an UN R141 aber mit US-ähnlicher Warnschwelle.</p>
         <p><strong>Brasilien:</strong> CONTRAN Resolution 619 wurde 2016 sehr zügig eingeführt mit kurzer Vorlaufzeit. Einige ältere Fahrzeugmodelle hatten zunächst Übergangsprobleme bei der Nachrüstung. Inhaltlich nah an FMVSS 138 (25 %-Schwellenwert).</p>
         <p><strong>Golf-Staaten:</strong> Hohe Temperaturen erhöhen den Reifendruck (ca. 0,1 bar pro 10°C). Bei direktem Sonnenschein kann der Reifendruck deutlich über dem Kaltwert liegen. TPMS-Systeme müssen mit diesen Druckschwankungen umgehen, ohne Fehlalarme zu erzeugen.</p>
-        <p><strong>Saudi-Arabien:</strong> Technisch wie GCC. Ob TPMS für Neufahrzeuge in KSA verpflichtend ist, vor Projektverwendung prüfen – die ~2016-Angabe der Golf-Staaten bezieht sich auf ESMA (VAE).</p>
+        <p><strong>Saudi-Arabien:</strong> Technisch wie GCC. Ob TPMS für Neufahrzeuge in KSA verpflichtend ist, vor Projektverwendung prüfen – die ~2016-Angabe der Golf-Staaten bezieht sich auf ESMA (VAE). Eigenständig zu beachten ist der Konformitätsweg: Neufahrzeuge brauchen für die Einfuhr eine Konformitätsbescheinigung nach der SASO-Fahrzeugregelung, die über die SABER-Plattform beantragt wird (Product Certificate für den Fahrzeugtyp, Shipment Certificate je Sendung) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Das TPMS wird dabei nicht separat zertifiziert, sondern über die technischen Unterlagen des Fahrzeugs (GSO-Normen, UN-R141-Nachweise oder gleichwertige Herstellerberichte) mit abgedeckt. In der Praxis werden Fahrzeuge in GCC-Spezifikation oft aus US-Plattformen abgeleitet. Deshalb ist zu klären, ob 315-MHz-Sensoren in KSA funkrechtlich zulässig sind (CST, ehemals CITC) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span> und ob der Hitzeeffekt auf Druck und Sensorbatterie in der Auslegung berücksichtigt ist.</p>
         <p><strong>Indien:</strong> TPMS ist noch nicht Pflicht (AIS-156 als Entwurf). Viele Premium-Fahrzeuge werden bereits mit TPMS geliefert (freiwillig), da das System beim Export nach anderen Märkten ohnehin vorhanden ist.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇬🇧 UK — UN R141 / übernommene VO (EG) 661/2009</summary>
+      <div class="details-body">
+        <p><strong>Rechtsgrundlage:</strong> In Großbritannien gilt die TPMS-Pflicht für M1 über die nach dem Brexit fortgeführte Verordnung (EG) 661/2009, Art. 9 Abs. 2. Sie verlangt ein genaues, technologieneutrales Reifendrucküberwachungssystem; die technischen Anforderungen kommen aus UN R141. Die EU-GSR2 (VO (EU) 2019/2144) gilt in Großbritannien nicht automatisch. Für TPMS ändert das in der Sache wenig, weil beide Rechtsrahmen auf UN R141 verweisen. Nordirland folgt nach dem Windsor-Rahmen weiterhin EU-Recht <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+        <p><strong>Genehmigung &amp; Akzeptanz:</strong> Das Vereinigte Königreich ist eigenständige Vertragspartei des 1958er-Abkommens. UN-R141-Genehmigungen anderer Vertragsparteien (z. B. E1, E4) können deshalb als Teilnachweis in der GB-Typgenehmigung (Genehmigungsbehörde VCA/DVSA, Kennzeichen E11) verwendet werden. Eine EU-Gesamtfahrzeug-Typgenehmigung ersetzt die GB-Genehmigung dagegen nicht automatisch <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+        <p><strong>Praxis:</strong> Funkfrequenz (433 MHz), Schwelle und Kalibrierlogik entsprechen der EU-Variante, sodass Sensoren und Software in der Regel unverändert übernommen werden können. Im Feld ist eine dauerhaft leuchtende TPMS-Warnleuchte bei Fahrzeugen mit Erstzulassung ab 01.01.2012 ein MOT-Mangel <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Relearn- und Kalibrierablauf sollten deshalb auch für Werkstätten nachvollziehbar dokumentiert sein.</p>
       </div>
     </details>
   </div>

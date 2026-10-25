@@ -30,6 +30,7 @@
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-097 Rev.1 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 100 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-138 ↗</a> (EV)</td><td>ISO 2575 (via AIS-097)</td><td>MoRTH · ARAI · iCAT</td><td>AIS-097 harmonisiert mit UN R121; Hindi/Englisch erlaubt; EV-Symbole via AIS-138</td></tr>
     </tbody>
   </table>
+  <div class="gesetz-links" style="font-size:12.5px;margin:-6px 0 18px;color:var(--text2)">📜 <strong>Gesetzestexte &amp; Interpretation:</strong> <a href="#" class="reg-link" onclick="showSection('gesetz-r121');return false">UN R121 — Bedienelemente</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-usa-fmvss101');return false">FMVSS 101 — Controls</a></div>
 </div>
 
 <!-- TAB: KERNANFORDERUNGEN -->
@@ -67,11 +68,13 @@
       </div>
     </details>
     <details class="interp-market">
-      <summary>🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇦🇪 Golf-Staaten · 🇸🇦 Saudi-Arabien · 🇮🇳 Indien</summary>
+      <summary>🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea · 🇧🇷 Brasilien · 🇬🇧 UK · 🇦🇪 Golf-Staaten · 🇸🇦 Saudi-Arabien · 🇮🇳 Indien</summary>
       <div class="details-body">
         <p><strong>China:</strong> GB 4094-2016 ist inhaltlich mit ISO 2575 harmonisiert, enthält aber spezifische Anforderungen für chinesischsprachige Beschriftungen und NEV-Funktionen (GB/T 37153). Bei der Fahrzeugtypgenehmigung in China wird die Konformität mit GB 4094 separat geprüft.</p>
         <p><strong>Japan:</strong> UN R121 ist ratifiziert. JASO Z9101 enthält nationale Ergänzungen für das japanische Markt. Japanischsprachige Beschriftungen sind zusätzlich zu den ISO-Symbolen erlaubt. Die Praxis entspricht weitgehend der ECE-Auslegung.</p>
         <p><strong>Korea:</strong> KS R ISO 2575 ist die koreanische Fassung von ISO 2575. Abweichungen vom Standard sind gering. EV-spezifische Symbole wurden per Ministerialerlass ergänzt, sobald entsprechende Fahrzeuge auf den Markt kamen.</p>
+        <p><strong>Brasilien:</strong> Brasilien ist keine Vertragspartei des UN-Abkommens von 1958; UN R121 gilt daher nicht unmittelbar. Anforderungen an Anzeigen und Bedienelemente ergeben sich aus CONTRAN-Resoluções und dem CAT-Verfahren (Certificado de Adequação à Legislação de Trânsito) bei SENATRAN <span style="color:var(--orange)">(konkrete Resolução-Nummer vor Projektverwendung prüfen)</span>. In der Praxis werden ISO-2575-konforme Symbole und ECE- bzw. FMVSS-Prüfnachweise im CAT-Dossier regelmäßig akzeptiert. Textbeschriftungen im Display, Warnmeldungen und die Betriebsanleitung sollten auf Portugiesisch vorliegen (Verbraucherschutzrecht/CDC) – häufiger Stolperstein bei Software-Sprachpaketen, die nur europäisches Portugiesisch abdecken.</p>
+        <p><strong>UK:</strong> Das Vereinigte Königreich ist weiterhin Vertragspartei des UN-Abkommens von 1958; UN R121 gilt über die GB-Typgenehmigung (VCA/DVSA), und ECE-Genehmigungen werden anerkannt. Wichtigste nationale Besonderheit ist die Geschwindigkeitsanzeige: Nach Road Vehicles (Construction and Use) Regulations 1986, Reg. 35, muss der Tacho bei Fahrzeugen mit Erstzulassung ab 1.4.1984 mph und km/h anzeigen können (gleichzeitig oder per Umschaltung); alternativ genügt die Erfüllung von UN R39. Für digitale Kombiinstrumente heißt das: mph als Default-Einheit für UK-Varianten und Umschaltmöglichkeit vorsehen. Bei Rechtslenkern ist die gespiegelte Anordnung der Bedienelemente zulässig, die R121-Anforderungen an Erreichbarkeit und Sichtbarkeit aus Fahrerposition sind aber erneut nachzuweisen.</p>
         <p><strong>Golf-Staaten:</strong> Arabische Beschriftungen sind erlaubt (und werden von lokalen Käufern erwartet). ISO-Symbole gelten unverändert. Rechtslenker-spezifische Symbole (z.B. Wischeranordnung) entfallen, da alle GCC-Märkte Linkslenker sind.</p>
         <p><strong>Saudi-Arabien:</strong> Symbolik wie GCC (GSO/ECE-Basis). SASO verlangt für Verbraucherprodukte Angaben in arabischer Sprache; Umfang für Betriebsanleitung und Warnhinweise vor Projektverwendung prüfen.</p>
         <p><strong>Indien:</strong> AIS-097 ist inhaltlich mit UN R121 harmonisiert. AIS-138 regelt speziell EV-Warnanzeigen und ist für ARAI/iCAT-Zulassungen verbindlich. Hindi-Beschriftungen sind zusätzlich erlaubt.</p>

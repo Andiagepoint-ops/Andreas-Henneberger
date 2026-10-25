@@ -30,6 +30,7 @@
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-185 ↗</a> (über <a href="https://www.araiindia.com/" target="_blank" class="reg-link">ARAI ↗</a>)</td><td>ADAS-Anforderungen nach AIS-185 (UN-basiert)</td><td>Lt. AIS-185</td><td>Inhalt, Umfang und Pflichttermine per MoRTH-Notifikation prüfen</td></tr>
     </tbody>
   </table>
+  <div class="gesetz-links" style="font-size:12.5px;margin:-6px 0 18px;color:var(--text2)">📜 <strong>Gesetzestexte &amp; Interpretation:</strong> <a href="#" class="reg-link" onclick="showSection('gesetz-r152');return false">UN R152 — Notbremse (AEBS)</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-r79');return false">UN R79 — Lenkanlagen (ACSF)</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-r157');return false">UN R157 — ALKS (Level 3)</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-usa-fmvss127');return false">FMVSS 127 — Notbremse (AEB)</a></div>
   <div class="callout" style="margin-top:12px"><span class="ci">⚠️</span><span><strong>Prüfstatus:</strong> Geprüft: FMVSS 127 (eCFR), GB 39901-2025, GB/T 39323-2020, GB/T 26773-2011 (chinesestandard.net-Vorschau), UK-Widerruf (legislation.gov.uk). Alle übrigen Angaben (UN-Regelungen, EU-Termine, Japan, Korea, Brasilien, Golf, Indien/AIS-185) stammen aus Fachwissen — <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</span></div>
 </div>
 
@@ -70,8 +71,50 @@
         <p>GB 39901-2025 ersetzt die Empfehlungsnorm GB/T 39901-2021 (nur M1), erweitert den Geltungsbereich auf M1 und N1 und wird ab 01.01.2028 verbindlich. Die Norm enthält ein eigenes Kapitel zur Typgleichheit (Kap. 8), Anforderungen an funktionale Sicherheit (Anhang A) und an Simulationsprüfungen (Anhang B). Laut Abschnitt 4.3 darf das System über 10 km/h nicht aktiv abschaltbar sein; die Abschaltung erfordert langes Drücken oder mindestens zwei bewusste Bedienschritte.</p>
       </div>
     </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan — UN R152 national übernommen, eigene Stichtage</summary>
+      <div class="details-body">
+        <p>Japan ist Vertragspartei des Übereinkommens von 1958 und hat die AEBS-Anforderungen auf Basis von UN R152 in die Sicherheitsvorschriften für Straßenfahrzeuge übernommen; eine R152-Genehmigung (E43 bzw. andere E-Nummer) wird im Rahmen der gegenseitigen Anerkennung grundsätzlich akzeptiert. Stolperstein sind die japanischen Einführungsstichtage, die nach neuen Modellen, Bestandsmodellen und Importfahrzeugen getrennt gestaffelt sind und nicht mit den EU-GSR2-Stufen übereinstimmen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Für Level 3 hat Japan früh ALKS-Genehmigungen nach R157 erteilt; zusätzliche nationale Auflagen (z. B. Betriebsbedingungen im Zulassungsbescheid) sind möglich. Prüfen, welche Änderungsserie MLIT aktuell verlangt.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇰🇷 Korea — KMVSS-Selbstzertifizierung mit UN-Anlehnung</summary>
+      <div class="details-body">
+        <p>Korea arbeitet mit Selbstzertifizierung nach KMVSS; die AEBS-, LDWS- und Lenkassistenz-Anforderungen sind inhaltlich an UN-Regelungen angelehnt, werden aber als nationale Vorschrift mit eigenen Artikelnummern und Anwendungsdaten geführt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. UN-Genehmigungen und -Prüfberichte dienen in der Praxis als technische Grundlage, ersetzen aber nicht die eigene Konformitätserklärung und die Nachprüfung durch KATRI/TS. Für Level 3 („teilautomatisiertes Fahrsystem“) gibt es einen eigenen KMVSS-Standard nach R157-Vorbild; Abweichungen zur jeweils aktuellen R157-Serie (Geschwindigkeit, Spurwechsel) im Einzelfall abgleichen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇧🇷 Brasilien — keine ADAS-Pflicht, aber Beschreibung im Typverfahren</summary>
+      <div class="details-body">
+        <p>Brasilien ist nicht Vertragspartei des Übereinkommens von 1958; Grundlage sind CONTRAN-Resoluções, das Fahrzeug erhält das CAT über SENATRAN. Eine allgemeine Pflicht für AEB oder Spurhalteassistenz bei PKW ist nicht bekannt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; die Ausstattung wird vor allem durch Latin NCAP getrieben. Verbaute Systeme sollten dennoch in der Fahrzeugbeschreibung konsistent angegeben werden; UN- oder FMVSS-Prüfberichte werden als technische Dokumentation verwendet, haben aber keine Genehmigungswirkung. Neue CONTRAN-Resoluções zu Assistenzsystemen vor Projektstart abfragen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇬🇧 UK — GB-Typgenehmigung auf UN-Basis, eigene Einbaupflichten</summary>
+      <div class="details-body">
+        <p>Großbritannien erkennt UN-Genehmigungen nach R152, R79, R157 und R171 im GB-Typgenehmigungsverfahren (DVSA/VCA) an. Die übernommene VO (EU) 2019/2144 wurde durch SI 2022/1273 reg. 84 widerrufen, daher gelten die EU-GSR2-Einbaupflichten (z. B. ELKS, DDAW, ADDW) in Großbritannien nicht automatisch; welcher Umfang national verlangt wird, ist gesondert zu prüfen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Nordirland folgt im Rahmen des Windsor-Rahmens weiterhin dem EU-Typgenehmigungsrecht <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Für selbstfahrende Fahrzeuge schafft der Automated Vehicles Act 2024 einen eigenen nationalen Rahmen, der neben die R157-Genehmigung tritt; die Umsetzung erfolgt über nachgeordnete Verordnungen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇦🇪 Golf-Staaten — GSO-Normen, Nachweis über UN oder FMVSS</summary>
+      <div class="details-body">
+        <p>Die GSO-Fahrzeugnormen enthalten keine eigenständige AEB- oder Spurhaltepflicht <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; die Konformität wird über anerkannte UN-Genehmigungen oder FMVSS-Selbstzertifizierung belegt und von den nationalen Behörden (z. B. ESMA/MoIAT in den VAE) im Konformitätsverfahren akzeptiert. Weil sowohl EU- als auch US-Spezifikationen in den Markt kommen, sollte die Dokumentation eindeutig zeigen, welche Basisspezifikation das Fahrzeug erfüllt. Praktischer Stolperstein ist die Sensorfunktion bei Hitze, Staub und Sand: nicht regulatorisch gefordert, aber Ursache für Abschaltungen, die im Handbuch (arabisch/englisch) beschrieben sein sollten.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇸🇦 Saudi-Arabien — SASO-Regelung auf GSO-Basis, Nachweis über SABER</summary>
+      <div class="details-body">
+        <p>Saudi-Arabien wendet SASO-Technische Regelungen für Fahrzeuge auf GSO-Basis an; inhaltlich gibt es für Fahrerassistenz keine über die GSO-Basis hinausgehende Pflicht <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Der praktische Unterschied liegt im Verfahren: Produkt- und Sendungskonformität werden über die Plattform SABER beantragt, wobei UN-Genehmigungen bzw. FMVSS-Nachweise und Prüfberichte über eine von SASO anerkannte Konformitätsbewertungsstelle eingereicht werden. Fehlende oder nicht zur Fahrzeugvariante passende Nachweise führen zu Verzögerungen bei der Einfuhr; Variantenzuordnung (Ausstattung mit/ohne ADAS) daher sauber in SABER abbilden.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇮🇳 Indien — CMVR/AIS, kein 1958er-Vertragsstaat</summary>
+      <div class="details-body">
+        <p>Indien ist nicht Vertragspartei des Übereinkommens von 1958, daher wirken UN-Genehmigungen nicht unmittelbar; die Typgenehmigung erfolgt nach CMVR über Prüfstellen wie ARAI oder ICAT auf Basis von AIS-Normen, die inhaltlich an UN-Regelungen angelehnt sind (für ADAS AIS-185 laut Vorschriften-Tab <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>). UN-Prüfberichte können als Grundlage dienen, eine indische Bestätigungsprüfung bleibt jedoch die Regel. Pflichttermine werden per MoRTH-Notifikation (GSR) festgelegt und betrafen zunächst vor allem Busse und LKW <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; für PKW zusätzlich den Bharat NCAP im Blick behalten, der ADAS-Ausstattung honoriert.</p>
+      </div>
+    </details>
   </div>
-  <div style="margin-top:12px;font-size:12px;color:var(--text2)">FMVSS-127- und GB-39901-Aussagen sind gegen eCFR, Federal Register und die chinesestandard.net-Vorschau geprüft. Aussagen zu EU-Durchführungsrechtsakten und R79/R171 aus Fachwissen — vor Projektverwendung gegen den Originaltext prüfen.</div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">FMVSS-127- und GB-39901-Aussagen sind gegen eCFR, Federal Register und die chinesestandard.net-Vorschau geprüft. Aussagen zu EU-Durchführungsrechtsakten, R79/R171 sowie zu Japan, Korea, Brasilien, UK, Golf-Staaten, Saudi-Arabien und Indien aus Fachwissen — vor Projektverwendung gegen den Originaltext prüfen.</div>
 
   <div class="faq-section">
     <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Fahrerassistenz">+ Frage einreichen</a></div>

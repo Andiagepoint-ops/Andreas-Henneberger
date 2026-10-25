@@ -1,0 +1,174 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Gesetzestexte &amp; Interpretation <span class="sep">/</span> UN R157 (ALKS, Level 3)</div>
+
+<!-- DOKUMENTENLEISTE -->
+<div class="reg-docs-box">
+  <div class="reg-docs-header">
+    <span class="reg-docs-title">📁 Dokumente — downloads/r157/</span>
+    <button class="reg-docs-btn primary" onclick="openRegUpload('r157')">+ Hochladen</button>
+    <button class="reg-docs-btn ghost" onclick="loadRegDocs('r157','reg-docs-r157')">🔄</button>
+  </div>
+  <div id="reg-docs-r157" class="reg-docs-list">
+    <span class="reg-docs-loading">Klicke 🔄 zum Laden der Dokumente.</span>
+  </div>
+</div>
+
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(142,68,173,.12);border-color:rgba(142,68,173,.3)">🤖</div>
+  <div><h2>UN R157 — Automatisiertes Spurhaltesystem (ALKS, Level 3)</h2><p>UN R157 regelt die Genehmigung automatisierter Spurhaltesysteme, bei denen das System im definierten Betriebsbereich die Fahraufgabe übernimmt: Betriebsbedingungen, Übernahmeaufforderung, Minimal-Risk-Manöver, Fahrerverfügbarkeit, Datenspeicher (DSSAD) und Sicherheitsaudit.</p></div>
+</div>
+
+<div class="gesetz-header">
+  <div class="gesetz-meta">
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-reg-link">🔗 UNECE R141–160 ↗</a>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42021X0389" target="_blank" class="gesetz-reg-link">🇪🇺 EU-ABl. 2021/389 (R157) ↗</a>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grva" target="_blank" class="gesetz-reg-link">🔗 UNECE GRVA ↗</a>
+    <a href="https://www.legislation.gov.uk/ukpga/2024/10/contents" target="_blank" class="gesetz-reg-link">🇬🇧 Automated Vehicles Act 2024 ↗</a>
+  </div>
+  <div class="gesetz-note">UN R157 war die erste UN-Regelung für ein System, das die Fahraufgabe übernimmt (SAE Level 3). Die Grundfassung wurde im EU-Amtsblatt als 2021/389 veröffentlicht; die 01-Änderungsserie erweiterte den Anwendungsbereich deutlich. Zahlenwerte und Serieninhalte unten aus Fachwissen – gegen die aktuelle Fassung prüfen.</div>
+</div>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§1</span>
+    <div>
+      <div class="gesetz-para-title">Geltungsbereich</div>
+      <div class="gesetz-para-sub">ALKS in M1 (Grundfassung), erweitert auf M und N</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Regelung gilt für die Genehmigung von Fahrzeugen hinsichtlich eines automatisierten Spurhaltesystems. Die Grundfassung war auf M1 beschränkt; mit der 01-Änderungsserie wurde sie auf weitere Klassen der Gruppen M und N ausgedehnt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Das System darf nur auf Straßen betrieben werden, auf denen Fußgänger und Radfahrer verboten und Gegenfahrbahnen baulich getrennt sind.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Der Einsatzbereich (ODD) ist eng: Autobahnähnliche Straßen, typischerweise Stau- bzw. Kolonnenverkehr in der Grundfassung. Für den Hersteller heißt das, dass das System die ODD-Grenzen zuverlässig erkennen muss (Kartendaten, Straßentyp, Baustellen) – ein häufiger Diskussionspunkt im Audit.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§2</span>
+    <div>
+      <div class="gesetz-para-title">Begriffe</div>
+      <div class="gesetz-para-sub">Übernahmeaufforderung, MRM, Fahrerverfügbarkeit, DSSAD</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Definiert werden u. a. die Übernahmeaufforderung (Transition Demand), das Minimal-Risk-Manöver (MRM) zum Anhalten des Fahrzeugs bei ausbleibender Übernahme, das Notfallmanöver (Emergency Manoeuvre), die Fahrerverfügbarkeitserkennung sowie das Datenspeichersystem für automatisiertes Fahren (DSSAD).</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Begriffe wie „aktiv“, „Übernahme“ und „Fahrer übersteuert“ bestimmen die Haftungsgrenze zwischen System und Fahrer. Die exakte Umsetzung der Zustandsmaschine sollte konsistent zwischen Systembeschreibung, HMI und DSSAD sein.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5</span>
+    <div>
+      <div class="gesetz-para-title">Systemanforderungen im Betrieb</div>
+      <div class="gesetz-para-sub">Kollisionsvermeidung, Höchstgeschwindigkeit, Spurwechsel</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Im aktiven Zustand muss das System die Fahraufgabe übernehmen, im Fahrstreifen bleiben, Verkehrsregeln beachten und Kollisionen vermeiden, soweit sie für einen kompetenten, umsichtigen Fahrer vermeidbar wären. Die Höchstgeschwindigkeit lag in der Grundfassung bei 60 km/h ohne Spurwechsel; mit der 01-Serie wurden bis zu 130 km/h und systemseitige Spurwechsel zulässig <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Mindestabstände zum Vorderfahrzeug sind geschwindigkeitsabhängig festgelegt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Der Maßstab „kompetenter, umsichtiger Fahrer“ wird über Referenzmodelle im Anhang konkretisiert und ist für die Szenarienauswahl entscheidend. Herstellerangaben zur Höchstgeschwindigkeit können unter dem zulässigen Maximum bleiben – die tatsächlich beantragten Grenzen bestimmen den Prüfumfang.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§6</span>
+    <div>
+      <div class="gesetz-para-title">Übergabe, MRM und Fahrerverfügbarkeit</div>
+      <div class="gesetz-para-sub">Übernahmeaufforderung, Mindestzeit vor MRM, Fahrerüberwachung</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Bei Erreichen der Systemgrenzen fordert das System den Fahrer zur Übernahme auf; ein Minimal-Risk-Manöver darf erst nach einer Mindestzeit (ca. 10 s) nach Beginn der Übernahmeaufforderung beginnen, außer bei schwerem Fehler <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Das System muss die Verfügbarkeit des Fahrers überwachen (u. a. Sitzposition, Gurt, Augenöffnung/Blickzuwendung) und bei fehlender Verfügbarkeit eine Übernahmeaufforderung auslösen. Nebentätigkeiten sind im aktiven Zustand zulässig, soweit das Fahrzeug sie erlaubt.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die Fahrerverfügbarkeitserkennung erfordert in der Regel eine Innenraumkamera; das ist Synergie mit der EU-ADDW-Pflicht. Das HMI-Konzept (Eskalation optisch, akustisch, haptisch) wird erfahrungsgemäß intensiv mit dem Technischen Dienst diskutiert. Infotainment-Inhalte müssen bei Übernahmeaufforderung automatisch pausieren.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§7–§8</span>
+    <div>
+      <div class="gesetz-para-title">DSSAD, Cybersecurity und Software-Updates</div>
+      <div class="gesetz-para-sub">Ereignisspeicher, Bezug auf R155/R156</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Das Fahrzeug muss ein Datenspeichersystem (DSSAD) besitzen, das u. a. Aktivierung, Deaktivierung, Übernahmeaufforderungen, MRM und Systemfehler mit Zeitstempel speichert <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Zusätzlich verlangt R157 die Einhaltung der Anforderungen an Cybersecurity (UN R155) und Software-Updates (UN R156) bzw. entsprechende Nachweise <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Der DSSAD ist nicht mit dem EDR identisch und dient der Klärung, wer zu einem Zeitpunkt die Fahraufgabe hatte. Ohne CSMS- und SUMS-Zertifikat (R155/R156) ist eine R157-Genehmigung praktisch nicht erreichbar – die Organisationsnachweise sollten vor Projektbeginn vorliegen.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Anh. 4 / Anh. 5</span>
+    <div>
+      <div class="gesetz-para-title">Prüfverfahren und Sicherheitsaudit</div>
+      <div class="gesetz-para-sub">Audit des Sicherheitskonzepts, Szenarientests</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Der Technische Dienst auditiert das Sicherheitskonzept (funktionale Sicherheit, SOTIF, Validierungsstrategie, Simulation) und führt physische Prüfungen in Szenarien wie Spurhalten, Folgefahrt, Einscheren, stehendes Hindernis und Übernahmeaufforderung durch <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Der Hersteller muss nachweisen, dass die Validierung den Einsatzbereich ausreichend abdeckt.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Physische Tests decken nur einen Bruchteil ab; das Gewicht liegt auf Audit und Simulation. Eine nachvollziehbare Szenarien-Datenbank und Werkzeug-Qualifizierung der Simulation sind praktisch unverzichtbar.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Übergang</span>
+    <div>
+      <div class="gesetz-para-title">Übergangsbestimmungen und Status</div>
+      <div class="gesetz-para-sub">Grundfassung 2021, 01-Serie, Weiterentwicklung GRVA</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Grundfassung von R157 trat im Januar 2021 in Kraft; die 01-Änderungsserie folgte 2022/2023 <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. R157 ist eine Genehmigungsregelung, keine Einbaupflicht – kein Markt verlangt ALKS. Weiterentwicklungen zu automatisierten Fahrsystemen (ADS) laufen in der GRVA.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Ältere Genehmigungen nach der Grundfassung bleiben in der Regel gültig; für erweiterte Funktionen (höhere Geschwindigkeit, Spurwechsel) ist eine Genehmigung nach der neueren Serie nötig. Zusätzlich zur Typgenehmigung können nationale Verkehrsregeln (z. B. Nutzungsregeln für den Fahrer) gelten.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Bezug</span>
+    <div>
+      <div class="gesetz-para-title">Bezug zu anderen Märkten</div>
+      <div class="gesetz-para-sub">EU, Japan, Korea, UK, USA, China</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-141-160" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> R157 wird u. a. in der EU, in Japan und im Vereinigten Königreich angewendet; Japan und Deutschland erteilten früh Level-3-Genehmigungen. Korea hat einen eigenen Level-3-Standard nach R157-Vorbild <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Großbritannien ergänzt mit dem Automated Vehicles Act 2024 einen nationalen Zulassungsrahmen. Die USA haben keinen FMVSS für automatisiertes Fahren; China arbeitet mit Pilotprogrammen und eigenen Normentwürfen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Für den US-Markt sind bei Level-3-Funktionen vor allem die Selbstzertifizierung nach bestehenden FMVSS, bundesstaatliche Regeln und Berichtspflichten an NHTSA relevant; eine R157-Genehmigung hat dort keine Wirkung. In China ist die Freigabe derzeit an Pilotzulassungen gebunden.</p>
+    </div>
+  </div>
+</details>
+
+<div style="font-size:12px;color:var(--text2);margin-top:12px">Geprüft: Veröffentlichung von UN R157 im EU-Amtsblatt (2021/389, EU CELLAR). sowie Existenz des Automated Vehicles Act 2024 (legislation.gov.uk). · Ungeprüft (Fachwissen): Geltungsbereich der Serien, Höchstgeschwindigkeiten, Übergabezeiten, DSSAD-Inhalte, R155/R156-Bezug, Daten der Änderungsserien und Marktstatus (Japan, Korea, UK, USA, China) – vor Projektverwendung gegen den Originaltext prüfen.</div>

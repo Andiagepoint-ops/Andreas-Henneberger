@@ -30,6 +30,7 @@
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-189 / AIS-190 (MoRTH/ARAI) ↗</a></td><td>AIS-189: CSMS + Fahrzeug, R155-basiert</td><td>AIS-190: SUMS + Fahrzeug, R156-basiert</td><td>Verbindlich ab Stichtag lt. CMVR-Notification</td></tr>
     </tbody>
   </table>
+  <div class="gesetz-links" style="font-size:12.5px;margin:-6px 0 18px;color:var(--text2)">📜 <strong>Gesetzestexte &amp; Interpretation:</strong> <a href="#" class="reg-link" onclick="showSection('gesetz-r155');return false">UN R155 — Cybersecurity (CSMS)</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-r156');return false">UN R156 — Software-Updates (SUMS)</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-cn-gb44495');return false">GB 44495-2024 — Cybersecurity CN</a></div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft: EU-Daten (VO 2019/2144 Anh. II, D4 Code „B“), Daten GB 44495/44496-2024, BIS-Modelljahre (15 CFR 791.308), NHTSA 09.09.2022. Stichtage JP, KR, UK, GCC, IN, CN-Bestandstypen und die R156-Fundstelle in VO 2019/2144 bewusst nicht beziffert – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
 </div>
 
@@ -80,6 +81,30 @@
       <summary>🇯🇵 🇰🇷 🇮🇳 — R155/R156-Übernahme mit nationalen Besonderheiten</summary>
       <div class="details-body">
         <p>Japan wendet R155/R156 direkt an und kennt zusätzlich ein nationales Genehmigungsverfahren für Software-Änderungen an zugelassenen Fahrzeugen. Korea hat CSMS- und Update-Pflichten über das Kfz-Verwaltungsgesetz eingeführt. Indien setzt mit AIS-189/AIS-190 eigene, R155/R156-basierte Standards um. Stichtage je Markt vor Projektverwendung gegen den Originaltext prüfen.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇧🇷 Brasilien — keine Cyber-Typgenehmigung, aber Datenschutz und Funkzulassung</summary>
+      <div class="details-body">
+        <p>Brasilien kennt bislang keine R155/R156-äquivalente Typgenehmigungsanforderung; die nationale Homologation (CONTRAN/SENATRAN, CAT) prüft Cybersecurity nicht als eigenes Merkmal <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Praktisch relevant sind dagegen die Datenschutzgesetzgebung LGPD (Lei 13.709/2018) für Telematik- und Connected-Services-Daten – insbesondere Rechtsgrundlage, Zweckbindung und Übermittlung an Backends im Ausland – sowie die ANATEL-Zertifizierung aller Funkmodule (Telematikeinheit, WLAN, Bluetooth), die oft den Zeitplan bestimmt. Empfehlung: das globale CSMS/SUMS auch für brasilianische Varianten anwenden, damit Schwachstellen-Reaktion, OTA-Kampagnen und Rückrufe einheitlich abgewickelt werden können; eine vorhandene UN-R155/R156-Genehmigung wird nicht verlangt, ist aber als Qualitätsnachweis gegenüber Flottenkunden nützlich.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇬🇧 UK — R155/R156 in der GB-Typgenehmigung, Anerkennung von UN-Genehmigungen</summary>
+      <div class="details-body">
+        <p>Großbritannien wendet als Vertragspartei des Übereinkommens von 1958 UN R155/R156 an; die VCA erteilt die GB-Typgenehmigung und erkennt UN-Genehmigungen anderer Vertragsparteien (E-Zeichen) grundsätzlich an. Eine EU-Genehmigung nach R155 samt CSMS-Bescheinigung ist daher in der Regel wiederverwendbar; zu klären ist, ob die VCA für die GB-Gesamtfahrzeuggenehmigung zusätzliche Unterlagen (z. B. Nachweis der laufenden Monitoring-Berichte) anfordert. Die GB-Stichtage folgen der EU nicht automatisch, sondern dem eigenen GB-Regelwerk <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Die Produktsicherheitsregeln nach dem PSTI Act 2022 nehmen typgenehmigte Kraftfahrzeuge aus, gelten aber für vernetztes Zubehör <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇦🇪 Golf-Staaten (GSO) — UN-Nachweis als Akzeptanzbasis</summary>
+      <div class="details-body">
+        <p>Ein verbindlicher GSO-Standard zu CSMS/SUMS ist nicht bekannt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>; in der Konformitätsbewertung (GCC-Konformitätszertifikat, nationale Behörden wie MoIAT in den VAE) werden UN-R155/R156-Genehmigungen und CSMS-/SUMS-Bescheinigungen jedoch zunehmend nachgefragt bzw. als Nachweis akzeptiert. Für die Projektplanung heißt das: die europäische Dokumentation (Genehmigungsbogen, Bescheinigungen, ggf. RXSWIN-Liste) für die GCC-Variante bereithalten und prüfen, ob länderspezifische Ausstattungen (Telematik-Provider, Kartendienste) von der genehmigten TARA abgedeckt sind. Zusätzlich gelten nationale Funkzulassungen (z. B. TDRA in den VAE) und Datenschutzgesetze (VAE: PDPL) für vernetzte Dienste <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇸🇦 Saudi-Arabien — GSO-Basis, Nachweis über SABER</summary>
+      <div class="details-body">
+        <p>Die SASO-Technischen Regelungen für Fahrzeuge stützen sich auf GSO-Standards; eine eigenständige saudische Cybersecurity- oder Software-Update-Pflicht ist nicht bekannt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Der Nachweis läuft praktisch über SABER (Produktzertifikat über eine benannte Stelle, danach Sendungszertifikat je Lieferung); dort werden vorhandene UN-R155/R156-Unterlagen akzeptiert, wenn die Zertifizierungsstelle sie anfordert. Abweichend von den übrigen GCC-Staaten sind die Funkzulassung bei der CST (früher CITC) und das saudische Datenschutzgesetz PDPL mit eigenen Regeln zur Datenübermittlung ins Ausland zu beachten – relevant für Backend-Standort, VSOC und OTA-Server <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
       </div>
     </details>
   </div>

@@ -1,0 +1,175 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Gesetzestexte &amp; Interpretation <span class="sep">/</span> UN R79 (Lenkanlagen, ACSF)</div>
+
+<!-- DOKUMENTENLEISTE -->
+<div class="reg-docs-box">
+  <div class="reg-docs-header">
+    <span class="reg-docs-title">📁 Dokumente — downloads/r79/</span>
+    <button class="reg-docs-btn primary" onclick="openRegUpload('r79')">+ Hochladen</button>
+    <button class="reg-docs-btn ghost" onclick="loadRegDocs('r79','reg-docs-r79')">🔄</button>
+  </div>
+  <div id="reg-docs-r79" class="reg-docs-list">
+    <span class="reg-docs-loading">Klicke 🔄 zum Laden der Dokumente.</span>
+  </div>
+</div>
+
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(142,68,173,.12);border-color:rgba(142,68,173,.3)">🎛️</div>
+  <div><h2>UN R79 — Lenkanlagen inkl. automatisierter Lenkfunktionen (ACSF)</h2><p>UN R79 regelt die Genehmigung von Fahrzeugen hinsichtlich der Lenkanlage: mechanische Grundanforderungen, Lenkkräfte, Fehlerverhalten sowie die automatisierten und korrigierenden Lenkfunktionen (ACSF, CSF, ESF) und die Sicherheitsdokumentation komplexer elektronischer Systeme.</p></div>
+</div>
+
+<div class="gesetz-header">
+  <div class="gesetz-meta">
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-reg-link">🔗 UNECE R61–80 ↗</a>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42018X1947" target="_blank" class="gesetz-reg-link">🇪🇺 EU-ABl. 2018/1947 (R79) ↗</a>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R0646" target="_blank" class="gesetz-reg-link">🇪🇺 DVO (EU) 2021/646 (ELKS) ↗</a>
+    <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="gesetz-reg-link">🇪🇺 VO (EU) 2019/2144 ↗</a>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-161-180" target="_blank" class="gesetz-reg-link">🔗 UNECE R171 (DCAS) ↗</a>
+  </div>
+  <div class="gesetz-note">UN R79 wurde im EU-Amtsblatt u. a. als 2018/1947 veröffentlicht; spätere Änderungsserien und Ergänzungen (insbesondere zu ACSF und zur Risk Mitigation Function) sind seither hinzugekommen. Die Level-2-Systemfunktionen werden zunehmend über UN R171 (DCAS) geregelt. Zahlenwerte unten aus Fachwissen – gegen die aktuelle Änderungsserie prüfen.</div>
+</div>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§1</span>
+    <div>
+      <div class="gesetz-para-title">Geltungsbereich</div>
+      <div class="gesetz-para-sub">Lenkanlagen der Klassen M, N und O</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Regelung gilt für die Lenkanlagen von Fahrzeugen der Klassen M und N sowie für Anhänger (Klasse O) mit Lenkanlage. Rein elektrische Lenkanlagen ohne mechanische Verbindung (Steer-by-Wire ohne Rückfallebene) sind nach dem bisherigen Ansatz nur eingeschränkt erfasst <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>R79 ist für praktisch jedes Fahrzeug relevant, weil jede Lenkanlage – auch eine konventionelle elektromechanische Servolenkung – darunter fällt. Für Steer-by-Wire-Konzepte ist früh zu klären, welche Änderungsserie den Ansatz zulässt und welche Redundanz gefordert ist.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§2</span>
+    <div>
+      <div class="gesetz-para-title">Begriffe und Funktionskategorien</div>
+      <div class="gesetz-para-sub">ACSF A–E, CSF, ESF, RMF</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> R79 unterscheidet u. a. die automatisch gesteuerte Lenkfunktion (ACSF) in den Kategorien A (Manövrieren/Parken bis ca. 10 km/h), B1 (Spurhalten mit Händen am Lenkrad), B2 (Spurhalten ohne Hände; nicht geregelt), C (Spurwechsel auf Fahrerbefehl), D (vom System vorgeschlagener, vom Fahrer bestätigter Spurwechsel) und E (vom System selbst eingeleitete Manöver) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Daneben stehen die korrigierende Lenkfunktion (CSF), die Notlenkfunktion (ESF) und die Risk Mitigation Function (RMF) zum Anhalten bei nicht reagierendem Fahrer.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die richtige Einordnung entscheidet über das Prüfprogramm: Ein Spurhalteassistent mit dauerhafter Lenkunterstützung ist B1, ein kurzzeitiger Eingriff beim Verlassen der Spur ist CSF bzw. ELKS. Funktionen, die über C hinausgehen, werden heute eher nach R171 genehmigt – Doppelgenehmigungen vermeiden, Abgrenzung mit dem Technischen Dienst festlegen.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5.2</span>
+    <div>
+      <div class="gesetz-para-title">Grundanforderungen Lenkanlage</div>
+      <div class="gesetz-para-sub">Lenkkräfte, Rückstellung, Fehlerfall</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Lenkanlage muss leicht und sicher bedienbar sein und das Fahrzeug bis zur bauartbedingten Höchstgeschwindigkeit sicher führen. Die Lenkkraft im Kreisfahrversuch ist je Fahrzeugklasse begrenzt, für M1 im intakten Zustand auf ca. 150 N und mit Fehler in der Servounterstützung auf ca. 300 N <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Bei Ausfall der Hilfskraft muss das Fahrzeug weiter lenkbar sein; Fehler sind dem Fahrer anzuzeigen.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die Lenkkraftgrenzen im Fehlerfall sind bei schweren E-Fahrzeugen (hohe Vorderachslast) relevant und sollten früh mit der Servo-Auslegung abgeglichen werden. Für Fahrzeuge mit Hinterachslenkung gelten zusätzliche Anforderungen an Fehlerverhalten und Anzeige.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5.6</span>
+    <div>
+      <div class="gesetz-para-title">ACSF-Anforderungen (Kategorie B1 und C)</div>
+      <div class="gesetz-para-sub">Hands-on-Erkennung, Querbeschleunigung, Warnkaskade</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Für ACSF der Kategorie B1 muss das System erkennen, ob der Fahrer die Hände am Lenkrad hat; nach einer bestimmten Zeit ohne Hände folgt eine optische Warnung (ca. 15 s), dann eine optische und akustische Warnung, und schließlich wird das System deaktiviert <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Die vom System erzeugte Querbeschleunigung ist begrenzt (für M1/N1 ca. 3 m/s²) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Für Kategorie C sind u. a. Fahrerbefehl, Prüfung des Nachbarfahrstreifens mit Mindesterfassungsbereich nach hinten, Blinkerbetätigung und eine maximale Manöverdauer vorgeschrieben <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die Hands-on-Erkennung über das Lenkmoment wird im Alltag oft umgangen (Gewichte am Lenkrad); kapazitive Lenkräder sind robuster, aber kein Muss. Der Fahrer kann jederzeit übersteuern – die Übersteuerkraft darf nicht zu hoch sein. Für Märkte ohne UN-Anerkennung (USA) gibt es keine entsprechende Pflichtprüfung, wohl aber Produkthaftungsrisiken.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5.1.6 / ELKS</span>
+    <div>
+      <div class="gesetz-para-title">Korrigierende Lenkfunktion und Notfall-Spurhalteassistent</div>
+      <div class="gesetz-para-sub">CSF, ESF und EU-ELKS-Pflicht</div>
+    </div>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32021R0646" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Eine korrigierende Lenkfunktion (CSF) darf zeitlich begrenzt eingreifen, um ein Verlassen des Fahrstreifens zu verhindern, und muss dem Fahrer angezeigt werden. Die Notlenkfunktion (ESF) darf zur Kollisionsvermeidung kurzzeitig lenken. In der EU verlangt VO (EU) 2019/2144 für M1/N1 einen Notfall-Spurhalteassistenten (ELKS); die technischen Vorschriften enthält die Durchführungsverordnung (EU) 2021/646, die ihrerseits auf R79 Bezug nimmt.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Eine reine Spurverlassenswarnung (R130) erfüllt ELKS nicht. ELKS darf abschaltbar sein, muss aber mit jedem Fahrzyklus wieder aktiv starten <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Im Genehmigungsplan sollten R79 (Lenkfunktion) und DVO 2021/646 (ELKS-Pflicht) als getrennte Nachweise geführt werden.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Anh. 6 / Anh. 8</span>
+    <div>
+      <div class="gesetz-para-title">Prüfverfahren und CEL-Audit</div>
+      <div class="gesetz-para-sub">Sicherheitskonzept, Fahrversuche ACSF</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Für komplexe elektronische Lenksysteme ist ein Sicherheitskonzept mit Systemgrenzen, Fehlerstrategie und Verifikationsnachweisen vorzulegen, das der Technische Dienst auditiert (Anhang zu CEL-Systemen) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Die ACSF-Funktionen werden in definierten Fahrversuchen geprüft (z. B. Spurhalten in Kurven bis zur angegebenen Querbeschleunigung, Hands-off-Erkennung, Spurwechselmanöver) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Das CEL-Audit ist oft der zeitkritische Teil der Genehmigung, weil es Dokumentation aus Entwicklung und funktionaler Sicherheit (ISO 26262) voraussetzt. Frühe Abstimmung mit dem Technischen Dienst zum Dokumentationsumfang spart Iterationen.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Übergang</span>
+    <div>
+      <div class="gesetz-para-title">Übergangsbestimmungen und Fristen</div>
+      <div class="gesetz-para-sub">Änderungsserien, EU-ELKS-Stufen</div>
+    </div>
+    <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Neue Änderungsserien enthalten Übergangsbestimmungen, ab wann Genehmigungen nach der Vorgängerserie nicht mehr erteilt bzw. anerkannt werden müssen. In der EU galt die ELKS-Pflicht für neue Typen ab 06.07.2022 und für alle Neufahrzeuge ab 07.07.2024 <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Bei Bestandstypen mit älterer R79-Genehmigung sollte geprüft werden, ob eine Nachtragsgenehmigung nach neuerer Serie für einen Facelift oder ein Software-Update nötig ist. Software-Änderungen an Lenkfunktionen sind über das Software-Update-Management (R156) zu bewerten.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Bezug</span>
+    <div>
+      <div class="gesetz-para-title">Bezug zu anderen Märkten</div>
+      <div class="gesetz-para-sub">USA, China, Japan, Korea, Indien</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-61-80" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> R79 wird von den Vertragsparteien des Übereinkommens von 1958 angewendet (u. a. EU, UK, Japan). Die USA haben keinen FMVSS für Lenkassistenz; China regelt die Lenkanlage über eine eigene GB-Norm und Spurhalteassistenz über Empfehlungsnormen (GB/T 39323) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Korea und Indien haben eigene, an R79 angelehnte Vorschriften <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Für die USA ist eine ACSF-Genehmigung nicht nötig, aber die R79-Dokumentation dient als gute Grundlage für das interne Sicherheitsargument. In China kann eine künftige Pflichtnorm für kombinierte Fahrassistenz zusätzliche Anforderungen bringen – Entwicklung beobachten.</p>
+    </div>
+  </div>
+</details>
+
+<div style="font-size:12px;color:var(--text2);margin-top:12px">Geprüft: Veröffentlichung von UN R79 im EU-Amtsblatt (2018/1947), Titel und Gegenstand der DVO (EU) 2021/646 (Notfall-Spurhalteassistent) sowie von VO (EU) 2019/2144 (EU CELLAR). · Ungeprüft (Fachwissen): ACSF-Kategorien und deren Anforderungen, Lenkkraft- und Querbeschleunigungswerte, Warnzeiten, Änderungsserien und EU-Stichtage – vor Projektverwendung gegen den Originaltext prüfen.</div>

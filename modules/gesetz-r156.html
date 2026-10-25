@@ -1,0 +1,155 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Gesetzestexte &amp; Interpretation <span class="sep">/</span> Software-Updates (UN R156)</div>
+
+<!-- DOKUMENTENLEISTE -->
+<div class="reg-docs-box">
+  <div class="reg-docs-header">
+    <span class="reg-docs-title">📁 Dokumente — downloads/r156/</span>
+    <button class="reg-docs-btn primary" onclick="openRegUpload('r156')">+ Hochladen</button>
+    <button class="reg-docs-btn ghost" onclick="loadRegDocs('r156','reg-docs-r156')">🔄</button>
+  </div>
+  <div id="reg-docs-r156" class="reg-docs-list">
+    <span class="reg-docs-loading">Klicke 🔄 zum Laden der Dokumente.</span>
+  </div>
+</div>
+
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(52,73,94,.12);border-color:rgba(52,73,94,.3)">🔄</div>
+  <div><h2>UN R156 — Software-Updates und Software-Update-Managementsystem (SUMS)</h2><p>UN R156 regelt die Genehmigung von Fahrzeugtypen hinsichtlich Software-Updates (inkl. Over-the-Air) und verlangt ein zertifiziertes Software-Update-Managementsystem (SUMS) des Herstellers. In Kraft seit 22.01.2021.</p></div>
+</div>
+
+<div class="gesetz-header">
+  <div class="gesetz-meta">
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-reg-link">🔗 UNECE R156 ↗</a>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42021X0388" target="_blank" class="gesetz-reg-link">🇪🇺 EUR-Lex (ABl. L 82, 09.03.2021) ↗</a>
+    <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="gesetz-reg-link">🇪🇺 VO (EU) 2019/2144 ↗</a>
+  </div>
+  <div class="gesetz-note">Grundlage: Fassung im ABl. L 82 vom 09.03.2021 (Ursprungsfassung, „Date of entry into force: 22 January 2021“). Spätere Supplements, das WP.29-Interpretationsdokument und die genaue Fundstelle der EU-Verpflichtung sind hier nicht eingearbeitet – aktuelle Fassung im Dokumente-Ordner ablegen.</div>
+</div>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§1</span>
+    <div>
+      <div class="gesetz-para-title">Geltungsbereich</div>
+      <div class="gesetz-para-sub">M, N, O, R, S und T – sofern Software-Updates möglich sind</div>
+    </div>
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Regelung gilt für Fahrzeuge der Klassen M, N, O, R, S und T, die Software-Updates zulassen.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Das Kriterium „zulassen“ ist weit: Auch Updates per Diagnosetester in der Werkstatt fallen darunter, nicht nur OTA. Damit ist praktisch jedes Fahrzeug mit programmierbaren Steuergeräten erfasst. Der Geltungsbereich reicht über R155 hinaus (zusätzlich land- und forstwirtschaftliche Fahrzeuge R, S, T), was für Landmaschinenhersteller relevant ist, soweit die jeweilige Region R156 verpflichtend macht.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§2</span>
+    <div>
+      <div class="gesetz-para-title">Begriffe: RXSWIN, Software-Update, Fahrzeugtyp</div>
+      <div class="gesetz-para-sub">RXSWIN = herstellerdefinierte Kennung genehmigungsrelevanter Software je UN-Regelung</div>
+    </div>
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Ein Fahrzeugtyp ist durch die Typbezeichnung und die wesentlichen Merkmale der Auslegung in Bezug auf Software-Update-Prozesse bestimmt. Die RXSWIN ist eine vom Hersteller festgelegte Kennung, die den genehmigungsrelevanten Softwarestand der elektronischen Steuersysteme abbildet, die zu den genehmigungsrelevanten Merkmalen nach Regelung Nr. X beitragen. Ein Software-Update ist ein Paket, mit dem Software auf eine neue Version gebracht wird, einschließlich einer Änderung von Konfigurationsparametern.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die RXSWIN wird je betroffener UN-Regelung gebildet (z. B. eine für R79 Lenkung, eine für R13-H Bremse). Die Granularität legt der Hersteller fest – zu grob führt zu häufigen Genehmigungserweiterungen, zu fein zu großem Verwaltungsaufwand. Dass auch Parameteränderungen als Update gelten, wird oft übersehen: Eine Kalibrieränderung über die Fertigung oder Werkstatt ist SUMS-pflichtig.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§6</span>
+    <div>
+      <div class="gesetz-para-title">SUMS-Konformitätsbescheinigung</div>
+      <div class="gesetz-para-sub">Gültigkeit höchstens 3 Jahre; bestehende Genehmigungen bleiben bei Ablauf gültig</div>
+    </div>
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Genehmigungsbehörde bewertet das SUMS und erteilt bei positivem Ergebnis eine Konformitätsbescheinigung. Sie gilt höchstens drei Jahre ab Ausstellung, sofern sie nicht entzogen wird, und kann jederzeit überprüft werden. Bestehende Fahrzeug-Typgenehmigungen verlieren durch den Ablauf der SUMS-Bescheinigung nicht ihre Gültigkeit.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Unterschied zu R155: Läuft die SUMS-Bescheinigung ab, bleiben vorhandene Fahrzeuggenehmigungen bestehen; neue Genehmigungen oder Erweiterungen sind ohne gültige Bescheinigung aber nicht möglich. CSMS- und SUMS-Audits werden in der Praxis meist zusammen durchgeführt, weil sich Prozesse (Integritätsschutz, Schwachstellenbehebung per Update) überschneiden.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§7.1</span>
+    <div>
+      <div class="gesetz-para-title">Anforderungen an das SUMS</div>
+      <div class="gesetz-para-sub">Prozesse 7.1.1.1–7.1.1.12, Dokumentation je Update, RXSWIN-Register</div>
+    </div>
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Bei der Erstbewertung sind u. a. Prozesse nachzuweisen für: sichere Dokumentation; eindeutige Identifikation aller ursprünglichen und aktualisierten Softwarestände inkl. Integritätsdaten und zugehöriger Hardware; Zugriff auf und Aktualisierung der RXSWIN vor und nach einem Update; Abgleich der verbauten Softwarestände mit der RXSWIN; Erkennen von Abhängigkeiten zu anderen Systemen; Identifikation der Zielfahrzeuge; Kompatibilitätsprüfung mit der zuletzt bekannten Konfiguration vor Freigabe; Bewertung, ob genehmigte Systeme oder Genehmigungsparameter betroffen sind und ob Funktionen hinzugefügt, geändert oder freigeschaltet werden; Bewertung der Auswirkung auf sicherheitsrelevante Systeme; Information der Nutzer; Bereitstellung der Informationen für Behörden (Genehmigung, Produktionskonformität, Marktüberwachung, Rückrufe, Hauptuntersuchung). Je Update sind Zweck, betroffene Systeme, Genehmigungsrelevanz, Ausführungsbedingungen sowie die Bestätigung der sicheren Durchführung und erfolgreichen Verifikation/Validierung zu dokumentieren; für jede RXSWIN ist ein prüffähiges Register zu führen. Updates und Update-Prozesse sind gegen Manipulation zu schützen; bei OTA ist nachzuweisen, dass Updates während der Fahrt die Sicherheit nicht beeinträchtigen und Updates mit Fachpersonal-Bedarf (z. B. Sensorkalibrierung) nur unter dessen Kontrolle ablaufen.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Der Kern des SUMS ist die Auswirkungsbewertung („Impact Assessment“): Sie entscheidet, ob ein Update nur dokumentiert wird oder eine Genehmigungserweiterung braucht. Besonders kritisch sind Function-on-Demand-Freischaltungen (§7.1.1.9) – das Freischalten einer bereits verbauten, aber nicht genehmigten Funktion ist genehmigungsrelevant. ISO 24089 bildet die Prozesse ab, ist aber nicht verbindlich.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§7.2.1</span>
+    <div>
+      <div class="gesetz-para-title">Fahrzeuganforderungen: Integrität und RXSWIN</div>
+      <div class="gesetz-para-sub">Authentizität/Integrität der Updates; RXSWIN eindeutig, über OBD auslesbar, geschützt</div>
+    </div>
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Authentizität und Integrität von Software-Updates sind zu schützen, um Manipulation und ungültige Updates angemessen zu verhindern. Nutzt der Typ RXSWIN, muss jede RXSWIN eindeutig sein und bei einer Änderung, die zu einer Genehmigungserweiterung oder Neugenehmigung führt, aktualisiert werden. Sie muss standardisiert über eine elektronische Schnittstelle, mindestens die OBD-Schnittstelle, auslesbar sein. Werden RXSWIN nicht im Fahrzeug gespeichert, meldet der Hersteller die Softwarestände mit Bezug zu den Genehmigungen an die Behörde; diese müssen dann ebenso über OBD auslesbar sein. RXSWIN bzw. Softwarestände sind gegen unbefugte Änderung zu schützen; die Schutzmaßnahmen werden der Behörde vertraulich mitgeteilt.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die OBD-Auslesbarkeit ist für Marktüberwachung und Hauptuntersuchung gedacht – das Auslesekonzept (Diagnosedienst, Datenkennung) muss frühzeitig mit dem Diagnose-Team abgestimmt werden. Signierte Update-Pakete mit Prüfung im Steuergerät (Secure Boot/Secure Flash) sind der übliche Weg, §7.2.1.1 zu erfüllen.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§7.2.2</span>
+    <div>
+      <div class="gesetz-para-title">Zusatzanforderungen für Over-the-Air-Updates</div>
+      <div class="gesetz-para-sub">Rückfall/sicherer Zustand, Energie, Nutzerinformation, Fahrsperre</div>
+    </div>
+    <a href="https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Bei fehlgeschlagenem oder unterbrochenem Update muss das Fahrzeug den vorherigen Stand wiederherstellen oder in einen sicheren Zustand gehen können. Updates dürfen nur ausgeführt werden, wenn genug Energie für den Abschluss einschließlich einer möglichen Wiederherstellung vorhanden ist. Kann ein Update die Sicherheit beeinflussen, muss die sichere Ausführung technisch gewährleistet sein. Der Nutzer ist vorab zu informieren über Zweck (einschließlich Kritikalität bzw. Rückruf-, Sicherheits- oder Security-Bezug), Funktionsänderungen, erwartete Dauer, während des Updates nicht verfügbare Funktionen und Hinweise zur sicheren Durchführung. Ist ein Update während der Fahrt nicht sicher, darf das Fahrzeug währenddessen nicht fahrbar sein und keine sicherheitsrelevanten Funktionen dürfen bedienbar sein. Danach ist der Nutzer über Erfolg oder Misserfolg und die Änderungen (ggf. auch der Betriebsanleitung) zu informieren. Vorbedingungen müssen vor Ausführung erfüllt sein.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die OTA-Anforderungen enthalten keine Zahlenwerte (z. B. Mindest-Ladezustand) – der Hersteller muss seine Kriterien festlegen und begründen. Häufige Prüfpunkte des Technischen Dienstes: Abbruch bei Spannungseinbruch, Verhalten bei Startversuch während des Updates und die Nutzerinformation im Display. A/B-Partitionierung erleichtert den Nachweis des Rückfalls auf den alten Stand.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">EU / Märkte</span>
+    <div>
+      <div class="gesetz-para-title">Übergangsbestimmungen, Fristen und Bezug zu anderen Märkten</div>
+      <div class="gesetz-para-sub">EU-Pflicht über VO (EU) 2019/2144; JP, KR, IN, CN mit eigenen Umsetzungen</div>
+    </div>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42021X0388" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Ursprungsfassung enthält keine eigenen Übergangsbestimmungen für bestehende Typen. In der EU wird R156 über die Typgenehmigungs-Rahmengesetzgebung (VO (EU) 2019/2144) verbindlich; Fundstelle und Stichtage <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Japan wendet R156 an und hat zusätzlich ein nationales Genehmigungsverfahren für Software-Änderungen an zugelassenen Fahrzeugen, Korea regelt Software-Updates R156-nah im Kfz-Verwaltungsgesetz, Indien setzt AIS-190 auf R156-Basis um, China verlangt GB 44496-2024 (inkl. Angaben in der Betriebsanleitung). In den USA sind OTA-Updates ohne Typgenehmigung möglich, z. B. als Rückrufbehebung.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Ein SUMS nach R156 ist die Grundlage für alle Märkte; marktspezifisch sind vor allem die Meldewege: In China sind OTA-Kampagnen bei den Behörden anzuzeigen, in den USA unterliegen sicherheitsrelevante Updates dem Rückrufrecht. Die RXSWIN-Logik ist mit der chinesischen SWIN vergleichbar, aber nicht identisch – Kennungen sollten so aufgebaut sein, dass beide aus derselben Software-Stückliste ableitbar sind. Stichtage außerhalb der EU <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+    </div>
+  </div>
+</details>
+
+<div style="font-size:12px;color:var(--text2);margin-top:12px">Geprüft: Geltungsbereich (M, N, O, R, S, T), Begriffe RXSWIN/Software-Update/Fahrzeugtyp, SUMS-Bescheinigung (max. 3 Jahre, bestehende Genehmigungen bleiben gültig), §§ 7.1.1–7.1.4, 7.2.1, 7.2.2 – gegen die Fassung im ABl. L 82/60 vom 09.03.2021 (EU-CELLAR, CELEX 42021X0388). Ungeprüft (Fachwissen): Fundstelle und Stichtage der EU-Verpflichtung, spätere Supplements, Umsetzung in JP, KR, IN, CN-OTA-Meldeverfahren, US-Rückrufpraxis – vor Projektverwendung gegen den Originaltext prüfen.</div>

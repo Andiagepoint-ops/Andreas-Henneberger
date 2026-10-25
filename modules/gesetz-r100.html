@@ -1,0 +1,175 @@
+
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Gesetzestexte &amp; Interpretation <span class="sep">/</span> Hochvolt (UN R100)</div>
+
+<!-- DOKUMENTENLEISTE -->
+<div class="reg-docs-box">
+  <div class="reg-docs-header">
+    <span class="reg-docs-title">📁 Dokumente — downloads/r100/</span>
+    <button class="reg-docs-btn primary" onclick="openRegUpload('r100')">+ Hochladen</button>
+    <button class="reg-docs-btn ghost" onclick="loadRegDocs('r100','reg-docs-r100')">🔄</button>
+  </div>
+  <div id="reg-docs-r100" class="reg-docs-list">
+    <span class="reg-docs-loading">Klicke 🔄 zum Laden der Dokumente.</span>
+  </div>
+</div>
+
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(241,196,15,.12);border-color:rgba(241,196,15,.3)">⚡</div>
+  <div><h2>UN R100 — Elektrische Sicherheit des Antriebsstrangs und REESS</h2><p>UN R100 regelt in Teil I die elektrische Sicherheit von Fahrzeugen mit Hochvolt-Antriebsstrang (Berührschutz, Isolation, Laden, Fahrbereitschaft) und in Teil II die Sicherheit des wiederaufladbaren Energiespeichers (REESS). Aktueller Stand: 03. Änderungsserie mit Übernahme von GTR 20 Phase 1.</p></div>
+</div>
+
+<div class="gesetz-header">
+  <div class="gesetz-meta">
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-reg-link">🔗 UNECE R100 ↗</a>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42015X0331(01)" target="_blank" class="gesetz-reg-link">🇪🇺 ABl. 2015/505 (R100, 02. Serie) ↗</a>
+    <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42018X1858" target="_blank" class="gesetz-reg-link">🇪🇺 ABl. 2018/1858 (Änderungen) ↗</a>
+    <a href="https://unece.org/transport/standards/transport/vehicle-regulations-wp29/global-technical-regulations-gtrs" target="_blank" class="gesetz-reg-link">🌐 GTR 20 (EVS) ↗</a>
+  </div>
+  <div class="gesetz-note">Paraphrase und Auslegung der UN R100 (03. Änderungsserie). Die Post-Crash-Anforderungen an Hochvolt-Systeme stehen nicht in R100, sondern in den Crash-Regelungen R12, R94, R95 und R137. Abschnittsnummern und Grenzwerte vor Projektverwendung gegen den Originaltext prüfen – das UNECE-Dokument kann im Dokumente-Ordner abgelegt werden.</div>
+</div>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§1</span>
+    <div>
+      <div class="gesetz-para-title">Geltungsbereich</div>
+      <div class="gesetz-para-sub">Teil I: Fahrzeuge M/N mit HV-Antrieb · Teil II: REESS</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Teil I gilt für die Sicherheitsanforderungen an den elektrischen Antriebsstrang von Straßenfahrzeugen der Klassen M und N mit einer bauartbedingten Höchstgeschwindigkeit über 25 km/h, die mit einem oder mehreren elektrischen Fahrmotoren ausgestattet und nicht dauerhaft an das Netz angeschlossen sind. Teil II gilt für die Sicherheitsanforderungen an das REESS solcher Fahrzeuge. Hochvolt-Komponenten und Systeme, die nicht galvanisch mit dem Hochvolt-Bus des Antriebs verbunden sind, sind ausgenommen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>R100 erfasst BEV, PHEV, HEV und Brennstoffzellenfahrzeuge gleichermaßen, sobald ein Antriebskreis die Spannungsklasse B erreicht. Ein 48-V-Mildhybrid fällt in der Regel nicht darunter. Teil I und Teil II sind getrennt genehmigbar: Zulieferer lassen das REESS häufig als eigenständigen Typ nach Teil II genehmigen, der OEM nutzt diese Genehmigung dann im Fahrzeugverfahren nach Teil I.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§2</span>
+    <div>
+      <div class="gesetz-para-title">Begriffe und Genehmigungsumfang</div>
+      <div class="gesetz-para-sub">Spannungsklasse B, Fahrzeugtyp, REESS-Typ</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Hochvolt (Spannungsklasse B) bezeichnet Komponenten mit einer Arbeitsspannung über 60 V und bis 1 500 V DC bzw. über 30 V und bis 1 000 V AC (Effektivwert) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Ein Fahrzeugtyp hinsichtlich der elektrischen Sicherheit ist u. a. durch Aufbau, Größe, Form und Werkstoffe der Hochvolt-Komponenten sowie Art und Typ des Antriebsstrangs bestimmt; ein REESS-Typ durch Zellchemie, Zellanzahl und Verschaltung, Gehäuse, Kühlung und Schutzeinrichtungen.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die Typdefinition entscheidet darüber, ob eine Änderung (z. B. neuer Zelllieferant, 800-V-Architektur, zusätzlicher Onboard-Lader) als Erweiterung behandelt werden kann oder eine neue Genehmigung braucht. Ein Wechsel der Zellchemie führt praktisch immer zu einem neuen REESS-Typ. Früh mit dem Technischen Dienst abstimmen, welche Prüfungen bei einer Erweiterung wiederholt werden müssen.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5.1</span>
+    <div>
+      <div class="gesetz-para-title">Schutz gegen elektrischen Schlag</div>
+      <div class="gesetz-para-sub">IPXXD innen / IPXXB außen, Potenzialausgleich, Kennzeichnung</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Aktive Hochvolt-Teile im Fahrgast- und Gepäckraum müssen mindestens Schutzgrad IPXXD (Prüfdraht), in anderen Bereichen IPXXB (Prüffinger) aufweisen. Hochvolt-Leitungen außerhalb von Gehäusen sind orange zu ummanteln, Energiespeicher und abnehmbare Abdeckungen mit dem gelben Hochspannungs-Warnsymbol zu kennzeichnen. Berührbare leitfähige Teile sind mit der elektrischen Masse zu verbinden; der Widerstand muss unter 0,1 Ω liegen (Messstrom mindestens 0,2 A). Fahrzeuge, die konduktiv an einem geerdeten Netz geladen werden, brauchen eine Vorrichtung, die die Fahrzeugmasse vor dem Anlegen der Netzspannung mit Erde verbindet.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Typische Stolpersteine sind Steckverbinder, die werkzeuglos getrennt werden können – sie müssen entweder auch getrennt den Schutzgrad erfüllen oder die Spannung innerhalb von 1 s unter die Grenze senken. Ladedosen werden oft übersehen: Ohne gesteckten Stecker muss der Berührschutz oder die schnelle Entladung nachgewiesen werden. Die Werte entsprechen inhaltlich FMVSS 305a S6.1/S6.2, sodass ein gemeinsames Prüfprogramm möglich ist.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5.1.3</span>
+    <div>
+      <div class="gesetz-para-title">Isolationswiderstand und Isolationsüberwachung</div>
+      <div class="gesetz-para-sub">DC ≥ 100 Ω/V, AC ≥ 500 Ω/V</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Der Isolationswiderstand zwischen Hochvolt-Bus und Fahrzeugmasse muss bezogen auf die Arbeitsspannung mindestens 100 Ω/V für DC-Kreise und 500 Ω/V für AC-Kreise betragen. Sind AC- und DC-Kreise galvanisch verbunden, genügen 500 Ω/V für den Gesamtkreis oder 100 Ω/V, wenn der AC-Kreis zusätzlich geschützt ist (doppelte Isolation, zusätzliche Barrieren) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Brennstoffzellenfahrzeuge müssen den Isolationswiderstand fortlaufend überwachen und den Fahrer bei Unterschreitung warnen. Für den Ladeanschluss gilt eine eigene Mindestisolation.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>In der Praxis setzen fast alle BEV ein Isolationswächter-Konzept ein, auch wenn R100 dies nur für Brennstoffzellenfahrzeuge vorschreibt – sonst lassen sich die Anforderungen nach Wasserexposition und Alterung kaum robust einhalten. Die Messung erfolgt nach dem Spannungsteiler-Verfahren mit bekanntem Zusatzwiderstand, identisch zu FMVSS 305a S7.2.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§5.3 / §6</span>
+    <div>
+      <div class="gesetz-para-title">Funktionale Sicherheit, Laden und Thermal Event</div>
+      <div class="gesetz-para-sub">Fahrbereitschaft, Wegfahrsperre beim Laden, Warnungen</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Dem Fahrer muss mindestens kurzzeitig angezeigt werden, dass das Fahrzeug fahrbereit ist; beim Verlassen des fahrbereiten Fahrzeugs ist ein optisches oder akustisches Signal zu geben. Solange ein Ladestecker so verbunden ist, dass geladen werden kann, darf sich das Fahrzeug nicht mehr als 150 mm aus eigener Kraft bewegen. Ein Ausfall der REESS-Steuerung muss angezeigt werden; bei einem Thermal Event im REESS ist der Fahrer zu warnen. Die 03. Serie ergänzt nach GTR 20 u. a. Anforderungen zur Thermal-Propagation-Dokumentation und zum Schutz gegen Wasser (Waschen, Wasserdurchfahrt) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die Thermal-Propagation-Anforderung wird in R100 überwiegend über eine Herstellerdokumentation mit Risikoanalyse nachgewiesen, nicht über eine allgemein vorgeschriebene Fahrzeugprüfung – anders als in China (GB 38031), wo ein physischer Auslösetest gefordert ist. Für Programme mit China-Zulassung lohnt es sich daher, das Propagations-Konzept von Anfang an auf den strengeren GB-Test auszulegen.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Teil II · Anh. 8</span>
+    <div>
+      <div class="gesetz-para-title">REESS-Prüfungen</div>
+      <div class="gesetz-para-sub">Vibration, Thermoschock, Stoß, Quetschung, Feuer, Kurzschluss, Über-/Tiefentladung, Übertemperatur, Überstrom</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Das REESS (oder repräsentative Teilsysteme) wird u. a. folgenden Prüfungen unterzogen: Vibration, Thermoschock und Temperaturwechsel, mechanischer Stoß (Beschleunigungspuls), mechanische Integrität (Quetschung mit einer Kraft im Bereich von 100 kN) <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>, Feuerbeständigkeit (Exposition gegenüber einem Benzin-Flammenbad), externer Kurzschluss, Überladung, Tiefentladung, Übertemperatur, Überstrom und – ab 03. Serie – Niedrigtemperaturschutz <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Abnahmekriterien: kein Elektrolytaustritt, kein Bruch des Gehäuses (Prüffinger IPXXB), kein Feuer, keine Explosion; der Isolationswiderstand nach der Prüfung muss mindestens 100 Ω/V betragen.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Die Schutzfunktionsprüfungen (Überladung, Tiefentladung, Übertemperatur, Überstrom, Kurzschluss) können am Fahrzeug oder an REESS-Teilsystemen mit Original-BMS durchgeführt werden; am Fahrzeug entsprechen sie weitgehend FMVSS 305a S11/S12. Die mechanischen Prüfungen können entfallen, wenn der Einbau im Fahrzeug über Crashversuche nachgewiesen wird <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Früh klären, welche Prüfungen mit Zulieferer-Daten abgedeckt sind.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">§12 / §13</span>
+    <div>
+      <div class="gesetz-para-title">Übergangsbestimmungen</div>
+      <div class="gesetz-para-sub">03. Änderungsserie, Gültigkeit älterer Genehmigungen</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> Die Übergangsbestimmungen legen fest, ab welchem Datum Vertragsparteien nur noch Genehmigungen nach der 03. Änderungsserie erteilen müssen und ab wann ältere Serien für Erstzulassungen nicht mehr anerkannt werden müssen. Erweiterungen bestehender Genehmigungen nach früheren Serien bleiben in einem begrenzten Rahmen möglich <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>In der EU wird R100 über VO (EU) 2019/2144 Anhang I verpflichtend; die dort genannten Fristen und die Übergangsbestimmungen der Regelung selbst sind gemeinsam zu lesen. Die konkreten Stichtage der 03. Serie hier nicht ohne Abgleich mit dem Originaltext verwenden <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+    </div>
+  </div>
+</details>
+
+<details class="gesetz-section">
+  <summary class="gesetz-section-head">
+    <span class="gesetz-para-ref">Bezug</span>
+    <div>
+      <div class="gesetz-para-title">Bezug zu anderen Märkten</div>
+      <div class="gesetz-para-sub">GTR 20, FMVSS 305a, GB 18384/38031, AIS-038, KMVSS</div>
+    </div>
+    <a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-81-100" target="_blank" class="gesetz-source-link" onclick="event.stopPropagation()">↗ Quelle</a>
+  </summary>
+  <div class="gesetz-body">
+    <div class="gesetz-req"><strong>Anforderungstext (Paraphrase):</strong> R100 ist inhaltlich mit GTR 20 (Electric Vehicle Safety) harmonisiert. Die USA setzen GTR 20 mit FMVSS 305a um, China mit GB 18384 (Fahrzeug) und GB 38031 (Traktionsbatterie), Indien mit AIS-038 Rev. 2 (M/N) und AIS-156 (L). Japan und das UK übernehmen R100 direkt über das 1958er Abkommen; GSO/SASO akzeptieren R100 als Nachweisbasis.</div>
+    <div class="gesetz-interp">
+      <div class="gesetz-interp-label">💡 Interpretation &amp; Praxisbedeutung</div>
+      <p>Eine R100-Genehmigung ist die Basis für die meisten Märkte, ersetzt aber weder die US-Selbstzertifizierung nach FMVSS 305a noch die chinesische CCC-Prüfung. Größte Unterschiede: Post-Crash-Lastfälle (USA: Heckaufprall und statischer Überschlag), Thermal-Propagation-Nachweis (China: physischer Test mit „kein Feuer, keine Explosion“ ab GB 38031-2025) und Warnzeiten.</p>
+    </div>
+  </div>
+</details>
+
+<div style="font-size:12px;color:var(--text2);margin-top:12px">Geprüft: Veröffentlichungen von UN R100 im ABl. (2015/505, 02. Serie; Änderungen 2018/1858) über EU-CELLAR; Vergleichswerte zu FMVSS 305a (Isolation, Potenzialausgleich, 150 mm, Steckverbinder 1 s) gegen eCFR. · Ungeprüft (Fachwissen): Abschnittsnummern der 03. Serie, Spannungsobergrenzen, Prüfparameter der REESS-Prüfungen, Inhalte und Übergangsfristen der 03. Änderungsserie – vor Projektverwendung gegen den Originaltext prüfen.</div>

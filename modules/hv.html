@@ -30,6 +30,7 @@
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-038 Rev. 2 (M, N) ↗</a> · AIS-156 (L-Klassen) · CMVR</td><td>AIS-038 Rev. 2: R100-basiert inkl. REESS-Prüfungen</td><td>Über AIS-098/AIS-099 (Front/Seite) lt. Regelwerk</td><td>AIS-004 Teil 3 (R10-basiert)</td></tr>
     </tbody>
   </table>
+  <div class="gesetz-links" style="font-size:12.5px;margin:-6px 0 18px;color:var(--text2)">📜 <strong>Gesetzestexte &amp; Interpretation:</strong> <a href="#" class="reg-link" onclick="showSection('gesetz-r100');return false">UN R100 — Hochvolt / REESS</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-r10');return false">UN R10 — EMV</a> · <a href="#" class="reg-link" onclick="showSection('gesetz-usa-fmvss305');return false">FMVSS 305a — EV Powertrain</a></div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)">Geprüft (eCFR, Stand 25.10.2026): Anwendungsbereich und Crashgeschwindigkeiten FMVSS 305a; Ausgabe-/Einführungsdaten der GB-Normen (chinesestandard.net-Vorschau). Japan, Korea, Brasilien, Golf-Staaten und Indien sowie die Zuordnung der HV-Anhänge in den Crash-Regelungen sind aus Fachwissen – <strong>vor Projektverwendung gegen den Originaltext prüfen</strong>.</div>
 </div>
 
@@ -76,6 +77,42 @@
         <p>AIS-038 Rev. 2 gilt für M- und N-Fahrzeuge und ist an UN R100 angelehnt; AIS-156 regelt dasselbe für L-Fahrzeuge (Zwei-/Dreiräder). Nach Batteriebränden bei E-Zweirädern wurden beide Standards phasenweise verschärft. Phasentermine vor Projektverwendung gegen den Originaltext prüfen.</p>
       </div>
     </details>
+    <details class="interp-market">
+      <summary>🇯🇵 Japan — R100/R10 über das 1958er Abkommen</summary>
+      <div class="details-body">
+        <p>Japan ist Vertragspartei des 1958er Abkommens und hat UN R100 und UN R10 in die Safety Regulations for Road Vehicles (保安基準) übernommen; eine E-Genehmigung (E43 bzw. fremde E-Nummer) wird im Typgenehmigungsverfahren des MLIT grundsätzlich anerkannt. Praktisch maßgeblich ist, welche Änderungsserie Japan jeweils übernommen hat und ab wann sie für neue Typen gilt – das kann von der EU abweichen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Die HV-Post-Crash-Kriterien werden in den japanischen Front- und Seitencrash-Vorschriften mitbewertet; für Fahrzeuge mit japanischer Crash-Eigenzertifizierung ist zu klären, ob die HV-Nachweise aus R94/R95/R137 ausreichen oder separat dokumentiert werden müssen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Ladeschnittstellen (CHAdeMO, Typ 1) sind keine R100-Frage, beeinflussen aber den R10-Lademodus-Prüfaufbau.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇰🇷 Korea — KMVSS mit eigener Batterieprüfung</summary>
+      <div class="details-body">
+        <p>Korea arbeitet im Selbstzertifizierungssystem nach KMVSS; UN-R100-Berichte werden technisch als Referenz genutzt, ersetzen aber nicht die KMVSS-Konformität. Für die Traktionsbatterie gelten eigene Sicherheitsprüfungen (u. a. Fall, Eintauchen, Feuer) und seit der Batterie-Zertifizierung für E-Fahrzeuge ab 2025 eine vorgelagerte Batteriesicherheitszertifizierung durch das Ministerium (MOLIT) statt reiner Selbstzertifizierung <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Nach Batteriebränden 2024 wurden zudem Angaben zum Zellhersteller und zur Zellchemie gegenüber Kunden verpflichtend <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. EMV läuft getrennt über KMVSS bzw. die KC-Funkzulassung; R10-Berichte sind dafür nicht automatisch ausreichend.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇧🇷 Brasilien — UN-R100-Nachweis über CONTRAN</summary>
+      <div class="details-body">
+        <p>Brasilien ist nicht Vertragspartei des 1958er Abkommens, verweist aber in CONTRAN-Resolutionen für Elektro- und Hybridfahrzeuge auf UN-R100-Anforderungen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. In der Praxis werden R100-Prüfberichte eines anerkannten Technischen Dienstes im Verfahren zur Erteilung des CAT (Certificado de Adequação à Legislação de Trânsito) akzeptiert; eine E-Genehmigung allein ersetzt das CAT aber nicht. Stolperstein ist die Dokumentation: Berichte und Herstellererklärungen müssen dem Antrag beim SENATRAN in der geforderten Form (ggf. mit Übersetzung) beiliegen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. EMV- und Funkthemen laufen zusätzlich über ANATEL für Funkmodule.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇬🇧 UK — R100/R10 unverändert über die GB-Typgenehmigung</summary>
+      <div class="details-body">
+        <p>Nach dem Brexit übernimmt das GB-Typgenehmigungssystem die UN-Regelungen über die assimilierte VO (EU) 2019/2144; UN R100 und UN R10 gelten inhaltlich wie in der EU. Das UK ist eigenständige Vertragspartei des 1958er Abkommens, daher werden E-Genehmigungen anderer Vertragsparteien für R100/R10 anerkannt; die DVSA prüft im Wesentlichen nur die Gesamtfahrzeug-Unterlagen. Neue UN-Änderungsserien greifen in GB, sobald sie für die Vertragspartei UK in Kraft treten – Abweichungen in den Übergangsfristen gegenüber der EU sind möglich <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Für Nordirland gilt weiterhin EU-Typgenehmigungsrecht.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇦🇪 Golf-Staaten — GSO-Standard mit UN/FMVSS-Nachweis</summary>
+      <div class="details-body">
+        <p>Die GSO-Standards für Elektrofahrzeuge stützen sich auf UN R100 bzw. FMVSS 305; vorhandene Prüfberichte und Genehmigungen nach einer dieser Basen werden im GCC-Konformitätsverfahren (G-Mark bzw. nationale Registrierung in VAE, Kuwait, Oman, Katar, Bahrain) in der Regel als Nachweis akzeptiert <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Wichtig für die Auslegung sind die klimatischen Bedingungen: Behörden und Kunden erwarten Nachweise zum Batterie-Thermomanagement bei hohen Umgebungstemperaturen, auch wenn der Standard selbst keinen eigenen Hitzetest vorschreibt <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Für die VAE kommen ggf. Anforderungen der Emirates Authority for Standardization (MoIAT/ECAS) an Ladeinfrastruktur und Ladeschnittstelle hinzu <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
+    <details class="interp-market">
+      <summary>🇸🇦 Saudi-Arabien — SASO-Regelung auf GSO-Basis, Nachweis über SABER</summary>
+      <div class="details-body">
+        <p>Saudi-Arabien übernimmt die GSO-Standards für Elektrofahrzeuge in eigene SASO-Technische Regelungen; die technischen HV-Anforderungen entsprechen damit der GSO-Basis (UN R100 bzw. FMVSS 305 als Nachweis). Der Unterschied liegt im Verfahren: Für jedes Fahrzeugmodell ist über die Plattform SABER ein Product Certificate Of Conformity (PCoC) und für jede Sendung ein Shipment Certificate (SCoC) über eine von SASO benannte Konformitätsbewertungsstelle zu beantragen. Zusätzlich verlangt SASO eine eigene Regelung zu Ladeschnittstellen (Typ 2 / CCS2) und Ladeeinrichtungen <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>. Funkmodule im Fahrzeug benötigen separat eine CST-Zulassung; R10-Berichte decken die Fahrzeug-EMV, nicht die Funkzulassung ab <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span>.</p>
+      </div>
+    </details>
   </div>
 
   <div class="faq-section">
@@ -97,7 +134,7 @@
       <div class="details-body"><p>Nicht direkt. China ist nicht Vertragspartei des 1958er Abkommens; für CCC und den MIIT-Katalog sind Prüfungen nach GB 18384, GB 38031 und GB 34660 in einem chinesischen Prüfinstitut nötig.</p></div>
     </details>
   </div>
-  <div style="margin-top:12px;font-size:12px;color:var(--text2)">FMVSS-305a-Termine und -Inhalte geprüft (eCFR). Inhalte von GB 38031-2025, AIS-038/AIS-156-Phasen und die R100-/R10-Zuordnung beim Laden aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">FMVSS-305a-Termine und -Inhalte geprüft (eCFR). Inhalte von GB 38031-2025, AIS-038/AIS-156-Phasen, die R100-/R10-Zuordnung beim Laden sowie die Hinweise zu Japan, Korea, Brasilien, UK, Golf-Staaten und Saudi-Arabien aus Fachwissen – vor Projektverwendung gegen den Originaltext prüfen.</div>
 </div>
 
 <!-- TAB: MARKTVERGLEICH -->
