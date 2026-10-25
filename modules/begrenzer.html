@@ -1,0 +1,100 @@
+<div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Geschwindigkeitsbegrenzer &amp; ISA</div>
+<div class="section-header">
+  <div class="section-icon" style="background:rgba(232,121,160,.12);border-color:rgba(232,121,160,.3)">🚦</div>
+  <div><h2>Modul — Geschwindigkeitsbegrenzer &amp; Intelligenter Geschwindigkeitsassistent (ISA)</h2><p>UN R89 · VO (EU) 2019/2144 Art. 6 · Delegierte VO (EU) 2021/1958 · AIS-018 / Speed Alert. Begrenzer (SLD), einstellbare Begrenzer (ASLD) und ISA in 9 Märkten.</p></div>
+</div>
+<div class="tabs" id="begrenzer-tabs">
+  <div class="tab active" onclick="switchTab('begrenzer','vorschriften')">📄 Vorschriften</div>
+  <div class="tab" onclick="switchTab('begrenzer','technik')">🔧 Technik</div>
+  <div class="tab" onclick="switchTab('begrenzer','interpretation')">💬 Interpretation &amp; FAQ</div>
+  <div class="tab" onclick="switchTab('begrenzer','vergleich')">📊 Marktvergleich</div>
+  <div class="tab" onclick="switchTab('begrenzer','amendments')">📅 Amendments &amp; Termine</div>
+  <div class="tab" onclick="switchTab('begrenzer','typmerkmale')">🔑 Typabgrenzende Merkmale</div>
+</div>
+
+<div id="begrenzer-tab-vorschriften">
+  <div class="callout"><span class="ci">ℹ️</span><span>Drei Systemfamilien sind zu unterscheiden: <strong>SLD</strong> (fest eingestellter Begrenzer, Pflicht für Busse und Lkw), <strong>ASLD</strong> (vom Fahrer einstellbarer Begrenzer, im PKW freiwillig) und <strong>ISA</strong> (erkennt das Tempolimit und warnt bzw. greift ein; in der EU seit 2022/2024 Pflicht für alle neuen M- und N-Fahrzeuge).</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Markt</th><th>Regelwerk</th><th>PKW (M1)</th><th>Busse / Lkw</th></tr></thead>
+    <tbody>
+      <tr><td>🇪🇺 ECE/EU</td><td><a href="https://eur-lex.europa.eu/eli/reg_del/2021/1958/oj" target="_blank" class="reg-link">ISA: VO (EU) 2019/2144 + DelVO 2021/1958 ↗</a> · UN R89 · RL 92/6/EWG</td><td>ISA Pflicht; ASLD freiwillig nach UN R89</td><td>SLD Pflicht: M3 100 km/h, N3 90 km/h (auch M2/N2)</td></tr>
+      <tr><td>🇺🇸 USA</td><td>Kein FMVSS für Begrenzer oder ISA</td><td>Keine Pflicht</td><td>Keine Bundespflicht (Rulemaking für schwere Lkw zurückgezogen)</td></tr>
+      <tr><td>🇨🇳 China</td><td>GB 7258 · GB/T-Normen für ISA</td><td>Keine Pflicht</td><td>Begrenzer für Busse und Gefahrgutfahrzeuge vorgeschrieben</td></tr>
+      <tr><td>🇯🇵 Japan</td><td>Safety Regulations (速度抑制装置)</td><td>Keine Pflicht</td><td>Pflicht für schwere Lkw (90 km/h)</td></tr>
+      <tr><td>🇰🇷 Korea</td><td>KMVSS (최고속도제한장치)</td><td>Keine Pflicht</td><td>Pflicht für Busse und schwere Lkw</td></tr>
+      <tr><td>🇧🇷 Brasilien</td><td>CONTRAN</td><td>Keine Pflicht</td><td>Teilweise (Busse, Gefahrgut)</td></tr>
+      <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung; GSR2 nicht automatisch übernommen</td><td>ISA nicht verpflichtend (Stand prüfen)</td><td>SLD Pflicht (Retained RL 92/6/EWG)</td></tr>
+      <tr><td>🇦🇪 Golf-Staaten</td><td>GSO / national</td><td>Keine Pflicht</td><td>Pflicht für schwere Fahrzeuge in mehreren Staaten</td></tr>
+      <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-018 (SLD) · Speed Alert (AIS-145) ↗</a></td><td>Speed-Alert Pflicht: Warnton ab 80 km/h, Dauerton ab 120 km/h</td><td>SLD Pflicht für Transportfahrzeuge (i. d. R. 80 km/h)</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Nationale Einstellwerte für Nutzfahrzeuge (CN, JP, KR, BR, GCC) vor Projektverwendung gegen den Originaltext prüfen.</div>
+</div>
+
+<div id="begrenzer-tab-technik" style="display:none">
+  <div class="module-grid">
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">🛰️</span><h3>ISA – Erkennung</h3></div><p>Tempolimit aus Kamera (Verkehrszeichenerkennung) und/oder Kartendaten. Die DelVO 2021/1958 verlangt Prüffahrten in mehreren EU-Ländern; die Erkennungsgenauigkeit muss im Realverkehr einen Mindestwert erreichen (Bezugswert 90 % richtig erkannter Limits).</p><div class="module-card-footer"><span class="tag">Kamera + Karte</span><span class="tag">Realfahrt-Prüfung</span></div></div>
+    <div class="module-card" style="--card-color:#d35d8a"><div class="module-card-header"><span class="module-card-icon">🔔</span><h3>ISA – Rückmeldung</h3></div><p>Hersteller wählt eine von vier Varianten: kaskadierte akustische Warnung, kaskadierte Vibrationswarnung, haptische Rückmeldung über das Fahrpedal oder Geschwindigkeitsregelung (aktiver Eingriff). Die Rückmeldung muss übersteuerbar sein.</p><div class="module-card-footer"><span class="tag">4 Varianten</span><span class="tag">Übersteuerbar</span></div></div>
+    <div class="module-card" style="--card-color:#b84a75"><div class="module-card-header"><span class="module-card-icon">🔛</span><h3>ISA – Ein/Aus</h3></div><p>Bei jedem Start des Fahrzeugs aktiv (Normalmodus). Der Fahrer darf das System abschalten; die Abschaltung muss bewusst erfolgen (kein Einzelklick-Dauer-Aus). Akustische Warnung darf einzeln abschaltbar sein.</p><div class="module-card-footer"><span class="tag">Default an</span></div></div>
+    <div class="module-card" style="--card-color:#9c3b62"><div class="module-card-header"><span class="module-card-icon">🛑</span><h3>SLD (UN R89 Teil I/II)</h3></div><p>Fest eingestellte Höchstgeschwindigkeit, nicht vom Fahrer verstellbar. Regelgüte: stabilisierte Geschwindigkeit ≤ Einstellwert, Überschwingen begrenzt. Pflicht für M2, M3, N2, N3 in der EU (RL 92/6/EWG).</p><div class="module-card-footer"><span class="tag">UN R89</span><span class="tag">90 / 100 km/h</span></div></div>
+    <div class="module-card" style="--card-color:#7d2f50"><div class="module-card-header"><span class="module-card-icon">🎚️</span><h3>ASLD (UN R89 Teil III)</h3></div><p>Vom Fahrer gesetzter Limiter (PKW-Standard). Muss durch Kickdown übersteuerbar sein; nach Übersteuern regelt er wieder ab, sobald die Geschwindigkeit unter den Einstellwert fällt. Anzeige des Einstellwerts für den Fahrer.</p><div class="module-card-footer"><span class="tag">Kickdown</span><span class="tag">Anzeige Pflicht</span></div></div>
+    <div class="module-card" style="--card-color:#5e2340"><div class="module-card-header"><span class="module-card-icon">🔢</span><h3>Speed Alert (Indien)</h3></div><p>M1 seit 2019: Signalton bei Überschreiten von 80 km/h, ab 100 km/h häufiger, ab 120 km/h Dauerton. Nicht abschaltbar. Schnittstelle zum Modul Geschwindigkeitsmesser.</p><div class="module-card-footer"><span class="tag">80 / 100 / 120 km/h</span></div></div>
+  </div>
+</div>
+
+<div id="begrenzer-tab-interpretation" style="display:none">
+  <div class="callout"><span class="ci">💬</span><span>Auslegungshinweise zu ISA, Begrenzern und Speed-Alert-Systemen.</span></div>
+  <div class="interp-section">
+    <div class="interp-header">Interpretationshinweise je Markt / Vorschrift</div>
+    <details class="interp-market"><summary>🇪🇺 EU — ISA ist Warnsystem, kein Begrenzer</summary><div class="details-body"><p>Die Pflicht nach Art. 6 GSR2 ist erfüllt, wenn das System das gültige Limit erkennt und eine der vier zulässigen Rückmeldungen gibt. Ein harter Eingriff ist nicht gefordert. Viele OEMs nutzen die akustische Kaskade, weil sie ohne Eingriff in die Längsführung auskommt.</p></div></details>
+    <details class="interp-market"><summary>🇪🇺 EU — Kartendaten und Länderabdeckung</summary><div class="details-body"><p>Die Prüfung erfolgt auf festgelegten Strecken in mehreren Mitgliedstaaten. Für die Genehmigung zählt die Leistung des Gesamtsystems; Hersteller müssen dokumentieren, wie Kartendaten aktuell gehalten werden. Abweichende Zeichen in Nicht-EU-Ländern sind für die Genehmigung nicht relevant.</p></div></details>
+    <details class="interp-market"><summary>🇮🇳 Indien — Speed Alert und Exportfahrzeuge</summary><div class="details-body"><p>Der indische Speed Alert ist nicht abschaltbar und arbeitet mit festen Schwellen – im Gegensatz zur EU-ISA, die das jeweilige Tempolimit verwendet. Plattformen für beide Märkte brauchen daher eine marktspezifische Kodierung.</p></div></details>
+  </div>
+  <div class="faq-section">
+    <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20Begrenzer">+ Frage einreichen</a></div>
+    <details><summary>Darf der Fahrer ISA dauerhaft abschalten?</summary><div class="details-body"><p>Nein, nicht dauerhaft. Abschalten ist zulässig, aber beim nächsten Start ist ISA wieder aktiv. Eine Konfiguration, die die Abschaltung über Zündzyklen speichert, ist nicht zulässig.</p></div></details>
+    <details><summary>Ersetzt ein Tempomat mit Limiter-Funktion die ISA?</summary><div class="details-body"><p>Nein. Ein ASLD begrenzt auf einen vom Fahrer gesetzten Wert. ISA muss das tatsächlich gültige Limit selbstständig erkennen. Beide Funktionen dürfen kombiniert werden (z. B. Übernahme des erkannten Limits in den Limiter).</p></div></details>
+    <details><summary>Muss das Fahrzeug bei erkannter Überschreitung bremsen?</summary><div class="details-body"><p>Nein. Die Geschwindigkeitsregelung ist nur eine von vier zulässigen Varianten; wählt der Hersteller sie, darf sie das Fahrzeug nur durch Reduzieren des Antriebsmoments verlangsamen und muss übersteuerbar sein.</p></div></details>
+  </div>
+</div>
+
+<div id="begrenzer-tab-vergleich" style="display:none">
+  <div class="callout"><span class="ci">📊</span><span>Geringer Harmonisierungsgrad: Die EU ist der einzige Markt mit ISA-Pflicht für PKW. Begrenzer für schwere Nutzfahrzeuge sind dagegen in den meisten Märkten Pflicht.</span></div>
+  <table class="doc-table">
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>BR</th><th>UK</th><th>GCC</th><th>IN</th></tr></thead>
+    <tbody>
+      <tr><td>ISA PKW Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
+      <tr><td>SLD schwere Nfz</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+      <tr><td>Speed-Alert PKW</td><td>über ISA</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt / Stand prüfen &nbsp; <span style="color:var(--red)">✗</span> = keine Pflicht</div>
+</div>
+
+<div id="begrenzer-tab-amendments" style="display:none">
+  <div class="callout"><span class="ci">🏛️</span><span>Zuständige WP.29 Arbeitsgruppe: <strong>GRVA</strong> (Automated/Autonomous and Connected Vehicles) — <a href="https://unece.org/transport/vehicle-regulations-wp29/working-parties/grva" target="_blank" class="reg-link">GRVA ↗</a></span></div>
+  <div class="interp-section" style="margin-top:1rem">
+    <div class="interp-header">Aktuelle &amp; geplante Entwicklungen</div>
+    <table class="doc-table" style="margin-top:.5rem">
+      <thead><tr><th>Regelung / Amendment</th><th>Status</th><th>Beschreibung</th><th>Datum</th></tr></thead>
+      <tbody>
+        <tr><td>ISA (DelVO 2021/1958) – neue Typen</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Pflicht für neue Typen M, N</td><td>06.07.2022</td></tr>
+        <tr><td>ISA – alle Neuzulassungen</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">In Kraft</span></td><td>Pflicht für alle neu zugelassenen M, N</td><td>07.07.2024</td></tr>
+        <tr><td>UN-Regelung zu ISA</td><td><span class="tag" style="border-color:var(--accent);color:var(--accent)">In Diskussion</span></td><td>Überführung der EU-Anforderungen in eine UN-Regelung bei GRVA</td><td>Offen</td></tr>
+        <tr><td>US – Speed Limiter schwere Lkw (FMCSA)</td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">Zurückgezogen</span></td><td>Geplante Pflicht für schwere Nutzfahrzeuge nicht weiterverfolgt</td><td>2025 (Stand prüfen)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">Quellen: EUR-Lex 2019/2144 und 2021/1958, UNECE GRVA, Federal Register.</div>
+</div>
+
+<div id="begrenzer-tab-typmerkmale" style="display:none">
+<div class="callout"><span class="ci">🔑</span><span>Typabgrenzende Merkmale bestimmen, wann eine neue Typgenehmigung erforderlich wird. Änderungen innerhalb der Merkmale können als Erweiterung der bestehenden Genehmigung behandelt werden.</span></div>
+<div class="module-grid">
+  <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">📷</span><h3>ISA-Sensorik</h3></div><p>Art der Limit-Erkennung (Kamera, Karte, Kombination) und deren Lieferant/Generation. Wechsel der Erkennungsquelle erfordert neue Realfahrt-Nachweise.</p><div class="module-card-footer"><span class="tag">Neue Prüfung: bei Sensorwechsel</span></div></div>
+  <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🔔</span><h3>Rückmeldungsvariante</h3></div><p>Wechsel zwischen akustischer, Vibrations-, Pedal- oder Regel-Rückmeldung ist ein anderer ISA-Typ.</p><div class="module-card-footer"><span class="tag">Neue Genehmigung: bei Variantenwechsel</span></div></div>
+  <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Antrieb / Regelstrecke (SLD/ASLD)</h3></div><p>Art der Leistungsregelung (Einspritzung, E-Motor-Momentbegrenzung), Getriebeart und Achsübersetzung beeinflussen die Regelgüte des Begrenzers.</p><div class="module-card-footer"><span class="tag">Prüfung: bei Antriebsänderung</span></div></div>
+  <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">🎛️</span><h3>Einstellwert</h3></div><p>Geänderter fest eingestellter Wert beim SLD erfordert eine Erweiterung; beim ASLD ist der wählbare Bereich typbestimmend.</p><div class="module-card-footer"><span class="tag">Erweiterung</span></div></div>
+</div>
+<div class="callout" style="margin-top:16px"><span class="ci">⚠️</span><span><strong>Hinweis:</strong> Basis: UN R89 §2 und DelVO (EU) 2021/1958 Anhang. Bei Unsicherheit ist die zuständige Genehmigungsbehörde zu konsultieren.</span></div>
+</div>

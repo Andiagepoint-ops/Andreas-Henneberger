@@ -165,6 +165,17 @@
   .reg-upload-actions{display:flex;gap:8px;justify-content:flex-end;}
   .upload-status.ok{background:rgba(62,207,142,.1);border:1px solid rgba(62,207,142,.3);color:#3ecf8e;display:block;padding:6px 10px;border-radius:6px;font-size:12px;margin-bottom:8px;}
   .upload-status.err{background:rgba(231,76,60,.1);border:1px solid rgba(231,76,60,.3);color:#e74c3c;display:block;padding:6px 10px;border-radius:6px;font-size:12px;margin-bottom:8px;}
+  .nav-search{position:relative;}
+  .search-results{position:absolute;top:40px;right:0;width:440px;max-width:90vw;max-height:70vh;overflow:auto;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 12px 32px rgba(0,0,0,.45);z-index:300;display:none;}
+  .sr-item{padding:10px 14px;border-bottom:1px solid var(--border);cursor:pointer;}
+  .sr-item:hover{background:var(--bg3);}
+  .sr-title{font-size:13px;font-weight:600;color:var(--text);}
+  .sr-snip{font-size:12px;color:var(--text2);margin-top:2px;line-height:1.45;}
+  .sr-snip mark{background:rgba(79,142,247,.3);color:var(--text);border-radius:2px;}
+  .sr-empty{padding:12px 14px;font-size:12px;color:var(--text2);}
+  .reg-doc-row{display:flex;gap:6px;align-items:center;}
+  .reg-doc-row .reg-doc-item{flex:1;}
+  .reg-doc-viewer{width:100%;height:75vh;border:1px solid var(--border);border-radius:6px;margin-top:12px;background:#fff;}
   </style>
 </head>
 <body>
@@ -179,7 +190,8 @@
     <a href="#" onclick="showSection('maerkte')">Märkte</a>
   </div>
   <div class="nav-search">
-    <input type="text" placeholder="🔍  Vorschrift, Markt, Thema …" oninput="searchContent(this.value)">
+    <input type="text" id="search-input" placeholder="🔍  Vorschrift, Markt, Thema …" oninput="searchContent(this.value)" onkeydown="if(event.key==='Escape'){this.value='';searchContent('')}" autocomplete="off">
+    <div id="search-results" class="search-results"></div>
   </div>
 </nav>
 
@@ -220,7 +232,7 @@
       <a class="sidebar-item" onclick="showSection('tpms')"><span class="icon">📡</span> TPMS</a>
       <a class="sidebar-item" onclick="showSection('notrad')"><span class="icon">🔧</span> Notrad / Ersatzrad</a>
       <a class="sidebar-item" onclick="showSection('tacho')"><span class="icon">🔢</span> Geschwindigkeitsmesser</a>
-      <a class="sidebar-item" onclick="showSection('placeholder')"><span class="icon">🚦</span> Geschwindigkeitsbegrenzer</a>
+      <a class="sidebar-item" onclick="showSection('begrenzer')"><span class="icon">🚦</span> Geschwindigkeitsbegrenzer &amp; ISA</a>
       <a class="sidebar-item" onclick="showSection('bremse')"><span class="icon">🛑</span> Bremse</a>
       <a class="sidebar-item" onclick="showSection('getriebe')"><span class="icon">⚙️</span> Getriebeschaltschema</a>
       <a class="sidebar-item" onclick="showSection('licht')"><span class="icon">💡</span> Beleuchtung</a>
@@ -236,12 +248,17 @@
       <a class="sidebar-item" onclick="showSection('gesetz-r30')" style="padding-left:28px"><span class="icon">⚙️</span> UN R30 — Reifen PKW</a>
       <a class="sidebar-item" onclick="showSection('gesetz-r13h')" style="padding-left:28px"><span class="icon">🛑</span> UN R13-H — Bremse</a>
       <a class="sidebar-item" onclick="showSection('gesetz-r39')" style="padding-left:28px"><span class="icon">🔢</span> UN R39 — Tachometer</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r48')" style="padding-left:28px"><span class="icon">💡</span> UN R48 — Beleuchtung</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r64')" style="padding-left:28px"><span class="icon">🔧</span> UN R64 — Notrad</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r89')" style="padding-left:28px"><span class="icon">🚦</span> UN R89 / ISA — Begrenzer</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-r141')" style="padding-left:28px"><span class="icon">📡</span> UN R141 — TPMS</a>
       <a class="sidebar-item" onclick="showSection('gesetz-entfrostung')" style="padding-left:28px"><span class="icon">❄️</span> EU 2021/535 Ann.IV — Entfrostung</a>
       <a class="sidebar-item" onclick="showSection('gesetz-wischer')" style="padding-left:28px"><span class="icon">🌧️</span> EU 2021/535 Ann.VI — Wischer</a>
       <a class="sidebar-item" onclick="showSection('gesetz-heizung')" style="padding-left:28px"><span class="icon">🔥</span> UN R122 — Heizung</a>
       <a class="sidebar-item" onclick="showSection('gesetz-r28')" style="padding-left:28px"><span class="icon">📯</span> UN R28 — Fanfare</a>
       <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🇺🇸 USA / FMVSS</a>
       <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss101')" style="padding-left:28px"><span class="icon">🖥️</span> FMVSS 101 — Controls</a>
+      <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss102')" style="padding-left:28px"><span class="icon">⚙️</span> FMVSS 102 — Transmission</a>
       <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss135')" style="padding-left:28px"><span class="icon">🛑</span> FMVSS 135 — Brakes</a>
       <a class="sidebar-item" onclick="showSection('gesetz-usa-fmvss139')" style="padding-left:28px"><span class="icon">⚙️</span> FMVSS 139 — Tires</a>
       <a class="sidebar-item" style="font-size:11px;padding:4px 20px;color:var(--text2)" onclick="">🇮🇳 Indien / AIS</a>
@@ -288,7 +305,7 @@
         <div class="module-card" style="--card-color:#f5a623" onclick="showSection('tpms')"><div class="module-card-header"><span class="module-card-icon">📡</span><h3>TPMS</h3></div><p>Direkt/indirekt, Schwellenwerte, Pflicht je Markt nach UN R141.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R141 · FMVSS 138</span><span class="tag">Interpretation + FAQ</span></div></div>
         <div class="module-card" style="--card-color:#f76f6f" onclick="showSection('notrad')"><div class="module-card-header"><span class="module-card-icon">🔧</span><h3>Notrad / Ersatzrad</h3></div><p>Space Saver, Runflat, Reparaturkit nach UN R64.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R64 · FMVSS 110</span><span class="tag">Interpretation + FAQ</span></div></div>
         <div class="module-card" style="--card-color:#c0392b" onclick="showSection('tacho')"><div class="module-card-header"><span class="module-card-icon">🔢</span><h3>Geschwindigkeitsmesser</h3></div><p>Toleranzformel, Einheit, Prüfmethoden nach UN R39.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R39 · FMVSS 101</span><span class="tag">Interpretation + FAQ</span></div></div>
-        <div class="module-card" style="--card-color:#e879a0" onclick="showSection('placeholder')"><div class="module-card-header"><span class="module-card-icon">🚦</span><h3>Geschwindigkeitsbegrenzer</h3></div><p>ISA, mechanische und elektronische Begrenzer, Einstellwerte.</p><div class="module-card-footer"><span class="tag placeholder">— geplant —</span></div></div>
+        <div class="module-card" style="--card-color:#e879a0" onclick="showSection('begrenzer')"><div class="module-card-header"><span class="module-card-icon">🚦</span><h3>Geschwindigkeitsbegrenzer &amp; ISA</h3></div><p>ISA nach GSR2, Begrenzer nach UN R89, Speed Alert, Einstellwerte in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R89 · EU 2021/1958</span><span class="tag">Interpretation + FAQ</span></div></div>
         <div class="module-card" style="--card-color:#e74c3c" onclick="showSection('bremse')"><div class="module-card-header"><span class="module-card-icon">🛑</span><h3>Bremse</h3></div><p>Betriebsbremse, ABS, AEB-Integration nach UN R13-H in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R13-H · FMVSS 135</span><span class="tag">Amendments</span></div></div>
         <div class="module-card" style="--card-color:#27ae60" onclick="showSection('getriebe')"><div class="module-card-header"><span class="module-card-icon">⚙️</span><h3>Getriebeschaltschema</h3></div><p>P-R-N-D Sequenz, Starter-Interlock nach FMVSS 102 vs. 9 Märkte.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">FMVSS 102 · GB 7258</span><span class="tag">Amendments</span></div></div>
         <div class="module-card" style="--card-color:#f39c12" onclick="showSection('licht')"><div class="module-card-header"><span class="module-card-icon">💡</span><h3>Beleuchtung</h3></div><p>Pflichtleuchten, DRL, ADB und Matrix-LED nach UN R48 in 9 Märkten.</p><div class="module-card-footer"><span class="tag">9 Märkte</span><span class="tag">UN R48 · FMVSS 108</span><span class="tag">ADB · DRL</span></div></div>
@@ -318,7 +335,51 @@
     <div id="section-grundlagen" style="display:none">
       <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Grundlagen</div>
       <div class="section-header"><div class="section-icon">📘</div><div><h2>Was ist Fahrzeughomologation?</h2><p>Grundlegendes Rahmenwerk für Typgenehmigungen weltweit.</p></div></div>
-      <div class="placeholder-box"><div class="ph-icon">📝</div><p>Inhalt folgt — UN WP.29-Rahmen, internationaler Kontext, Ablaufübersicht.</p></div>
+      <div class="callout"><span class="ci">ℹ️</span><span><strong>Homologation</strong> ist der Nachweis, dass ein Fahrzeug, System oder Bauteil die technischen Vorschriften eines Zielmarkts erfüllt – bevor es dort in Verkehr gebracht wird. Weltweit gibt es zwei Grundprinzipien: <strong>Typgenehmigung</strong> (Behörde prüft und genehmigt vorab) und <strong>Selbstzertifizierung</strong> (Hersteller bestätigt Konformität selbst, Behörde prüft stichprobenartig im Markt).</span></div>
+      <div class="module-grid">
+        <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🏛️</span><h3>Typgenehmigung</h3></div><p>Ein Technischer Dienst prüft das Fahrzeug bzw. Bauteil, die Genehmigungsbehörde erteilt die Genehmigung. Ohne Genehmigung kein Inverkehrbringen. Danach laufende Überwachung der Serie (COP).</p><div class="module-card-footer"><span class="tag">EU · UK · CN · JP · IN · BR · GCC</span></div></div>
+        <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">✍️</span><h3>Selbstzertifizierung</h3></div><p>Der Hersteller erklärt die Einhaltung (z. B. FMVSS) selbst und haftet dafür. Die Behörde kauft Fahrzeuge im Markt und prüft nach (Compliance Testing); Verstöße führen zu Rückrufen und Bußgeldern.</p><div class="module-card-footer"><span class="tag">USA · Kanada · Korea</span></div></div>
+        <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🤝</span><h3>Gegenseitige Anerkennung</h3></div><p>Über das UN-Übereinkommen von 1958 erkennen sich die Vertragsparteien Genehmigungen nach UN-Regelungen gegenseitig an – erkennbar am E-Zeichen. Ein Nachweis gilt so in vielen Märkten.</p><div class="module-card-footer"><span class="tag">UN 1958</span><span class="tag">E-Zeichen</span></div></div>
+      </div>
+      <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin:8px 0 12px">Das UN WP.29-Rahmenwerk</h3>
+      <table class="doc-table">
+        <thead><tr><th>Übereinkommen</th><th>Inhalt</th><th>Ergebnis</th><th>Wirkung</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1958</strong></td><td>Einheitliche technische Vorschriften und gegenseitige Anerkennung von Genehmigungen</td><td>UN-Regelungen (R1 … R170+)</td><td>Genehmigung einer Vertragspartei gilt bei allen, die die Regelung anwenden</td></tr>
+          <tr><td><strong>1998</strong></td><td>Globale technische Regelungen ohne Anerkennungspflicht</td><td>UN GTR (z. B. GTR 8 ESC, GTR 9 Fußgängerschutz)</td><td>Vertragsparteien übernehmen GTRs in nationales Recht – auch USA, China, Indien</td></tr>
+          <tr><td><strong>1997</strong></td><td>Periodische technische Überwachung im Betrieb</td><td>UN Rules (Hauptuntersuchung)</td><td>Gegenseitige Anerkennung von Prüfbescheinigungen</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px;color:var(--text2);margin:-8px 0 20px">Fachliche Arbeit in Arbeitsgruppen (GR): <strong>GRSG</strong> allgemeine Sicherheit · <strong>GRE</strong> Licht und Lichtsignal · <strong>GRVA</strong> automatisiertes Fahren, Bremse, Lenkung · <strong>GRBP</strong> Lärm und Reifen · <strong>GRPE</strong> Emissionen · <strong>GRSP</strong> passive Sicherheit.</p>
+      <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin-bottom:12px">Status der Märkte in den UN-Übereinkommen</h3>
+      <table class="doc-table">
+        <thead><tr><th>Markt</th><th>1958</th><th>1998</th><th>System</th></tr></thead>
+        <tbody>
+          <tr><td>🇪🇺 EU</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Typgenehmigung (VO (EU) 2018/858), UN-Regelungen verbindlich</td></tr>
+          <tr><td>🇬🇧 UK</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>GB-Typgenehmigung (VCA)</td></tr>
+          <tr><td>🇯🇵 Japan</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Typbestimmung (MLIT), viele UN-Regelungen übernommen</td></tr>
+          <tr><td>🇰🇷 Korea</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Selbstzertifizierung nach KMVSS</td></tr>
+          <tr><td>🇺🇸 USA</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Selbstzertifizierung nach FMVSS</td></tr>
+          <tr><td>🇨🇳 China</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>CCC + MIIT-Produktzulassung, GB-Normen (oft ECE-nah)</td></tr>
+          <tr><td>🇮🇳 Indien</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td>Typgenehmigung nach CMVR (ARAI, ICAT), AIS-Normen</td></tr>
+          <tr><td>🇧🇷 Brasilien</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td>CAT-Zertifikat (SENATRAN) nach CONTRAN-Resolutionen</td></tr>
+          <tr><td>🇦🇪 Golf-Staaten</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td>GSO-Normen, Konformitätsnachweis; ECE- oder US-Nachweise werden akzeptiert</td></tr>
+        </tbody>
+      </table>
+      <div style="font-size:12px;color:var(--text2);margin:-8px 0 20px">Stand der Vertragsparteien vor Projektverwendung gegen die UNECE-Statusliste (ECE/TRANS/WP.29/343) prüfen.</div>
+      <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);margin-bottom:12px">Typischer Ablauf einer EU-Gesamtfahrzeug-Typgenehmigung</h3>
+      <table class="doc-table">
+        <thead><tr><th>#</th><th>Schritt</th><th>Wer</th><th>Ergebnis</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Genehmigungsplanung: Vorschriftenliste, Typ-/Variantenstruktur, Fristen</td><td>Hersteller</td><td>Homologationsplan</td></tr>
+          <tr><td>2</td><td>Erstbewertung des Qualitätssystems (COP)</td><td>Behörde / Technischer Dienst</td><td>COP-Bescheinigung</td></tr>
+          <tr><td>3</td><td>Bauteil- und Systemgenehmigungen (UN-Regelungen)</td><td>Technischer Dienst (Witness) + Behörde</td><td>Prüfberichte, Genehmigungen mit E-Zeichen</td></tr>
+          <tr><td>4</td><td>Beschreibungsbogen / Informationsmappe</td><td>Hersteller</td><td>Beschreibungsunterlagen</td></tr>
+          <tr><td>5</td><td>Gesamtfahrzeug-Genehmigung</td><td>Genehmigungsbehörde (z. B. KBA)</td><td>EU-Typgenehmigungsbogen</td></tr>
+          <tr><td>6</td><td>Serienproduktion mit Konformitätsbescheinigung</td><td>Hersteller</td><td>CoC je Fahrzeug → Zulassung</td></tr>
+          <tr><td>7</td><td>Laufende Überwachung: COP-Audits, Marktüberwachung, Nachträge</td><td>Behörde, Marktüberwachung</td><td>Erweiterungen, ggf. Rückrufe</td></tr>
+        </tbody>
+      </table>
     </div>
     <div id="section-genehmigungsarten" style="display:none">
       <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Genehmigungsarten</div>
@@ -344,12 +405,72 @@
     <div id="section-modul1" style="display:none">
       <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> PKW Homologation</div>
       <div class="section-header"><div class="section-icon">🚗</div><div><h2>PKW Homologation</h2><p>Gesamtfahrzeug-Genehmigungsprozesse und Grundlagen.</p></div></div>
-      <div class="placeholder-box"><div class="ph-icon">📝</div><p>Inhalt folgt — Originalvorschriften, Interpretationen und historische Entwicklung je Markt.</p></div>
+      <div class="callout"><span class="ci">ℹ️</span><span>Die Gesamtfahrzeug-Genehmigung bündelt alle Einzelvorschriften (Bremse, Licht, Reifen …) zu einer Freigabe für das Inverkehrbringen. Die Themenmodule dieses Portals beschreiben die Einzelvorschriften; hier steht der Rahmen je Markt.</span></div>
+      <table class="doc-table">
+        <thead><tr><th>Markt</th><th>Verfahren</th><th>Rechtsgrundlage</th><th>Behörde / Prüfstelle</th><th>Nachweis</th></tr></thead>
+        <tbody>
+          <tr><td>🇪🇺 EU</td><td>EU-Gesamtfahrzeug-Typgenehmigung (WVTA); daneben Kleinserie und Einzelgenehmigung</td><td><a href="https://eur-lex.europa.eu/eli/reg/2018/858/oj" target="_blank" class="reg-link">VO (EU) 2018/858 ↗</a> · <a href="https://eur-lex.europa.eu/eli/reg/2019/2144/oj" target="_blank" class="reg-link">VO (EU) 2019/2144 (GSR) ↗</a></td><td>Nationale Behörde (z. B. KBA) + Technische Dienste</td><td>Typgenehmigung, CoC</td></tr>
+          <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung (vorher EU-Genehmigung)</td><td>Road Vehicles (Approval) Regulations 2020</td><td>VCA (DVSA)</td><td>GB-Genehmigung, GB-CoC</td></tr>
+          <tr><td>🇺🇸 USA</td><td>Selbstzertifizierung, keine Vorab-Genehmigung</td><td><a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-571" target="_blank" class="reg-link">49 CFR 571 (FMVSS) ↗</a> · Part 565/566/567 · EPA/CARB für Emissionen</td><td>NHTSA (Kontrolle im Markt)</td><td>Zertifizierungsetikett (Part 567)</td></tr>
+          <tr><td>🇨🇳 China</td><td>MIIT-Produktzulassung + CCC-Zertifizierung</td><td>GB 7258 und GB-Pflichtnormen, CCC-Durchführungsregeln</td><td>MIIT, CNCA, Prüfinstitute (z. B. CATARC)</td><td>MIIT-Ankündigung, CCC-Zeichen</td></tr>
+          <tr><td>🇯🇵 Japan</td><td>Typbestimmung (型式指定), daneben Typmeldung für Kleinserien</td><td>Straßenverkehrsfahrzeuggesetz, Safety Regulations; UN R0 (IWVTA)</td><td>MLIT, NTSEL</td><td>Typbestimmung, Fertigstellungsbescheinigung</td></tr>
+          <tr><td>🇰🇷 Korea</td><td>Selbstzertifizierung</td><td>KMVSS (자동차안전기준)</td><td>MOLIT, Prüfung durch KATRI (TS)</td><td>Selbstzertifizierungs-Meldung</td></tr>
+          <tr><td>🇮🇳 Indien</td><td>Typgenehmigung, COP-Prüfung</td><td>CMVR (insb. Rule 126), AIS-/IS-Normen</td><td>MoRTH; Prüfstellen ARAI, ICAT, GARC</td><td>Typgenehmigungszertifikat</td></tr>
+          <tr><td>🇧🇷 Brasilien</td><td>Zertifikat für die Straßenverkehrstauglichkeit (CAT)</td><td>CTB, CONTRAN-Resolutionen, PROCONVE (Emissionen)</td><td>SENATRAN; INMETRO für Bauteile; IBAMA für Emissionen</td><td>CAT, LCVM (Emissionen)</td></tr>
+          <tr><td>🇦🇪 Golf-Staaten</td><td>Konformitätsnachweis gegen GSO-Normen, Registrierung je Land</td><td>GSO-Fahrzeugnormen</td><td>GSO; national z. B. SASO (KSA), MoIAT (VAE)</td><td>GCC-Konformitätszertifikat</td></tr>
+        </tbody>
+      </table>
+      <div class="module-grid">
+        <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🧩</span><h3>Typ · Variante · Version</h3></div><p>Die EU-Genehmigung beschreibt eine Typ-Hierarchie: Fahrzeugtyp → Varianten (z. B. Karosserie, Antrieb) → Versionen (Motorisierung, Ausstattung). Was als neuer Typ gilt, legt Anhang I der VO 2018/858 fest; Typabgrenzungen der Einzelvorschriften stehen im jeweiligen Modul-Tab.</p><div class="module-card-footer"><span class="tag">VO 2018/858 Anh. I</span></div></div>
+        <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🔄</span><h3>Nachträge &amp; Erweiterungen</h3></div><p>Änderungen am genehmigten Fahrzeug werden als Nachtrag zur bestehenden Genehmigung beantragt – mit oder ohne neue Prüfung. Neue Änderungsserien einer Vorschrift können eine Neugenehmigung erzwingen, sobald Übergangsfristen enden.</p><div class="module-card-footer"><span class="tag">Revision / Extension</span></div></div>
+        <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">📅</span><h3>Fristen GSR2 (EU)</h3></div><p>VO (EU) 2019/2144 gilt in Stufen: neue Typen ab 06.07.2022, alle Neuzulassungen ab 07.07.2024; weitere Stufen bis 2029 (u. a. erweiterte Notbremsassistenz, Fahrerablenkungswarnung).</p><div class="module-card-footer"><span class="tag">2022 · 2024 · 2026 · 2029</span></div></div>
+        <div class="module-card" style="--card-color:#f76f6f"><div class="module-card-header"><span class="module-card-icon">🔍</span><h3>Marktüberwachung</h3></div><p>Seit VO 2018/858 prüfen Behörden Fahrzeuge aus dem Markt nach (in der EU mind. 1 Prüfung je 40.000 Neuzulassungen des Vorjahres). Die EU-Kommission kann selbst prüfen und Bußgelder bis 30.000 € je nicht konformem Fahrzeug verhängen.</p><div class="module-card-footer"><span class="tag">Art. 8 / Art. 9 VO 2018/858</span></div></div>
+      </div>
+      <div class="faq-section">
+        <div class="faq-header">Häufige Fragen (FAQ)<a class="faq-submit" href="mailto:info@homolobase.de?subject=FAQ-Frage%3A%20PKW%20Homologation">+ Frage einreichen</a></div>
+        <details><summary>Reicht eine EU-Typgenehmigung für den Export in andere Märkte?</summary><div class="details-body"><p>Nur teilweise. Märkte des 1958-Übereinkommens (UK, Japan, Korea u. a.) erkennen Genehmigungen nach UN-Regelungen an, verlangen aber zusätzlich nationale Anforderungen. USA, China, Indien und Brasilien haben eigene Verfahren; die UN-Prüfberichte helfen dort nur als technische Grundlage.</p></div></details>
+        <details><summary>Was ist der Unterschied zwischen IWVTA und EU-WVTA?</summary><div class="details-body"><p>Die IWVTA (UN R0) ist eine internationale Gesamtfahrzeug-Genehmigung auf UN-Ebene. Sie deckt nur einen Teil der Vorschriften ab, die eine nationale Gesamtfahrzeug-Genehmigung verlangt, und ersetzt die EU-WVTA nicht. Sie vereinfacht aber die Anerkennung zwischen den Vertragsparteien.</p></div></details>
+        <details><summary>Wann ist eine Einzelgenehmigung sinnvoll?</summary><div class="details-body"><p>Für Einzelfahrzeuge, Prototypen im Straßenverkehr oder Kleinstmengen. Die Prüfung erfolgt am konkreten Fahrzeug (in Deutschland §21 StVZO bzw. EU-Einzelgenehmigung nach Art. 44 VO 2018/858). Für Serien ist sie wirtschaftlich nicht sinnvoll.</p></div></details>
+      </div>
     </div>
     <div id="section-glossar" style="display:none">
       <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Glossar</div>
       <div class="section-header"><div class="section-icon">📖</div><div><h2>Glossar</h2><p>Schlüsselbegriffe der Fahrzeughomologation.</p></div></div>
-      <div class="placeholder-box"><div class="ph-icon">📝</div><p>Inhalt folgt — WVTA, CoC, E-Zeichen, COP, TA etc.</p></div>
+      <div class="callout"><span class="ci">💡</span><span>Tipp: Die Suche oben rechts findet Begriffe auch in allen Modulen.</span></div>
+      <table class="doc-table"><thead><tr><th style="width:28%">Begriff</th><th>Erklärung</th></tr></thead><tbody>
+        <tr><td><strong>ABE</strong></td><td>Allgemeine Betriebserlaubnis (DE) – nationale Genehmigung für Fahrzeugteile oder Fahrzeuge nach StVZO.</td></tr>
+        <tr><td><strong>Änderungsserie (Series of Amendments)</strong></td><td>Inhaltliche Fortschreibung einer UN-Regelung (z. B. „01-Serie“). Ändert in der Regel Anforderungen und Fristen; die Genehmigungsnummer enthält die Serie.</td></tr>
+        <tr><td><strong>Ergänzung (Supplement)</strong></td><td>Kleinere Änderung einer UN-Regelung ohne neue Serie; bestehende Genehmigungen bleiben gültig.</td></tr>
+        <tr><td><strong>Übergangsbestimmungen</strong></td><td>Fristen in UN-Regelungen und EU-Verordnungen, ab wann neue Anforderungen für neue Typen bzw. alle Neuzulassungen gelten.</td></tr>
+        <tr><td><strong>CCC</strong></td><td>China Compulsory Certification – Pflichtzertifizierung für Fahrzeuge und geregelte Bauteile in China (CNCA).</td></tr>
+        <tr><td><strong>CMVR</strong></td><td>Central Motor Vehicles Rules – zentrales Fahrzeugrecht Indiens; technische Details in AIS-Normen.</td></tr>
+        <tr><td><strong>CoC</strong></td><td>Certificate of Conformity – Übereinstimmungsbescheinigung je Fahrzeug, Grundlage der Zulassung in der EU.</td></tr>
+        <tr><td><strong>COP</strong></td><td>Conformity of Production – Nachweis, dass die Serie dem genehmigten Typ entspricht (Erstbewertung + laufende Audits).</td></tr>
+        <tr><td><strong>E-Zeichen / e-Zeichen</strong></td><td>Genehmigungszeichen nach UN-Regelung (E im Kreis, Ländernummer, z. B. E1 = Deutschland) bzw. nach EU-Recht (e im Rechteck).</td></tr>
+        <tr><td><strong>Einzelgenehmigung</strong></td><td>Genehmigung eines einzelnen Fahrzeugs (EU: Art. 44 VO 2018/858, DE: §21 StVZO).</td></tr>
+        <tr><td><strong>FMVSS</strong></td><td>Federal Motor Vehicle Safety Standards – US-Sicherheitsstandards in 49 CFR 571; der Hersteller zertifiziert selbst.</td></tr>
+        <tr><td><strong>GB / GB/T</strong></td><td>Chinesische Normen: GB = verpflichtend, GB/T = empfohlen.</td></tr>
+        <tr><td><strong>GSR / GSR2</strong></td><td>General Safety Regulation – VO (EU) 2019/2144, macht u. a. UN-Regelungen und Fahrerassistenzsysteme verpflichtend.</td></tr>
+        <tr><td><strong>GTR</strong></td><td>Global Technical Regulation nach dem UN-Übereinkommen von 1998; ohne gegenseitige Anerkennung.</td></tr>
+        <tr><td><strong>ISA</strong></td><td>Intelligenter Geschwindigkeitsassistent – erkennt das Tempolimit und warnt bzw. regelt; EU-Pflicht nach GSR2.</td></tr>
+        <tr><td><strong>IWVTA</strong></td><td>International Whole Vehicle Type Approval nach UN R0.</td></tr>
+        <tr><td><strong>KBA</strong></td><td>Kraftfahrt-Bundesamt – deutsche Genehmigungsbehörde (Ländernummer E1/e1).</td></tr>
+        <tr><td><strong>KMVSS</strong></td><td>Korea Motor Vehicle Safety Standards; Grundlage der koreanischen Selbstzertifizierung.</td></tr>
+        <tr><td><strong>Kleinserie</strong></td><td>Genehmigung mit erleichterten Anforderungen für begrenzte Stückzahlen (EU: Art. 41/42 VO 2018/858).</td></tr>
+        <tr><td><strong>Marktüberwachung</strong></td><td>Nachprüfung von Fahrzeugen und Bauteilen aus dem Markt durch Behörden bzw. die EU-Kommission.</td></tr>
+        <tr><td><strong>Nachtrag / Erweiterung</strong></td><td>Änderung einer bestehenden Genehmigung (Revision ohne, Extension mit neuer Prüfung).</td></tr>
+        <tr><td><strong>NHTSA</strong></td><td>National Highway Traffic Safety Administration – US-Behörde für Fahrzeugsicherheit, Rückrufe und FMVSS.</td></tr>
+        <tr><td><strong>Prüfbericht</strong></td><td>Dokument des Technischen Dienstes über die Prüfung nach einer Vorschrift; Grundlage der Genehmigung.</td></tr>
+        <tr><td><strong>Selbstzertifizierung</strong></td><td>Der Hersteller bestätigt die Einhaltung selbst (USA, Kanada, Korea); die Behörde kontrolliert im Markt.</td></tr>
+        <tr><td><strong>STU / Selbstständige technische Einheit</strong></td><td>Bauteil, das unabhängig vom Fahrzeug genehmigt wird, aber nur an bestimmten Fahrzeugen verwendet werden darf.</td></tr>
+        <tr><td><strong>Technischer Dienst</strong></td><td>Von der Behörde benannte Prüfstelle (z. B. TÜV, DEKRA, UTAC, IDIADA), die Prüfungen durchführt oder bezeugt.</td></tr>
+        <tr><td><strong>Typ</strong></td><td>Fahrzeuge bzw. Bauteile, die sich in den typabgrenzenden Merkmalen einer Vorschrift nicht unterscheiden.</td></tr>
+        <tr><td><strong>Typgenehmigung</strong></td><td>Behördliche Bestätigung, dass ein Typ die Vorschriften erfüllt.</td></tr>
+        <tr><td><strong>Variante / Version</strong></td><td>Untergliederung eines Fahrzeugtyps in der EU-Genehmigung (Typ → Variante → Version).</td></tr>
+        <tr><td><strong>Witness-Test</strong></td><td>Prüfung beim Hersteller oder Lieferanten, die ein Technischer Dienst überwacht und bezeugt.</td></tr>
+        <tr><td><strong>WP.29</strong></td><td>World Forum for Harmonization of Vehicle Regulations der UNECE in Genf; verwaltet die UN-Übereinkommen von 1958, 1997 und 1998.</td></tr>
+        <tr><td><strong>WVTA</strong></td><td>Whole Vehicle Type Approval – Gesamtfahrzeug-Typgenehmigung.</td></tr>
+      </tbody></table>
     </div>
     <div id="section-placeholder" style="display:none">
       <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> …</div>
@@ -368,7 +489,8 @@ const MODULES = ['reifen','tpms','notrad','anzeige','tacho','bremse','getriebe',
   'markt-eceu','markt-usa','markt-cn','markt-br','markt-jp','markt-kr','markt-gcc','markt-uk','markt-in',
   'gesetz-r121','gesetz-r30','gesetz-r13h','gesetz-r39',
   'gesetz-usa-fmvss101','gesetz-usa-fmvss135','gesetz-usa-fmvss139','gesetz-in-ais039','gesetz-in-ais099',
-  'entfrostung','wischer','heizung','gesetz-entfrostung','gesetz-wischer','gesetz-heizung','fanfare','gesetz-r28','upload'];
+  'entfrostung','wischer','heizung','gesetz-entfrostung','gesetz-wischer','gesetz-heizung','fanfare','gesetz-r28',
+  'begrenzer','gesetz-r48','gesetz-r64','gesetz-r89','gesetz-r141','gesetz-usa-fmvss102','upload'];
 const INLINE = ['home','grundlagen','genehmigungsarten','maerkte','modul1','glossar','placeholder'];
 let currentSection = 'home';
 
@@ -402,6 +524,7 @@ async function showSection(id) {
         document.head.appendChild(s);
         old.remove();
       });
+      mc.querySelectorAll('.reg-docs-btn.ghost[onclick^="loadRegDocs"]').forEach(b=>b.click());
     } catch(e) {
       mc.innerHTML = '<div class="placeholder-box"><div class="ph-icon">⚠️</div><p>Modul <strong>'+id+'</strong> konnte nicht geladen werden.</p></div>';
     }
@@ -437,9 +560,54 @@ function switchTab(module, tab) {
   }
 }
 
-function searchContent(q) {
-  // Basic: highlight or filter — placeholder for future implementation
+/* ===== VOLLTEXTSUCHE ===== */
+let _searchIdx=null,_searchTimer=null;
+function _esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function _reEsc(s){return s.replace(/[.*+?^$(){}|[\]\\]/g,'\\$&');}
+function _txt(doc){doc.querySelectorAll('script,style').forEach(e=>e.remove());return (doc.body?doc.body.textContent:'').replace(/\s+/g,' ').trim();}
+async function buildSearchIndex(){
+  if(_searchIdx)return _searchIdx;
+  const items=[];
+  INLINE.filter(id=>id!=='placeholder').forEach(id=>{
+    const el=document.getElementById('section-'+id); if(!el)return;
+    const doc=new DOMParser().parseFromString(el.innerHTML,'text/html');
+    const h=doc.querySelector('h2'); items.push({id,title:h?h.textContent.trim():id,text:_txt(doc)});
+  });
+  const mods=await Promise.all(MODULES.filter(m=>m!=='upload').map(async id=>{
+    try{const r=await fetch('modules/'+id+'.html');if(!r.ok)return null;
+      const doc=new DOMParser().parseFromString(await r.text(),'text/html');
+      const h=doc.querySelector('h2');return {id,title:h?h.textContent.trim():id,text:_txt(doc)};}catch(e){return null;}
+  }));
+  _searchIdx=items.concat(mods.filter(Boolean));
+  return _searchIdx;
 }
+function searchContent(q){
+  clearTimeout(_searchTimer);
+  const box=document.getElementById('search-results');
+  q=(q||'').trim();
+  if(q.length<2){box.style.display='none';box.innerHTML='';return;}
+  _searchTimer=setTimeout(async()=>{
+    box.style.display='block';
+    if(!_searchIdx)box.innerHTML='<div class="sr-empty">Durchsuche alle Module …</div>';
+    const idx=await buildSearchIndex();
+    const terms=q.toLowerCase().split(/\s+/).filter(Boolean);
+    const hits=[];
+    for(const it of idx){
+      const low=it.text.toLowerCase();
+      if(!terms.every(x=>low.includes(x)))continue;
+      let score=0;terms.forEach(x=>{let i=-1;while((i=low.indexOf(x,i+1))>=0)score++;if(it.title.toLowerCase().includes(x))score+=20;});
+      const pos=low.indexOf(terms[0]),s=Math.max(0,pos-70);
+      hits.push({...it,score,snip:(s>0?'… ':'')+it.text.slice(s,pos+130)+' …'});
+    }
+    hits.sort((a,b)=>b.score-a.score);
+    const re=new RegExp('('+terms.map(x=>_reEsc(_esc(x))).join('|')+')','gi');
+    box.innerHTML=hits.length?hits.slice(0,15).map(h=>'<div class="sr-item" onclick="searchOpen(\''+h.id+'\')"><div class="sr-title">'+_esc(h.title)+'</div><div class="sr-snip">'+_esc(h.snip).replace(re,'<mark>$1</mark>')+'</div></div>').join('')
+      :'<div class="sr-empty">Keine Treffer für „'+_esc(q)+'“.</div>';
+  },200);
+}
+function searchOpen(id){document.getElementById('search-results').style.display='none';showSection(id);}
+document.addEventListener('click',e=>{if(!e.target.closest('.nav-search')){const b=document.getElementById('search-results');if(b)b.style.display='none';}});
+/* ===== ENDE VOLLTEXTSUCHE ===== */
 
 /* ===== UPLOAD MODULE ===== */
 const GH_OWNER='Andiagepoint-ops',GH_REPO='Andreas-Henneberger',GH_BRANCH='main';
@@ -532,11 +700,11 @@ async function uploadFile(){
       {method:'PUT',headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github+json'},body:JSON.stringify(body)});
     if(bar)bar.style.width='100%';
     if(res.ok){
-      const rawUrl=`https://andiagepoint-ops.github.io/Andreas-Henneberger/${path}`;
+      const rawUrl=siteUrl(path);
       const result=document.getElementById('upload-result');
       if(result){
         result.className='upload-result ok';
-        result.innerHTML=`✅ <strong>Hochgeladen!</strong><br>Link: <a href="${rawUrl}" target="_blank">${rawUrl}</a> <span class="copy-btn" onclick="navigator.clipboard.writeText('${rawUrl}');this.textContent='✓'">Link kopieren</span>`;
+        result.innerHTML=`✅ <strong>Hochgeladen!</strong> Abrufbar nach dem automatischen Deploy (ca. 1 Min.).<br>Link: <a href="${rawUrl}" target="_blank">${rawUrl}</a> <span class="copy-btn" onclick="navigator.clipboard.writeText('${rawUrl}');this.textContent='✓'">Link kopieren</span>`;
         result.style.display='';
       }
       uploadClearFile();
@@ -562,7 +730,7 @@ async function uploadLoadFileList(){
     const files=await res.json();
     if(!Array.isArray(files)||!files.length){el.textContent='Noch keine Dateien.';return;}
     el.innerHTML=files.filter(f=>f.type==='file').map(f=>{
-      const url=`https://andiagepoint-ops.github.io/Andreas-Henneberger/downloads/${f.name}`;
+      const url=siteUrl('downloads/'+f.name);
       return `<div class="file-list-item"><span>📄</span><a href="${url}" target="_blank">${f.name}</a><span class="copy-btn" onclick="navigator.clipboard.writeText('${url}');this.textContent='✓';setTimeout(()=>this.textContent='Kopieren',1500)">Kopieren</span></div>`;
     }).join('');
   }catch(e){el.textContent='Fehler: '+e.message;}
@@ -578,6 +746,15 @@ function uploadInit(){
 /* ===== END UPLOAD MODULE ===== */
 
 /* ===== REGULATION DOCS ===== */
+function siteUrl(p){return new URL(p, location.origin+'/').href;}
+function toggleRegPdf(btn){
+  const url=btn.dataset.url, box=btn.closest('.reg-docs-box');
+  let fr=box.querySelector('iframe.reg-doc-viewer');
+  box.querySelectorAll('.reg-doc-row button').forEach(b=>b.textContent='👁 Anzeigen');
+  if(fr&&fr.dataset.src===url){fr.remove();return;}
+  if(!fr){fr=document.createElement('iframe');fr.className='reg-doc-viewer';box.appendChild(fr);}
+  fr.src=url;fr.dataset.src=url;btn.textContent='✕ Schließen';
+}
 async function loadRegDocs(subfolder, containerId) {
   const el = document.getElementById(containerId);
   if (!el) return;
@@ -589,9 +766,9 @@ async function loadRegDocs(subfolder, containerId) {
     const files = (await res.json()).filter(f => f.type === 'file' && !f.name.startsWith('.'));
     if (!files.length) { el.innerHTML = '<span class="reg-docs-empty">Noch keine Dokumente hochgeladen.</span>'; return; }
     el.innerHTML = files.map(f => {
-      const url = `https://andiagepoint-ops.github.io/Andreas-Henneberger/downloads/${subfolder}/${f.name}`;
+      const url = siteUrl('downloads/'+subfolder+'/'+f.name);
       const ext = f.name.split('.').pop().toUpperCase();
-      return `<a href="${url}" target="_blank" class="reg-doc-item"><span class="reg-doc-icon">📄</span><span class="reg-doc-name">${f.name}</span><span class="reg-doc-badge">${ext}</span></a>`;
+      return `<div class="reg-doc-row"><a href="${url}" target="_blank" class="reg-doc-item"><span class="reg-doc-icon">📄</span><span class="reg-doc-name">${f.name}</span><span class="reg-doc-badge">${ext}</span></a>${ext==='PDF'?`<button class="reg-docs-btn ghost" data-url="${url}" onclick="toggleRegPdf(this)">👁 Anzeigen</button>`:''}</div>`;
     }).join('');
   } catch(e) { el.innerHTML = `<span class="reg-docs-empty">Fehler: ${e.message}</span>`; }
 }
