@@ -1,7 +1,7 @@
 <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Fahrerassistenz (ADAS)</div>
 <div class="section-header">
   <div class="section-icon" style="background:rgba(142,68,173,.12);border-color:rgba(142,68,173,.3)">🎯</div>
-  <div><h2>Modul — Fahrerassistenz (Notbremse, Spurhaltung, Lenkung)</h2><p>UN R152 · R79 · R130 · R157 · R171 · VO (EU) 2019/2144 · FMVSS 127 · GB 39901 und marktspezifische Äquivalente. AEB, Spurhalte- und Lenkassistenz, Müdigkeits- und Ablenkungswarnung in 9 Märkten.</p></div>
+  <div><h2>Modul — Fahrerassistenz (Notbremse, Spurhaltung, Lenkung)</h2><p>UN R152 · R79 · R130 · R157 · R171 · VO (EU) 2019/2144 · FMVSS 127 · GB 39901 und marktspezifische Äquivalente. AEB, Spurhalte- und Lenkassistenz, Müdigkeits- und Ablenkungswarnung in 10 Märkten.</p></div>
 </div>
 <div class="tabs" id="adas-tabs">
   <div class="tab active" onclick="switchTab('adas','vorschriften')">📄 Vorschriften</div>
@@ -26,6 +26,7 @@
       <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resoluções ↗</a></td><td>Keine allgemeine AEB-Pflicht für PKW bekannt</td><td>Keine eigene Regelung bekannt</td><td>Stand ausdrücklich prüfen (Latin NCAP treibt Ausstattung)</td></tr>
       <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung (UN-Regelungen) · retained <a href="https://www.legislation.gov.uk/eur/2019/2144" target="_blank" class="reg-link">VO 2019/2144 ↗</a> widerrufen durch <a href="https://www.legislation.gov.uk/uksi/2022/1273/regulation/84" target="_blank" class="reg-link">SI 2022/1273 reg. 84 ↗</a></td><td>UN R152 als Prüfgrundlage</td><td>UN R79 / R157 / R171</td><td>Umfang der GB-Einbaupflichten (GSR2-Äquivalent) prüfen</td></tr>
       <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Normen ↗</a> (UN-/FMVSS-Nachweise)</td><td>Keine eigenständige AEB-Pflicht bekannt</td><td>Keine eigenständige Regelung bekannt</td><td>Akzeptanz von UN- bzw. US-Nachweisen; Stand prüfen</td></tr>
+      <tr><td>🇸🇦 Saudi-Arabien</td><td><a href="https://www.saso.gov.sa/" target="_blank" class="reg-link">SASO-Techn. Regelungen (GSO-Basis) ↗</a> (UN-/FMVSS-Nachweise)</td><td>Keine eigenständige AEB-Pflicht bekannt</td><td>Keine eigenständige Regelung bekannt</td><td>Konformität über SABER; Stand prüfen</td></tr>
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-185 ↗</a> (über <a href="https://www.araiindia.com/" target="_blank" class="reg-link">ARAI ↗</a>)</td><td>ADAS-Anforderungen nach AIS-185 (UN-basiert)</td><td>Lt. AIS-185</td><td>Inhalt, Umfang und Pflichttermine per MoRTH-Notifikation prüfen</td></tr>
     </tbody>
   </table>
@@ -101,7 +102,7 @@
 <div id="adas-tab-vergleich" style="display:none">
   <div class="callout"><span class="ci">📊</span><span>Geringe Harmonisierung: Die EU schreibt das breiteste Paket vor, die USA regeln nur AEB (FMVSS 127, eigene Prüflogik), China zieht mit GB 39901-2025 ab 2028 nach. Lenk- und Level-2/3-Funktionen sind fast nur über UN-Regelungen erfasst.</span></div>
   <table class="doc-table">
-    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>IN</th><th>Rest (BR, GCC)</th></tr></thead>
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>IN</th><th>Rest (BR, GCC, KSA)</th></tr></thead>
     <tbody>
       <tr><td>Basis AEB</td><td>R152 / 2019/2144</td><td>FMVSS 127</td><td>GB 39901-2025</td><td>R152</td><td>KMVSS</td><td>AIS-185</td><td>—</td></tr>
       <tr><td>AEB Fahrzeug Pflicht</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 09/2029</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠ ab 01/2028</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>

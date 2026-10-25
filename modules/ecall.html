@@ -1,7 +1,7 @@
 <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> eCall / Notrufsystem</div>
 <div class="section-header">
   <div class="section-icon" style="background:rgba(192,57,43,.12);border-color:rgba(192,57,43,.3)">🆘</div>
-  <div><h2>Modul — eCall / Notrufsystem (AECS)</h2><p>VO (EU) 2015/758 · DelVO 2017/79 · DelVO 2024/1180 und 2025/1871 (NG-eCall) · UN R144 · AIS-140. Automatischer Unfallnotruf, Mindestdatensatz und Umstieg auf 4G/5G in 9 Märkten.</p></div>
+  <div><h2>Modul — eCall / Notrufsystem (AECS)</h2><p>VO (EU) 2015/758 · DelVO 2017/79 · DelVO 2024/1180 und 2025/1871 (NG-eCall) · UN R144 · AIS-140. Automatischer Unfallnotruf, Mindestdatensatz und Umstieg auf 4G/5G in 10 Märkten.</p></div>
 </div>
 <div class="tabs" id="ecall-tabs">
   <div class="tab active" onclick="switchTab('ecall','vorschriften')">📄 Vorschriften</div>
@@ -26,6 +26,7 @@
       <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resolutionen ↗</a></td><td>Keine eCall-Pflicht bekannt</td><td>—</td><td>Stand vor Projektverwendung prüfen</td></tr>
       <tr><td>🇬🇧 UK</td><td><a href="https://www.legislation.gov.uk/eur/2015/758" target="_blank" class="reg-link">Assimilated VO (EU) 2015/758 ↗</a> · geändert durch <a href="https://www.legislation.gov.uk/uksi/2025/661" target="_blank" class="reg-link">S.I. 2025/661 ↗</a></td><td>Ja – neue Typen M1/N1 (GB-Typgenehmigung); Ausnahmen wie EU, zusätzlich Mittelserien</td><td>Wie EU; Normenliste Art. 5(8): EN 16072:2025, CEN/TS 17184:2022 <em>oder</em> EN 17184:2024, CEN/TS 17240:2018 <em>oder</em> EN 17240:2024, EN 15722:2020</td><td>Leitungsvermittelte Normen für neue Typen bis 31.12.2025; CoC rein leitungsvermittelter Fahrzeuge ab 01.01.2027 ungültig</td></tr>
       <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a></td><td>Keine harmonisierte GSO-Pflicht bekannt; Einzelstaaten (insb. VAE, KSA) prüfen</td><td>—</td><td>Stand je Mitgliedstaat vor Projektverwendung prüfen</td></tr>
+      <tr><td>🇸🇦 Saudi-Arabien</td><td><a href="https://www.saso.gov.sa/" target="_blank" class="reg-link">SASO/GSO ↗</a></td><td>Keine eCall-Pflicht bekannt</td><td>—</td><td>Stand vor Projektverwendung prüfen</td></tr>
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR · AIS-140 ↗</a></td><td>PKW (privat): keine eCall-Pflicht. Öffentliche Personenverkehrsfahrzeuge (Busse, Taxis): Ortungsgerät (VLT) mit Notruftaste(n) nach AIS-140</td><td>VLT mit GNSS (inkl. NavIC/IRNSS) und Mobilfunk, Anbindung an Leitstellen der Bundesstaaten – kein Crash-getriggerter Notruf</td><td>Notifikation und Anwendungsbeginn vor Projektverwendung gegen den Originaltext prüfen</td></tr>
     </tbody>
   </table>
@@ -114,7 +115,7 @@
 <div id="ecall-tab-vergleich" style="display:none">
   <div class="callout"><span class="ci">📊</span><span>Geringe Harmonisierung: Pflicht-eCall für PKW nur in EU und UK (ERA-GLONASS außerhalb der Übersicht). China führt nach Kenntnisstand eine eigene Norm ein, Indien regelt den öffentlichen Personenverkehr, die übrigen Märkte setzen auf freiwillige Telematik.</span></div>
   <table class="doc-table">
-    <thead><tr><th>Kriterium</th><th>EU</th><th>UK</th><th>USA</th><th>CN</th><th>JP / KR</th><th>BR / GCC</th><th>IN</th></tr></thead>
+    <thead><tr><th>Kriterium</th><th>EU</th><th>UK</th><th>USA</th><th>CN</th><th>JP / KR</th><th>BR / GCC / KSA</th><th>IN</th></tr></thead>
     <tbody>
       <tr><td>Basis</td><td>VO 2015/758 + DelVO 2017/79</td><td>assim. 2015/758</td><td>—</td><td>GB 45086.1 (prüfen)</td><td>— (R144 möglich)</td><td>—</td><td>AIS-140</td></tr>
       <tr><td>Pflicht PKW (M1)</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td></tr>

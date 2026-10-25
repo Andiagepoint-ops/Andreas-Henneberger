@@ -16,7 +16,7 @@
 <div id="gen-out"></div>
 <script>
 (function(){
-  const MK=[['🇪🇺','EU'],['🇺🇸','USA'],['🇨🇳','China'],['🇯🇵','Japan'],['🇰🇷','Korea'],['🇧🇷','Brasilien'],['🇬🇧','UK'],['🇦🇪','Golf-Staaten'],['🇮🇳','Indien']];
+  const MK=[['🇪🇺','EU'],['🇺🇸','USA'],['🇨🇳','China'],['🇯🇵','Japan'],['🇰🇷','Korea'],['🇧🇷','Brasilien'],['🇬🇧','UK'],['🇦🇪','Golf-Staaten'],['🇸🇦','Saudi-Arabien'],['🇮🇳','Indien']];
   const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const topics=(window.TOPIC_MODULES||[]);
   document.getElementById('gen-markets').innerHTML=MK.map(([f,n])=>'<label class="upd-check gen-cb"><input type="checkbox" class="gen-m" value="'+f+'" checked> '+f+' '+n+'</label>').join('');

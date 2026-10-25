@@ -1,7 +1,7 @@
 <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Elektrische Sicherheit (Hochvolt) &amp; EMV</div>
 <div class="section-header">
   <div class="section-icon" style="background:rgba(241,196,15,.12);border-color:rgba(241,196,15,.3)">⚡</div>
-  <div><h2>Modul — Elektrische Sicherheit (Hochvolt) &amp; EMV</h2><p>UN R100 · Post-Crash nach R94/R95/R12/R137 · UN R10 · GTR 20 · FMVSS 305/305a · GB 18384 / GB 38031 / GB 34660 · AIS-038 Rev. 2 und marktspezifische Äquivalente. HV-Schutz, REESS, Post-Crash und EMV in 9 Märkten.</p></div>
+  <div><h2>Modul — Elektrische Sicherheit (Hochvolt) &amp; EMV</h2><p>UN R100 · Post-Crash nach R94/R95/R12/R137 · UN R10 · GTR 20 · FMVSS 305/305a · GB 18384 / GB 38031 / GB 34660 · AIS-038 Rev. 2 und marktspezifische Äquivalente. HV-Schutz, REESS, Post-Crash und EMV in 10 Märkten.</p></div>
 </div>
 <div class="tabs" id="hv-tabs">
   <div class="tab active" onclick="switchTab('hv','vorschriften')">📄 Vorschriften</div>
@@ -26,6 +26,7 @@
       <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes" target="_blank" class="reg-link">CONTRAN-Resolutionen ↗</a> (UN-R100-Bezug)</td><td>lt. Regelwerk; UN-R100-Nachweis in der Praxis anerkannt</td><td>lt. Regelwerk</td><td>lt. Regelwerk</td></tr>
       <tr><td>🇬🇧 UK</td><td>GB-Typgenehmigung nach <a href="https://www.legislation.gov.uk/uksi/2020/818/contents/made" target="_blank" class="reg-link">Road Vehicles (Approval) Regulations 2020 ↗</a> · <a href="https://www.legislation.gov.uk/eur/2019/2144/annex/I" target="_blank" class="reg-link">assimilierte VO 2019/2144 Anh. I ↗</a></td><td>Wie UN R100</td><td>Wie UN R94/R95/R137</td><td>Wie UN R10</td></tr>
       <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Standards für Elektrofahrzeuge ↗</a></td><td>UN R100 bzw. FMVSS 305 als Nachweis akzeptiert (lt. GSO-Standard)</td><td>Wie Nachweisbasis</td><td>UN R10 bzw. nationale Funkzulassung</td></tr>
+      <tr><td>🇸🇦 Saudi-Arabien</td><td><a href="https://www.saso.gov.sa/" target="_blank" class="reg-link">SASO/GSO-Standards für Elektrofahrzeuge ↗</a></td><td>UN R100 bzw. FMVSS 305 als Nachweis (lt. GSO); Ladeschnittstelle Typ 2 / CCS2 nach SASO-Regelung <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span></td><td>Wie Nachweisbasis</td><td>UN R10; Funkkomponenten zusätzlich CST-Zulassung <span style="color:var(--orange)">(vor Projektverwendung prüfen)</span></td></tr>
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-038 Rev. 2 (M, N) ↗</a> · AIS-156 (L-Klassen) · CMVR</td><td>AIS-038 Rev. 2: R100-basiert inkl. REESS-Prüfungen</td><td>Über AIS-098/AIS-099 (Front/Seite) lt. Regelwerk</td><td>AIS-004 Teil 3 (R10-basiert)</td></tr>
     </tbody>
   </table>
@@ -103,7 +104,7 @@
 <div id="hv-tab-vergleich" style="display:none">
   <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad bei den Grundwerten (60 V DC / 30 V AC, 100/500 Ω/V, IPXXB/IPXXD, 0,2 J) über GTR 20. Unterschiede liegen bei Crash-Lastfällen (USA: Heckaufprall + Überschlag), Thermal-Propagation-Zielen (China am strengsten) und bei der EMV (keine bundesrechtliche Fahrzeug-EMV-Genehmigung in den USA).</span></div>
   <table class="doc-table">
-    <thead><tr><th>Kriterium</th><th>EU / UK</th><th>USA</th><th>CN</th><th>IN</th><th>JP / KR</th><th>BR / GCC</th></tr></thead>
+    <thead><tr><th>Kriterium</th><th>EU / UK</th><th>USA</th><th>CN</th><th>IN</th><th>JP / KR</th><th>BR / GCC / KSA</th></tr></thead>
     <tbody>
       <tr><td>Basis</td><td>UN R100 / R10</td><td>FMVSS 305 / 305a</td><td>GB 18384 / 38031 / 34660</td><td>AIS-038 Rev. 2 / AIS-004</td><td>UN R100 bzw. KMVSS</td><td>R100- bzw. FMVSS-Nachweis</td></tr>
       <tr><td>Berührschutz IPXXB/IPXXD</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>

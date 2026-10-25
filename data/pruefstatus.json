@@ -59,7 +59,7 @@
   "marktvergleich": {
    "status": "ungeprueft",
    "date": "2026-10-25",
-   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen."
+   "note": "Inhalte aus Fachwissen und Sekundärquellen, nicht am Originaltext abgeglichen – Werte vor Projektverwendung prüfen. KSA-Spalte 10/2026 ergänzt (überwiegend GSO-Werte übernommen, ungeprüft)."
   },
   "heizung": {
    "status": "ungeprueft",
@@ -200,6 +200,11 @@
    "status": "teilweise",
    "date": "2026-10-25",
    "note": "Geprüft: VO; Art. 5; DelVO; DelVO u. a.. Nicht geprüft: 12 Angaben aus Fachwissen (im Modul markiert)."
+  },
+  "markt-sa": {
+   "status": "ungeprueft",
+   "date": "2026-10-25",
+   "note": "Geprüft nur: GSO-Mitgliedschaft (gso.org.sa), SABER-Fahrzeugpfad und Gebühren (saber.sa). SASO-Normnummern, CAFE, Reifenlabel, CST, Sprachregel aus Fachwissen – vor Projektverwendung prüfen."
   }
  }
 }

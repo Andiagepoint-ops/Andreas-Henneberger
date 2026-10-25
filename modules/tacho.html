@@ -1,7 +1,7 @@
 <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Geschwindigkeitsmesser</div>
 <div class="section-header">
   <div class="section-icon" style="background:rgba(192,57,43,.12);border-color:rgba(192,57,43,.3)">🔢</div>
-  <div><h2>Modul — Geschwindigkeitsmesser</h2><p>UN R39 · FMVSS 101 und Äquivalente. Toleranzformel, Skaleneinheit und Prüfmethoden in 9 Märkten.</p></div>
+  <div><h2>Modul — Geschwindigkeitsmesser</h2><p>UN R39 · FMVSS 101 und Äquivalente. Toleranzformel, Skaleneinheit und Prüfmethoden in 10 Märkten.</p></div>
 </div>
 <div class="tabs" id="tacho-tabs">
   <div class="tab active" onclick="switchTab('tacho','vorschriften')">📄 Vorschriften</div>
@@ -26,6 +26,7 @@
       <tr><td>🇧🇷 Brasilien</td><td><a href="https://www.abnt.org.br/" target="_blank" class="reg-link">ABNT NBR 6160:2021 ↗</a> <a href="https://www.denatran.gov.br/" target="_blank" class="reg-link">CONTRAN ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>NBR 6160 orientiert sich an UN R39; Prüfung über INMETRO-akkreditierte Stellen</td></tr>
       <tr><td>🇬🇧 UK</td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">UN R39 retained ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>mph (Pflicht, Primäranzeige); km/h erlaubt</td><td>UK: mph Pflicht-Primäreinheit (wie USA); km/h darf nicht größer als mph-Anzeige sein</td></tr>
       <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO (UN R39-Basis) ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>Analog UN R39; Skalenbereich bis mind. 200 km/h empfohlen</td></tr>
+      <tr><td>🇸🇦 Saudi-Arabien</td><td><a href="https://www.saso.gov.sa/" target="_blank" class="reg-link">SASO/GSO (UN R39-Basis) ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>Analog UN R39 / GCC</td></tr>
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-017 Rev.1 ↗</a> <a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 100 ↗</a></td><td>0 ≤ V<sub>ind</sub>−V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</td><td>km/h (Pflicht)</td><td>AIS-017 ist UN R39-äquivalent; <strong>Speed Alert System (AIS-145)</strong> ab 80/120 km/h Pflicht</td></tr>
     </tbody>
   </table>
@@ -34,12 +35,12 @@
 <!-- TAB: TECHNISCHE ANFORDERUNGEN -->
 <div id="tacho-tab-anforderungen" style="display:none">
   <div class="module-grid">
-    <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">📐</span><h3>Toleranzformel (UN R39 §5.2)</h3></div><p><strong>0 ≤ V<sub>ind</sub> − V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</strong><br>Beispiel 100 km/h: Anzeige muss zwischen 100 und 114 km/h liegen. Unter dem Istwert verboten. Gilt weltweit (außer USA).</p><div class="module-card-footer"><span class="tag">UN R39 §5.2</span><span class="tag">8/9 Märkten</span></div></div>
+    <div class="module-card" style="--card-color:#c0392b"><div class="module-card-header"><span class="module-card-icon">📐</span><h3>Toleranzformel (UN R39 §5.2)</h3></div><p><strong>0 ≤ V<sub>ind</sub> − V<sub>real</sub> ≤ V<sub>real</sub>/10 + 4 km/h</strong><br>Beispiel 100 km/h: Anzeige muss zwischen 100 und 114 km/h liegen. Unter dem Istwert verboten. Gilt weltweit (außer USA).</p><div class="module-card-footer"><span class="tag">UN R39 §5.2</span><span class="tag">8/10 Märkten</span></div></div>
     <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">💱</span><h3>Skaleneinheit und Beschriftung</h3></div><p>km/h Pflicht: EU, CN, JP, KR, BR, GCC, IN. mph Pflicht: UK, USA. UN R39 §4.2: Skala bis v<sub>max</sub> + 10 %. Teilstriche max. alle 20 km/h.</p><div class="module-card-footer"><span class="tag">km/h: 7 Märkte</span><span class="tag">mph: UK + USA</span></div></div>
     <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">💡</span><h3>Beleuchtung und Ablesbarkeit</h3></div><p>UN R39 §4.3: Ablesbar bei Nacht mit Fahrzeuginnenbeleuchtung und bei extremem Umgebungslicht. Analoge Zeiger und digitale Anzeigen gleichwertig. HUD als Ergänzung erlaubt.</p><div class="module-card-footer"><span class="tag">UN R39 §4.3</span><span class="tag">Analog = Digital</span></div></div>
     <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🧾</span><h3>Prüfmethodik (UN R39 Annex)</h3></div><p>Prüfgeschwindigkeiten: 40, 80, 120 km/h (+ weitere wenn v<sub>max</sub> > 120 km/h). Rollenprüfstand oder Messfahrt. Toleranz Prüfeinrichtung: ±1 %. Prüfung bei Nenndruck und Betriebstemperatur.</p><div class="module-card-footer"><span class="tag">UN R39 Annex</span><span class="tag">40/80/120 km/h</span></div></div>
     <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🗺️</span><h3>USA-Sonderfall: Keine Genauigkeitsnorm</h3></div><p>FMVSS 101 regelt nur Lesbarkeit und Beleuchtung. Keine bundesrechtliche Toleranzpflicht. SAE J678 (freiwillig, äquivalent UN R39) wird von Herstellern angewendet. Kein staatliches Prüfverfahren erforderlich.</p><div class="module-card-footer"><span class="tag">SAE J678 (freiwillig)</span><span class="tag">Kein Bundesstandard</span></div></div>
-    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: Speed Alert System (AIS-145)</h3></div><p>Einziger der 9 Märkte mit Pflicht-Geschwindigkeitswarner. AIS-145: Dauerton ab 80 km/h, Schnellton ab 120 km/h. Pflicht seit 2019 für alle Neuzulassungen.</p><div class="module-card-footer"><span class="tag">AIS-145</span><span class="tag">80 + 120 km/h</span><span class="tag">Seit 2019</span></div></div>
+    <div class="module-card" style="--card-color:#e879a0"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: Speed Alert System (AIS-145)</h3></div><p>Einziger der 10 Märkte mit Pflicht-Geschwindigkeitswarner. AIS-145: Dauerton ab 80 km/h, Schnellton ab 120 km/h. Pflicht seit 2019 für alle Neuzulassungen.</p><div class="module-card-footer"><span class="tag">AIS-145</span><span class="tag">80 + 120 km/h</span><span class="tag">Seit 2019</span></div></div>
   </div>
 </div>
 
@@ -110,7 +111,7 @@
 
 <!-- TAB: MARKTVERGLEICH -->
 <div id="tacho-tab-vergleich" style="display:none">
-  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad: 7 von 9 Märkten verwenden identische UN R39-Toleranzformel. Hauptunterschiede: USA (keine Bundesnorm), UK (mph-Pflicht), Indien (Speed-Alert-Pflicht).</span></div>
+  <div class="callout"><span class="ci">📊</span><span>Hoher Harmonisierungsgrad: 8 von 10 Märkten verwenden identische UN R39-Toleranzformel. Hauptunterschiede: USA (keine Bundesnorm), UK (mph-Pflicht), Indien (Speed-Alert-Pflicht).</span></div>
   <table class="doc-table">
     <thead><tr><th>Markt</th><th>Bundes-Genauigkeitsnorm</th><th>Toleranzformel</th><th>Pflicht-Einheit</th><th>Speed-Alert-Pflicht</th><th>Regelwerk</th></tr></thead>
     <tbody>
@@ -122,6 +123,7 @@
       <tr><td>🇧🇷 Brasilien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ NBR 6160</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.abnt.org.br/" target="_blank" class="reg-link">NBR 6160 ↗</a></td></tr>
       <tr><td>🇬🇧 UK</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ UN R39 retained</span></td><td>0 … V/10 + 4 km/h</td><td>mph</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement/regulation-no-39" target="_blank" class="reg-link">UN R39 ↗</a></td></tr>
       <tr><td>🇦🇪 Golf-Staaten</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GSO/UN R39</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO ↗</a></td></tr>
+      <tr><td>🇸🇦 Saudi-Arabien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ GSO/UN R39</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><a href="https://www.saso.gov.sa/" target="_blank" class="reg-link">SASO ↗</a></td></tr>
       <tr><td>🇮🇳 Indien</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ AIS-017</span></td><td>0 … V/10 + 4 km/h</td><td>km/h</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓ AIS-145 (80+120 km/h)</span></td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">AIS-017 ↗</a></td></tr>
     </tbody>
   </table>
@@ -130,7 +132,7 @@
     <div class="module-card" style="--card-color:#f5a623"><div class="module-card-header"><span class="module-card-icon">🇺🇸</span><h3>USA: Einziger Markt ohne Genauigkeitsnorm</h3></div><p>FMVSS 101 regelt nur Lesbarkeit. SAE J678 (freiwillig) kompensiert dies. Kein staatliches Prüfverfahren erforderlich.</p></div>
     <div class="module-card" style="--card-color:#4f8ef7"><div class="module-card-header"><span class="module-card-icon">🇬🇧</span><h3>UK: mph Pflicht-Primäreinheit</h3></div><p>UK + USA einzige Märkte mit mph-Pflicht. UK hat UN R39 (Genauigkeit) übernommen, mph-Pflicht kommt aus britischem Verkehrsrecht.</p></div>
     <div class="module-card" style="--card-color:#3ecf8e"><div class="module-card-header"><span class="module-card-icon">🇮🇳</span><h3>Indien: Speed Alert System Pflicht</h3></div><p>Einziger Markt mit gesetzlichem akustischem Geschwindigkeitswarner (AIS-145): Dauerton 80 km/h, Schnellton 120 km/h.</p></div>
-    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Höchster Harmonisierungsgrad</h3></div><p>7 von 9 Märkten: identische Toleranzformel aus UN R39. Höchster Harmonisierungsgrad aller betrachteten Module.</p></div>
+    <div class="module-card" style="--card-color:#7c6af7"><div class="module-card-header"><span class="module-card-icon">⚖️</span><h3>Höchster Harmonisierungsgrad</h3></div><p>8 von 10 Märkten: identische Toleranzformel aus UN R39. Höchster Harmonisierungsgrad aller betrachteten Module.</p></div>
   </div>
   <div style="margin-top:12px;font-size:12px;color:var(--text2)"><span style="color:var(--green)">✓</span> = Pflicht &nbsp; <span style="color:var(--orange)">⚠</span> = eingeschränkt &nbsp; <span style="color:var(--red)">✗</span> = nicht vorhanden</div>
 </div>

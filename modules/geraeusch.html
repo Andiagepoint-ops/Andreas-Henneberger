@@ -1,7 +1,7 @@
 <div class="breadcrumb"><a href="#" onclick="showSection('home')">Startseite</a><span class="sep">/</span> Fahrgeräusch &amp; AVAS</div>
 <div class="section-header">
   <div class="section-icon" style="background:rgba(127,140,141,.12);border-color:rgba(127,140,141,.3)">🔈</div>
-  <div><h2>Modul — Fahrgeräusch &amp; AVAS (Außengeräusch, Mindestgeräusch E-Fahrzeuge)</h2><p>UN R51 (03-Serie) · VO (EU) 540/2014 · UN R138 · FMVSS 141 · GB 1495 / GB/T 37153 · AIS-173 und marktspezifische Äquivalente. Vorbeifahrtpegel, ASEP und akustische Fußgängerwarnung in 9 Märkten.</p></div>
+  <div><h2>Modul — Fahrgeräusch &amp; AVAS (Außengeräusch, Mindestgeräusch E-Fahrzeuge)</h2><p>UN R51 (03-Serie) · VO (EU) 540/2014 · UN R138 · FMVSS 141 · GB 1495 / GB/T 37153 · AIS-173 und marktspezifische Äquivalente. Vorbeifahrtpegel, ASEP und akustische Fußgängerwarnung in 10 Märkten.</p></div>
 </div>
 <div class="tabs" id="geraeusch-tabs">
   <div class="tab active" onclick="switchTab('geraeusch','vorschriften')">📄 Vorschriften</div>
@@ -26,6 +26,7 @@
       <tr><td>🇧🇷 Brasilien</td><td><a href="https://conama.mma.gov.br/" target="_blank" class="reg-link">CONAMA-Resolutionen (Ruído) ↗</a> · CONTRAN</td><td>Grenzwerte Beschleunigungsgeräusch lt. CONAMA (Verfahren an ISO 362 / R51 angelehnt)</td><td>Keine eigene AVAS-Regelung bekannt – Stand prüfen</td><td>Lärmzertifizierung über IBAMA im PROCONVE-Rahmen</td></tr>
       <tr><td>🇬🇧 UK</td><td><a href="https://www.legislation.gov.uk/eur/2014/540" target="_blank" class="reg-link">Retained VO 540/2014 ↗</a> · GB-Typgenehmigung</td><td>Wie EU: 72 / 70 / 68 dB(A)</td><td>Wie EU (Art. 8, Anh. VIII)</td><td>Änderungsbefugnis nach 2024 c. 10 s. 91 – künftige Abweichungen beobachten</td></tr>
       <tr><td>🇦🇪 Golf-Staaten</td><td><a href="https://www.gso.org.sa/" target="_blank" class="reg-link">GSO-Fahrzeugregelwerk ↗</a></td><td>UN R51- bzw. US-Nachweise lt. GSO-Regelwerk akzeptiert</td><td>Für E-Fahrzeuge: R138- bzw. FMVSS-141-Nachweis lt. GSO</td><td>Akzeptanz je Mitgliedstaat prüfen</td></tr>
+      <tr><td>🇸🇦 Saudi-Arabien</td><td><a href="https://www.saso.gov.sa/" target="_blank" class="reg-link">SASO/GSO-Fahrzeugregelwerk ↗</a></td><td>UN R51- bzw. US-Nachweise lt. GSO-Regelwerk</td><td>Für E-Fahrzeuge: R138- bzw. FMVSS-141-Nachweis lt. GSO</td><td>Akzeptanz durch SASO prüfen</td></tr>
       <tr><td>🇮🇳 Indien</td><td><a href="https://morth.nic.in/" target="_blank" class="reg-link">CMVR Rule 120 · EP Rules (Lärm) · AIS-173 ↗</a></td><td>Grenzwerte lt. Environment (Protection) Rules, Stufen an R51.03 angelehnt</td><td>AIS-173: AVAS für leise Elektro-/Hybridfahrzeuge (R138-Basis); Pflichttermine lt. MoRTH-Notifikation</td><td>Prüfung über ARAI / ICAT</td></tr>
     </tbody>
   </table>
@@ -103,7 +104,7 @@
 <div id="geraeusch-tab-vergleich" style="display:none">
   <div class="callout"><span class="ci">📊</span><span>Beim Außengeräusch ist UN R51 (03) der Referenzstandard; die USA haben für PKW keinen Bundesgrenzwert. Beim AVAS bestehen zwei Welten: UN R138 (bis 20 km/h, EU/UK/JP und angelehnt CN/IN) und FMVSS 141 (bis 30 km/h, eigene Terzbandwerte). Ein globales Fahrzeug muss beide Profile gleichzeitig erfüllen.</span></div>
   <table class="doc-table">
-    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>UK</th><th>IN</th><th>BR / GCC</th></tr></thead>
+    <thead><tr><th>Kriterium</th><th>EU</th><th>USA</th><th>CN</th><th>JP</th><th>KR</th><th>UK</th><th>IN</th><th>BR / GCC / KSA</th></tr></thead>
     <tbody>
       <tr><td>Basis Außengeräusch</td><td>540/2014 · R51.03</td><td>—</td><td>GB 1495-2002</td><td>R51.03</td><td>nationales Lärmrecht</td><td>540/2014 (retained)</td><td>EP Rules</td><td>CONAMA / GSO</td></tr>
       <tr><td>Grenzwert PKW-Vorbeifahrt</td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--red);color:var(--red)">✗</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--green);color:var(--green)">✓</span></td><td><span class="tag" style="border-color:var(--orange);color:var(--orange)">⚠</span></td></tr>
