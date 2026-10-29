@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-25T21:16:37+00:00",
- "since": "2024-10-25",
+ "generated": "2026-10-29T10:55:58+00:00",
+ "since": "2024-10-29",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -11,8 +11,8 @@
    "count": 63
   },
   "EU-Amtsblatt": {
-   "ok": true,
-   "count": 90
+   "ok": false,
+   "error": "HTTP Error 500: SPARQL Request Failed"
   }
  },
  "items": [
