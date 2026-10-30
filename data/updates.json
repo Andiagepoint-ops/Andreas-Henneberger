@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-29T10:55:58+00:00",
- "since": "2024-10-29",
+ "generated": "2026-10-30T10:54:22+00:00",
+ "since": "2024-10-30",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -11,8 +11,8 @@
    "count": 63
   },
   "EU-Amtsblatt": {
-   "ok": false,
-   "error": "HTTP Error 500: SPARQL Request Failed"
+   "ok": true,
+   "count": 89
   }
  },
  "items": [
@@ -2035,17 +2035,6 @@
    "modules": [],
    "market": "USA",
    "firstSeen": "2024-10-30"
-  },
-  {
-   "id": "eu-32024R1610R(01)",
-   "source": "EU-Amtsblatt",
-   "kind": "EU-Rechtsakt",
-   "date": "2024-10-29",
-   "title": "Berichtigung der Verordnung (EU) 2024/1610 des Europäischen Parlaments und des Rates vom 14. Mai 2024 zur Änderung der Verordnung (EU) 2019/1242 im Hinblick auf die Verschärfung der CO2-Emissionsnormen für neue schwere Nutzfahrzeuge und die Einbeziehung von Meldepflichten, zur Änderung der Verordnun",
-   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1610R(01)",
-   "modules": [],
-   "market": "EU",
-   "firstSeen": "2024-10-29"
   },
   {
    "id": "ecfr-571.139-2023-12-05",
