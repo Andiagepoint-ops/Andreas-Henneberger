@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-30T10:54:22+00:00",
- "since": "2024-10-30",
+ "generated": "2026-10-31T10:26:00+00:00",
+ "since": "2024-10-31",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -8,7 +8,7 @@
   },
   "Federal Register": {
    "ok": true,
-   "count": 63
+   "count": 62
   },
   "EU-Amtsblatt": {
    "ok": true,
@@ -2022,19 +2022,6 @@
    ],
    "market": "EU",
    "firstSeen": "2024-11-04"
-  },
-  {
-   "id": "fr-2024-24462",
-   "source": "Federal Register",
-   "kind": "Regel (Final Rule)",
-   "date": "2024-10-30",
-   "title": "Federal Motor Vehicle Safety Standards; Anti-Ejection Glazing for Bus Portals; Bus Emergency Exits and Window Retention and Release",
-   "url": "https://www.federalregister.gov/documents/2024/10/30/2024-24462/federal-motor-vehicle-safety-standards-anti-ejection-glazing-for-bus-portals-bus-emergency-exits-and",
-   "summary": "This final rule establishes Federal Motor Vehicle Safety Standard (FMVSS) No. 217a, \"Anti-ejection glazing for bus portals; Mandatory applicability beginning October 30, 2027,\" to drive the installation of advanced glazing in over-the-road buses (motorcoaches) and other large buses to reduce passenger and driver ejections. This final rule, issued pursuant to the Moving Ahead for Progress in the 21",
-   "effective": "2024-12-30",
-   "modules": [],
-   "market": "USA",
-   "firstSeen": "2024-10-30"
   },
   {
    "id": "ecfr-571.139-2023-12-05",
