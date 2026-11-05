@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-31T10:26:00+00:00",
- "since": "2024-10-31",
+ "generated": "2026-11-05T12:27:14+00:00",
+ "since": "2024-11-05",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -12,7 +12,7 @@
   },
   "EU-Amtsblatt": {
    "ok": true,
-   "count": 89
+   "count": 88
   }
  },
  "items": [
@@ -2009,19 +2009,6 @@
    "modules": [],
    "market": "EU",
    "firstSeen": "2024-11-05"
-  },
-  {
-   "id": "eu-42024X2689",
-   "source": "EU-Amtsblatt",
-   "kind": "UN-Regelung im EU-Amtsblatt",
-   "date": "2024-11-04",
-   "title": "UN-Regelung Nr. 171 — Einheitliche Vorschriften für die Genehmigung von Kraftfahrzeugen hinsichtlich Fahrerassistenzsysteme (driver control assistance systems, DCAS) [2024/2689]",
-   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42024X2689",
-   "modules": [
-    "adas"
-   ],
-   "market": "EU",
-   "firstSeen": "2024-11-04"
   },
   {
    "id": "ecfr-571.139-2023-12-05",
