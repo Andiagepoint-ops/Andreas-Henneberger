@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-05T12:27:14+00:00",
- "since": "2024-11-05",
+ "generated": "2026-11-06T12:11:13+00:00",
+ "since": "2024-11-06",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -16,6 +16,17 @@
   }
  },
  "items": [
+  {
+   "id": "eu-32024R1252R(06)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-11-06",
+   "title": "Berichtigung der Verordnung (EU) 2024/1252 des Europäischen Parlaments und des Rates vom 11. April 2024 zur Schaffung eines Rahmens zur Gewährleistung einer sicheren und nachhaltigen Versorgung mit kritischen Rohstoffen und zur Änderung der Verordnungen (EU) Nr. 168/2013, (EU) 2018/858, (EU) 2018/17",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1252R(06)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-06"
+  },
   {
    "id": "fr-2026-21794",
    "source": "Federal Register",
@@ -1998,17 +2009,6 @@
    "modules": [],
    "market": "USA",
    "firstSeen": "2024-11-20"
-  },
-  {
-   "id": "eu-32024D2868",
-   "source": "EU-Amtsblatt",
-   "kind": "EU-Rechtsakt",
-   "date": "2024-11-05",
-   "title": "Beschluss (EU) 2024/2868 des Rates vom 5. November 2024 über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu Vorschlägen für Änderungen der UN-Regelungen Nr. 0, 10",
-   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024D2868",
-   "modules": [],
-   "market": "EU",
-   "firstSeen": "2024-11-05"
   },
   {
    "id": "ecfr-571.139-2023-12-05",
