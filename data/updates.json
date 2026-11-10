@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-06T12:11:13+00:00",
- "since": "2024-11-06",
+ "generated": "2026-11-10T12:43:23+00:00",
+ "since": "2024-11-10",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -12,10 +12,21 @@
   },
   "EU-Amtsblatt": {
    "ok": true,
-   "count": 88
+   "count": 89
   }
  },
  "items": [
+  {
+   "id": "eu-32026R1738R(03)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-11-10",
+   "title": "Berichtigung der Verordnung (EU) 2026/1738 des Europäischen Parlaments und des Rates vom 8. Juli 2026 über Anforderungen an die kreislauforientierte Konstruktion von Fahrzeugen und über die Bewirtschaftung von Altfahrzeugen, zur Änderung der Verordnungen (EU) Nr. 168/2013, (EU) 2018/858, (EU) 2019/1",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1738R(03)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-10"
+  },
   {
    "id": "eu-32024R1252R(06)",
    "source": "EU-Amtsblatt",
