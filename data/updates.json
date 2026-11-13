@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-10T12:43:23+00:00",
- "since": "2024-11-10",
+ "generated": "2026-11-13T12:17:23+00:00",
+ "since": "2024-11-13",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -12,10 +12,54 @@
   },
   "EU-Amtsblatt": {
    "ok": true,
-   "count": 89
+   "count": 93
   }
  },
  "items": [
+  {
+   "id": "eu-42026X2519",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-11-13",
+   "title": "UN-Regelung Nr. 182 – Einheitliche Bedingungen für die Genehmigung eines Fahrzeugtyps hinsichtlich eines Warnsystems bei Müdigkeit und nachlassender Aufmerksamkeit des Fahrers (DDAW-System) [2026/2519]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X2519",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "eu-42026X2518",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-11-13",
+   "title": "Regelung Nr. 173 der Wirtschaftskommission der Vereinten Nationen für Europa (UNECE) — Einheitliche Bedingungen für die Genehmigung des Einbaus von Sicherheitsgurten, Rückhaltesystemen, Kinderrückhaltesystemen, ISOFIX-Kinderrückhaltesystemen und i-Size-Kinderrückhaltesystemen [2026/2518]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X2518",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "eu-42026X2500",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-11-13",
+   "title": "Regelung Nr. 174 der Wirtschaftskommission der Vereinten Nationen für Europa (UNECE) — Einheitliche Bestimmungen für die Genehmigung von Sicherheitsgurt-Warneinrichtungen [2026/2500]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X2500",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-13"
+  },
+  {
+   "id": "eu-42026X2499",
+   "source": "EU-Amtsblatt",
+   "kind": "UN-Regelung im EU-Amtsblatt",
+   "date": "2026-11-13",
+   "title": "UN-Regelung Nr. 183 – Einheitliche Bedingungen für die Genehmigung eines Fahrzeugtyps hinsichtlich eines hochentwickelten Warnsystems bei nachlassender Konzentration des Fahrers (ADDW-System) [2026/2499]",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:42026X2499",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-13"
+  },
   {
    "id": "eu-32026R1738R(03)",
    "source": "EU-Amtsblatt",
