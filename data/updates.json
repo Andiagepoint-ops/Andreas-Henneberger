@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-13T12:17:23+00:00",
- "since": "2024-11-13",
+ "generated": "2026-11-14T11:33:27+00:00",
+ "since": "2024-11-14",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -8,7 +8,7 @@
   },
   "Federal Register": {
    "ok": true,
-   "count": 62
+   "count": 63
   },
   "EU-Amtsblatt": {
    "ok": true,
@@ -16,6 +16,21 @@
   }
  },
  "items": [
+  {
+   "id": "fr-2026-23239",
+   "source": "Federal Register",
+   "kind": "Regelentwurf (NPRM)",
+   "date": "2026-11-16",
+   "title": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles",
+   "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23239/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped",
+   "summary": "In response to requests from the Alliance for Automotive Innovation (the Alliance), Society of Automotive Engineers (SAE) International, and Gatik AI Inc. (Gatik), NHTSA is announcing a 15-day extension of the public comment period for the notice of proposed rulemaking (NPRM) published on October 26, 2026 proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 108, \"Lamps, reflective ",
+   "effective": "2026-10-26",
+   "modules": [
+    "licht"
+   ],
+   "market": "USA",
+   "firstSeen": "2026-11-14"
+  },
   {
    "id": "eu-42026X2519",
    "source": "EU-Amtsblatt",
