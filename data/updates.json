@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-16T12:50:06+00:00",
- "since": "2024-11-16",
+ "generated": "2026-11-17T13:31:06+00:00",
+ "since": "2024-11-17",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -11,8 +11,8 @@
    "count": 63
   },
   "EU-Amtsblatt": {
-   "ok": true,
-   "count": 94
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   }
  },
  "items": [
