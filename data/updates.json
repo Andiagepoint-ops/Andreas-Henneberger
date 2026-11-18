@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-17T13:31:06+00:00",
- "since": "2024-11-17",
+ "generated": "2026-11-18T13:08:26+00:00",
+ "since": "2024-11-18",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -11,8 +11,8 @@
    "count": 63
   },
   "EU-Amtsblatt": {
-   "ok": false,
-   "error": "HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 95
   }
  },
  "items": [
@@ -96,6 +96,17 @@
    "modules": [],
    "market": "EU",
    "firstSeen": "2026-11-10"
+  },
+  {
+   "id": "eu-32026D2542",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-11-09",
+   "title": "Beschluss (EU) 2026/2542 des Rates vom 9. November 2026 über den Standpunkt, der im Namen der Europäischen Union im Weltforum für die Harmonisierung der Regelungen für Kraftfahrzeuge der Wirtschaftskommission der Vereinten Nationen für Europa zu den Vorschlägen zu UN-Regelungen im November 2026 zu v",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026D2542",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-18"
   },
   {
    "id": "eu-32024R1252R(06)",
