@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18T13:08:26+00:00",
- "since": "2024-11-18",
+ "generated": "2026-11-19T13:18:20+00:00",
+ "since": "2024-11-19",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -12,10 +12,21 @@
   },
   "EU-Amtsblatt": {
    "ok": true,
-   "count": 95
+   "count": 96
   }
  },
  "items": [
+  {
+   "id": "eu-32025R1706R(02)",
+   "source": "EU-Amtsblatt",
+   "kind": "EU-Rechtsakt",
+   "date": "2026-11-19",
+   "title": "Berichtigung der Durchführungsverordnung (EU) 2025/1706 der Kommission vom 25. Juli 2025 mit Vorschriften, Verfahren und Prüfmethoden für die Anwendung der Verordnung (EU) 2024/1257 in Bezug auf die Typgenehmigung hinsichtlich der Abgas- und Verdunstungsemissionen, auf die Dauerhaltbarkeit von borde",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1706R(02)",
+   "modules": [],
+   "market": "EU",
+   "firstSeen": "2026-11-19"
+  },
   {
    "id": "fr-2026-23239",
    "source": "Federal Register",
