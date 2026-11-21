@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-19T13:18:20+00:00",
- "since": "2024-11-19",
+ "generated": "2026-11-21T12:43:50+00:00",
+ "since": "2024-11-21",
  "sources": {
   "eCFR": {
    "ok": true,
@@ -8,7 +8,7 @@
   },
   "Federal Register": {
    "ok": true,
-   "count": 63
+   "count": 62
   },
   "EU-Amtsblatt": {
    "ok": true,
@@ -2099,19 +2099,6 @@
    "modules": [],
    "market": "USA",
    "firstSeen": "2024-11-26"
-  },
-  {
-   "id": "fr-2024-26985",
-   "source": "Federal Register",
-   "kind": "Regelentwurf (NPRM)",
-   "date": "2024-11-20",
-   "title": "Federal Motor Vehicle Safety Standards; Pedestrian Head Protection, Global Technical Regulation No. 9; Incorporation by Reference",
-   "url": "https://www.federalregister.gov/documents/2024/11/20/2024-26985/federal-motor-vehicle-safety-standards-pedestrian-head-protection-global-technical-regulation-no-9",
-   "summary": "NHTSA received a request to extend the comment period for the September 19, 2024, Notice of Proposed Rulemaking (NPRM) proposing a new Federal Motor Vehicle Safety Standard (FMVSS) to ensure passenger vehicles are designed to mitigate the risk of serious to fatal injury in pedestrian crashes. The NPRM is based on Global Technical Regulation (GTR) No. 9 on pedestrian safety, with focused enhancemen",
-   "effective": null,
-   "modules": [],
-   "market": "USA",
-   "firstSeen": "2024-11-20"
   },
   {
    "id": "ecfr-571.139-2023-12-05",
